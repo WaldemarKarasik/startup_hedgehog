@@ -7,12 +7,14 @@ import {
   Zap,
   Search,
   DollarSign,
+  UserSearch,
 } from "lucide-react";
 import Header from "@/src/landing/components/Header";
 import Footer from "@/src/landing/components/Footer";
 import ProjectCard from "@/src/landing/components/ProjectCard";
 import { mockStartups } from "@/src/lib/mock-data";
 import { HowItWorksForDevelopers } from "@/src/landing/components/HowItWorksForDevelopers";
+import PricingFAQ from "@/src/landing/components/PricingFAQ";
 export default function Home() {
   const featuredStartups = mockStartups
     .filter((s) => s.status === "active")
@@ -91,11 +93,8 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Почему предприниматели и разработчики выбирают StartupЁж?
+                Почему предприниматели выбирают StartupЁж?
               </h2>
-              <p className="text-xl text-gray-600">
-                Уникальная платформа для долгосрочного партнёрства
-              </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -120,6 +119,54 @@ export default function Home() {
                 <p className="text-gray-600">
                   Вместо разовой продажи — долгосрочное партнёрство с делением
                   прибыли. Обе стороны заинтересованы в успехе проекта
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                  <Shield className="w-6 h-6 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">
+                  Юридическая защита
+                </h3>
+                <p className="text-gray-600">
+                  Готовые договоры, электронная подпись и арбитражная система.
+                  Ваши интересы защищены на каждом этапе.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Почему разработчики выбирают StartupЁж?
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                  <Handshake className="w-6 h-6 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">
+                  Разделение прибыли
+                </h3>
+                <p className="text-gray-600">
+                  Единственная платформа в России с моделью Revenue Share, где
+                  вы зарабатываете больше, чем при разовой продаже
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                  <UserSearch className="w-6 h-6 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">
+                  Активное продвижение
+                </h3>
+                <p className="text-gray-600">
+                  Наша команда продвигает ваш проект среди 500+ предпринимателей
+                  и получает предложения для вас
                 </p>
               </div>
 
@@ -212,7 +259,7 @@ export default function Home() {
                 А для разработчиков?
               </h2>
               <p className="text-xl text-gray-600">
-                Простой процесс от разработки до партнерства
+                Простой процесс от размещения до партнерства
               </p>
             </div>
             <HowItWorksForDevelopers />
@@ -257,7 +304,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        <PricingFAQ />
         {/* CTA Section */}
         <section className="py-20 bg-primary-600 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

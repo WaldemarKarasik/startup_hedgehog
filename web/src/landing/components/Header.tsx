@@ -27,7 +27,7 @@ export default function Header() {
             Калькулятор
           </Link>
           <Link
-            href="/how-it-works"
+            href="#FAQ"
             className="text-gray-700 hover:text-primary-600 transition-colors"
           >
             Как это работает
