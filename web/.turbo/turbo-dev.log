@@ -11,5 +11,21 @@
    - Network:      http://100.84.165.231:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 544ms
+ [32m[1m✓[22m[39m Ready in 543ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1395ms
+ GET / [32m200[39m in 1687ms
+ [32m[1m✓[22m[39m Compiled in 24ms
+ GET / [32m200[39m in 46ms
+ [32m[1m✓[22m[39m Compiled / in 6ms
+ GET / [32m200[39m in 87ms
+ GET / [32m200[39m in 41ms
+ [32m[1m✓[22m[39m Compiled / in 3ms
+ GET / [32m200[39m in 62ms
+ GET / [32m200[39m in 37ms
+ [32m[1m✓[22m[39m Compiled / in 5ms
+ GET / [32m200[39m in 82ms
+ [32m[1m✓[22m[39m Compiled / in 3ms
+ GET / [32m200[39m in 57ms
+ GET / [32m200[39m in 44ms
 [?25h
