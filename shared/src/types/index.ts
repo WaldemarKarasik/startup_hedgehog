@@ -1,3 +1,3 @@
-export const Test = {
-  name: "1",
+export type Test = {
+  name: string;
 };

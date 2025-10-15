@@ -1,9 +1,0 @@
-{
-  "name": "web",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "echo 'Dev server not configured yet'",
-    "build": "echo 'Build not configured yet'"
-  }
-}

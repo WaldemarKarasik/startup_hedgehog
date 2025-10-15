@@ -30,7 +30,8 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "shared": ["shared"]
+      "shared": ["../shared"]
     }
-  }
+  },
+  "references": [{ "path": "../shared" }]
 }
