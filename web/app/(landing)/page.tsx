@@ -8,10 +8,10 @@ import {
   Search,
   DollarSign,
 } from "lucide-react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ProjectCard from "@/components/ProjectCard";
-import { mockStartups } from "@/lib/mock-data";
+import Header from "@/src/landing/components/Header";
+import Footer from "@/src/landing/components/Footer";
+import ProjectCard from "@/src/landing/components/ProjectCard";
+import { mockStartups } from "@/src/lib/mock-data";
 export default function Home() {
   const featuredStartups = mockStartups
     .filter((s) => s.status === "active")
@@ -27,7 +27,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Биржа стартапов с{" "}
+                Первая в России биржа стартапов с{" "}
                 <span className="text-primary-200">Revenue Share</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-primary-100">

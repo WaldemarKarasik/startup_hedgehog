@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Eye, Heart, TrendingUp, Code } from "lucide-react";
-import { Startup } from "@/types";
+import { Startup } from "@/src/types";
 
 interface ProjectCardProps {
   startup: Startup;

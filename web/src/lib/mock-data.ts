@@ -1,4 +1,4 @@
-import { Developer, Startup } from "@/types";
+import { Developer, Startup } from "@/src/types";
 
 export const mockDevelopers: Developer[] = [
   {
