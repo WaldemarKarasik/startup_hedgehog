@@ -11,49 +11,59 @@
    - Network:      http://100.84.165.231:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 457ms
+ [32m[1m✓[22m[39m Ready in 473ms
  [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 1569ms
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(landing)/layout.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./globals.css'[39m
-[0m [90m 1 |[39m [36mimport[39m type { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m[33m;[39m
- [90m 2 |[39m [36mimport[39m { [33mInter[39m } [36mfrom[39m [32m"next/font/google"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m
- [90m 5 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
- [90m 6 |[39m[0m
-
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
- [32m[1m✓[22m[39m Compiled /_error in 437ms
- GET / [31m500[39m in 2133ms
- [32m[1m✓[22m[39m Compiled / in 13ms
- GET / [32m200[39m in 338ms
- GET / [32m200[39m in 94ms
- GET / [32m200[39m in 52ms
+ [32m[1m✓[22m[39m Compiled / in 1898ms
+ GET / [32m200[39m in 2186ms
+ [32m[1m✓[22m[39m Compiled /calculator in 194ms
+ GET /calculator [32m200[39m in 223ms
+ GET / [32m200[39m in 45ms
+ GET /calculator [32m200[39m in 12ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 131ms
+ GET /catalog [33m404[39m in 173ms
+ GET /catalog [33m404[39m in 51ms
+ GET /calculator [32m200[39m in 50ms
+ GET /calculator [32m200[39m in 72ms
+ GET /calculator [32m200[39m in 9ms
+ GET /calculator [32m200[39m in 8ms
+ GET /calculator [32m200[39m in 9ms
+ GET /calculator [32m200[39m in 10ms
+ GET /calculator [32m200[39m in 9ms
+ GET /calculator [32m200[39m in 12ms
+ GET /calculator [32m200[39m in 10ms
+ GET /calculator [32m200[39m in 9ms
+ GET /calculator [32m200[39m in 10ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ GET /calculator [32m200[39m in 44ms
+ [32m[1m✓[22m[39m Compiled /catalog in 170ms
+ GET /catalog [32m200[39m in 293ms
+ GET /catalog [32m200[39m in 215ms
+ GET / [32m200[39m in 75ms
+ GET /catalog [32m200[39m in 44ms
  GET / [32m200[39m in 39ms
+ GET /how-it-works [33m404[39m in 13ms
+ GET /how-it-works [33m404[39m in 21ms
+ GET / [32m200[39m in 84ms
+ GET / [32m200[39m in 49ms
  GET / [32m200[39m in 38ms
+ GET / [32m200[39m in 36ms
+ GET / [32m200[39m in 51ms
+ GET / [32m200[39m in 42ms
+ GET / [32m200[39m in 39ms
+ GET / [32m200[39m in 36ms
+ GET / [32m200[39m in 42ms
+ GET / [32m200[39m in 40ms
  GET / [32m200[39m in 35ms
- GET / [32m200[39m in 36ms
- GET / [32m200[39m in 36ms
- GET / [32m200[39m in 36ms
- [32m[1m✓[22m[39m Compiled in 30ms
- GET / [32m200[39m in 80ms
- [32m[1m✓[22m[39m Compiled /_not-found/page in 160ms
- GET /calculator [33m404[39m in 199ms
- GET /calculator [33m404[39m in 22ms
- GET / [32m200[39m in 134ms
- [32m[1m✓[22m[39m Compiled / in 6ms
- GET / [32m200[39m in 104ms
- GET / [32m200[39m in 86ms
- GET /(landing)/calculator [33m404[39m in 10ms
- GET /(landing)/calculator [33m404[39m in 19ms
- GET / [32m200[39m in 149ms
- [32m[1m✓[22m[39m Compiled / in 7ms
- GET / [32m200[39m in 61ms
- GET / [32m200[39m in 556ms
+ GET / [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in 25ms
+ GET / [32m200[39m in 173ms
+ GET /catalog [32m200[39m in 74ms
+ GET /project/1 [33m404[39m in 8ms
+ GET /project/1 [33m404[39m in 19ms
+ GET /catalog [32m200[39m in 85ms
+ GET /project/1 [33m404[39m in 11ms
+ GET /project/1 [33m404[39m in 29ms
+ GET /project/2 [33m404[39m in 25ms
+ GET /project/2 [33m404[39m in 24ms
+ GET /project/2 [33m404[39m in 15ms
 [?25h
