@@ -1,0 +1,30 @@
+
+[0m[2m[35m$[0m [2m[1mnext build --turbopack[0m
+ [33m[1m⚠[22m[39m Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/daniel/Documents/стартап_еж/bun.lock as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/daniel/Documents/стартап_еж/web/bun.lock
+
+   [1m[38;2;173;127;168m▲ Next.js 16.0.0-beta.0[39m[22m (Turbopack)
+
+ [37m[1m [22m[39m Creating an optimized production build ...
+ [32m[1m✓[22m[39m Compiled successfully in 1819ms
+[?25l [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m..[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m...[39m[2K[1G [37m[1m [22m[39m Running TypeScript  [36m.[39m[2K[1G[?25h[?25l [37m[1m [22m[39m Finished TypeScript in 1964ms  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finished TypeScript in 1964ms     [32m[1m✓[22m[39m Finished TypeScript in 1964ms 
+[?25l [37m[1m [22m[39m Collecting page data  [36m.[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m..[39m[2K[1G [37m[1m [22m[39m Collecting page data  [36m...[39m[2K[1G[?25h [37m[1m [22m[39m Collecting page data in 467ms     [32m[1m✓[22m[39m Collecting page data in 467ms 
+[?25l [37m[1m [22m[39m Generating static pages (0/6)  [36m[    ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/6)  [36m[=   ][39m[2K[1G [37m[1m [22m[39m Generating static pages (0/6)  [36m[==  ][39m[2K[1G[?25h [32m[1m✓[22m[39m Generating static pages (6/6) in 538ms
+[?25l [37m[1m [22m[39m Finalizing page optimization  [36m.[39m[2K[1G[?25h [37m[1m [22m[39m Finalizing page optimization in 6ms     [32m[1m✓[22m[39m Finalizing page optimization in 6ms 
+
+[4mRoute (app)[24m
+┌ ○ /
+├ ○ /_not-found
+├ ○ /calculator
+├ ○ /catalog
+└ ƒ /project/[id]
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+[?25h

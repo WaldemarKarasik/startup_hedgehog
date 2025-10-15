@@ -3,7 +3,7 @@ import {
   ArrowRight,
   Handshake,
   Shield,
-  TrendingUp,
+  Hourglass,
   Zap,
   Search,
   DollarSign,
@@ -12,6 +12,7 @@ import Header from "@/src/landing/components/Header";
 import Footer from "@/src/landing/components/Footer";
 import ProjectCard from "@/src/landing/components/ProjectCard";
 import { mockStartups } from "@/src/lib/mock-data";
+import { HowItWorksForDevelopers } from "@/src/landing/components/HowItWorksForDevelopers";
 export default function Home() {
   const featuredStartups = mockStartups
     .filter((s) => s.status === "active")
@@ -27,12 +28,12 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Первая в России биржа стартапов с{" "}
-                <span className="text-primary-200">Revenue Share</span>
+                Биржа готовых IT-стартапов с{" "}
+                <span className="text-primary-200">разделением прибыли</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-primary-100">
-                Найдите готовый стартап или продайте свой проект. Долгосрочное
-                партнёрство вместо разовой сделки.
+                Найдите готовое IT решение для вашего бизнеса или продайте свой
+                проект. Долгосрочное партнёрство вместо разовой сделки.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -90,7 +91,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Почему StartupЁж?
+                Почему предприниматели и разработчики выбирают StartupЁж?
               </h2>
               <p className="text-xl text-gray-600">
                 Уникальная платформа для долгосрочного партнёрства
@@ -100,6 +101,17 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                  <Hourglass className="w-6 h-6 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Time to market</h3>
+                <p className="text-gray-600">
+                  Вместо затраты большого количество времени и денег на
+                  разработку с нуля, вы покупаете готовое White Label решение,
+                  которое разработчик кастомизирует под ваши запросы
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                   <Handshake className="w-6 h-6 text-primary-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
@@ -107,7 +119,7 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-600">
                   Вместо разовой продажи — долгосрочное партнёрство с делением
-                  прибыли. Обе стороны заинтересованы в успехе проекта.
+                  прибыли. Обе стороны заинтересованы в успехе проекта
                 </p>
               </div>
 
@@ -123,19 +135,6 @@ export default function Home() {
                   Ваши интересы защищены на каждом этапе.
                 </p>
               </div>
-
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                  <TrendingUp className="w-6 h-6 text-primary-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">
-                  Прозрачная аналитика
-                </h3>
-                <p className="text-gray-600">
-                  Реал-тайм дашборд с доходами, автоматическое распределение
-                  выплат и детальная статистика для обеих сторон.
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -145,7 +144,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Как это работает?
+                Как это работает для предпринимателей?
               </h2>
               <p className="text-xl text-gray-600">
                 Простой процесс от поиска до партнёрства
@@ -208,6 +207,15 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <div className="mt-20 text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                А для разработчиков?
+              </h2>
+              <p className="text-xl text-gray-600">
+                Простой процесс от разработки до партнерства
+              </p>
+            </div>
+            <HowItWorksForDevelopers />
           </div>
         </section>
 

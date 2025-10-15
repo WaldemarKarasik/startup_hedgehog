@@ -15,11 +15,16 @@ import Header from "@/src/landing/components/Header";
 import { mockStartups } from "@/src/lib/mock-data";
 import Footer from "@/src/landing/components/Footer";
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
-  const startup = mockStartups.find((s) => s.id === params.id);
-  if (!startup) {
-    notFound();
-  }
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ id?: string }>;
+}) {
+  const { id } = await params;
+  if (!id) notFound();
+
+  const startup = mockStartups.find((s) => s.id === id);
+  if (!startup) notFound();
 
   const categoryLabels = {
     web: "Веб-приложение",
