@@ -17,5 +17,8 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build"
+  },
+  "dependencies": {
+    "lucide-react": "^0.545.0"
   }
 }
