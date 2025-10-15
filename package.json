@@ -11,8 +11,8 @@
     "typescript": "^5"
   },
   "workspaces": [
-    "./packages/shared",
-    "./packages/web"
+    "./shared",
+    "./web"
   ],
   "scripts": {
     "dev": "turbo dev",
