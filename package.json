@@ -1,0 +1,21 @@
+{
+  "name": "startup-monorepo",
+  "module": "index.ts",
+  "packageManager": "bun@1.2.23",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "turbo": "^2.5.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "workspaces": [
+    "./packages/shared",
+    "./packages/web"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  }
+}

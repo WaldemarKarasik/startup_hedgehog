@@ -1,0 +1,38 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "inputs": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.js",
+        "src/**/*.jsx",
+        "tsconfig.json",
+        "tsconfig.*.json",
+        "next.config.ts",
+        "package.json"
+      ]
+    },
+    "lint": {},
+    "test": {
+      "dependsOn": ["build"]
+    }
+  },
+  "globalDependencies": [
+    "**/.env",
+    "**/.env.*",
+    "**/.env.local",
+    "**/.env.*.local",
+    ".gitignore",
+    "turbo.json",
+    "package.json",
+    "bun.lock",
+    "tsconfig.json"
+  ]
+}
