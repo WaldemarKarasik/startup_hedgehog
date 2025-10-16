@@ -1,8 +1,6 @@
 {
   "name": "startup-monorepo",
   "module": "index.ts",
-  "packageManager": "bun@1.2.23",
-  "private": true,
   "devDependencies": {
     "@types/bun": "latest",
     "turbo": "^2.5.8"
@@ -10,15 +8,18 @@
   "peerDependencies": {
     "typescript": "^5"
   },
-  "workspaces": [
-    "./shared",
-    "./web"
-  ],
+  "packageManager": "bun@1.2.23",
+  "private": true,
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build"
   },
+  "workspaces": [
+    "./shared",
+    "./web",
+    "./server"
+  ],
   "dependencies": {
-    "lucide-react": "^0.545.0"
+    "hono": "^4.9.12"
   }
 }

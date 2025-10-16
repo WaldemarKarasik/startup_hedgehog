@@ -1,0 +1,578 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+
+
+// ============================================================
+// ПОЛЬЗОВАТЕЛИ И АУТЕНТИФИКАЦИЯ
+// ============================================================
+
+enum UserRole {
+  DEVELOPER  // Разработчик - продаёт проекты
+  BUYER      // Покупатель - покупает проекты
+  ADMIN      // Администратор платформы
+}
+
+enum UserType {
+  INDIVIDUAL    // Физическое лицо
+  SELF_EMPLOYED // Самозанятый
+  IP            // Индивидуальный предприниматель
+  LLC           // ООО
+}
+
+model User {
+  id            String      @id @default(cuid())
+  email         String      @unique
+  passwordHash  String
+  role          UserRole
+  
+  // Профиль
+  firstName     String
+  lastName      String
+  phone         String?
+  avatar        String?
+  bio           String?     @db.Text
+  
+  // Юридические данные
+  userType      UserType?
+  legalName     String?     // Полное название ИП/ООО
+  inn           String?     @unique
+  legalBasis    String?     // "Устава", "паспорта серии..."
+  bankDetails   Json?       // Банковские реквизиты
+  
+  // Платёжные данные (для выплат разработчикам)
+  payoutMethod   String?     // "bank_card" или "bank_account"
+  payoutDetails  Json?       // Номер карты или реквизиты счёта (зашифровано)
+  
+  // Репутация
+  reputation    Int         @default(100) // 0-100
+  trustScore    Int         @default(60)
+  rating        Decimal     @default(0)   @db.Decimal(3, 2) // 0.00 - 5.00
+  reviewCount   Int         @default(0)
+  
+  // Статус
+  isVerified    Boolean     @default(false)
+  isSuspended   Boolean     @default(false)
+  suspendedReason String?
+  lastActiveAt  DateTime    @default(now())
+  
+  // Связи
+  developedStartups  Startup[]        @relation("DeveloperStartups")
+  purchasedDeals     Deal[]           @relation("BuyerDeals")
+  soldDeals          Deal[]           @relation("DeveloperDeals")
+  reviews            Review[]         @relation("ReviewAuthor")
+  receivedReviews    Review[]         @relation("ReviewTarget")
+  disputes           Dispute[]
+  notifications      Notification[]
+  
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  
+  @@index([email])
+  @@index([role])
+  @@index([reputation])
+}
+
+// ============================================================
+// СТАРТАПЫ (ПРОЕКТЫ)
+// ============================================================
+
+enum StartupCategory {
+  SAAS
+  MARKETPLACE
+  ECOMMERCE
+  FINTECH
+  EDTECH
+  HEALTHTECH
+  ANALYTICS
+  CRM
+  TOOL
+  OTHER
+}
+
+enum StartupStatus {
+  DRAFT      // Черновик
+  MODERATION // На модерации
+  ACTIVE     // Активен в каталоге
+  SOLD       // Продан (но может быть продан повторно)
+  ARCHIVED   // Архивирован
+  REJECTED   // Отклонён модерацией
+}
+
+model Startup {
+  id          String          @id @default(cuid())
+  developerId String
+  developer   User            @relation("DeveloperStartups", fields: [developerId], references: [id])
+  
+  // Основная информация
+  name        String
+  tagline     String
+  description String          @db.Text
+  fullDescription String?     @db.Text
+  category    StartupCategory
+  
+  // Технические детали
+  techStack   String[]        // ["React", "Node.js", "PostgreSQL"]
+  version     String          @default("1.0.0")
+  
+  // Демо и медиа
+  demoUrl     String?
+  videoUrl    String?
+  githubUrl   String?
+  images      String[]        // URLs к скриншотам
+  
+  // Метрики проекта (если есть)
+  userCount   Int?            // Текущие пользователи
+  mrr         Decimal?        @db.Decimal(10, 2) // Monthly Recurring Revenue
+  
+  // Условия оферты (шаблон договора)
+  fixedPrice          Decimal?  @db.Decimal(10, 2) // null = только Revenue Share
+  revenueSharePercent Int       // 0-100
+  revenueShareDuration String   // "36 месяцев" или "бессрочно"
+  
+  // Поддержка
+  supportPeriod       Int       // месяцев
+  criticalSLA         Int       // часов для критических
+  normalSLA           Int       // дней для обычных
+  
+  // Дополнительные опции
+  includesTraining    Boolean   @default(false)
+  customizationPrice  Decimal?  @db.Decimal(10, 2)
+  exclusivityPrice    Decimal?  @db.Decimal(10, 2)
+  
+  // Статус и модерация
+  status      StartupStatus   @default(DRAFT)
+  rejectionReason String?
+  
+  // SEO и статистика
+  slug        String          @unique
+  views       Int             @default(0)
+  favorites   Int             @default(0)
+  
+  // Связи
+  deals       Deal[]
+  reviews     Review[]
+  
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  publishedAt DateTime?
+  
+  @@index([developerId])
+  @@index([status])
+  @@index([category])
+  @@index([slug])
+}
+
+// ============================================================
+// СДЕЛКИ
+// ============================================================
+
+enum DealStatus {
+  DRAFT              // Черновик (переговоры)
+  PENDING_PAYMENT    // Ожидает оплаты
+  ESCROW             // Деньги в эскроу
+  ACTIVE             // Активна
+  PAUSED             // Приостановлена
+  DISPUTE            // Спор
+  CANCELLED          // Отменена
+  COMPLETED          // Завершена
+}
+
+model Deal {
+  id          String      @id @default(cuid())
+  startupId   String
+  startup     Startup     @relation(fields: [startupId], references: [id])
+  
+  buyerId     String
+  buyer       User        @relation("BuyerDeals", fields: [buyerId], references: [id])
+  
+  developerId String
+  developer   User        @relation("DeveloperDeals", fields: [developerId], references: [id])
+  
+  // Согласованные условия (копия из оферты или результат переговоров)
+  fixedPrice          Decimal?  @db.Decimal(10, 2)
+  revenueSharePercent Int
+  revenueShareDuration String
+  supportPeriod       Int
+  criticalSLA         Int
+  normalSLA           Int
+  
+  // Оплата
+  hasRevenueShare     Boolean   @default(true)
+  paymentMethodId     String?   // Для recurring платежей (сохранённая карта)
+  escrowPaymentId     String?   // ID платежа в эскроу
+  escrowExpiresAt     DateTime?
+  
+  // Статус
+  status      DealStatus  @default(DRAFT)
+  
+  // Даты
+  activatedAt DateTime?
+  pausedAt    DateTime?
+  completedAt DateTime?
+  
+  // Связи
+  contract    Contract?
+  transactions Transaction[]
+  revenueReports RevenueReport[]
+  disputes    Dispute[]
+  
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  
+  @@index([buyerId])
+  @@index([developerId])
+  @@index([startupId])
+  @@index([status])
+}
+
+// ============================================================
+// ДОГОВОРЫ
+// ============================================================
+
+enum ContractStatus {
+  DRAFT               // Черновик
+  AWAITING_SIGNATURES // Ожидает подписей
+  PARTIALLY_SIGNED    // Одна сторона подписала
+  FULLY_SIGNED        // Обе стороны подписали
+  ACTIVE              // Действующий
+  TERMINATED          // Расторгнут
+}
+
+model Contract {
+  id          String         @id @default(cuid())
+  dealId      String         @unique
+  deal        Deal           @relation(fields: [dealId], references: [id])
+  
+  // Содержание
+  templateVersion String      // "1.0"
+  content         String      @db.Text  // Текст договора
+  pdfUrl          String?     // Ссылка на PDF
+  
+  // Параметры (дубликат из Deal для истории)
+  fixedPrice              Decimal?  @db.Decimal(10, 2)
+  revenueSharePercent     Int
+  revenueShareDuration    String
+  supportPeriod           Int
+  criticalSLA             Int
+  normalSLA               Int
+  
+  // Подписи
+  signatures      Json[]      // [{ userId, timestamp, certificateThumbprint }]
+  status          ContractStatus @default(DRAFT)
+  
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  signedAt        DateTime?
+  
+  @@index([dealId])
+  @@index([status])
+}
+
+// ============================================================
+// ТРАНЗАКЦИИ И ПЛАТЕЖИ
+// ============================================================
+
+enum TransactionType {
+  FIXED_PRICE     // Разовый платёж
+  REVENUE_SHARE   // Ежемесячный Revenue Share
+  REFUND          // Возврат
+  CHARGEBACK      // Chargeback
+  PENALTY         // Штраф
+}
+
+enum TransactionStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+model Transaction {
+  id          String            @id @default(cuid())
+  dealId      String
+  deal        Deal              @relation(fields: [dealId], references: [id])
+  
+  // Суммы
+  amount          Decimal       @db.Decimal(10, 2) // Полная сумма
+  platformFee     Decimal       @db.Decimal(10, 2) // 5% или 0%
+  developerAmount Decimal       @db.Decimal(10, 2) // Сумма разработчику
+  
+  // Тип и статус
+  type        TransactionType
+  status      TransactionStatus @default(PENDING)
+  
+  // Данные платёжной системы
+  paymentId       String?       // ID в ЮKassa
+  paymentMethod   String?       // "bank_card"
+  payoutId        String?       // ID выплаты разработчику
+  
+  // Метаданные
+  description     String?
+  metadata        Json?
+  
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  
+  @@index([dealId])
+  @@index([status])
+  @@index([type])
+}
+
+// ============================================================
+// ОТЧЁТНОСТЬ О ДОХОДАХ
+// ============================================================
+
+enum RevenueReportStatus {
+  PENDING        // Ожидает отправки покупателем
+  SUBMITTED      // Отправлен покупателем  
+  UNDER_REVIEW   // На проверке платформой
+  DISPUTED       // Оспаривается разработчиком
+  APPROVED       // Одобрен
+  PAID           // Оплачен (RS выплачен разработчику)
+}
+
+model RevenueReport {
+  id          String              @id @default(cuid())
+  dealId      String
+  deal        Deal                @relation(fields: [dealId], references: [id])
+  
+  // Период
+  month       String              // "2024-01"
+  year        Int
+  monthNumber Int
+  
+  // Финансовые данные
+  grossRevenue    Decimal         @db.Decimal(10, 2) // Валовая выручка
+  returns         Decimal         @db.Decimal(10, 2) // Возвраты
+  fees            Decimal         @db.Decimal(10, 2) // Комиссии
+  netRevenue      Decimal         @db.Decimal(10, 2) // Чистая
+  
+  revenueShareAmount Decimal      @db.Decimal(10, 2) // Сумма к выплате
+  
+  // Подтверждение (только ручная отчётность в MVP)
+  proofUrls   String[]            // Скриншоты/документы от покупателя
+  notes       String?             // Комментарии покупателя
+  
+  // Статус
+  status      RevenueReportStatus @default(PENDING)
+  
+  // Аудит
+  isAudited   Boolean             @default(false)
+  auditFlags  String[]            // ["sudden_drop", "zero_revenue"]
+  
+  submittedAt DateTime?
+  verifiedAt  DateTime?
+  
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+  
+  @@unique([dealId, month])
+  @@index([dealId])
+  @@index([status])
+  @@index([month])
+}
+
+// ============================================================
+// СПОРЫ И АРБИТРАЖ
+// ============================================================
+
+enum DisputeType {
+  UNPAID_REVENUE_SHARE      // Не платит RS
+  REVENUE_UNDERREPORTING    // Занижает доходы
+  NO_DEVELOPER_SUPPORT      // Нет поддержки
+  CODE_QUALITY              // Проблемы с кодом
+  UNAUTHORIZED_RESALE       // Незаконная перепродажа
+  IP_VIOLATION              // Нарушение ИС
+  OTHER
+}
+
+enum DisputeStage {
+  NEGOTIATION   // Переговоры сторон (стороны сами общаются)
+  MEDIATION     // Медиация платформы (даём рекомендации, но не обязательные)
+}
+
+enum DisputeStatus {
+  OPEN
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
+  ESCALATED_TO_COURT
+}
+
+model Dispute {
+  id          String        @id @default(cuid())
+  dealId      String
+  deal        Deal          @relation(fields: [dealId], references: [id])
+  
+  // Инициатор
+  initiatedBy     String    // userId
+  initiator       User      @relation(fields: [initiatedBy], references: [id])
+  
+  // Детали
+  type        DisputeType
+  stage       DisputeStage  @default(NEGOTIATION)
+  status      DisputeStatus @default(OPEN)
+  
+  title       String
+  description String        @db.Text
+  
+  // Доказательства
+  evidenceUrls String[]
+  
+  // Решение (рекомендательное для SaaS-платформы, не обязательное)
+  resolution  String?       @db.Text      // Рекомендация от платформы
+  platformAction String?                   // "blocked_buyer", "blocked_developer", "refund_suggested", null
+  
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  resolvedAt  DateTime?
+  
+  @@index([dealId])
+  @@index([initiatedBy])
+  @@index([status])
+}
+
+// ============================================================
+// ОТЗЫВЫ И РЕЙТИНГИ
+// ============================================================
+
+enum ReviewType {
+  DEVELOPER_REVIEW  // Отзыв о разработчике
+  STARTUP_REVIEW    // Отзыв о проекте
+}
+
+model Review {
+  id          String      @id @default(cuid())
+  
+  // Кто оставил
+  authorId    String
+  author      User        @relation("ReviewAuthor", fields: [authorId], references: [id])
+  
+  // Кому/чему
+  targetUserId String?
+  targetUser   User?      @relation("ReviewTarget", fields: [targetUserId], references: [id])
+  
+  startupId   String?
+  startup     Startup?    @relation(fields: [startupId], references: [id])
+  
+  type        ReviewType
+  
+  // Контент
+  rating      Int         // 1-5
+  title       String?
+  comment     String      @db.Text
+  
+  // Верификация
+  isVerifiedPurchase Boolean @default(false)
+  
+  // Модерация
+  isVisible   Boolean     @default(true)
+  
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  
+  @@index([authorId])
+  @@index([targetUserId])
+  @@index([startupId])
+}
+
+// ============================================================
+// УВЕДОМЛЕНИЯ
+// ============================================================
+
+enum NotificationType {
+  DEAL_CREATED
+  DEAL_PAYMENT_RECEIVED
+  DEAL_ACTIVATED
+  CONTRACT_READY_TO_SIGN
+  CONTRACT_SIGNED
+  REVENUE_REPORT_DUE
+  REVENUE_SHARE_PAYMENT
+  DISPUTE_OPENED
+  DISPUTE_RESOLVED
+  REVIEW_RECEIVED
+  STARTUP_APPROVED
+  STARTUP_REJECTED
+}
+
+model Notification {
+  id          String            @id @default(cuid())
+  userId      String
+  user        User              @relation(fields: [userId], references: [id])
+  
+  type        NotificationType
+  title       String
+  message     String            @db.Text
+  
+  // Ссылка на связанный объект
+  link        String?
+  metadata    Json?
+  
+  isRead      Boolean           @default(false)
+  readAt      DateTime?
+  
+  createdAt   DateTime          @default(now())
+  
+  @@index([userId])
+  @@index([isRead])
+}
+
+// ============================================================
+// АУДИТ И ЛОГИРОВАНИЕ
+// ============================================================
+
+enum AuditType {
+  FRAUD_DETECTION       // Автоматическое обнаружение
+  RANDOM_CHECK          // Случайная проверка
+  USER_COMPLAINT        // По жалобе
+  MANUAL_REVIEW         // Ручная проверка
+}
+
+enum AuditStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+  NO_ISSUES_FOUND
+  ISSUES_FOUND
+}
+
+model Audit {
+  id          String      @id @default(cuid())
+  dealId      String?
+  userId      String?
+  
+  type        AuditType
+  status      AuditStatus @default(PENDING)
+  
+  // Триггеры
+  flags       String[]    // ["sudden_revenue_drop", "refuses_transparency"]
+  priority    String      // "low", "medium", "high"
+  
+  // Результаты
+  findings    String?     @db.Text
+  actions     Json?       // Принятые меры
+  
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  completedAt DateTime?
+  
+  @@index([dealId])
+  @@index([userId])
+  @@index([status])
+}

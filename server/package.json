@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "bun --watch run src/index.ts && tsc --watch"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.7.3",
+    "@prisma/client": "^6.17.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.23",
+    "dotenv": "^17.2.3",
+    "prisma": "^6.17.1"
+  }
+}

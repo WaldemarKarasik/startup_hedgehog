@@ -27,20 +27,20 @@ export default function Header() {
             Калькулятор
           </Link>
           <Link
-            href="#FAQ"
-            className="text-gray-700 hover:text-primary-600 transition-colors"
+            href="/for-developers"
+            className="text-green-500 hover:text-primary-600 transition-colors"
           >
-            Как это работает
+            Разработчикам
           </Link>
         </div>
 
         <div className="flex items-center gap-3">
-          <Link
+          {/* <Link
             href="/add-project"
             className="hidden sm:block px-4 py-2 text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
           >
             Добавить проект
-          </Link>
+          </Link> */}
           <button className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
             Войти
           </button>
