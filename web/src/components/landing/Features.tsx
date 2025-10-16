@@ -27,22 +27,23 @@ export default function Features() {
   const forDevelopers = [
     {
       icon: "💰",
-      title: "Passive income",
+      title: "Recurring доход",
       description:
-        "Получайте 10-20% от прибыли покупателя каждый месяц. В 4 раза больше чем разовая продажа",
+        "Получайте 5-20% от выручки клиента каждый месяц за поддержку и обновления",
       gradient: "from-emerald-500 to-teal-500",
     },
     {
       icon: "🎯",
-      title: "Мы найдём покупателя",
-      description: "Продвигаем ваш проект среди предпринимателей и стартапов",
+      title: "Клиенты с готовым бизнесом",
+      description:
+        "Покупатели — владельцы существующих бизнесов, которым нужно IT-решение",
       gradient: "from-orange-500 to-red-500",
     },
     {
-      icon: "📈",
-      title: "Защита и репутация",
+      icon: "🔧",
+      title: "Кастомизация включена",
       description:
-        "Договор защищает ваши права. Честная отчётность с проверкой",
+        "5-7 дней на адаптацию под клиента. Фиксированный платёж за работу",
       gradient: "from-violet-500 to-purple-500",
     },
   ];
@@ -65,10 +66,10 @@ export default function Features() {
             {forBuyers.map((feature, index) => (
               <div
                 key={index}
-                className="group relative p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="p-8 bg-white rounded-2xl border border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-300"
               >
                 <div
-                  className={`w-16 h-16 mb-6 bg-gradient-to-br ${feature.gradient} rounded-xl flex items-center justify-center text-3xl shadow-lg transform group-hover:scale-110 transition-transform duration-300`}
+                  className={`w-16 h-16 mb-6 bg-gradient-to-br ${feature.gradient} rounded-xl flex items-center justify-center text-3xl`}
                 >
                   {feature.icon}
                 </div>
@@ -78,11 +79,6 @@ export default function Features() {
                 <p className="text-gray-600 leading-relaxed">
                   {feature.description}
                 </p>
-
-                {/* Hover effect border */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
-                />
               </div>
             ))}
           </div>
@@ -95,7 +91,7 @@ export default function Features() {
               Для разработчиков
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Превратите свой код в источник пассивного дохода
+              Продавайте готовые решения с кастомизацией
             </p>
           </div>
 
@@ -103,10 +99,10 @@ export default function Features() {
             {forDevelopers.map((feature, index) => (
               <div
                 key={index}
-                className="group relative p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="p-8 bg-white rounded-2xl border border-gray-200 hover:border-indigo-300 hover:shadow-lg transition-all duration-300"
               >
                 <div
-                  className={`w-16 h-16 mb-6 bg-gradient-to-br ${feature.gradient} rounded-xl flex items-center justify-center text-3xl shadow-lg transform group-hover:scale-110 transition-transform duration-300`}
+                  className={`w-16 h-16 mb-6 bg-gradient-to-br ${feature.gradient} rounded-xl flex items-center justify-center text-3xl`}
                 >
                   {feature.icon}
                 </div>
@@ -116,11 +112,6 @@ export default function Features() {
                 <p className="text-gray-600 leading-relaxed">
                   {feature.description}
                 </p>
-
-                {/* Hover effect border */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} rounded-2xl opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
-                />
               </div>
             ))}
           </div>

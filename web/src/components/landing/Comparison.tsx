@@ -11,7 +11,7 @@ export default function Comparison() {
     },
     {
       criterion: "Стоимость",
-      platform: "300-450К + RS 15-20%",
+      platform: "300-450К + RS 5-20%",
       platformGood: true,
       freelancer: "800К - 1.5М ₽",
       freelancerGood: false,
@@ -180,7 +180,7 @@ export default function Comparison() {
               <li className="flex items-start gap-3">
                 <span className="text-red-500 font-bold mt-1">✗</span>
                 <span>
-                  Не хотите делиться прибылью долгосрочно (но заплатите в 2-3
+                  Не хотите делиться выручкой долгосрочно (но заплатите в 2-3
                   раза больше сразу)
                 </span>
               </li>

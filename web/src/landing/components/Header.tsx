@@ -28,7 +28,7 @@ export default function Header() {
           </Link>
           <Link
             href="/for-developers"
-            className="text-green-500 hover:text-primary-600 transition-colors"
+            className="text-gray-700 hover:text-primary-600  transition-colors "
           >
             Разработчикам
           </Link>

@@ -10,48 +10,35 @@ export default function ForDevelopers() {
       <Header />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 pt-20 pb-32 text-white">
-          <div className="absolute inset-0 overflow-hidden opacity-20">
-            <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
-            <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
-            <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000" />
-          </div>
-
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="bg-gradient-to-br from-gray-900 to-indigo-900 pt-20 pb-32 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <div className="inline-block px-4 py-2 mb-8 bg-green-500/20 border border-green-400/30 rounded-full text-green-300 text-sm font-semibold">
-                💰 Первым 10 разработчикам — комиссия 5% вместо 10%
-              </div>
-
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
-                Превратите свой код в
-                <br />
-                <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
-                  источник пассивного дохода
-                </span>
+              <h1 className="text-5xl sm:text-6xl font-bold mb-6 leading-tight">
+                Для разработчиков готовых IT-решений
               </h1>
 
-              <p className="mt-6 max-w-3xl mx-auto text-xl sm:text-2xl text-indigo-200 leading-relaxed">
-                Продавайте готовые IT-решения владельцам существующего бизнеса +
-                кастомизация + долгосрочный доход
+              <p className="mt-6 max-w-3xl mx-auto text-xl sm:text-2xl text-gray-300 leading-relaxed">
+                Продавайте готовые продукты существующему бизнесу по модели
+                Revenue Share: фиксированный платёж + долгосрочная поддержка за
+                процент от выручки
               </p>
 
               <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <Link
                   href="/for-developers/apply"
-                  className="px-10 py-5 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl font-bold text-lg shadow-2xl hover:shadow-green-500/50 transform hover:scale-105 transition-all duration-200"
+                  className="px-10 py-5 bg-indigo-600 text-white rounded-xl font-semibold text-lg hover:bg-indigo-700 transition-colors"
                 >
-                  Подать заявку →
+                  Подать заявку
                 </Link>
                 <Link
                   href="/catalog"
-                  className="px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-xl font-bold text-lg hover:bg-white/20 transition-all duration-200"
+                  className="px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white rounded-xl font-semibold text-lg hover:bg-white/20 transition-colors"
                 >
                   Примеры продуктов
                 </Link>
               </div>
 
-              <p className="mt-8 text-indigo-300 text-sm">
+              <p className="mt-8 text-gray-400 text-sm">
                 📋 Проверка заявки 1-2 дня • 🎯 Approval rate ~20-30%
               </p>
             </div>
@@ -64,27 +51,29 @@ export default function ForDevelopers() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold text-indigo-600 mb-2">
-                  3-5x
+                  24-36 мес
                 </div>
-                <div className="text-gray-600">больше чем разовая продажа</div>
+                <div className="text-gray-600">длительность партнёрства</div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-indigo-600 mb-2">
-                  15-20%
+                  5-20%
                 </div>
-                <div className="text-gray-600">ежемесячный Revenue Share</div>
+                <div className="text-gray-600">Revenue Share от выручки</div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-indigo-600 mb-2">
                   300-450К
                 </div>
-                <div className="text-gray-600">средний фикс. платёж</div>
+                <div className="text-gray-600">
+                  фикс. платёж за кастомизацию
+                </div>
               </div>
               <div>
                 <div className="text-4xl font-bold text-indigo-600 mb-2">
                   5-7 дней
                 </div>
-                <div className="text-gray-600">на кастомизацию</div>
+                <div className="text-gray-600">работы на интеграцию</div>
               </div>
             </div>
           </div>
@@ -144,7 +133,7 @@ export default function ForDevelopers() {
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="px-6 py-4 font-semibold text-gray-900">
-                      Marketplace
+                      Marketplace (Gumroad)
                     </td>
                     <td className="px-6 py-4 text-center text-gray-600">
                       100-200 ₽ × продажи
@@ -190,12 +179,12 @@ export default function ForDevelopers() {
                     клиента
                   </li>
                   <li>
-                    • <strong>RS 15%:</strong> клиент зарабатывает 312К/мес →
-                    вам 46 800 ₽/мес
+                    • <strong>RS 10% от выручки:</strong> клиент зарабатывает
+                    312К/мес → вам 31 200 ₽/мес
                   </li>
                   <li>
-                    • <strong>За 24 месяца:</strong> 300К + (46.8К × 24) ={" "}
-                    <strong className="text-green-600">1 423 200 ₽</strong>
+                    • <strong>За 24 месяца:</strong> 300К + (31.2К × 24) ={" "}
+                    <strong className="text-green-600">1 048 800 ₽</strong>
                   </li>
                 </ul>
                 <p className="text-sm italic text-gray-600 mt-4">
@@ -214,7 +203,7 @@ export default function ForDevelopers() {
                 Как это работает?
               </h2>
               <p className="text-xl text-gray-600">
-                Простой процесс от заявки до пассивного дохода
+                Простой процесс от заявки до recurring дохода
               </p>
             </div>
 
@@ -224,14 +213,15 @@ export default function ForDevelopers() {
                   step: "1",
                   title: "Подайте заявку",
                   description:
-                    "Форма + ссылка на GitHub/демо. Мы проверяем качество кода и продукта.",
+                    "Форма + ссылка на GitHub/демо + видео-презентация. Мы проверяем качество кода и продукта.",
                   icon: "📝",
                   color: "from-blue-500 to-cyan-500",
                 },
                 {
                   step: "2",
                   title: "Approval в 1-2 дня",
-                  description: "Мы тестируем продукт, проверяем код",
+                  description:
+                    "Мы тестируем продукт, проверяем код, созваниваемся. Approval rate ~20-30%.",
                   icon: "✅",
                   color: "from-purple-500 to-pink-500",
                 },
@@ -247,7 +237,7 @@ export default function ForDevelopers() {
                   step: "4",
                   title: "Кастомизация + RS",
                   description:
-                    "5-7 дней работы → фикс. платёж. Потом каждый месяц получаете 15-20% от прибыли клиента.",
+                    "5-7 дней работы → фикс. платёж. Потом каждый месяц получаете 5-20% от выручки клиента.",
                   icon: "💰",
                   color: "from-orange-500 to-red-500",
                 },
@@ -269,57 +259,57 @@ export default function ForDevelopers() {
           </div>
         </section>
 
-        {/* Incentives для ранних разработчиков */}
-        <section className="py-24 bg-gradient-to-br from-green-50 to-emerald-50">
+        {/* Что мы предлагаем */}
+        <section className="py-24 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <div className="inline-block px-4 py-2 bg-green-600 text-white rounded-full text-sm font-bold mb-4">
-                🔥 Только для первых 10 разработчиков
-              </div>
-              <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-                Early Adopter Benefits
+              <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+                Что мы предлагаем
               </h2>
+              <p className="text-xl text-gray-600">
+                Прозрачные условия сотрудничества
+              </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-green-200">
-                <div className="text-4xl mb-4">💎</div>
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                <div className="text-4xl mb-4">🤝</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  Комиссия 5%
+                  Комиссия 10%
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Вместо стандартных 10% — только 5% от фикс. платежа.{" "}
-                  <strong>Навсегда</strong>.
+                  От фиксированного платежа. Revenue Share остаётся полностью
+                  вам.
                 </p>
-                <div className="text-sm text-green-600 font-semibold">
-                  Экономия: 15-22.5К с каждой сделки
+                <div className="text-sm text-gray-600">
+                  Пример: с 350К фикс. платежа — 35К платформе, 315К вам
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-green-200">
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
                 <div className="text-4xl mb-4">🎯</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  Гарантия первой сделки
+                  Поиск клиентов
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Мы сами находим первого покупателя для вашего продукта в
-                  течение 60 дней.
+                  Мы находим покупателей. Вы фокусируетесь на разработке и
+                  поддержке.
                 </p>
-                <div className="text-sm text-green-600 font-semibold">
-                  Или вернём listing fee
+                <div className="text-sm text-gray-600">
+                  Вы не тратите время на продажи и переговоры
                 </div>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 shadow-xl border-2 border-green-200">
-                <div className="text-4xl mb-4">📢</div>
+              <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                <div className="text-4xl mb-4">📄</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  Featured placement
+                  Контракты и оплата
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Ваш продукт на главной странице
+                  Шаблоны договоров, контроль выплат, разрешение споров.
                 </p>
-                <div className="text-sm text-green-600 font-semibold">
-                  Бесплатный маркетинг
+                <div className="text-sm text-gray-600">
+                  Юридическая защита и прозрачность сделок
                 </div>
               </div>
             </div>
@@ -345,8 +335,8 @@ export default function ForDevelopers() {
                     <li className="flex items-start gap-3">
                       <span className="text-green-600 font-bold mt-1">✓</span>
                       <span>
-                        <strong>Работающий продукт</strong> — с основным
-                        функционалом
+                        <strong>Работающий продукт</strong> — минимум MVP с
+                        основным функционалом
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -356,7 +346,13 @@ export default function ForDevelopers() {
                         кода
                       </span>
                     </li>
-
+                    <li className="flex items-start gap-3">
+                      <span className="text-green-600 font-bold mt-1">✓</span>
+                      <span>
+                        <strong>Есть пользователи</strong> — хотя бы demo users
+                        или первые клиенты
+                      </span>
+                    </li>
                     <li className="flex items-start gap-3">
                       <span className="text-green-600 font-bold mt-1">✓</span>
                       <span>
@@ -387,14 +383,15 @@ export default function ForDevelopers() {
                     <li className="flex items-start gap-3">
                       <span className="text-red-600 font-bold mt-1">✗</span>
                       <span>
-                        <strong>"Сделаю после покупки"</strong> — нужен готовый
-                        продукт
+                        <strong>&quot;Сделаю после покупки&quot;</strong> —
+                        нужен готовый продукт
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-red-600 font-bold mt-1">✗</span>
                       <span>
-                        <strong>Плохой код</strong> — баги, legacy
+                        <strong>Плохой код</strong> — нет документации, 1000
+                        TODO, legacy
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -447,27 +444,20 @@ export default function ForDevelopers() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white relative overflow-hidden">
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-white rounded-full filter blur-3xl animate-pulse" />
-            <div
-              className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-300 rounded-full filter blur-3xl animate-pulse"
-              style={{ animationDelay: "1s" }}
-            />
-          </div>
-
-          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl sm:text-5xl font-extrabold mb-6">
-              Готовы превратить код в пассивный доход?
+        <section className="py-24 bg-gradient-to-br from-indigo-600 to-indigo-700 text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Есть готовый IT-продукт?
             </h2>
             <p className="text-xl text-indigo-100 mb-12">
-              Первым 10 разработчикам — комиссия 5% вместо 10% навсегда
+              Подайте заявку. Мы проверим качество и поможем найти первых
+              клиентов.
             </p>
             <Link
               href="/for-developers/apply"
-              className="inline-block px-12 py-6 bg-white text-indigo-600 rounded-xl font-bold text-xl shadow-2xl hover:shadow-white/50 transform hover:scale-105 transition-all duration-200"
+              className="inline-block px-12 py-6 bg-white text-indigo-600 rounded-xl font-semibold text-xl hover:bg-gray-100 transition-colors"
             >
-              Подать заявку →
+              Подать заявку
             </Link>
             <p className="mt-8 text-indigo-200 text-sm">
               Проверка заявки 1-2 дня • Никаких комиссий до первой сделки

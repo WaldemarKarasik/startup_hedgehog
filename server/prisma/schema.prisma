@@ -182,14 +182,13 @@ model Startup {
 // ============================================================
 
 enum DealStatus {
-  DRAFT              // Черновик (переговоры)
-  PENDING_PAYMENT    // Ожидает оплаты
-  ESCROW             // Деньги в эскроу
-  ACTIVE             // Активна
-  PAUSED             // Приостановлена
-  DISPUTE            // Спор
-  CANCELLED          // Отменена
-  COMPLETED          // Завершена
+  AWAITING_DEVELOPER_CONFIRMATION // Ожидает подтверждения разработчика
+  CONTRACT_GENERATION             // Идет генерация договора
+  AWAITING_SIGNATURES             // Ожидает подписания
+  ACTIVE                          // Сделка активна
+  COMPLETED                       // Завершена
+  DISPUTED                        // Открыт спор
+  CANCELLED                       // Отменена
 }
 
 model Deal {
@@ -218,7 +217,7 @@ model Deal {
   escrowExpiresAt     DateTime?
   
   // Статус
-  status      DealStatus  @default(DRAFT)
+  status      DealStatus  @default(AWAITING_DEVELOPER_CONFIRMATION)
   
   // Даты
   activatedAt DateTime?

@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 import Link from "next/link";
-import Header from "@/src/landing/components/Header";
 import Footer from "@/src/landing/components/Footer";
+import Header from "@/src/landing/components/Header";
 
 export default function Apply() {
   const [formData, setFormData] = useState({
@@ -13,6 +13,7 @@ export default function Apply() {
     telegram: "",
     productName: "",
     productDescription: "",
+    revenueSharePercent: "10",
     githubUrl: "",
     demoUrl: "",
     hasUsers: "",
@@ -218,6 +219,58 @@ export default function Apply() {
                     Что делает продукт? Какие основные функции?
                   </p>
                 </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Процент Revenue Share{" "}
+                    <span className="text-red-500">*</span>
+                  </label>
+                  <div className="flex items-center gap-4">
+                    <input
+                      type="range"
+                      min="5"
+                      max="20"
+                      step="1"
+                      required
+                      value={formData.revenueSharePercent}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          revenueSharePercent: e.target.value,
+                        })
+                      }
+                      className="flex-1 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
+                    />
+                    <div className="text-3xl font-bold text-indigo-600 min-w-[80px] text-center">
+                      {formData.revenueSharePercent}%
+                    </div>
+                  </div>
+                  <div className="mt-3 bg-indigo-50 rounded-xl p-4 border border-indigo-200">
+                    <p className="text-sm text-gray-700 mb-2">
+                      <strong>От выручки</strong> клиента (не от прибыли)
+                    </p>
+                    <div className="text-xs text-gray-600 space-y-1">
+                      <div>
+                        • <strong>5-8%:</strong> конкурентное преимущество,
+                        быстрее привлечь клиентов
+                      </div>
+                      <div>
+                        • <strong>8-12%:</strong> стандартная модель, баланс
+                      </div>
+                      <div>
+                        • <strong>15-20%:</strong> премиум продукт с высокой
+                        ценностью
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-500 mt-2">
+                    Например: клиент зарабатывает 300К/мес → вам{" "}
+                    {Math.round(
+                      (300 * parseInt(formData.revenueSharePercent)) / 100
+                    )}
+                    К/мес
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -349,7 +402,9 @@ export default function Apply() {
                     <option value="maybe">
                       Готов, но хочу обсудить детали
                     </option>
-                    <option value="no">Нет, продаю только "как есть"</option>
+                    <option value="no">
+                      Нет, продаю только &quot;как есть&quot;
+                    </option>
                   </select>
                   <p className="text-sm text-gray-500 mt-2">
                     Кастомизация = интеграции, брендинг, специфичные фичи для
