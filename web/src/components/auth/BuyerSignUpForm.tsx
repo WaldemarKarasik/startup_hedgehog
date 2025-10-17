@@ -109,11 +109,10 @@ export default function BuyerSignUpForm() {
           <span className="text-3xl">✓</span>
         </div>
         <h3 className="text-2xl font-bold text-gray-900 mb-2">
-          Регистрация успешна!
+          Почти готово!
         </h3>
         <p className="text-gray-600 mb-6">
-          На ваш email отправлена ссылка для подтверждения. Пожалуйста,
-          проверьте почту.
+          Мы отправили письмо на ваш email. Перейдите по ссылке, чтобы подтвердить адрес.
         </p>
         <p className="text-sm text-gray-500">
           Уже есть аккаунт?{" "}

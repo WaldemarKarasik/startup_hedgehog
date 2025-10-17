@@ -23,10 +23,10 @@ export default function AuthTypeToggle({
       >
         <div className="flex items-center justify-center gap-2">
           <span className="text-lg">🛍️</span>
-          <span>Я ищу IT-решение</span>
+          <span>Ищу решение для бизнеса</span>
         </div>
         <div className="text-xs text-gray-500 mt-1">
-          Покупатель / Владелец бизнеса
+          Владелец бизнеса
         </div>
       </button>
 

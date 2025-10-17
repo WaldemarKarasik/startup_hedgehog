@@ -69,10 +69,10 @@ export default function SignInPage() {
             </div>
           </Link>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Регистрация и вход
+            Войти в StartupЁж
           </h1>
           <p className="text-gray-600">
-            Присоединяйтесь к платформе готовых IT-решений
+            Готовые IT-решения для вашего бизнеса
           </p>
         </div>
 

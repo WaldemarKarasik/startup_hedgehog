@@ -123,14 +123,14 @@ export default function DeveloperSignInInfo() {
             className="px-6 py-4 bg-indigo-600 text-white rounded-lg font-semibold text-center hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
           >
             <FileText className="w-5 h-5" />
-            Подать заявку на регистрацию
+            Подать заявку
           </Link>
 
           <Link
             href="/"
             className="px-6 py-4 bg-white text-indigo-600 border-2 border-indigo-600 rounded-lg font-semibold text-center hover:bg-indigo-50 transition-colors flex items-center justify-center gap-2"
           >
-            Вернуться на главную
+            На главную
           </Link>
         </div>
 
