@@ -41,9 +41,12 @@ export default function Header() {
           >
             Добавить проект
           </Link> */}
-          <button className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
+          <Link
+            href="/sign-in"
+            className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+          >
             Войти
-          </button>
+          </Link>
         </div>
       </nav>
     </header>

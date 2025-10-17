@@ -12,8 +12,8 @@ export default function Footer() {
               StartupЁж
             </div>
             <p className="text-sm">
-              Биржа стартапов с Revenue Share моделью. Находите готовые проекты
-              или продавайте свои.
+              Готовые IT-решения для владельцев бизнеса. Кастомизация за 5-7
+              дней и долгосрочная поддержка через Revenue Share.
             </p>
           </div>
 

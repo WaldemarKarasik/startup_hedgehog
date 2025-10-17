@@ -278,8 +278,7 @@ export default function ForDevelopers() {
                   Комиссия 10%
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  От фиксированного платежа. Revenue Share остаётся полностью
-                  вам.
+                  От фиксированного платежа и Revenue Share.
                 </p>
                 <div className="text-sm text-gray-600">
                   Пример: с 350К фикс. платежа — 35К платформе, 315К вам

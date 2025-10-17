@@ -8,36 +8,162 @@
 
    [1m[38;2;173;127;168m▲ Next.js 16.0.0-beta.0[39m[22m (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://100.84.168.55:3000
+   - Network:      http://100.84.135.232:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 461ms
+ [32m[1m✓[22m[39m Ready in 598ms
  [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 1948ms
- GET / [32m200[39m in 2165ms
- [32m[1m✓[22m[39m Compiled in 18ms
- [32m[1m✓[22m[39m Compiled in 33ms
- [32m[1m✓[22m[39m Compiled in 33ms
- GET / [32m200[39m in 78ms
+ [32m[1m✓[22m[39m Compiled / in 1930ms
+ GET / [32m200[39m in 2148ms
+ [32m[1m✓[22m[39m Compiled /calculator in 212ms
+ GET /calculator [32m200[39m in 237ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 188ms
+ GET /for-developers [32m200[39m in 209ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 22ms
  [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled / in 7ms
- GET / [32m200[39m in 55ms
+ GET / [32m200[39m in 31ms
+ GET /for-developers [32m200[39m in 41ms
+ [32m[1m✓[22m[39m Compiled /for-developers/apply in 174ms
+ GET /for-developers/apply [32m200[39m in 198ms
+ GET / [32m200[39m in 24ms
+ GET /for-developers [32m200[39m in 13ms
+ GET /calculator [32m200[39m in 39ms
+ GET / [32m200[39m in 5ms
+ [32m[1m✓[22m[39m Compiled /catalog in 145ms
+ GET /catalog [32m200[39m in 160ms
+ GET / [32m200[39m in 62ms
+ GET / [32m200[39m in 71ms
+ [32m[1m✓[22m[39m Compiled / in 6ms
+ GET / [32m200[39m in 66ms
+ GET / [32m200[39m in 53ms
+ GET / [32m200[39m in 37ms
+ GET / [32m200[39m in 65ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 124ms
+ GET /faq [33m404[39m in 158ms
+ GET /faq [33m404[39m in 30ms
+ GET / [32m200[39m in 68ms
+ [32m[1m✓[22m[39m Compiled in 31ms
+ [32m[1m✓[22m[39m Compiled in 28ms
+ [32m[1m✓[22m[39m Compiled in 29ms
+ [32m[1m✓[22m[39m Compiled in 28ms
+ GET / [32m200[39m in 53ms
+ GET / [32m200[39m in 86ms
+ GET / [32m200[39m in 70ms
+ GET / [32m200[39m in 46ms
+ GET / [32m200[39m in 37ms
+ GET / [32m200[39m in 67ms
+ GET / [32m200[39m in 34ms
+ GET / [32m200[39m in 50ms
+ GET / [32m200[39m in 35ms
+ GET / [32m200[39m in 52ms
+ GET / [32m200[39m in 44ms
+ GET / [32m200[39m in 64ms
+ GET / [32m200[39m in 77ms
  GET / [32m200[39m in 73ms
- [32m[1m✓[22m[39m Compiled in 15ms
- GET / [32m200[39m in 112ms
- [32m[1m✓[22m[39m Compiled in 15ms
- GET / [32m200[39m in 122ms
- [32m[1m✓[22m[39m Compiled /for-developers/apply in 212ms
- GET /for-developers/apply [32m200[39m in 238ms
- GET / [32m200[39m in 22ms
+ GET / [32m200[39m in 68ms
+ GET / [32m200[39m in 52ms
+ GET / [32m200[39m in 61ms
+ GET / [32m200[39m in 64ms
+ GET / [32m200[39m in 67ms
+ GET / [32m200[39m in 53ms
+ GET / [32m200[39m in 67ms
+ GET / [32m200[39m in 56ms
+ GET / [32m200[39m in 37ms
+ GET / [32m200[39m in 69ms
+ GET / [32m200[39m in 32ms
+ GET / [32m200[39m in 63ms
+ GET / [32m200[39m in 30ms
+ GET / [32m200[39m in 59ms
+ GET / [32m200[39m in 30ms
+ GET / [32m200[39m in 59ms
+ GET / [32m200[39m in 28ms
+ GET / [32m200[39m in 60ms
+ GET / [32m200[39m in 29ms
+ GET / [32m200[39m in 65ms
+ [32m[1m✓[22m[39m Compiled in 28ms
+ [32m[1m✓[22m[39m Compiled / in 6ms
+ GET / [32m200[39m in 117ms
+ GET / [32m200[39m in 73ms
+ GET / [32m200[39m in 37ms
+ GET / [32m200[39m in 69ms
+ GET / [32m200[39m in 59ms
+ GET /sign-in [33m404[39m in 11ms
+ GET /sign-in [33m404[39m in 21ms
+ GET / [32m200[39m in 38ms
+ GET /sign-in [33m404[39m in 6ms
+ GET /sign-in [33m404[39m in 20ms
+ GET / [32m200[39m in 90ms
+ GET / [32m200[39m in 35ms
+ GET / [32m200[39m in 21ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 265ms
+ GET /sign-in [32m200[39m in 435ms
+ GET /sign-in [32m200[39m in 47ms
+ GET /sign-in [32m200[39m in 8ms
+ GET / [32m200[39m in 249ms
+ GET /sign-in [32m200[39m in 25ms
+ GET /sign-in [32m200[39m in 8ms
+ GET / [32m200[39m in 103ms
+ GET /sign-in [32m200[39m in 50ms
+ GET /sign-in [32m200[39m in 24ms
+ GET /sign-in [32m200[39m in 7ms
+ GET / [32m200[39m in 102ms
+ GET /sign-in [32m200[39m in 65ms
+ GET /sign-in [32m200[39m in 42ms
+ GET /sign-in [32m200[39m in 7ms
+ GET / [32m200[39m in 150ms
+ GET /sign-in [32m200[39m in 69ms
+ GET /sign-in [32m200[39m in 45ms
+ GET /sign-in [32m200[39m in 6ms
+ GET / [32m200[39m in 149ms
+ GET /sign-in [32m200[39m in 59ms
+ GET /sign-in [32m200[39m in 7ms
+ GET / [32m200[39m in 109ms
+ GET /sign-in [32m200[39m in 39ms
+ GET /sign-in [32m200[39m in 25ms
+ GET /sign-in [32m200[39m in 9ms
+ GET / [32m200[39m in 208ms
+ GET / [32m200[39m in 26ms
+ GET / [32m200[39m in 20ms
+ GET / [32m200[39m in 19ms
+ GET / [32m200[39m in 14ms
+ GET / [32m200[39m in 19ms
+ GET / [32m200[39m in 19ms
+ GET / [32m200[39m in 13ms
+ GET / [32m200[39m in 18ms
+ GET / [32m200[39m in 12ms
+ GET / [32m200[39m in 15ms
+ GET / [32m200[39m in 53ms
+ GET /sign-in [32m200[39m in 6ms
+ GET / [32m200[39m in 15ms
+ GET /sign-in [32m200[39m in 6ms
+ GET /for-developers/apply [32m200[39m in 165ms
+ GET /sign-in [32m200[39m in 5ms
  [32m[1m✓[22m[39m Compiled in 15ms
  [32m[1m✓[22m[39m Compiled in 13ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 13ms
+ GET /sign-in [32m200[39m in 87ms
+ GET /sign-in [32m200[39m in 22ms
+ GET / [32m200[39m in 24ms
+ GET / [32m200[39m in 20ms
+ GET /for-developers [32m200[39m in 69ms
+ GET /for-developers/apply [32m200[39m in 10ms
+ GET /for-developers/apply [32m200[39m in 28ms
+ GET /for-developers/apply [32m200[39m in 10ms
+ GET /for-developers/apply [32m200[39m in 7ms
+ GET /for-developers/apply [32m200[39m in 8ms
+ GET /for-developers/apply [32m200[39m in 11ms
+ GET /for-developers/apply [32m200[39m in 12ms
+ GET /for-developers/apply [32m200[39m in 9ms
+ GET /for-developers/apply [32m200[39m in 8ms
+ GET /for-developers/apply [32m200[39m in 8ms
+ GET /for-developers/apply [32m200[39m in 8ms
+ GET /for-developers/apply [32m200[39m in 11ms
+ GET /for-developers/apply [32m200[39m in 8ms
+ GET /for-developers/apply [32m200[39m in 8ms
+ GET /for-developers/apply [32m200[39m in 7ms
+ GET /for-developers/apply [32m200[39m in 7ms
+ GET /for-developers/apply [32m200[39m in 7ms
+ GET /for-developers/apply [32m200[39m in 8ms
 [?25h
