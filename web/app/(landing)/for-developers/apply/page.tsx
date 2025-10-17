@@ -26,12 +26,40 @@ export default function Apply() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Send to API
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await fetch("http://localhost:5173/api/developer-applications", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to submit application");
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Error submitting form:", err);
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Failed to submit application. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -117,6 +145,16 @@ export default function Apply() {
               </li>
             </ul>
           </div>
+
+          {/* Error Display */}
+          {error && (
+            <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6 mb-8">
+              <h3 className="font-bold text-red-900 mb-2 flex items-center gap-2">
+                <span>❌</span> Ошибка при отправке
+              </h3>
+              <p className="text-red-700">{error}</p>
+            </div>
+          )}
 
           {/* Form */}
           <form
@@ -493,9 +531,10 @@ export default function Apply() {
             <div className="pt-6 border-t-2 border-gray-200">
               <button
                 type="submit"
-                className="w-full px-8 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-200"
+                disabled={isSubmitting}
+                className="w-full px-8 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
-                Отправить заявку →
+                {isSubmitting ? "Отправка..." : "Отправить заявку →"}
               </button>
               <p className="text-center text-sm text-gray-500 mt-4">
                 Нажимая кнопку, вы соглашаетесь с условиями размещения и
