@@ -11,159 +11,42 @@
    - Network:      http://100.84.135.232:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 598ms
- [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 1930ms
- GET / [32m200[39m in 2148ms
- [32m[1m✓[22m[39m Compiled /calculator in 212ms
- GET /calculator [32m200[39m in 237ms
- [32m[1m✓[22m[39m Compiled /for-developers in 188ms
- GET /for-developers [32m200[39m in 209ms
- [32m[1m✓[22m[39m Compiled in 20ms
- [32m[1m✓[22m[39m Compiled in 22ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET / [32m200[39m in 31ms
- GET /for-developers [32m200[39m in 41ms
- [32m[1m✓[22m[39m Compiled /for-developers/apply in 174ms
- GET /for-developers/apply [32m200[39m in 198ms
- GET / [32m200[39m in 24ms
+ [32m[1m✓[22m[39m Ready in 543ms
+ [37m[1m○[22m[39m Compiling /for-developers ...
+ [32m[1m✓[22m[39m Compiled /for-developers in 2.3s
+ GET /for-developers [32m200[39m in 1768ms
  GET /for-developers [32m200[39m in 13ms
- GET /calculator [32m200[39m in 39ms
- GET / [32m200[39m in 5ms
- [32m[1m✓[22m[39m Compiled /catalog in 145ms
- GET /catalog [32m200[39m in 160ms
- GET / [32m200[39m in 62ms
- GET / [32m200[39m in 71ms
- [32m[1m✓[22m[39m Compiled / in 6ms
- GET / [32m200[39m in 66ms
- GET / [32m200[39m in 53ms
- GET / [32m200[39m in 37ms
- GET / [32m200[39m in 65ms
- [32m[1m✓[22m[39m Compiled /_not-found/page in 124ms
- GET /faq [33m404[39m in 158ms
- GET /faq [33m404[39m in 30ms
- GET / [32m200[39m in 68ms
- [32m[1m✓[22m[39m Compiled in 31ms
- [32m[1m✓[22m[39m Compiled in 28ms
- [32m[1m✓[22m[39m Compiled in 29ms
- [32m[1m✓[22m[39m Compiled in 28ms
- GET / [32m200[39m in 53ms
- GET / [32m200[39m in 86ms
- GET / [32m200[39m in 70ms
- GET / [32m200[39m in 46ms
- GET / [32m200[39m in 37ms
- GET / [32m200[39m in 67ms
- GET / [32m200[39m in 34ms
- GET / [32m200[39m in 50ms
- GET / [32m200[39m in 35ms
- GET / [32m200[39m in 52ms
- GET / [32m200[39m in 44ms
- GET / [32m200[39m in 64ms
- GET / [32m200[39m in 77ms
- GET / [32m200[39m in 73ms
- GET / [32m200[39m in 68ms
- GET / [32m200[39m in 52ms
- GET / [32m200[39m in 61ms
- GET / [32m200[39m in 64ms
- GET / [32m200[39m in 67ms
- GET / [32m200[39m in 53ms
- GET / [32m200[39m in 67ms
- GET / [32m200[39m in 56ms
- GET / [32m200[39m in 37ms
- GET / [32m200[39m in 69ms
- GET / [32m200[39m in 32ms
- GET / [32m200[39m in 63ms
- GET / [32m200[39m in 30ms
- GET / [32m200[39m in 59ms
- GET / [32m200[39m in 30ms
- GET / [32m200[39m in 59ms
- GET / [32m200[39m in 28ms
- GET / [32m200[39m in 60ms
- GET / [32m200[39m in 29ms
- GET / [32m200[39m in 65ms
- [32m[1m✓[22m[39m Compiled in 28ms
- [32m[1m✓[22m[39m Compiled / in 6ms
- GET / [32m200[39m in 117ms
- GET / [32m200[39m in 73ms
- GET / [32m200[39m in 37ms
- GET / [32m200[39m in 69ms
- GET / [32m200[39m in 59ms
- GET /sign-in [33m404[39m in 11ms
- GET /sign-in [33m404[39m in 21ms
- GET / [32m200[39m in 38ms
- GET /sign-in [33m404[39m in 6ms
- GET /sign-in [33m404[39m in 20ms
- GET / [32m200[39m in 90ms
- GET / [32m200[39m in 35ms
+ GET /for-developers [32m200[39m in 9ms
+ GET /for-developers [32m200[39m in 9ms
+ GET /for-developers [32m200[39m in 8ms
+ GET /for-developers [32m200[39m in 8ms
+ GET /for-developers [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled /catalog in 203ms
+ GET /catalog [32m200[39m in 342ms
+ GET /for-developers [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled / in 190ms
+ GET / [32m200[39m in 218ms
+ [32m[1m✓[22m[39m Compiled /calculator in 214ms
+ GET /calculator [32m200[39m in 231ms
+ GET /for-developers [32m200[39m in 8ms
  GET / [32m200[39m in 21ms
- [32m[1m✓[22m[39m Compiled /sign-in in 265ms
- GET /sign-in [32m200[39m in 435ms
- GET /sign-in [32m200[39m in 47ms
- GET /sign-in [32m200[39m in 8ms
- GET / [32m200[39m in 249ms
- GET /sign-in [32m200[39m in 25ms
- GET /sign-in [32m200[39m in 8ms
- GET / [32m200[39m in 103ms
- GET /sign-in [32m200[39m in 50ms
- GET /sign-in [32m200[39m in 24ms
- GET /sign-in [32m200[39m in 7ms
- GET / [32m200[39m in 102ms
- GET /sign-in [32m200[39m in 65ms
- GET /sign-in [32m200[39m in 42ms
- GET /sign-in [32m200[39m in 7ms
- GET / [32m200[39m in 150ms
- GET /sign-in [32m200[39m in 69ms
- GET /sign-in [32m200[39m in 45ms
- GET /sign-in [32m200[39m in 6ms
- GET / [32m200[39m in 149ms
- GET /sign-in [32m200[39m in 59ms
- GET /sign-in [32m200[39m in 7ms
- GET / [32m200[39m in 109ms
- GET /sign-in [32m200[39m in 39ms
- GET /sign-in [32m200[39m in 25ms
- GET /sign-in [32m200[39m in 9ms
- GET / [32m200[39m in 208ms
- GET / [32m200[39m in 26ms
+ GET / [32m200[39m in 177ms
+ GET /for-developers [32m200[39m in 7ms
+ GET /for-developers [32m200[39m in 13ms
+ GET /catalog [32m200[39m in 118ms
+ GET /for-developers [32m200[39m in 6ms
  GET / [32m200[39m in 20ms
- GET / [32m200[39m in 19ms
- GET / [32m200[39m in 14ms
- GET / [32m200[39m in 19ms
- GET / [32m200[39m in 19ms
- GET / [32m200[39m in 13ms
- GET / [32m200[39m in 18ms
- GET / [32m200[39m in 12ms
- GET / [32m200[39m in 15ms
- GET / [32m200[39m in 53ms
- GET /sign-in [32m200[39m in 6ms
- GET / [32m200[39m in 15ms
- GET /sign-in [32m200[39m in 6ms
- GET /for-developers/apply [32m200[39m in 165ms
- GET /sign-in [32m200[39m in 5ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 13ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 13ms
- GET /sign-in [32m200[39m in 87ms
- GET /sign-in [32m200[39m in 22ms
- GET / [32m200[39m in 24ms
- GET / [32m200[39m in 20ms
- GET /for-developers [32m200[39m in 69ms
- GET /for-developers/apply [32m200[39m in 10ms
- GET /for-developers/apply [32m200[39m in 28ms
- GET /for-developers/apply [32m200[39m in 10ms
- GET /for-developers/apply [32m200[39m in 7ms
- GET /for-developers/apply [32m200[39m in 8ms
- GET /for-developers/apply [32m200[39m in 11ms
- GET /for-developers/apply [32m200[39m in 12ms
- GET /for-developers/apply [32m200[39m in 9ms
- GET /for-developers/apply [32m200[39m in 8ms
- GET /for-developers/apply [32m200[39m in 8ms
- GET /for-developers/apply [32m200[39m in 8ms
- GET /for-developers/apply [32m200[39m in 11ms
- GET /for-developers/apply [32m200[39m in 8ms
- GET /for-developers/apply [32m200[39m in 8ms
- GET /for-developers/apply [32m200[39m in 7ms
- GET /for-developers/apply [32m200[39m in 7ms
- GET /for-developers/apply [32m200[39m in 7ms
- GET /for-developers/apply [32m200[39m in 8ms
+ GET /for-developers [32m200[39m in 8ms
+ GET / [32m200[39m in 27ms
+ GET /catalog [32m200[39m in 53ms
+ GET /calculator [32m200[39m in 7ms
+ GET /for-developers [32m200[39m in 6ms
+ [32m[1m✓[22m[39m Compiled in 111ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./web/app/(landing)/for-developers/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /for-developers [32m200[39m in 147ms
+ GET /for-developers [32m200[39m in 48ms
+ GET /for-developers [32m200[39m in 27ms
+ [32m[1m✓[22m[39m Compiled in 40ms
+ [32m[1m✓[22m[39m Compiled /for-developers/apply in 163ms
+ GET /for-developers/apply [32m200[39m in 184ms
 [?25h

@@ -20,6 +20,69 @@ datasource db {
 // ============================================================
 // ПОЛЬЗОВАТЕЛИ И АУТЕНТИФИКАЦИЯ
 // ============================================================
+enum ApplicationStatus {
+  NEW          // Новая заявка
+  IN_REVIEW    // На рассмотрении
+  APPROVED     // Одобрена
+  REJECTED     // Отклонена
+  CONTACTED    // Связались с разработчиком
+}
+
+enum HasUsersOption {
+  yes    // Да, есть пользователи
+  no     // Нет пользователей
+}
+
+enum CustomizationReadyOption {
+  yes    // Готов к кастомизации
+  no     // Не готов
+  maybe  // Возможно
+}
+
+model DeveloperApplication {
+  id          String            @id @default(cuid())
+  
+  // Контактная информация
+  name        String
+  email       String
+  telegram    String?
+  
+  // Информация о проекте
+  productName        String
+  productDescription String        @db.Text
+  revenueSharePercent Int          // 0-100
+  
+  // Ссылки
+  githubUrl   String?
+  demoUrl     String?
+  videoUrl    String?
+  
+  // Метрики
+  hasUsers    HasUsersOption
+  userCount   String?           // Если hasUsers = yes
+  
+  // Готовность к кастомизации
+  customizationReady CustomizationReadyOption
+  targetBusinesses   String?     // Целевые бизнесы
+  
+  // Дополнительные материалы
+  portfolio        String?       // Ссылка на портфолио
+  additionalInfo   String?       @db.Text
+  
+  // Статус и обработка
+  status      ApplicationStatus @default(NEW)
+  reviewNotes String?           @db.Text  // Заметки администратора
+  reviewedBy  String?           // userId администратора
+  reviewedAt  DateTime?
+  
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
+
 
 enum UserRole {
   DEVELOPER  // Разработчик - продаёт проекты
@@ -71,7 +134,7 @@ model User {
   lastActiveAt  DateTime    @default(now())
   
   // Связи
-  developedStartups  Startup[]        @relation("DeveloperStartups")
+  developedProducts  Product[]        @relation("DeveloperProducts")
   purchasedDeals     Deal[]           @relation("BuyerDeals")
   soldDeals          Deal[]           @relation("DeveloperDeals")
   reviews            Review[]         @relation("ReviewAuthor")
@@ -91,7 +154,7 @@ model User {
 // СТАРТАПЫ (ПРОЕКТЫ)
 // ============================================================
 
-enum StartupCategory {
+enum ProductCategory {
   SAAS
   MARKETPLACE
   ECOMMERCE
@@ -104,7 +167,7 @@ enum StartupCategory {
   OTHER
 }
 
-enum StartupStatus {
+enum ProductStatus {
   DRAFT      // Черновик
   MODERATION // На модерации
   ACTIVE     // Активен в каталоге
@@ -113,17 +176,17 @@ enum StartupStatus {
   REJECTED   // Отклонён модерацией
 }
 
-model Startup {
+model Product {
   id          String          @id @default(cuid())
   developerId String
-  developer   User            @relation("DeveloperStartups", fields: [developerId], references: [id])
+  developer   User            @relation("DeveloperProducts", fields: [developerId], references: [id])
   
   // Основная информация
   name        String
   tagline     String
   description String          @db.Text
   fullDescription String?     @db.Text
-  category    StartupCategory
+  category    ProductCategory
   
   // Технические детали
   techStack   String[]        // ["React", "Node.js", "PostgreSQL"]
@@ -155,7 +218,7 @@ model Startup {
   exclusivityPrice    Decimal?  @db.Decimal(10, 2)
   
   // Статус и модерация
-  status      StartupStatus   @default(DRAFT)
+  status      ProductStatus   @default(DRAFT)
   rejectionReason String?
   
   // SEO и статистика
@@ -193,8 +256,8 @@ enum DealStatus {
 
 model Deal {
   id          String      @id @default(cuid())
-  startupId   String
-  startup     Startup     @relation(fields: [startupId], references: [id])
+  productId   String
+  product     Product     @relation(fields: [productId], references: [id])
   
   buyerId     String
   buyer       User        @relation("BuyerDeals", fields: [buyerId], references: [id])
@@ -235,7 +298,7 @@ model Deal {
   
   @@index([buyerId])
   @@index([developerId])
-  @@index([startupId])
+  @@index([productId])
   @@index([status])
 }
 
@@ -467,8 +530,8 @@ model Review {
   targetUserId String?
   targetUser   User?      @relation("ReviewTarget", fields: [targetUserId], references: [id])
   
-  startupId   String?
-  startup     Startup?    @relation(fields: [startupId], references: [id])
+  productId   String?
+  product     Product?    @relation(fields: [productId], references: [id])
   
   type        ReviewType
   
@@ -488,7 +551,7 @@ model Review {
   
   @@index([authorId])
   @@index([targetUserId])
-  @@index([startupId])
+  @@index([productId])
 }
 
 // ============================================================

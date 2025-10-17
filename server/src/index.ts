@@ -2,22 +2,27 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { developerApplicationsRouter } from "./routes/developer-applications";
 
-export const app = new Hono();
+export const app = new Hono()
+  .use(
+    "/*",
+    cors({
+      origin: ["http://localhost:3000", "http://localhost:3001"], // Add your frontend URLs
+      credentials: true,
+    })
+  )
+  .get("/", async (c) => {
+    return c.json({ success: true, message: "StartupЁж API is running" });
+  })
+  .route("/api/developer-applications", developerApplicationsRouter);
 
 // Enable CORS for frontend
-app.use("/*", cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"], // Add your frontend URLs
-  credentials: true,
-}));
 
 // Health check
-app.get("/", async (c) => {
-  return c.json({ success: true, message: "StartupЁж API is running" });
-});
 
 // Routes
-app.route("/api/developer-applications", developerApplicationsRouter);
 
+// Export AppType for RPC client (must be after all routes are defined)
+export type AppType = typeof app;
 export default {
   port: 5173,
   idleTimeout: 30,
