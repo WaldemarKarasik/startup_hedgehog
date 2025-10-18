@@ -5,8 +5,29 @@ import { FloatLabel } from "primereact/floatlabel";
 import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
 import { Rocket, Mail, Lock, User, UserCircle } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { signUpSchema, type SignUpFormData } from "@/src/lib/validations/auth";
 
 export const SignUpForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+    watch,
+  } = useForm<SignUpFormData>({
+    resolver: zodResolver(signUpSchema),
+    defaultValues: {
+      acceptTerms: false,
+    },
+  });
+
+  const onSubmit = async (data: SignUpFormData) => {
+    console.log("Sign up data:", data);
+    // TODO: Implement actual sign up logic
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  };
+
   return (
     <div className="w-full max-w-md lg:max-w-2xl mx-auto">
       {/* Card Container */}
@@ -28,7 +49,7 @@ export const SignUpForm = () => {
 
         {/* Form Content */}
         <div className="px-8 py-8">
-          <form className="flex flex-col gap-7">
+          <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-7">
             {/* Name Fields Row */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {/* First Name */}
@@ -36,20 +57,30 @@ export const SignUpForm = () => {
                 <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none z-20" />
                 <FloatLabel>
                   <InputText
-                    id="name"
+                    id="firstName"
                     type="text"
-                    className="w-full pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
+                    {...register("firstName")}
+                    className={`w-full pr-4 py-3 border-2 rounded-lg focus:ring-2 transition-all ${
+                      errors.firstName
+                        ? "border-red-500 focus:border-red-500 focus:ring-red-200"
+                        : "border-gray-200 focus:border-primary-500 focus:ring-primary-200"
+                    }`}
                     placeholder="Имя"
                     style={{ paddingLeft: "3rem" }}
                   />
                   <label
-                    htmlFor="name"
+                    htmlFor="firstName"
                     className="text-gray-600 font-medium text-sm"
                     style={{ left: "3rem" }}
                   >
                     Имя
                   </label>
                 </FloatLabel>
+                {errors.firstName && (
+                  <p className="mt-1 text-xs text-red-600">
+                    {errors.firstName.message}
+                  </p>
+                )}
               </div>
 
               {/* Last Name */}
@@ -57,20 +88,30 @@ export const SignUpForm = () => {
                 <UserCircle className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none z-20" />
                 <FloatLabel>
                   <InputText
-                    id="last-name"
+                    id="lastName"
                     type="text"
-                    className="w-full pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
+                    {...register("lastName")}
+                    className={`w-full pr-4 py-3 border-2 rounded-lg focus:ring-2 transition-all ${
+                      errors.lastName
+                        ? "border-red-500 focus:border-red-500 focus:ring-red-200"
+                        : "border-gray-200 focus:border-primary-500 focus:ring-primary-200"
+                    }`}
                     placeholder="Фамилия"
                     style={{ paddingLeft: "3rem" }}
                   />
                   <label
-                    htmlFor="last-name"
+                    htmlFor="lastName"
                     className="text-gray-600 font-medium text-sm"
                     style={{ left: "3rem" }}
                   >
                     Фамилия
                   </label>
                 </FloatLabel>
+                {errors.lastName && (
+                  <p className="mt-1 text-xs text-red-600">
+                    {errors.lastName.message}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -81,7 +122,12 @@ export const SignUpForm = () => {
                 <InputText
                   id="email"
                   type="email"
-                  className="w-full pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
+                  {...register("email")}
+                  className={`w-full pr-4 py-3 border-2 rounded-lg focus:ring-2 transition-all ${
+                    errors.email
+                      ? "border-red-500 focus:border-red-500 focus:ring-red-200"
+                      : "border-gray-200 focus:border-primary-500 focus:ring-primary-200"
+                  }`}
                   placeholder="Email"
                   style={{ paddingLeft: "3.5rem" }}
                 />
@@ -93,6 +139,11 @@ export const SignUpForm = () => {
                   Email
                 </label>
               </FloatLabel>
+              {errors.email && (
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.email.message}
+                </p>
+              )}
             </div>
 
             {/* Password Field */}
@@ -101,8 +152,13 @@ export const SignUpForm = () => {
               <FloatLabel>
                 <Password
                   id="password"
+                  {...register("password")}
                   className="w-full"
-                  inputClassName="w-full pr-12 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
+                  inputClassName={`w-full pr-12 py-3 border-2 rounded-lg focus:ring-2 transition-all ${
+                    errors.password
+                      ? "border-red-500 focus:border-red-500 focus:ring-red-200"
+                      : "border-gray-200 focus:border-primary-500 focus:ring-primary-200"
+                  }`}
                   inputStyle={{ paddingLeft: "3.5rem" }}
                   style={{ width: "100%" }}
                   placeholder="Пароль"
@@ -121,6 +177,11 @@ export const SignUpForm = () => {
                   Пароль
                 </label>
               </FloatLabel>
+              {errors.password && (
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.password.message}
+                </p>
+              )}
             </div>
 
             {/* Confirm Password Field */}
@@ -128,33 +189,48 @@ export const SignUpForm = () => {
               <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none z-20" />
               <FloatLabel>
                 <Password
-                  id="repeat-password"
+                  id="confirmPassword"
+                  {...register("confirmPassword")}
                   className="w-full"
-                  inputClassName="w-full pr-12 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
+                  inputClassName={`w-full pr-12 py-3 border-2 rounded-lg focus:ring-2 transition-all ${
+                    errors.confirmPassword
+                      ? "border-red-500 focus:border-red-500 focus:ring-red-200"
+                      : "border-gray-200 focus:border-primary-500 focus:ring-primary-200"
+                  }`}
                   inputStyle={{ paddingLeft: "3.5rem" }}
                   placeholder="Подтвердите пароль"
                   feedback={false}
                   toggleMask
                 />
                 <label
-                  htmlFor="repeat-password"
+                  htmlFor="confirmPassword"
                   className="text-gray-600 font-medium"
                   style={{ left: "3.5rem" }}
                 >
                   Подтвердите пароль
                 </label>
               </FloatLabel>
+              {errors.confirmPassword && (
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.confirmPassword.message}
+                </p>
+              )}
             </div>
 
             {/* Terms Agreement */}
             <div className="flex items-start gap-3 mt-2">
               <input
                 type="checkbox"
-                id="terms"
-                className="mt-1 w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-2 focus:ring-primary-200"
+                id="acceptTerms"
+                {...register("acceptTerms")}
+                className={`mt-1 w-4 h-4 text-primary-600 rounded focus:ring-2 ${
+                  errors.acceptTerms
+                    ? "border-red-500 focus:ring-red-200"
+                    : "border-gray-300 focus:ring-primary-200"
+                }`}
               />
               <label
-                htmlFor="terms"
+                htmlFor="acceptTerms"
                 className="text-sm text-gray-600 leading-tight"
               >
                 Я соглашаюсь с{" "}
@@ -173,11 +249,18 @@ export const SignUpForm = () => {
                 </Link>
               </label>
             </div>
+            {errors.acceptTerms && (
+              <p className="text-sm text-red-600 -mt-4">
+                {errors.acceptTerms.message}
+              </p>
+            )}
 
             {/* Submit Button */}
             <Button
-              label="Создать аккаунт"
+              label={isSubmitting ? "Создание..." : "Создать аккаунт"}
               type="submit"
+              disabled={isSubmitting}
+              loading={isSubmitting}
               className="w-full py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-0 mt-2"
             />
           </form>
