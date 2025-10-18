@@ -11,25 +11,34 @@
    - Network:      http://100.84.158.117:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 115ms
- [32m[1m✓[22m[39m Ready in 670ms
- [37m[1m○[22m[39m Compiling /sign-up ...
- [32m[1m✓[22m[39m Compiled /sign-up in 1825ms
- GET /sign-up [32m200[39m in 2066ms
- [32m[1m✓[22m[39m Compiled /sign-in in 191ms
- GET /sign-in [32m200[39m in 212ms
- GET /sign-up [32m200[39m in 9ms
- GET /sign-in [32m200[39m in 8ms
- GET /sign-up [32m200[39m in 8ms
- [32m[1m✓[22m[39m Compiled / in 177ms
- GET / [32m200[39m in 300ms
- GET /sign-in [32m200[39m in 28ms
- GET / [32m200[39m in 25ms
- GET /sign-in [32m200[39m in 24ms
- GET / [32m200[39m in 20ms
- GET /sign-in [32m200[39m in 23ms
- GET / [32m200[39m in 23ms
- GET /sign-in [32m200[39m in 22ms
- GET /sign-in? [32m200[39m in 59ms
- GET / [32m200[39m in 118ms
+ [32m[1m✓[22m[39m Compiled middleware in 119ms
+ [32m[1m✓[22m[39m Ready in 694ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1644ms
+ GET / [32m200[39m in 1898ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 372ms
+ GET /sign-in [32m200[39m in 402ms
+ [32m[1m✓[22m[39m Compiled /sign-up in 199ms
+ GET /sign-up [32m200[39m in 217ms
+ [32m[1m✓[22m[39m Compiled in 94ms
+ GET /sign-up [32m200[39m in 133ms
+ GET /sign-up [32m200[39m in 63ms
+ [32m[1m✓[22m[39m Compiled in 36ms
+ GET /sign-up [32m200[39m in 100ms
+ GET /sign-up [32m200[39m in 56ms
+ GET /sign-up [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled in 37ms
+ GET /sign-up [32m200[39m in 137ms
+ GET /sign-up [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /sign-up [32m200[39m in 139ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ GET /sign-up [32m200[39m in 142ms
+ GET /sign-up [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ GET /sign-up [32m200[39m in 133ms
+ GET /sign-up [32m200[39m in 70ms
+ GET /sign-up? [32m200[39m in 53ms
+ GET /sign-up? [32m200[39m in 51ms
+ GET /sign-up? [32m200[39m in 44ms
 [?25h

@@ -332,7 +332,7 @@ model Contract {
   normalSLA               Int
   
   // Подписи
-  signatures      Json[]      // [{ userId, timestamp, certificateThumbprint }]
+  signatures      Json      // [{ userId, timestamp, certificateThumbprint }]
   status          ContractStatus @default(DRAFT)
   
   createdAt       DateTime    @default(now())
@@ -369,9 +369,9 @@ model Transaction {
   deal        Deal              @relation(fields: [dealId], references: [id])
   
   // Суммы
-  amount          Decimal       @db.Decimal(10, 2) // Полная сумма
-  platformFee     Decimal       @db.Decimal(10, 2) // Комиссия платформы (10%)
-  developerAmount Decimal       @db.Decimal(10, 2) // Сумма разработчику
+  amount          Decimal       @default("0.00") @db.Decimal(10, 2) // Полная сумма
+  platformFee     Decimal       @default("0.00") @db.Decimal(10, 2) // Комиссия платформы (10%)
+  developerAmount Decimal       @default("0.00")  @db.Decimal(10, 2) // Сумма разработчику
   
   // Тип и статус
   type        TransactionType
@@ -413,9 +413,8 @@ model RevenueReport {
   deal        Deal                @relation(fields: [dealId], references: [id])
   
   // Период
-  month       String              // "2024-01"
-  year        Int
-  monthNumber Int
+  periodStart DateTime    // 2025-10-01T00:00:00Z (начало месяца)
+  periodEnd   DateTime?   // 2025-10-31T23:59:59Z (необязательно, но логично)
   
   // Финансовые данные
   grossRevenue    Decimal         @db.Decimal(10, 2) // Валовая выручка
@@ -442,10 +441,9 @@ model RevenueReport {
   createdAt   DateTime            @default(now())
   updatedAt   DateTime            @updatedAt
   
-  @@unique([dealId, month])
+  @@unique([dealId, periodStart])
   @@index([dealId])
   @@index([status])
-  @@index([month])
 }
 
 // ============================================================
