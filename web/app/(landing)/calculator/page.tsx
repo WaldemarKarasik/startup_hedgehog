@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { Calculator, Code2, Briefcase } from "lucide-react";
-import Header from "@/src/landing/components/Header";
-import BusinessCalculator from "@/src/components/landing/calculator/BusinessCalculator";
-import DeveloperCalculator from "@/src/components/landing/calculator/DeveloperCalculator";
-import Footer from "@/src/landing/components/Footer";
+import BusinessCalculator from "@/app/(landing)/_components/BusinessCalculator";
+import DeveloperCalculator from "@/app/(landing)/_components/DeveloperCalculator";
+import Header from "../_components/Header";
+import Footer from "../_components/Footer";
 
 type CalculatorType = "developer" | "business";
 

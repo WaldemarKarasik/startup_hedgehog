@@ -1,8 +1,8 @@
-import Header from "@/src/landing/components/Header";
-import Footer from "@/src/landing/components/Footer";
 import ProjectCard from "@/src/landing/components/ProjectCard";
 import { mockStartups } from "@/src/lib/mock-data";
 import { Filter } from "lucide-react";
+import Header from "../_components/Header";
+import Footer from "../_components/Footer";
 
 export default function CatalogPage() {
   const activeStartups = mockStartups.filter((s) => s.status === "active");

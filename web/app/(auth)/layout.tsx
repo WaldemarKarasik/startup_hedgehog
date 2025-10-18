@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "../globals.css";
-import "primereact/resources/themes/lara-light-blue/theme.css";
+import Header from "../(landing)/_components/Header";
+import Footer from "../(landing)/_components/Footer";
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
@@ -18,7 +18,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="min-h-screen flex flex-col ">
+          <Header />
+          <main className="mt-20 flex-1 h-full flex flex-col items-center justify-center">
+            {children}
+          </main>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

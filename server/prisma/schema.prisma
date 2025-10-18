@@ -43,8 +43,6 @@ model DeveloperApplication {
   id          String            @id @default(cuid())
   
   // Контактная информация
-  name        String
-  email       String
   telegram    String?
   
   // Информация о проекте
@@ -75,10 +73,16 @@ model DeveloperApplication {
   reviewedBy  String?           // userId администратора
   reviewedAt  DateTime?
   
+
+  // Связи
+  // Связь с пользователем, который подаёт заявку
+  userId      String
+  user        User              @relation(fields: [userId], references: [id])
+
   createdAt   DateTime          @default(now())
   updatedAt   DateTime          @updatedAt
-  
-  @@index([email])
+
+  @@unique([userId])
   @@index([status])
   @@index([createdAt])
 }
@@ -101,7 +105,7 @@ model User {
   id            String      @id @default(cuid())
   email         String      @unique
   passwordHash  String
-  role          UserRole
+  role          UserRole    @default(BUYER)
   
   // Профиль
   firstName     String
@@ -134,6 +138,7 @@ model User {
   lastActiveAt  DateTime    @default(now())
   
   // Связи
+  application        DeveloperApplication? // Связь с заявкой
   developedProducts  Product[]        @relation("DeveloperProducts")
   purchasedDeals     Deal[]           @relation("BuyerDeals")
   soldDeals          Deal[]           @relation("DeveloperDeals")
@@ -198,9 +203,6 @@ model Product {
   githubUrl   String?
   images      String[]        // URLs к скриншотам
   
-  // Метрики проекта (если есть)
-  userCount   Int?            // Текущие пользователи
-  mrr         Decimal?        @db.Decimal(10, 2) // Monthly Recurring Revenue
   
   // Условия оферты (шаблон договора)
   fixedPrice          Decimal?  @db.Decimal(10, 2) // null = только Revenue Share
@@ -212,10 +214,6 @@ model Product {
   criticalSLA         Int       // часов для критических
   normalSLA           Int       // дней для обычных
   
-  // Дополнительные опции
-  includesTraining    Boolean   @default(false)
-  customizationPrice  Decimal?  @db.Decimal(10, 2)
-  exclusivityPrice    Decimal?  @db.Decimal(10, 2)
   
   // Статус и модерация
   status      ProductStatus   @default(DRAFT)
@@ -372,7 +370,7 @@ model Transaction {
   
   // Суммы
   amount          Decimal       @db.Decimal(10, 2) // Полная сумма
-  platformFee     Decimal       @db.Decimal(10, 2) // 5% или 0%
+  platformFee     Decimal       @db.Decimal(10, 2) // Комиссия платформы (10%)
   developerAmount Decimal       @db.Decimal(10, 2) // Сумма разработчику
   
   // Тип и статус

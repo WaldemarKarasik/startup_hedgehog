@@ -10,7 +10,7 @@ export default function Header() {
           className="flex items-center gap-2 text-primary-600 font-bold text-xl"
         >
           <Rocket className="w-6 h-6" />
-          StartupЁж
+          StartAppЁж
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

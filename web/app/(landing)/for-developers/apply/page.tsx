@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 import Link from "next/link";
-import Footer from "@/src/landing/components/Footer";
-import Header from "@/src/landing/components/Header";
+import Header from "../../_components/Header";
+import Footer from "../../_components/Footer";
 
 export default function Apply() {
   const [formData, setFormData] = useState({
@@ -35,13 +35,16 @@ export default function Apply() {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5173/api/developer-applications", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "http://localhost:5173/api/developer-applications",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const result = await response.json();
 

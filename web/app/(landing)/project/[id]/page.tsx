@@ -11,9 +11,9 @@ import {
   Calendar,
   Users,
 } from "lucide-react";
-import Header from "@/src/landing/components/Header";
 import { mockStartups } from "@/src/lib/mock-data";
-import Footer from "@/src/landing/components/Footer";
+import Header from "../../_components/Header";
+import Footer from "../../_components/Footer";
 
 export default async function ProjectPage({
   params,

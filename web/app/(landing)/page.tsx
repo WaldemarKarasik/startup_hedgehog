@@ -1,11 +1,11 @@
-import Comparison from "@/src/components/landing/Comparison";
-import CTA from "@/src/components/landing/CTA";
-import FAQ from "@/src/components/landing/FAQ";
-import Features from "@/src/components/landing/Features";
-import Hero from "@/src/components/landing/Hero";
-import Scenarios from "@/src/components/landing/Scenarios";
-import Footer from "@/src/landing/components/Footer";
-import Header from "@/src/landing/components/Header";
+import Comparison from "@/app/(landing)/_components/Comparison";
+import CTA from "@/app/(landing)/_components/CTA";
+import FAQ from "@/app/(landing)/_components/FAQ";
+import Features from "@/app/(landing)/_components/Features";
+import Hero from "@/app/(landing)/_components/Hero";
+import Scenarios from "@/app/(landing)/_components/Scenarios";
+import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (

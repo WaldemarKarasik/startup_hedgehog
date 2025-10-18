@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 text-white font-bold text-xl mb-4">
               <Rocket className="w-6 h-6" />
-              StartupЁж
+              StartAppЁж
             </div>
             <p className="text-sm">
               Готовые IT-решения для владельцев бизнеса. Кастомизация за 5-7

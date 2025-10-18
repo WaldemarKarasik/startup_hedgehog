@@ -8,45 +8,162 @@
 
    [1m[38;2;173;127;168m▲ Next.js 16.0.0-beta.0[39m[22m (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://100.84.135.232:3000
+   - Network:      http://100.84.158.117:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 543ms
- [37m[1m○[22m[39m Compiling /for-developers ...
- [32m[1m✓[22m[39m Compiled /for-developers in 2.3s
- GET /for-developers [32m200[39m in 1768ms
- GET /for-developers [32m200[39m in 13ms
- GET /for-developers [32m200[39m in 9ms
- GET /for-developers [32m200[39m in 9ms
- GET /for-developers [32m200[39m in 8ms
- GET /for-developers [32m200[39m in 8ms
- GET /for-developers [32m200[39m in 9ms
- [32m[1m✓[22m[39m Compiled /catalog in 203ms
- GET /catalog [32m200[39m in 342ms
- GET /for-developers [32m200[39m in 8ms
- [32m[1m✓[22m[39m Compiled / in 190ms
- GET / [32m200[39m in 218ms
- [32m[1m✓[22m[39m Compiled /calculator in 214ms
- GET /calculator [32m200[39m in 231ms
- GET /for-developers [32m200[39m in 8ms
- GET / [32m200[39m in 21ms
- GET / [32m200[39m in 177ms
+ [32m[1m✓[22m[39m Compiled middleware in 127ms
+ [32m[1m✓[22m[39m Ready in 710ms
+ [37m[1m○[22m[39m Compiling /sign-in ...
+ [32m[1m✓[22m[39m Compiled /sign-in in 2s
+ GET /sign-in [32m200[39m in 2271ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 7ms
+ GET /sign-in [32m200[39m in 58ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 7ms
+ GET /sign-in [32m200[39m in 55ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 5ms
+ GET /sign-in [32m200[39m in 50ms
+ [32m[1m✓[22m[39m Compiled / in 215ms
+ GET / [32m200[39m in 247ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 232ms
+ GET /for-developers [32m200[39m in 251ms
+ GET /sign-in [32m200[39m in 24ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 5ms
+ GET /sign-in [32m200[39m in 81ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 5ms
+ GET /sign-in [32m200[39m in 87ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 5ms
+ GET /sign-in [32m200[39m in 47ms
+ GET /sign-in [32m200[39m in 9ms
+ GET / [32m200[39m in 22ms
+ GET /sign-in [32m200[39m in 21ms
+ GET / [32m200[39m in 23ms
+ GET /sign-in [32m200[39m in 22ms
+ GET /sign-in [32m200[39m in 77ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 24ms
+ GET /sign-in [32m200[39m in 140ms
+ GET /sign-in [32m200[39m in 64ms
+ GET /sign-in [32m200[39m in 59ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 8ms
+ GET /sign-in [32m200[39m in 111ms
+ GET /sign-in [32m200[39m in 49ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 19ms
+ GET /sign-in [32m200[39m in 99ms
+ GET /sign-in [32m200[39m in 51ms
+ GET /sign-in [32m200[39m in 8ms
+ GET /sign-in [32m200[39m in 10ms
+ GET / [32m200[39m in 152ms
+ [32m[1m✓[22m[39m Compiled in 35ms
+ GET / [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 6ms
+ GET /sign-in [32m200[39m in 152ms
+ GET / [32m200[39m in 24ms
+ GET /sign-in [32m200[39m in 24ms
+ GET /sign-in [32m200[39m in 61ms
+ GET /sign-in [32m200[39m in 44ms
+ GET /sign-in [32m200[39m in 41ms
+ GET /sign-in [32m200[39m in 43ms
+ GET /sign-in [32m200[39m in 43ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ GET /sign-in [32m200[39m in 70ms
+ GET / [32m200[39m in 149ms
  GET /for-developers [32m200[39m in 7ms
- GET /for-developers [32m200[39m in 13ms
- GET /catalog [32m200[39m in 118ms
- GET /for-developers [32m200[39m in 6ms
+ GET /sign-in [32m200[39m in 24ms
+ [32m[1m✓[22m[39m Compiled in 44ms
+ GET /sign-in [32m200[39m in 38ms
+ GET / [32m200[39m in 22ms
+ GET /sign-in [32m200[39m in 23ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 13ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled /sign-up in 209ms
+ GET /sign-up [32m200[39m in 245ms
+ GET /sign-in [32m200[39m in 35ms
+ GET /sign-up [32m200[39m in 7ms
+ GET / [32m200[39m in 24ms
+ GET /sign-in [32m200[39m in 26ms
+ GET /sign-up [32m200[39m in 10ms
+ GET / [32m200[39m in 25ms
+ GET /sign-in [32m200[39m in 21ms
+ GET /sign-up [32m200[39m in 5ms
+ GET /sign-in [32m200[39m in 5ms
  GET / [32m200[39m in 20ms
- GET /for-developers [32m200[39m in 8ms
- GET / [32m200[39m in 27ms
- GET /catalog [32m200[39m in 53ms
- GET /calculator [32m200[39m in 7ms
- GET /for-developers [32m200[39m in 6ms
- [32m[1m✓[22m[39m Compiled in 111ms
- [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./web/app/(landing)/for-developers/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- GET /for-developers [32m200[39m in 147ms
- GET /for-developers [32m200[39m in 48ms
- GET /for-developers [32m200[39m in 27ms
- [32m[1m✓[22m[39m Compiled in 40ms
- [32m[1m✓[22m[39m Compiled /for-developers/apply in 163ms
- GET /for-developers/apply [32m200[39m in 184ms
+ GET /sign-in [32m200[39m in 21ms
+ GET /sign-up [32m200[39m in 7ms
+ GET / [32m200[39m in 23ms
+ GET /sign-in [32m200[39m in 14ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /sign-in [32m200[39m in 130ms
+ [32m[1m✓[22m[39m Compiled in 13ms
+ [32m[1m✓[22m[39m Compiled in 13ms
+ [32m[1m✓[22m[39m Compiled in 45ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ GET /sign-in [32m200[39m in 117ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ GET /sign-in [32m200[39m in 75ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ GET / [32m200[39m in 177ms
+ GET /sign-in [32m200[39m in 42ms
+ GET /sign-up [32m200[39m in 103ms
+ GET /sign-in [32m200[39m in 7ms
+ GET /sign-up [32m200[39m in 8ms
+ GET / [32m200[39m in 26ms
+ GET /sign-in [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 13ms
+ GET /sign-up [32m200[39m in 11ms
+ GET / [32m200[39m in 25ms
+ GET /sign-in [32m200[39m in 64ms
+ GET /sign-up [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /sign-in [32m200[39m in 7ms
+ GET /sign-up [32m200[39m in 59ms
+ GET /sign-in [32m200[39m in 6ms
+ GET /sign-up [32m200[39m in 8ms
+ GET /sign-in [32m200[39m in 8ms
+ GET /sign-in [32m200[39m in 6ms
+ GET /sign-up [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ GET /sign-up [32m200[39m in 133ms
+ GET /sign-up [32m200[39m in 46ms
+ GET / [32m200[39m in 165ms
+ GET /for-developers [32m200[39m in 60ms
+ GET /sign-in [32m200[39m in 133ms
+ GET /sign-up [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled in 29ms
+ GET /sign-up [32m200[39m in 48ms
+ GET /sign-up [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ GET /sign-in [32m200[39m in 7ms
+ GET /sign-up [32m200[39m in 31ms
+ GET /sign-in [32m200[39m in 8ms
+ GET /sign-up [32m200[39m in 6ms
+ GET /sign-in [32m200[39m in 6ms
+ GET /sign-up [32m200[39m in 7ms
+ GET /sign-in [32m200[39m in 7ms
+ GET /sign-up [32m200[39m in 7ms
+ GET /sign-in [32m200[39m in 6ms
+ GET /sign-up [32m200[39m in 7ms
+ GET / [32m200[39m in 22ms
+ GET /sign-in [32m200[39m in 23ms
+ GET / [32m200[39m in 26ms
+ GET /sign-in [32m200[39m in 23ms
+ GET / [32m200[39m in 22ms
+ GET /sign-in [32m200[39m in 25ms
+ GET / [32m200[39m in 21ms
 [?25h

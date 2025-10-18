@@ -1,8 +1,8 @@
 "use client";
 
-import Footer from "@/src/landing/components/Footer";
-import Header from "@/src/landing/components/Header";
 import Link from "next/link";
+import Header from "../_components/Header";
+import Footer from "../_components/Footer";
 
 export default function ForDevelopers() {
   return (
