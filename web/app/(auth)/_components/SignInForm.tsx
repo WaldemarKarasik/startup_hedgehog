@@ -10,11 +10,13 @@ import { Rocket, Mail, Lock } from "lucide-react";
 import { useForm, Controller, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useMutation } from "@tanstack/react-query";
+import { apiClient, SignInError } from "@/src/lib/api-client";
 // + -----------------------------------
 
 // + --- 1. Define Validation Schema ---
 const signInSchema = z.object({
-  email: z.string().email("Некорректный email адрес"),
+  email: z.email("Некорректный email адрес"),
   password: z.string().min(1, "Пароль не может быть пустым"), // Для входа обычно достаточно .min(1), т.к. сервер проверит остальное
 });
 
@@ -34,14 +36,20 @@ export const SignInForm = () => {
       password: "",
     },
   });
-
+  const { mutate, error } = useMutation({
+    mutationFn: async (data: SignInFormValues) => {
+      const res = await apiClient.api.auth.signin.$post({ json: data });
+      const resData = await res.json();
+      if (!resData.success) {
+        throw new Error((resData as SignInError).message);
+      }
+    },
+  });
   // + --- 4. Create Submit Handler ---
   const onSubmit: SubmitHandler<SignInFormValues> = (data) => {
     // TODO: Implement your actual sign-in logic here
     // e.g., await signIn(data.email, data.password);
-    console.log("Form data:", data);
-    // Имитируем задержку сети
-    return new Promise((resolve) => setTimeout(resolve, 1000));
+    mutate(data);
   };
 
   return (
@@ -165,7 +173,11 @@ export const SignInForm = () => {
                 Забыли пароль?
               </Link>
             </div>
-
+            {error && (
+              <div className="w-full p-3 text-sm text-center text-red-800 bg-red-100 border border-red-300 rounded-lg">
+                {error.message}
+              </div>
+            )}
             {/* Submit Button */}
             <Button
               label={isSubmitting ? "Вход..." : "Войти"}
