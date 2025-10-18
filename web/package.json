@@ -16,7 +16,8 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-hook-form": "^7.65.0",
-    "shared": "workspace:*"
+    "shared": "workspace:*",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "typescript": "^5",

@@ -5,8 +5,25 @@ import { FloatLabel } from "primereact/floatlabel";
 import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
 import { Rocket, Mail, Lock } from "lucide-react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { signInSchema, type SignInFormData } from "@/src/lib/validations/auth";
 
 export const SignInForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<SignInFormData>({
+    resolver: zodResolver(signInSchema),
+  });
+
+  const onSubmit = async (data: SignInFormData) => {
+    console.log("Sign in data:", data);
+    // TODO: Implement actual sign in logic
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  };
+
   return (
     <div className="w-full max-w-md lg:max-w-2xl mx-auto">
       {/* Card Container */}
@@ -28,7 +45,7 @@ export const SignInForm = () => {
 
         {/* Form Content */}
         <div className="px-8 py-8">
-          <form className="flex flex-col gap-7">
+          <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-7">
             {/* Email Field */}
             <div className="relative">
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none z-20" />
@@ -36,7 +53,12 @@ export const SignInForm = () => {
                 <InputText
                   id="email"
                   type="email"
-                  className="w-full pl-14 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
+                  {...register("email")}
+                  className={`w-full pl-14 pr-4 py-3 border-2 rounded-lg focus:ring-2 transition-all ${
+                    errors.email
+                      ? "border-red-500 focus:border-red-500 focus:ring-red-200"
+                      : "border-gray-200 focus:border-primary-500 focus:ring-primary-200"
+                  }`}
                   placeholder="Email"
                   style={{ paddingLeft: "3.5rem" }}
                 />
@@ -48,6 +70,11 @@ export const SignInForm = () => {
                   Email
                 </label>
               </FloatLabel>
+              {errors.email && (
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.email.message}
+                </p>
+              )}
             </div>
 
             {/* Password Field */}
@@ -56,8 +83,13 @@ export const SignInForm = () => {
               <FloatLabel>
                 <Password
                   id="password"
+                  {...register("password")}
                   className="w-full"
-                  inputClassName="w-full pr-12 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
+                  inputClassName={`w-full pr-12 py-3 border-2 rounded-lg focus:ring-2 transition-all ${
+                    errors.password
+                      ? "border-red-500 focus:border-red-500 focus:ring-red-200"
+                      : "border-gray-200 focus:border-primary-500 focus:ring-primary-200"
+                  }`}
                   inputStyle={{ paddingLeft: "3.5rem" }}
                   placeholder="Пароль"
                   feedback={false}
@@ -71,6 +103,11 @@ export const SignInForm = () => {
                   Пароль
                 </label>
               </FloatLabel>
+              {errors.password && (
+                <p className="mt-2 text-sm text-red-600">
+                  {errors.password.message}
+                </p>
+              )}
             </div>
 
             {/* Forgot Password Link */}
@@ -85,8 +122,10 @@ export const SignInForm = () => {
 
             {/* Submit Button */}
             <Button
-              label="Войти"
+              label={isSubmitting ? "Вход..." : "Войти"}
               type="submit"
+              disabled={isSubmitting}
+              loading={isSubmitting}
               className="w-full py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-0"
             />
           </form>
