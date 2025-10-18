@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "../(landing)/_components/Header";
 import Footer from "../(landing)/_components/Footer";
+import "../globals.css";
+import "primereact/resources/themes/lara-light-blue/theme.css";
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
@@ -19,10 +21,10 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
-        <div className="min-h-screen flex flex-col ">
+        <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 via-primary-50/20 to-gray-50">
           <Header />
-          <main className="mt-20 flex-1 h-full flex flex-col items-center justify-center">
-            {children}
+          <main className="flex-1 flex items-center justify-center px-4 py-12 sm:py-16">
+            <div className="w-full max-w-7xl">{children}</div>
           </main>
           <Footer />
         </div>
