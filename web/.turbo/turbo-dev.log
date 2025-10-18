@@ -11,92 +11,39 @@
    - Network:      http://100.84.158.117:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 131ms
- [32m[1m✓[22m[39m Ready in 696ms
- [37m[1m○[22m[39m Compiling /sign-in ...
- [32m[1m✓[22m[39m Compiled /sign-in in 2.3s
-{
-  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
-  [0mmessage[2m:[0m [0m[32m[0m[32m"Требуется авторизация"[0m[0m[0m[2m,[0m
-}
-{
-  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
-  [0mmessage[2m:[0m [0m[32m[0m[32m"Требуется авторизация"[0m[0m[0m[2m,[0m
-}
- GET /sign-in [32m200[39m in 2173ms
-{
-  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
-  [0mmessage[2m:[0m [0m[32m[0m[32m"Требуется авторизация"[0m[0m[0m[2m,[0m
-}
- GET /sign-in [32m200[39m in 74ms
-{
-  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
-  [0mmessage[2m:[0m [0m[32m[0m[32m"Требуется авторизация"[0m[0m[0m[2m,[0m
-}
- GET /sign-in [32m200[39m in 554ms
- [32m[1m✓[22m[39m Compiled /sign-in in 8ms
- GET /sign-in [32m200[39m in 60ms
- [32m[1m✓[22m[39m Compiled /sign-in in 6ms
-{
-  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
-  [0mmessage[2m:[0m [0m[32m[0m[32m"Требуется авторизация"[0m[0m[0m[2m,[0m
-}
- GET /sign-in [32m200[39m in 53ms
-[0m[31m [31m[1m⨯[22m[39m SyntaxError: JSON Parse error: Unexpected identifier "Internal"
-    at parse (null)
-    at processTicksAndRejections (null) {
-  digest: [32m'937931977'[39m
-}[0m
- GET /sign-in [31m500[39m in 122ms
-{
-  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
-  [0mmessage[2m:[0m [0m[32m[0m[32m"Требуется авторизация"[0m[0m[0m[2m,[0m
-}
- GET /sign-in [32m200[39m in 65ms
- [32m[1m✓[22m[39m Compiled /sign-in in 48ms
- GET /sign-in [32m200[39m in 128ms
- [32m[1m✓[22m[39m Compiled /sign-in in 32ms
- GET /sign-in [32m200[39m in 81ms
- GET /sign-in [32m200[39m in 88ms
- GET /sign-in [32m200[39m in 54ms
- [32m[1m✓[22m[39m Compiled /sign-in in 9ms
- GET /sign-in [32m200[39m in 58ms
- GET /sign-in [32m200[39m in 61ms
- [32m[1m✓[22m[39m Compiled /sign-in in 41ms
- GET /sign-in [32m200[39m in 90ms
- [32m[1m✓[22m[39m Compiled in 43ms
- [32m[1m✓[22m[39m Compiled in 62ms
- [32m[1m✓[22m[39m Compiled /sign-in in 65ms
- [32m[1m✓[22m[39m Compiled in 134ms
-[0m[31m [31m[1m⨯[22m[39m Error: No QueryClient set, use QueryClientProvider to set one
-    at AuthInitializer (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/src/lib/AuthInitializer.tsx:14:58)
-[0m [90m 12 |[39m   [90m// Запрашиваем /api/users/me.[39m
- [90m 13 |[39m   [90m// 'queryKey: ["me"]' - уникальный ключ[39m
-[31m[1m>[22m[39m[90m 14 |[39m   [36mconst[39m { data[33m,[39m error[33m,[39m isSuccess[33m,[39m isError[33m,[39m isLoading } [33m=[39m useQuery({
- [90m    |[39m                                                          [31m[1m^[22m[39m
- [90m 15 |[39m     queryKey[33m:[39m [[32m"me"[39m][33m,[39m
- [90m 16 |[39m     queryFn[33m:[39m [36masync[39m () [33m=>[39m {
- [90m 17 |[39m       [90m// Делаем запрос.[39m[0m {
-  digest: [32m'2779385703'[39m
-}[0m
-[0m[31m [31m[1m⨯[22m[39m Error: No QueryClient set, use QueryClientProvider to set one
-    at AuthInitializer (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/src/lib/AuthInitializer.tsx:14:58)
-[0m [90m 12 |[39m   [90m// Запрашиваем /api/users/me.[39m
- [90m 13 |[39m   [90m// 'queryKey: ["me"]' - уникальный ключ[39m
-[31m[1m>[22m[39m[90m 14 |[39m   [36mconst[39m { data[33m,[39m error[33m,[39m isSuccess[33m,[39m isError[33m,[39m isLoading } [33m=[39m useQuery({
- [90m    |[39m                                                          [31m[1m^[22m[39m
- [90m 15 |[39m     queryKey[33m:[39m [[32m"me"[39m][33m,[39m
- [90m 16 |[39m     queryFn[33m:[39m [36masync[39m () [33m=>[39m {
- [90m 17 |[39m       [90m// Делаем запрос.[39m[0m {
-  digest: [32m'2779385703'[39m
-}[0m
- GET /sign-in [31m500[39m in 482ms
- [32m[1m✓[22m[39m Compiled /sign-in in 8ms
- GET /sign-in [32m200[39m in 115ms
- GET /sign-in [32m200[39m in 509ms
- [32m[1m✓[22m[39m Compiled in 16ms
-[0m[33mnull[0m
- GET /sign-in [32m200[39m in 111ms
- [32m[1m✓[22m[39m Compiled in 23ms
- GET /sign-in [32m200[39m in 122ms
+ [32m[1m✓[22m[39m Compiled middleware in 115ms
+ [32m[1m✓[22m[39m Ready in 682ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 1725ms
+ GET / [32m200[39m in 1994ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 160ms
+ GET /dashboard [32m200[39m in 187ms
+ [32m[1m✓[22m[39m Compiled /calculator in 235ms
+ GET /calculator [32m200[39m in 253ms
+ [32m[1m✓[22m[39m Compiled /catalog in 214ms
+ GET /catalog [32m200[39m in 340ms
+ GET / [32m200[39m in 13ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 183ms
+ GET /for-developers [32m200[39m in 200ms
+ GET / [32m200[39m in 18ms
+ GET /dashboard [32m200[39m in 9ms
+ GET / [32m200[39m in 154ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 15ms
+ GET /calculator [32m200[39m in 6ms
+ GET /catalog [32m200[39m in 118ms
+ GET / [32m200[39m in 12ms
+ GET /for-developers [32m200[39m in 6ms
+ GET /calculator [32m200[39m in 7ms
+ GET /catalog [32m200[39m in 45ms
+ GET / [32m200[39m in 12ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /catalog [32m200[39m in 38ms
+ GET / [32m200[39m in 18ms
+ GET /calculator [32m200[39m in 6ms
+ GET /for-developers [32m200[39m in 6ms
+ GET / [32m200[39m in 13ms
+ GET / [32m200[39m in 51ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
 [?25h

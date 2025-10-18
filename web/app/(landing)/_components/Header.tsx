@@ -1,7 +1,11 @@
+"use client";
 import Link from "next/link";
 import { Rocket } from "lucide-react";
-
+import { useAuthStore } from "@/src/stores/auth.store";
+import { Skeleton } from "primereact/skeleton";
 export default function Header() {
+  const { user, status } = useAuthStore();
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -41,12 +45,21 @@ export default function Header() {
           >
             Добавить проект
           </Link> */}
-          <Link
-            href="/sign-in"
-            className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
-          >
-            Войти
-          </Link>
+          {status == "loading" ? null : status == "authenticated" && user ? (
+            <Link
+              href="/dashboard"
+              className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+            >
+              Личный кабинет
+            </Link>
+          ) : (
+            <Link
+              href="/sign-in"
+              className="px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors"
+            >
+              Войти
+            </Link>
+          )}
         </div>
       </nav>
     </header>
