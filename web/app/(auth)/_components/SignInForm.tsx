@@ -6,7 +6,44 @@ import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
 import { Rocket, Mail, Lock } from "lucide-react";
 
+// + --- Imports for Form Validation ---
+import { useForm, Controller, SubmitHandler } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+// + -----------------------------------
+
+// + --- 1. Define Validation Schema ---
+const signInSchema = z.object({
+  email: z.string().email("Некорректный email адрес"),
+  password: z.string().min(1, "Пароль не может быть пустым"), // Для входа обычно достаточно .min(1), т.к. сервер проверит остальное
+});
+
+// + --- 2. Create Type from Schema ---
+type SignInFormValues = z.infer<typeof signInSchema>;
+
 export const SignInForm = () => {
+  // + --- 3. Initialize react-hook-form ---
+  const {
+    control,
+    handleSubmit,
+    formState: { errors, isSubmitting }, // isSubmitting для блокировки кнопки
+  } = useForm<SignInFormValues>({
+    resolver: zodResolver(signInSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  });
+
+  // + --- 4. Create Submit Handler ---
+  const onSubmit: SubmitHandler<SignInFormValues> = (data) => {
+    // TODO: Implement your actual sign-in logic here
+    // e.g., await signIn(data.email, data.password);
+    console.log("Form data:", data);
+    // Имитируем задержку сети
+    return new Promise((resolve) => setTimeout(resolve, 1000));
+  };
+
   return (
     <div className="w-full max-w-md lg:max-w-2xl mx-auto">
       {/* Card Container */}
@@ -28,49 +65,95 @@ export const SignInForm = () => {
 
         {/* Form Content */}
         <div className="px-8 py-8">
-          <form className="flex flex-col gap-7">
-            {/* Email Field */}
-            <div className="relative">
-              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none z-20" />
-              <FloatLabel>
-                <InputText
-                  id="email"
-                  type="email"
-                  className="w-full pl-14 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
-                  placeholder="Email"
-                  style={{ paddingLeft: "3.5rem" }}
-                />
-                <label
-                  htmlFor="email"
-                  className="text-gray-600 font-medium"
-                  style={{ left: "3.5rem" }}
-                >
-                  Email
-                </label>
-              </FloatLabel>
+          {/* + --- 5. Hook up the form submit --- */}
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col gap-7"
+          >
+            {/* Email Field - Now wrapped in Controller */}
+            <div className="flex flex-col">
+              <div className="relative">
+                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none z-20" />
+                <FloatLabel>
+                  {/* + --- 6. Use <Controller> for PrimeReact --- */}
+                  <Controller
+                    name="email"
+                    control={control}
+                    render={({ field, fieldState }) => (
+                      <InputText
+                        id={field.name}
+                        {...field}
+                        type="email"
+                        // + Добавляем .p-invalid для стилей ошибки PrimeReact
+                        className={`w-full pl-14 pr-4 py-3 border-2 rounded-lg transition-all ${
+                          fieldState.error
+                            ? "border-red-500 focus:border-red-500 focus:ring-red-200 p-invalid" // p-invalid - класс PrimeReact
+                            : "border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
+                        }`}
+                        placeholder="Email"
+                        style={{ paddingLeft: "3.5rem" }}
+                      />
+                    )}
+                  />
+                  <label
+                    htmlFor="email"
+                    className="text-gray-600 font-medium"
+                    style={{ left: "3.5rem" }}
+                  >
+                    Email
+                  </label>
+                </FloatLabel>
+              </div>
+              {/* + --- 7. Display validation error --- */}
+              {errors.email && (
+                <small className="text-red-500 text-xs pt-1 pl-1">
+                  {errors.email.message}
+                </small>
+              )}
             </div>
 
-            {/* Password Field */}
-            <div className="relative full-width-password">
-              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none z-20" />
-              <FloatLabel>
-                <Password
-                  id="password"
-                  className="w-full"
-                  inputClassName="w-full pr-12 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
-                  inputStyle={{ paddingLeft: "3.5rem" }}
-                  placeholder="Пароль"
-                  feedback={false}
-                  toggleMask
-                />
-                <label
-                  htmlFor="password"
-                  className="text-gray-600 font-medium"
-                  style={{ left: "3.5rem" }}
-                >
-                  Пароль
-                </label>
-              </FloatLabel>
+            {/* Password Field - Now wrapped in Controller */}
+            <div className="flex flex-col">
+              <div className="relative full-width-password">
+                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none z-20" />
+                <FloatLabel>
+                  {/* + --- 6. Use <Controller> for PrimeReact --- */}
+                  <Controller
+                    name="password"
+                    control={control}
+                    render={({ field, fieldState }) => (
+                      <Password
+                        id={field.name}
+                        {...field}
+                        className="w-full"
+                        // + Добавляем .p-invalid для стилей ошибки PrimeReact
+                        inputClassName={`w-full pr-12 py-3 border-2 rounded-lg transition-all ${
+                          fieldState.error
+                            ? "border-red-500 focus:border-red-500 focus:ring-red-200 p-invalid"
+                            : "border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200"
+                        }`}
+                        inputStyle={{ paddingLeft: "3.5rem" }}
+                        placeholder="Пароль"
+                        feedback={false}
+                        toggleMask
+                      />
+                    )}
+                  />
+                  <label
+                    htmlFor="password"
+                    className="text-gray-600 font-medium"
+                    style={{ left: "3.5rem" }}
+                  >
+                    Пароль
+                  </label>
+                </FloatLabel>
+              </div>
+              {/* + --- 7. Display validation error --- */}
+              {errors.password && (
+                <small className="text-red-500 text-xs pt-1 pl-1">
+                  {errors.password.message}
+                </small>
+              )}
             </div>
 
             {/* Forgot Password Link */}
@@ -85,9 +168,11 @@ export const SignInForm = () => {
 
             {/* Submit Button */}
             <Button
-              label="Войти"
+              label={isSubmitting ? "Вход..." : "Войти"}
               type="submit"
+              disabled={isSubmitting} // + Блокируем кнопку во время отправки
               className="w-full py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-200 border-0"
+              loading={isSubmitting} // + Добавляем спиннер PrimeReact
             />
           </form>
 

@@ -11,34 +11,148 @@
    - Network:      http://100.84.158.117:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 119ms
- [32m[1m✓[22m[39m Ready in 694ms
- [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 1644ms
- GET / [32m200[39m in 1898ms
- [32m[1m✓[22m[39m Compiled /sign-in in 372ms
- GET /sign-in [32m200[39m in 402ms
- [32m[1m✓[22m[39m Compiled /sign-up in 199ms
- GET /sign-up [32m200[39m in 217ms
- [32m[1m✓[22m[39m Compiled in 94ms
- GET /sign-up [32m200[39m in 133ms
- GET /sign-up [32m200[39m in 63ms
- [32m[1m✓[22m[39m Compiled in 36ms
- GET /sign-up [32m200[39m in 100ms
+ [32m[1m✓[22m[39m Compiled middleware in 128ms
+ [32m[1m✓[22m[39m Ready in 710ms
+ [37m[1m○[22m[39m Compiling /sign-up ...
+ [32m[1m✓[22m[39m Compiled /sign-up in 2.3s
+ GET /sign-up [32m200[39m in 1796ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 233ms
+ GET /sign-in [32m200[39m in 254ms
+ [32m[1m✓[22m[39m Compiled / in 190ms
+ GET / [32m200[39m in 333ms
+ GET / [32m200[39m in 77ms
+ GET / [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 211ms
+ GET /for-developers [32m200[39m in 227ms
+ GET /sign-in [32m200[39m in 162ms
+ GET /sign-in [32m200[39m in 102ms
+ GET /sign-up [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 346ms
+ GET /sign-up [32m200[39m in 54ms
+ GET /sign-up? [32m200[39m in 41ms
+ GET /sign-in [32m200[39m in 81ms
+ GET /sign-up [32m200[39m in 6ms
+ [32m[1m✓[22m[39m Compiled in 74ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ GET /sign-up [32m200[39m in 164ms
+ GET /sign-in [32m200[39m in 20ms
+ GET /sign-up [32m200[39m in 10ms
+ [32m[1m✓[22m[39m Compiled /sign-up in 47ms
+ [32m[1m✓[22m[39m Compiled in 115ms
+ GET /sign-up [32m200[39m in 169ms
+ [32m[1m✓[22m[39m Compiled in 128ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+[0m[31m [31m[1m⨯[22m[39m ./web/app/layout.tsx:5:10
+Ecmascript file had an error
+[0m [90m 3 |[39m [36mimport[39m [32m"./globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m { [33mQueryClient[39m[33m,[39m [33mQueryClientProvider[39m } [36mfrom[39m [32m"@tanstack/react-query"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { useState } [36mfrom[39m [32m"react"[39m[33m;[39m
+ [90m   |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+[0m
+ [32m[1m✓[22m[39m Compiled /_error in 501ms
+ GET /sign-up [31m500[39m in 640ms
+ [32m[1m✓[22m[39m Compiled in 68ms
+ [32m[1m✓[22m[39m Compiled /sign-up in 80ms
+ GET /sign-up [32m200[39m in 277ms
  GET /sign-up [32m200[39m in 56ms
  GET /sign-up [32m200[39m in 47ms
- [32m[1m✓[22m[39m Compiled in 37ms
- GET /sign-up [32m200[39m in 137ms
- GET /sign-up [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled /calculator in 190ms
+ GET /calculator [32m200[39m in 207ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 23ms
+ GET /for-developers [32m200[39m in 104ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 26ms
+ GET /sign-in [32m200[39m in 207ms
+ GET /sign-up [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled /sign-up in 71ms
+[0m[31m [31m[1m⨯[22m[39m Error: Objects are not valid as a React child (found: object with keys {children}). If you meant to render a collection of children, use an array instead.
+    at [3mignore-listed frames[23m {
+  digest: [32m'1296966801'[39m
+}[0m
+[0m[31m [31m[1m⨯[22m[39m Error: Objects are not valid as a React child (found: object with keys {children}). If you meant to render a collection of children, use an array instead.
+    at [3mignore-listed frames[23m {
+  digest: [32m'1296966801'[39m
+}[0m
+ GET /sign-up [31m500[39m in 354ms
+ [32m[1m✓[22m[39m Compiled /sign-up in 12ms
+[0m[31m [31m[1m⨯[22m[39m Error: No QueryClient set, use QueryClientProvider to set one
+    at SignUpForm (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28auth%29/_components/SignUpForm.tsx:59:20)
+[0m [90m 57 |[39m     }[33m,[39m
+ [90m 58 |[39m   })[33m;[39m
+[31m[1m>[22m[39m[90m 59 |[39m   [36mconst[39m mutation [33m=[39m useMutation({
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 60 |[39m     [90m// 'mutationFn' - это и есть ваш API-запрос[39m
+ [90m 61 |[39m     mutationFn[33m:[39m (data[33m:[39m [33mSignUpFormValues[39m) [33m=>[39m {
+ [90m 62 |[39m       [90m// Очищаем старую ошибку при *начале* нового запроса[39m[0m {
+  digest: [32m'3644732313'[39m
+}[0m
+ GET /sign-up [31m500[39m in 133ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled /sign-up in 21ms
+ [32m[1m✓[22m[39m Compiled in 95ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /sign-up [32m200[39m in 99ms
+ GET /sign-up [32m200[39m in 103ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 10ms
+ GET /sign-in [32m200[39m in 131ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 1ms
+ [32m[1m✓[22m[39m Compiled in 164ms
+ GET /sign-in [32m200[39m in 200ms
+ GET /sign-in [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled / in 14ms
+ GET / [32m200[39m in 229ms
+ GET / [32m200[39m in 68ms
+ GET /sign-in [32m200[39m in 218ms
+ [32m[1m✓[22m[39m Compiled /sign-up in 11ms
+ GET /sign-up [32m200[39m in 77ms
+ GET / [32m200[39m in 30ms
+ GET / [32m200[39m in 46ms
+ GET /sign-in [32m200[39m in 337ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 6ms
+ GET /sign-in [32m200[39m in 69ms
+ GET /sign-in [32m200[39m in 26ms
+ GET / [32m200[39m in 23ms
+ GET /sign-in [32m200[39m in 24ms
+ [32m[1m✓[22m[39m Compiled /catalog in 163ms
+ GET /catalog [32m200[39m in 274ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 14ms
+ GET /for-developers [32m200[39m in 156ms
+ GET / [32m200[39m in 22ms
+ GET /sign-in [32m200[39m in 23ms
+ GET / [32m200[39m in 21ms
+ GET /sign-in [32m200[39m in 23ms
+ [32m[1m✓[22m[39m Compiled /sign-up in 5ms
+ GET /sign-up [32m200[39m in 88ms
+ GET / [32m200[39m in 27ms
+ GET /sign-in [32m200[39m in 25ms
+ GET / [32m200[39m in 23ms
+ GET /sign-in [32m200[39m in 25ms
+ GET / [32m200[39m in 20ms
+ GET /catalog [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled /calculator in 15ms
+ GET /calculator [32m200[39m in 167ms
+ GET /for-developers [32m200[39m in 8ms
+ GET / [32m200[39m in 23ms
+ GET /sign-in [32m200[39m in 20ms
+ GET /sign-in [32m200[39m in 104ms
+ GET /sign-up [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled in 22ms
  [32m[1m✓[22m[39m Compiled in 19ms
- GET /sign-up [32m200[39m in 139ms
- [32m[1m✓[22m[39m Compiled in 46ms
- GET /sign-up [32m200[39m in 142ms
- GET /sign-up [32m200[39m in 54ms
- [32m[1m✓[22m[39m Compiled in 23ms
- GET /sign-up [32m200[39m in 133ms
- GET /sign-up [32m200[39m in 70ms
- GET /sign-up? [32m200[39m in 53ms
- GET /sign-up? [32m200[39m in 51ms
- GET /sign-up? [32m200[39m in 44ms
+ [32m[1m✓[22m[39m Compiled in 24ms
+ GET /sign-up [32m200[39m in 132ms
+ GET /sign-in [32m200[39m in 60ms
+ GET /sign-in [32m200[39m in 51ms
+ GET /sign-up [32m200[39m in 151ms
+ GET /sign-up [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled in 28ms
+ [32m[1m✓[22m[39m Compiled in 21ms
 [?25h
