@@ -12,6 +12,15 @@ export const requireAuth: MiddlewareHandler<{
   Variables: { user: JwtPayload };
 }> = async (c: Context, next: Next) => {
   const token = getCookie(c, "token");
+  
+  // Диагностическое логирование
+  console.log("[requireAuth] Cookie header:", c.req.header("cookie"));
+  console.log("[requireAuth] Token from getCookie:", token);
+  console.log("[requireAuth] Request URL:", c.req.url);
+  console.log("[requireAuth] Request headers:", Object.fromEntries(
+    Array.from(c.req.raw.headers.entries())
+  ));
+  
   if (!token) {
     return c.json({ success: false, message: "Требуется авторизация" }, 401);
   }

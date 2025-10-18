@@ -3,7 +3,7 @@ import { Hono } from "hono";
 import z from "zod";
 import { prisma } from "../lib/prisma";
 import { decode, sign, verify } from "hono/jwt";
-import { setCookie } from "hono/cookie";
+import { setCookie, getCookie } from "hono/cookie";
 import { requireAuth } from "../lib/requireAuth";
 
 // 1. Схема валидации Zod (на стороне БЭКЕНДА)
@@ -166,13 +166,21 @@ export const authRoutes = new Hono()
         const token = await sign(payload, secret);
 
         // + --- 2. Устанавливаем токен в HttpOnly Cookie ---
-        setCookie(c, "token", token, {
-          httpOnly: true, // + Недоступен для JavaScript
-          secure: process.env.NODE_ENV === "production", // + Только по HTTPS в production
-          sameSite: "Lax", // + Защита от CSRF
-          path: "/", // + Доступен на всем сайте
-          maxAge: 60 * 60 * 24 * 7, // + 7 дней (в секундах)
-        });
+        const isProduction = process.env.NODE_ENV === "production";
+        
+        // В development убираем sameSite чтобы работать с cross-origin на HTTP
+        const cookieOptions: any = {
+          httpOnly: true,
+          path: "/",
+          maxAge: 60 * 60 * 24 * 7, // 7 дней (в секундах)
+        };
+        
+        if (isProduction) {
+          cookieOptions.secure = true;
+          cookieOptions.sameSite = "Lax";
+        }
+        
+        setCookie(c, "token", token, cookieOptions);
         const userPayload = {
           id: user.id,
           email: user.email,
@@ -203,6 +211,25 @@ export const authRoutes = new Hono()
       }
     }
   )
+  .get("/debug-cookies", async (c) => {
+    // Диагностический endpoint для проверки cookies
+    const allCookies = c.req.header("cookie");
+    const token = getCookie(c, "token");
+    const allHeaders = Object.fromEntries(
+      Array.from(c.req.raw.headers.entries())
+    );
+    
+    return c.json({
+      success: true,
+      debug: {
+        cookieHeader: allCookies || "NO COOKIE HEADER",
+        tokenFromGetCookie: token || "NO TOKEN COOKIE",
+        allHeaders: allHeaders,
+        url: c.req.url,
+        method: c.req.method,
+      },
+    });
+  })
   .get("/me", requireAuth, async (c) => {
     const user = c.get("user");
     return c.json({ success: true, user: user });
