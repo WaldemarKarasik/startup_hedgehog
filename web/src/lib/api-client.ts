@@ -4,9 +4,18 @@ import { hcWithType } from "server/dist/client";
 // API base URL (from environment or default to localhost)
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5173";
 
-// Create typed RPC client
+// Create typed RPC client with credentials included in ALL requests
 export const apiClient = hcWithType(API_URL, {
-  init: { credentials: "include" },
+  fetch: (input: RequestInfo | URL, init?: RequestInit) => {
+    // Force credentials: 'include' for every request
+    return fetch(input, {
+      ...init,
+      credentials: 'include',
+      headers: {
+        ...init?.headers,
+      },
+    });
+  },
 });
 
 export type SignUpSuccess = InferResponseType<
