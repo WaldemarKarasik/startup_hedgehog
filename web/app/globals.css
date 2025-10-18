@@ -35,3 +35,21 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Force PrimeReact Password component to full width */
+.full-width-password .p-password {
+  width: 100% !important;
+  display: block !important;
+}
+
+.full-width-password .p-password input {
+  width: 100% !important;
+}
+
+.full-width-password .p-inputwrapper {
+  width: 100% !important;
+}
+
+.full-width-password .p-password-panel {
+  width: 100% !important;
+}

@@ -9,18 +9,6 @@ import { Rocket, Mail, Lock } from "lucide-react";
 export const SignInForm = () => {
   return (
     <div className="w-full max-w-md lg:max-w-2xl mx-auto">
-      <style jsx>{`
-        .full-width-password :global(.p-password) {
-          width: 100% !important;
-          display: block !important;
-        }
-        .full-width-password :global(.p-password input) {
-          width: 100% !important;
-        }
-        .full-width-password :global(.p-inputwrapper) {
-          width: 100% !important;
-        }
-      `}</style>
       {/* Card Container */}
       <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
         {/* Header with gradient background */}
