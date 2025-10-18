@@ -4,6 +4,7 @@ import z from "zod";
 import { prisma } from "../lib/prisma";
 import { decode, sign, verify } from "hono/jwt";
 import { setCookie } from "hono/cookie";
+import { requireAuth } from "../lib/requireAuth";
 
 // 1. Схема валидации Zod (на стороне БЭКЕНДА)
 const signUpSchema = z.object({
@@ -201,4 +202,8 @@ export const authRoutes = new Hono()
         );
       }
     }
-  );
+  )
+  .get("/me", requireAuth, async (c) => {
+    const user = c.get("user");
+    return c.json({ success: true, user: user });
+  });

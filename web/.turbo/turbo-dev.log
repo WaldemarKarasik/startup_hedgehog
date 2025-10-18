@@ -11,18 +11,13 @@
    - Network:      http://100.84.158.117:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 124ms
- [32m[1m✓[22m[39m Ready in 697ms
+ [32m[1m✓[22m[39m Compiled middleware in 118ms
+ [32m[1m✓[22m[39m Ready in 688ms
  [37m[1m○[22m[39m Compiling /sign-in ...
- [32m[1m✓[22m[39m Compiled /sign-in in 2.2s
- GET /sign-in [32m200[39m in 2489ms
- GET /sign-in [32m200[39m in 68ms
- [32m[1m✓[22m[39m Compiled /catalog in 203ms
- GET /catalog [32m200[39m in 335ms
- [32m[1m✓[22m[39m Compiled /calculator in 208ms
- GET /calculator [32m200[39m in 226ms
- [32m[1m✓[22m[39m Compiled /for-developers in 190ms
- GET /for-developers [32m200[39m in 208ms
- [32m[1m✓[22m[39m Compiled / in 168ms
- GET / [32m200[39m in 262ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 2.5s
+{
+  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  [0mmessage[2m:[0m [0m[32m[0m[32m"Требуется авторизация"[0m[0m[0m[2m,[0m
+}
+ GET /sign-in [32m200[39m in 2776ms
 [?25h
