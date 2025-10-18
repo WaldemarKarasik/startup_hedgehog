@@ -96,14 +96,15 @@ export const SignUpForm = () => {
             </div>
 
             {/* Password Field */}
-            <div className="relative">
+            <div className="relative w-full">
               <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none z-20" />
-              <FloatLabel>
+              <FloatLabel className="w-full">
                 <Password
                   id="password"
                   className="w-full"
+                  style={{ width: '100%' }}
                   inputClassName="w-full pr-12 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
-                  inputStyle={{ paddingLeft: '3.5rem' }}
+                  inputStyle={{ paddingLeft: '3.5rem', width: '100%' }}
                   placeholder="Пароль"
                   feedback={true}
                   toggleMask
@@ -111,6 +112,7 @@ export const SignUpForm = () => {
                   mediumLabel="Средний"
                   strongLabel="Сильный"
                   promptLabel="Введите пароль"
+                  panelClassName="w-full"
                 />
                 <label
                   htmlFor="password"
@@ -123,17 +125,19 @@ export const SignUpForm = () => {
             </div>
 
             {/* Confirm Password Field */}
-            <div className="relative">
+            <div className="relative w-full">
               <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none z-20" />
-              <FloatLabel>
+              <FloatLabel className="w-full">
                 <Password
                   id="repeat-password"
                   className="w-full"
+                  style={{ width: '100%' }}
                   inputClassName="w-full pr-12 py-3 border-2 border-gray-200 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-200 transition-all"
-                  inputStyle={{ paddingLeft: '3.5rem' }}
+                  inputStyle={{ paddingLeft: '3.5rem', width: '100%' }}
                   placeholder="Подтвердите пароль"
                   feedback={false}
                   toggleMask
+                  panelClassName="w-full"
                 />
                 <label
                   htmlFor="repeat-password"
