@@ -12,6 +12,7 @@ export const requireAuth: MiddlewareHandler<{
   Variables: { user: JwtPayload };
 }> = async (c: Context, next: Next) => {
   const token = getCookie(c, "token");
+
   if (!token) {
     return c.json({ success: false, message: "Требуется авторизация" }, 401);
   }

@@ -6,7 +6,12 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5173";
 
 // Create typed RPC client
 export const apiClient = hcWithType(API_URL, {
-  init: { credentials: "include" },
+  fetch: (input: string | Request | URL, init: RequestInit | undefined) => {
+    return fetch(input, {
+      ...init,
+      credentials: "include", // ✅ Принудительно!
+    });
+  },
 });
 
 export type SignUpSuccess = InferResponseType<
@@ -26,4 +31,8 @@ export type SignInSuccess = InferResponseType<
 export type SignInError = InferResponseType<
   typeof apiClient.api.auth.signin.$post,
   500
+>;
+export type GetMeSuccess = InferResponseType<
+  typeof apiClient.api.auth.me.$get,
+  200
 >;

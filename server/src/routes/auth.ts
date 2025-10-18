@@ -5,7 +5,7 @@ import { prisma } from "../lib/prisma";
 import { decode, sign, verify } from "hono/jwt";
 import { setCookie } from "hono/cookie";
 import { requireAuth } from "../lib/requireAuth";
-
+const isProduction = process.env.NODE_ENV === "production";
 // 1. Схема валидации Zod (на стороне БЭКЕНДА)
 const signUpSchema = z.object({
   firstName: z
@@ -164,15 +164,17 @@ export const authRoutes = new Hono()
         }
 
         const token = await sign(payload, secret);
-
+        const cookieOptions: any = {
+          httpOnly: true,
+          path: "/",
+          maxAge: 604800,
+        };
+        if (isProduction) {
+          cookieOptions.secure = true;
+          cookieOptions.sameSite = "Lax";
+        }
         // + --- 2. Устанавливаем токен в HttpOnly Cookie ---
-        setCookie(c, "token", token, {
-          httpOnly: true, // + Недоступен для JavaScript
-          secure: process.env.NODE_ENV === "production", // + Только по HTTPS в production
-          sameSite: "Lax", // + Защита от CSRF
-          path: "/", // + Доступен на всем сайте
-          maxAge: 60 * 60 * 24 * 7, // + 7 дней (в секундах)
-        });
+        setCookie(c, "token", token, cookieOptions);
         const userPayload = {
           id: user.id,
           email: user.email,
@@ -205,5 +207,18 @@ export const authRoutes = new Hono()
   )
   .get("/me", requireAuth, async (c) => {
     const user = c.get("user");
-    return c.json({ success: true, user: user });
+    const payload = await prisma.user.findFirst({
+      where: { id: user.userId },
+      select: {
+        id: true,
+        email: true,
+        firstName: true,
+        lastName: true,
+        role: true,
+      },
+    });
+    if (!payload) {
+      return c.json({ success: false }, 500);
+    }
+    return c.json({ success: true, user: payload });
   });

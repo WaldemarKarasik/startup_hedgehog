@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import QueryProvider from "@/src/lib/TanstackQueryProvider";
 import { apiClient } from "@/src/lib/api-client";
+import { AuthInitializer } from "@/src/lib/AuthInitializer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,11 +14,12 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const me = await apiClient.api.auth.me.$get();
-  console.log(await me.json());
   return (
     <>
-      <QueryProvider>{children}</QueryProvider>
+      <QueryProvider>
+        <AuthInitializer />
+        {children}
+      </QueryProvider>
     </>
   );
 }

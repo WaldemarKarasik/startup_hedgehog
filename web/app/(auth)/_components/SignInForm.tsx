@@ -11,7 +11,9 @@ import { useForm, Controller, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
-import { apiClient, SignInError } from "@/src/lib/api-client";
+import { apiClient, SignInError, SignInSuccess } from "@/src/lib/api-client";
+import { useAuthStore } from "@/src/stores/auth.store";
+import { useRouter } from "next/navigation";
 // + -----------------------------------
 
 // + --- 1. Define Validation Schema ---
@@ -36,6 +38,8 @@ export const SignInForm = () => {
       password: "",
     },
   });
+  const router = useRouter();
+
   const { mutate, error } = useMutation({
     mutationFn: async (data: SignInFormValues) => {
       const res = await apiClient.api.auth.signin.$post({ json: data });
@@ -43,8 +47,14 @@ export const SignInForm = () => {
       if (!resData.success) {
         throw new Error((resData as SignInError).message);
       }
+      return resData;
+    },
+    onSuccess: (data: SignInSuccess) => {
+      setUser(data.user);
+      router.push("/");
     },
   });
+  const setUser = useAuthStore((state) => state.setUser);
   // + --- 4. Create Submit Handler ---
   const onSubmit: SubmitHandler<SignInFormValues> = (data) => {
     // TODO: Implement your actual sign-in logic here
