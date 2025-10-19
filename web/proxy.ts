@@ -3,7 +3,6 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 const authRoutes = ["/sign-in", "/sign-up"];
 const protectedRoutes = ["/dashboard"];
-const adminRoutes = ["/dashboard/applications"];
 export default function proxy(request: NextRequest) {
   const url = request.nextUrl.clone(); // Клонируем для перезаписи
   const { pathname } = request.nextUrl; // Путь в браузере (напр., '/')
@@ -64,9 +63,6 @@ export default function proxy(request: NextRequest) {
 
   const isAuthPage = authRoutes.includes(pathname);
   const isProtectedPage = protectedRoutes.some((route) =>
-    finalPathname.startsWith(route)
-  );
-  const isAdminPage = adminRoutes.some((route) =>
     finalPathname.startsWith(route)
   );
 

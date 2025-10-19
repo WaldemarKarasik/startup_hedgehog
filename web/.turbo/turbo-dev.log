@@ -11,337 +11,286 @@
    - Network:      http://100.84.138.197:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 101ms
- [32m[1m✓[22m[39m Ready in 587ms
- [37m[1m○[22m[39m Compiling /dashboard ...
- [32m[1m✓[22m[39m Compiled /dashboard in 1720ms
- GET /dashboard [32m200[39m in 1896ms
- [32m[1m✓[22m[39m Compiled /_not-found/page in 153ms
- GET /dashboard/deals [33m404[39m in 190ms
- GET /dashboard/deals [33m404[39m in 31ms
- GET /dashboard [32m200[39m in 28ms
- [32m[1m✓[22m[39m Compiled in 20ms
- [32m[1m✓[22m[39m Compiled in 19ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 18ms
- [32m[1m✓[22m[39m Compiled /for-developers/apply in 207ms
- GET /for-developers/apply [32m200[39m in 236ms
- GET /dashboard [32m200[39m in 42ms
- [32m[1m✓[22m[39m Compiled in 18ms
- [32m[1m✓[22m[39m Compiled in 18ms
- [32m[1m✓[22m[39m Compiled in 19ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 15ms
- GET /dashboard [32m200[39m in 62ms
- [32m[1m✓[22m[39m Compiled in 15ms
- GET /dashboard [32m200[39m in 82ms
- GET /dashboard [32m200[39m in 26ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 24ms
- GET /dashboard [32m200[39m in 103ms
- [32m[1m✓[22m[39m Compiled in 13ms
- GET /dashboard [32m200[39m in 106ms
- GET /for-developers/apply [32m200[39m in 10ms
- GET /dashboard [32m200[39m in 8ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET /dashboard [32m200[39m in 173ms
- GET /dashboard [32m200[39m in 29ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET /dashboard [32m200[39m in 250ms
- [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
- [32m[1m✓[22m[39m Compiled in 15ms
- GET /dashboard [32m200[39m in 59ms
- GET /dashboard [32m200[39m in 25ms
- [32m[1m✓[22m[39m Compiled in 15ms
- GET /dashboard [32m200[39m in 78ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET /dashboard [32m200[39m in 92ms
- [32m[1m✓[22m[39m Compiled in 17ms
- GET /dashboard [32m200[39m in 77ms
- [32m[1m✓[22m[39m Compiled in 31ms
- GET /dashboard [32m200[39m in 112ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET /dashboard [32m200[39m in 95ms
- [32m[1m✓[22m[39m Compiled in 42ms
- [32m[1m✓[22m[39m Compiled in 45ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 19ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 45ms
- [32m[1m✓[22m[39m Compiled in 51ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 14ms
- GET /dashboard [32m200[39m in 113ms
- [32m[1m✓[22m[39m Compiled in 44ms
- GET /dashboard [32m200[39m in 99ms
- [32m[1m✓[22m[39m Compiled in 13ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 45ms
- [32m[1m✓[22m[39m Compiled in 43ms
- GET /for-developers/apply [32m200[39m in 25ms
- GET /dashboard [32m200[39m in 52ms
- GET /dashboard/products [33m404[39m in 19ms
- GET /dashboard/products [33m404[39m in 25ms
- GET /dashboard [32m200[39m in 58ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 14ms
- GET /dashboard [32m200[39m in 119ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET /dashboard/settings [33m404[39m in 17ms
- GET /dashboard/settings [33m404[39m in 25ms
- GET /dashboard [32m200[39m in 102ms
- GET /for-developers/apply [32m200[39m in 8ms
- [32m[1m✓[22m[39m Compiled / in 211ms
- GET / [32m200[39m in 236ms
- [32m[1m✓[22m[39m Compiled /calculator in 179ms
- GET /calculator [32m200[39m in 263ms
- [32m[1m✓[22m[39m Compiled /catalog in 163ms
- GET /catalog [32m200[39m in 285ms
- [32m[1m✓[22m[39m Compiled /for-developers in 236ms
- GET /for-developers [32m200[39m in 321ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 24ms
- GET /dashboard [32m200[39m in 73ms
- GET /dashboard [32m200[39m in 26ms
- GET /for-developers/apply [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard/products [33m404[39m in 7ms
- GET /dashboard/products [33m404[39m in 24ms
- GET /dashboard [32m200[39m in 24ms
- GET /dashboard/products [33m404[39m in 8ms
- GET /dashboard/products [33m404[39m in 20ms
- GET /dashboard [32m200[39m in 24ms
- GET /for-developers/apply [32m200[39m in 17ms
- GET /dashboard [32m200[39m in 10ms
- [32m[1m✓[22m[39m Compiled in 15ms
- GET / [32m200[39m in 53ms
- GET / [32m200[39m in 12ms
- GET /dashboard [32m200[39m in 121ms
- GET /dashboard/catalog [33m404[39m in 8ms
- GET /dashboard/catalog [33m404[39m in 23ms
- GET /dashboard [32m200[39m in 57ms
- GET / [32m200[39m in 156ms
- GET /catalog [32m200[39m in 106ms
- GET /dashboard [32m200[39m in 8ms
- [32m[1m✓[22m[39m Compiled in 15ms
- GET /catalog [32m200[39m in 36ms
- GET /dashboard [32m200[39m in 49ms
- GET /catalog [32m200[39m in 36ms
- GET /dashboard [32m200[39m in 7ms
- GET /catalog [32m200[39m in 35ms
- GET /catalog [32m200[39m in 37ms
- GET /for-developers [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /catalog [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled middleware in 99ms
+ [32m[1m✓[22m[39m Ready in 580ms
+ [37m[1m○[22m[39m Compiling /dashboard/applications ...
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 1748ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 1996ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 179ms
+ GET /dashboard [32m200[39m in 200ms
  GET /dashboard [32m200[39m in 11ms
- GET /dashboard/deals [33m404[39m in 8ms
- GET /dashboard/deals [33m404[39m in 22ms
- GET /dashboard [32m200[39m in 59ms
- GET /catalog [32m200[39m in 141ms
- GET /dashboard [32m200[39m in 7ms
- GET / [32m200[39m in 77ms
- GET / [32m200[39m in 191ms
- GET / [32m200[39m in 11ms
- [32m[1m✓[22m[39m Compiled in 24ms
- GET / [32m200[39m in 62ms
- GET /catalog [32m200[39m in 147ms
- GET / [32m200[39m in 11ms
- GET /catalog [32m200[39m in 37ms
- GET /catalog [32m200[39m in 38ms
- GET / [32m200[39m in 11ms
- GET /calculator [32m200[39m in 78ms
- GET /dashboard [32m200[39m in 9ms
- [32m[1m✓[22m[39m Compiled in 29ms
- GET / [32m200[39m in 18ms
- GET /dashboard [32m200[39m in 32ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 14ms
- GET /dashboard/deals [33m404[39m in 7ms
- GET /dashboard/deals [33m404[39m in 24ms
- GET /dashboard [32m200[39m in 69ms
- GET / [32m200[39m in 158ms
- GET /dashboard [32m200[39m in 9ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 46ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET /dashboard [32m200[39m in 57ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 23ms
- GET /dashboard [32m200[39m in 24ms
- GET /dashboard [32m200[39m in 24ms
- GET /dashboard [32m200[39m in 23ms
- GET /dashboard [32m200[39m in 78ms
- GET /dashboard [32m200[39m in 25ms
- GET /dashboard [32m200[39m in 23ms
- GET /dashboard [32m200[39m in 23ms
- GET /catalog [32m200[39m in 145ms
- GET /dashboard [32m200[39m in 10ms
- GET /for-developers/apply [32m200[39m in 150ms
- GET /dashboard [32m200[39m in 8ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET / [32m200[39m in 128ms
- GET /dashboard [32m200[39m in 33ms
- GET / [32m200[39m in 358ms
- GET / [32m200[39m in 70ms
- [32m[1m✓[22m[39m Compiled in 24ms
- GET / [32m200[39m in 87ms
- GET /dashboard [32m200[39m in 10ms
- GET / [32m200[39m in 13ms
- GET /dashboard [32m200[39m in 8ms
- GET / [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 11ms
- GET / [32m200[39m in 13ms
- GET /dashboard [32m200[39m in 8ms
- GET / [32m200[39m in 14ms
- [32m[1m✓[22m[39m Compiled / in 6ms
- GET / [32m200[39m in 41ms
- GET / [32m200[39m in 19ms
- GET / [32m200[39m in 12ms
- GET / [32m200[39m in 18ms
- GET / [32m200[39m in 12ms
- GET / [32m200[39m in 11ms
- [32m[1m✓[22m[39m Compiled /catalog in 6ms
- GET /catalog [32m200[39m in 171ms
- [32m[1m✓[22m[39m Compiled /calculator in 8ms
- GET /calculator [32m200[39m in 84ms
- [32m[1m✓[22m[39m Compiled /for-developers in 11ms
- GET /for-developers [32m200[39m in 93ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard/deals [33m404[39m in 9ms
- GET /dashboard/deals [33m404[39m in 22ms
- GET /dashboard [32m200[39m in 39ms
- GET /catalog [32m200[39m in 173ms
- GET / [32m200[39m in 10ms
- GET /catalog [32m200[39m in 40ms
- GET /calculator [32m200[39m in 5ms
- GET /for-developers [32m200[39m in 6ms
- GET / [32m200[39m in 12ms
- GET /for-developers [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 7ms
- GET / [32m200[39m in 31ms
+ [32m[1m✓[22m[39m Compiled /catalog in 196ms
+ GET /catalog [32m200[39m in 339ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 23ms
  GET /dashboard [32m200[39m in 6ms
- GET / [32m200[39m in 20ms
- GET / [32m200[39m in 18ms
- GET /dashboard [32m200[39m in 12ms
- GET / [32m200[39m in 21ms
- GET /catalog [32m200[39m in 41ms
- GET /calculator [32m200[39m in 7ms
- GET /for-developers [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard/products [33m404[39m in 7ms
- GET /dashboard/products [33m404[39m in 23ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard/products [33m404[39m in 6ms
- GET /dashboard/products [33m404[39m in 21ms
- GET /dashboard [32m200[39m in 34ms
- GET /dashboard/products [33m404[39m in 9ms
- GET /dashboard/products [33m404[39m in 22ms
- GET /dashboard [32m200[39m in 26ms
- [32m[1m✓[22m[39m Compiled middleware in 1ms
- GET /dashboard [32m200[39m in 41ms
- GET /dashboard [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 16ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /catalog [32m200[39m in 36ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 15ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 6ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 14ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 14ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 5ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 14ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 14ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 8ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:22:7)
+    at processTicksAndRejections (null)
+[0m [90m 20 |[39m     [36mconst[39m response [33m=[39m [36mawait[39m apiClient[33m.[39mapi[33m.[39mauth[33m.[39mme[33m.[39m$get()[33m;[39m
+ [90m 21 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 22 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 23 |[39m     }
+ [90m 24 |[39m
+ [90m 25 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 42ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 6ms
  GET /dashboard [32m200[39m in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 5ms
+Response (0 KB) {
+  [0mok[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  [0murl[2m:[0m "[0m[1m[0m"[0m[2m,[0m
+  [0mstatus[2m:[0m [0m[33m401[0m[0m[2m,[0m
+  [0mstatusText[2m:[0m [0m"[1mUnauthorized[0m"[0m[2m,[0m
+  [0mheaders[2m:[0m [0mHeaders {
+    [0m[32m"vary"[0m[2m:[0m [0m[32m[0m[32m"Origin"[0m[0m[0m[2m,[0m
+    [0m[32m"access-control-allow-credentials"[0m[2m:[0m [0m[32m[0m[32m"true"[0m[0m[0m[2m,[0m
+    [0m[32m"content-type"[0m[2m:[0m [0m[32m[0m[32m"application/json"[0m[0m[0m[2m,[0m
+    [0m[32m"date"[0m[2m:[0m [0m[32m[0m[32m"Sun, 19 Oct 2025 03:52:18 GMT"[0m[0m[0m[2m,[0m
+    [0m[32m"content-length"[0m[2m:[0m [0m[32m[0m[32m"71"[0m[0m[0m[2m,[0m
+  }[0m[2m,[0m
+  [0mredirected[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  [0mbodyUsed[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  ReadableStream {
+    [0mblob[2m:[0m [36m[Function: blob][0m[0m[2m,[0m
+    [0mbytes[2m:[0m [36m[Function: bytes][0m[0m[2m,[0m
+    [0mcancel[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mgetReader[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mjson[2m:[0m [36m[Function: json][0m[0m[2m,[0m
+    [0mlocked[2m:[0m [36m[Getter][0m[0m[2m,[0m
+    [0mpipeThrough[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mpipeTo[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mtee[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mtext[2m:[0m [36m[Function: text][0m[0m[2m,[0m
+    [0mvalues[2m:[0m [36m[Function: values][0m[0m[2m,[0m
+    [0m[2m[[0m[34mSymbol(Symbol.asyncIterator)[0m[2m]:[0m [36m[Function: asyncIterator][0m[0m[2m,[0m
+  }
+}
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m     console[33m.[39mlog(response)[33m;[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 63ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard [32m200[39m in 27ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 6ms
+{
+  [0mname[2m:[0m [0m[32m[0m[32m"token"[0m[0m[0m[2m,[0m
+  [0mvalue[2m:[0m [0m[32m[0m[32m"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWd3NHdscXQwMDAwaWowcGo0Nnl3ZG93Iiwicm9sZSI6IkJVWUVSIiwiZW1haWwiOiJrb21zb21vbHJhZGlvQGdtYWlsLmNvbSIsImV4cCI6MTc2MTQzODM0M30.OT_a9bwxZe_PT6cYd-0AQaUSfLoDH-Kn0sDIUKLqkK0"[0m[0m[0m[2m,[0m
+}
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:23:7)
+    at processTicksAndRejections (null)
+[0m [90m 21 |[39m     console[33m.[39mlog(token)[33m;[39m
+ [90m 22 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 23 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 24 |[39m     }
+ [90m 25 |[39m
+ [90m 26 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 61ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 20ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 5ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:22:7)
+    at processTicksAndRejections (null)
+[0m [90m 20 |[39m     [36mconst[39m response [33m=[39m [36mawait[39m apiClient[33m.[39mapi[33m.[39mauth[33m.[39mme[33m.[39m$get()[33m;[39m
+ [90m 21 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 22 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 23 |[39m     }
+ [90m 24 |[39m
+ [90m 25 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 75ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 30ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:22:7)
+    at processTicksAndRejections (null)
+[0m [90m 20 |[39m     [36mconst[39m response [33m=[39m [36mawait[39m apiClient[33m.[39mapi[33m.[39mauth[33m.[39mme[33m.[39m$get()[33m;[39m
+ [90m 21 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 22 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 23 |[39m     }
+ [90m 24 |[39m
+ [90m 25 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 26ms
  GET /dashboard [32m200[39m in 10ms
  GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 35ms
- [32m[1m✓[22m[39m Compiled /dashboard/applications in 188ms
- GET /dashboard/applications [32m200[39m in 225ms
- [32m[1m✓[22m[39m Compiled in 21ms
- GET /dashboard/applications [32m200[39m in 63ms
- GET /dashboard [32m200[39m in 33ms
- GET /dashboard/applications [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 5ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/applications [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 9ms
- GET /dashboard/applications [32m200[39m in 6ms
- [32m[1m✓[22m[39m Compiled in 17ms
  GET /dashboard [32m200[39m in 28ms
- GET /dashboard/applications [32m200[39m in 28ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 6ms
- [32m[1m✓[22m[39m Compiled in 20ms
- GET /dashboard/applications [32m200[39m in 52ms
- GET /dashboard [32m200[39m in 85ms
- GET /dashboard/applications [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 6ms
- [32m[1m✓[22m[39m Compiled in 19ms
- GET /dashboard/applications [32m200[39m in 107ms
- GET /dashboard [32m200[39m in 29ms
- GET /dashboard/applications [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/applications [32m200[39m in 5ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 41ms
- GET /dashboard [32m200[39m in 131ms
- GET / [32m200[39m in 164ms
- GET /dashboard [32m200[39m in 9ms
- GET / [32m200[39m in 13ms
- GET /dashboard [32m200[39m in 8ms
- GET / [32m200[39m in 12ms
- GET /dashboard [32m200[39m in 7ms
  GET /dashboard [32m200[39m in 30ms
- GET /dashboard/applications [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 5ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 6ms
- [32m[1m✓[22m[39m Compiled middleware in 1ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled middleware in 2ms
- [32m[1m✓[22m[39m Compiled in 18ms
-[?25h
+ GET /dashboard [32m200[39m in 33ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:22:7)
+    at processTicksAndRejections (null)
+[0m [90m 20 |[39m     [36mconst[39m response [33m=[39m [36mawait[39m apiClient[33m.[39mapi[33m.[39mauth[33m.[39mme[33m.[39m$get()[33m;[39m
+ [90m 21 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 22 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 23 |[39m     }
+ [90m 24 |[39m
+ [90m 25 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 20ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 5ms
+[0m[31m[APPLICATIONS_PAGE] Failed to check access: Error: NEXT_REDIRECT
+    at checkAdminAccess (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28admin%29/applications/page.tsx:22:7)
+    at processTicksAndRejections (null)
+[0m [90m 20 |[39m     [36mconst[39m response [33m=[39m [36mawait[39m apiClient[33m.[39mapi[33m.[39mauth[33m.[39mme[33m.[39m$get()[33m;[39m
+ [90m 21 |[39m     [36mif[39m ([33m![39mresponse[33m.[39mok) {
+[31m[1m>[22m[39m[90m 22 |[39m       redirect([32m"/sign-in"[39m)[33m;[39m
+ [90m    |[39m       [31m[1m^[22m[39m
+ [90m 23 |[39m     }
+ [90m 24 |[39m
+ [90m 25 |[39m     [36mconst[39m data [33m=[39m [36mawait[39m response[33m.[39mjson()[33m;[39m[0m {
+  digest: [32m'NEXT_REDIRECT;replace;/sign-in;307;'[39m
+}[0m
+ GET /dashboard/applications [32m200[39m in 26ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 5ms

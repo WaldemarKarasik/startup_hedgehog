@@ -8,11 +8,37 @@ export type JwtPayload = {
   exp: number;
 };
 
+/**
+ * Извлекает токен из cookie или Cookie header
+ * Поддерживает как browser requests (getCookie), так и server-side fetch (Cookie header)
+ */
+function extractToken(c: Context): string | undefined {
+  // 1. Пробуем получить из стандартных cookies (browser requests)
+  let token = getCookie(c, "token");
+
+  if (token) {
+    return token;
+  }
+
+  // 2. Если нет - парсим Cookie header (server-side fetch)
+  const cookieHeader = c.req.header("cookie");
+  if (cookieHeader) {
+    const cookies = cookieHeader.split(";").map((c) => c.trim());
+    for (const cookie of cookies) {
+      const [name, value] = cookie.split("=");
+      if (name === "token") {
+        return value;
+      }
+    }
+  }
+
+  return undefined;
+}
+
 export const requireAuth: MiddlewareHandler<{
   Variables: { user: JwtPayload };
 }> = async (c: Context, next: Next) => {
-  const token = getCookie(c, "token");
-
+  const token = extractToken(c);
   if (!token) {
     return c.json({ success: false, message: "Требуется авторизация" }, 401);
   }
