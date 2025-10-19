@@ -294,3 +294,130 @@ Response (0 KB) {
  GET /dashboard/applications [32m200[39m in 26ms
  GET /dashboard [32m200[39m in 5ms
  GET /dashboard [32m200[39m in 5ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ GET /dashboard [32m200[39m in 71ms
+ GET /dashboard [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard [32m200[39m in 61ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 7ms
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0muser[2m:[0m {
+    [0mid[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+    [0memail[2m:[0m [0m[32m[0m[32m"komsomolradio@gmail.com"[0m[0m[0m[2m,[0m
+    [0mfirstName[2m:[0m [0m[32m[0m[32m"Данил"[0m[0m[0m[2m,[0m
+    [0mlastName[2m:[0m [0m[32m[0m[32m"Касаткин"[0m[0m[0m[2m,[0m
+    [0mrole[2m:[0m [0m[32m[0m[32m"ADMIN"[0m[0m[0m[2m,[0m
+  }[0m[2m,[0m
+}
+ GET /dashboard/applications [32m200[39m in 174ms
+ GET /dashboard [32m200[39m in 9ms
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0muser[2m:[0m {
+    [0mid[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+    [0memail[2m:[0m [0m[32m[0m[32m"komsomolradio@gmail.com"[0m[0m[0m[2m,[0m
+    [0mfirstName[2m:[0m [0m[32m[0m[32m"Данил"[0m[0m[0m[2m,[0m
+    [0mlastName[2m:[0m [0m[32m[0m[32m"Касаткин"[0m[0m[0m[2m,[0m
+    [0mrole[2m:[0m [0m[32m[0m[32m"ADMIN"[0m[0m[0m[2m,[0m
+  }[0m[2m,[0m
+}
+ GET /dashboard/applications [32m200[39m in 118ms
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0muser[2m:[0m {
+    [0mid[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+    [0memail[2m:[0m [0m[32m[0m[32m"komsomolradio@gmail.com"[0m[0m[0m[2m,[0m
+    [0mfirstName[2m:[0m [0m[32m[0m[32m"Данил"[0m[0m[0m[2m,[0m
+    [0mlastName[2m:[0m [0m[32m[0m[32m"Касаткин"[0m[0m[0m[2m,[0m
+    [0mrole[2m:[0m [0m[32m[0m[32m"ADMIN"[0m[0m[0m[2m,[0m
+  }[0m[2m,[0m
+}
+ GET /dashboard/applications [32m200[39m in 116ms
+ GET /dashboard [32m200[39m in 6ms
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0muser[2m:[0m {
+    [0mid[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+    [0memail[2m:[0m [0m[32m[0m[32m"komsomolradio@gmail.com"[0m[0m[0m[2m,[0m
+    [0mfirstName[2m:[0m [0m[32m[0m[32m"Данил"[0m[0m[0m[2m,[0m
+    [0mlastName[2m:[0m [0m[32m[0m[32m"Касаткин"[0m[0m[0m[2m,[0m
+    [0mrole[2m:[0m [0m[32m[0m[32m"ADMIN"[0m[0m[0m[2m,[0m
+  }[0m[2m,[0m
+}
+ GET /dashboard/applications [32m200[39m in 114ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 6ms
+ GET /dashboard/applications [32m200[39m in 70ms
+ GET /dashboard/applications [32m200[39m in 319ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/applications [32m200[39m in 114ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 114ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 221ms
+ [32m[1m✓[22m[39m Compiled / in 187ms
+ GET / [32m200[39m in 210ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/applications [32m200[39m in 115ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/applications [32m200[39m in 114ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 114ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 221ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 224ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 115ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/applications [32m200[39m in 114ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 115ms
+ GET / [32m200[39m in 19ms
+ GET /dashboard/applications [32m200[39m in 289ms
+ GET /dashboard [32m200[39m in 25ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 131ms
+ GET /dashboard/settings [33m404[39m in 163ms
+ GET /dashboard/settings [33m404[39m in 23ms
+ GET /dashboard [32m200[39m in 24ms
+ GET / [32m200[39m in 12ms
+ GET / [32m200[39m in 45ms
+ GET /dashboard [32m200[39m in 7ms
+ GET / [32m200[39m in 14ms
+ GET / [32m200[39m in 49ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 31ms
+ GET / [32m200[39m in 172ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/applications [32m200[39m in 199ms
+ GET /dashboard/applications [32m200[39m in 310ms
+ GET /dashboard/applications [32m200[39m in 191ms
+ GET /dashboard/applications [32m200[39m in 198ms
+ GET /dashboard/applications [32m200[39m in 188ms
+ GET /dashboard [32m200[39m in 23ms
+ GET /dashboard/deals [33m404[39m in 11ms
+ GET /dashboard/deals [33m404[39m in 23ms
+ GET /dashboard [32m200[39m in 25ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 25ms
+ GET / [32m200[39m in 22ms
+ GET /dashboard [32m200[39m in 10ms
+ GET /dashboard [32m200[39m in 26ms
+ GET /dashboard/applications [32m200[39m in 110ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/applications [32m200[39m in 107ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 108ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/applications [32m200[39m in 107ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/applications [32m200[39m in 106ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 204ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/applications [32m200[39m in 106ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 7ms
+[?25h

@@ -1,4 +1,4 @@
-import { apiClient } from "@/src/lib/api-client";
+import { API_URL, apiClient, GetMe } from "@/src/lib/api-client";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -17,13 +17,19 @@ async function checkAdminAccess() {
   // API вызов к backend для проверки роли
 
   try {
-    const response = await apiClient.api.auth.me.$get();
+    const response = await fetch(`${API_URL}/api/auth/me`, {
+      method: "GET",
+      headers: {
+        Cookie: `token=${token.value}`,
+      },
+      cache: "no-store", // Всегда fresh data
+    });
+
     if (!response.ok) {
       redirect("/sign-in");
     }
 
-    const data = await response.json();
-    console.log(data);
+    const data: GetMe = await response.json();
     if (!data.success || !data.user) {
       redirect("/sign-in");
     }

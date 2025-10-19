@@ -2,7 +2,8 @@ import { InferResponseType } from "hono/client";
 import { hcWithType } from "server/dist/client";
 
 // API base URL (from environment or default to localhost)
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5173";
+export const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://localhost:5173";
 
 // Create typed RPC client
 export const apiClient = hcWithType(API_URL, {
@@ -32,6 +33,7 @@ export type SignInError = InferResponseType<
   typeof apiClient.api.auth.signin.$post,
   500
 >;
+export type GetMe = InferResponseType<typeof apiClient.api.auth.me.$get>;
 export type GetMeSuccess = InferResponseType<
   typeof apiClient.api.auth.me.$get,
   200
