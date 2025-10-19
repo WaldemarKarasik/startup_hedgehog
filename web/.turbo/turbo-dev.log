@@ -11,111 +11,258 @@
    - Network:      http://100.84.138.197:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 103ms
- [32m[1m✓[22m[39m Ready in 737ms
- [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 1789ms
- GET / [32m200[39m in 2013ms
- [32m[1m✓[22m[39m Compiled /dashboard in 148ms
- GET /dashboard [32m200[39m in 168ms
- [32m[1m✓[22m[39m Compiled /for-developers in 201ms
- GET /for-developers [32m200[39m in 219ms
- GET / [32m200[39m in 13ms
- GET /dashboard [32m200[39m in 8ms
- GET / [32m200[39m in 12ms
- [32m[1m✓[22m[39m Compiled /catalog in 197ms
- GET /catalog [32m200[39m in 309ms
- [32m[1m✓[22m[39m Compiled /calculator in 183ms
- GET /calculator [32m200[39m in 199ms
- GET / [32m200[39m in 12ms
- GET /catalog [32m200[39m in 38ms
- GET / [32m200[39m in 13ms
- GET /dashboard [32m200[39m in 12ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 7ms
- GET / [32m200[39m in 63ms
- [37m[1m○[22m[39m Compiling /sign-in ...
- [32m[1m✓[22m[39m Compiled /sign-in in 595ms
- GET /sign-in [32m200[39m in 621ms
- GET / [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 7ms
- GET / [32m200[39m in 52ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 7ms
- [32m[1m✓[22m[39m Compiled in 105ms
- [32m[1m✓[22m[39m Compiled /dashboard in 35ms
-[0m[31m [31m[1m⨯[22m[39m Error: The default export is not a React Component in "/dashboard/layout"
-    at processTicksAndRejections (null)[0m
-[0m[31m [31m[1m⨯[22m[39m Error: The default export is not a React Component in "/dashboard/layout"
-    at processTicksAndRejections (null) {
-  page: [32m'/dashboard'[39m
-}[0m
- [32m[1m✓[22m[39m Compiled /_error in 454ms
- GET /dashboard [31m500[39m in 644ms
-[0m[31m [31m[1m⨯[22m[39m Error: The default export is not a React Component in "/dashboard/layout"
-    at processTicksAndRejections (null)[0m
-[0m[31m [31m[1m⨯[22m[39m Error: The default export is not a React Component in "/dashboard/layout"
-    at processTicksAndRejections (null) {
-  page: [32m'/dashboard'[39m
-}[0m
- GET /dashboard [31m500[39m in 52ms
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'../globals.css'[39m
-[0m [90m 1 |[39m [36mimport[39m type { [33mMetadata[39m } [36mfrom[39m [32m"next"[39m[33m;[39m
- [90m 2 |[39m [36mimport[39m { [33mInter[39m } [36mfrom[39m [32m"next/font/google"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m [32m"../globals.css"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [32m[1m✓[22m[39m Compiled middleware in 110ms
+ [32m[1m✓[22m[39m Ready in 618ms
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 1824ms
+ GET /dashboard [32m200[39m in 2028ms
+ GET /dashboard [32m200[39m in 34ms
+ GET /dashboard [32m200[39m in 25ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 164ms
+ GET /dashboard/settings/profile [33m404[39m in 201ms
+ GET /dashboard/settings/profile [33m404[39m in 45ms
+ GET /dashboard [32m200[39m in 26ms
+ GET /dashboard/settings [33m404[39m in 8ms
+ GET /dashboard/settings [33m404[39m in 22ms
+ GET /dashboard [32m200[39m in 24ms
+ GET /dashboard/deals [33m404[39m in 6ms
+ GET /dashboard/deals [33m404[39m in 24ms
+ GET /dashboard [32m200[39m in 27ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ GET /dashboard/catalog [33m404[39m in 8ms
+ GET /dashboard/catalog [33m404[39m in 35ms
+ GET /dashboard [32m200[39m in 65ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
  [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
- [90m 5 |[39m
- [90m 6 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m[0m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
 
 
 
 https://nextjs.org/docs/messages/module-not-found
 
 [0m
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled /dashboard in 23ms
- GET /dashboard [32m200[39m in 92ms
- GET /dashboard [32m200[39m in 25ms
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
+[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/layout.tsx:5:1
+[1m[31mModule not found[39m[22m: Can't resolve [32m'./_components/DashboardLayout'[39m
+[0m [90m 3 |[39m [36mimport[39m [32m"../../globals.css"[39m[33m;[39m
+ [90m 4 |[39m [36mimport[39m [32m"primereact/resources/themes/lara-light-blue/theme.css"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m [33mDashboardLayout[39m [36mfrom[39m [32m"./_components/DashboardLayout"[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mconst[39m inter [33m=[39m [33mInter[39m({ subsets[33m:[39m [[32m"latin"[39m[33m,[39m [32m"cyrillic"[39m] })[33m;[39m
+ [90m 8 |[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+[0m
  [32m[1m✓[22m[39m Compiled /dashboard in 7ms
- GET /dashboard [32m200[39m in 36ms
- [32m[1m✓[22m[39m Compiled in 47ms
- [32m[1m✓[22m[39m Compiled /dashboard in 6ms
- GET /dashboard [32m200[39m in 85ms
- GET /dashboard [32m200[39m in 59ms
- [32m[1m✓[22m[39m Compiled /_not-found/page in 144ms
- GET /dashboard/settings [33m404[39m in 177ms
- GET /dashboard/settings [33m404[39m in 26ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 27ms
- GET /dashboard [32m200[39m in 32ms
- GET /dashboard [32m200[39m in 28ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 44ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard [32m200[39m in 5ms
- GET / [32m200[39m in 57ms
- GET / [32m200[39m in 56ms
- GET /dashboard [32m200[39m in 8ms
- GET / [32m200[39m in 48ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard/settings/profile [33m404[39m in 7ms
- GET /dashboard/settings/profile [33m404[39m in 21ms
- GET /dashboard [32m200[39m in 27ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 25ms
+ GET /dashboard [32m200[39m in 91ms
+ GET /dashboard [32m200[39m in 52ms
  GET /dashboard [32m200[39m in 24ms
- GET /dashboard [32m200[39m in 15ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 15ms
- GET /dashboard [32m200[39m in 29ms
- GET /dashboard [32m200[39m in 23ms
- GET /dashboard [32m200[39m in 22ms
- GET /dashboard [32m200[39m in 25ms
- GET /dashboard [32m200[39m in 22ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ GET /dashboard [32m200[39m in 100ms
+ GET /dashboard/deals [33m404[39m in 8ms
+ GET /dashboard/deals [33m404[39m in 19ms
+ GET /dashboard [32m200[39m in 28ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /dashboard [32m200[39m in 103ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ GET /dashboard/analytics [33m404[39m in 9ms
+ GET /dashboard/analytics [33m404[39m in 20ms
+ GET /dashboard [32m200[39m in 100ms
+ [32m[1m✓[22m[39m Compiled in 39ms
+ GET /dashboard [32m200[39m in 126ms
 [?25h
