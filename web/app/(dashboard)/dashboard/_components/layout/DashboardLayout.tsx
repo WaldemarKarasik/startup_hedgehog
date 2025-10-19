@@ -19,6 +19,7 @@ import {
   X,
   TrendingUp,
   ShoppingCart,
+  FileUser,
 } from "lucide-react";
 import React from "react";
 import Link from "next/link";
@@ -72,7 +73,7 @@ export default function DashboardLayout({
     {
       label: "Каталог",
       icon: <ShoppingCart size={20} />,
-      href: "/dashboard/catalog",
+      href: "/catalog",
       active: currentPath.startsWith("/dashboard/catalog"),
     },
     ...(user?.role === "DEVELOPER"
@@ -92,6 +93,16 @@ export default function DashboardLayout({
       notYetImplemented: true,
       active: currentPath.startsWith("/dashboard/analytics"),
     },
+    ...(user?.role === "ADMIN"
+      ? [
+          {
+            label: "Developer Applications",
+            icon: <FileUser size={20} />,
+            href: "/dashboard/applications",
+            active: currentPath.startsWith("/dashboard/applications"),
+          },
+        ]
+      : []),
     {
       label: "Настройки",
       icon: <Settings size={20} />,
@@ -168,7 +179,7 @@ export default function DashboardLayout({
       <div className="flex-1 flex flex-col min-w-0">
         {/* Header */}
         <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
-          <div className="flex items-center justify-between px-4 lg:px-8 py-3">
+          <div className="flex items-center justify-between px-4 lg:px-8 py-2.5">
             {/* Mobile Menu Button */}
             <button
               onClick={() => setSidebarOpen(true)}
@@ -179,7 +190,6 @@ export default function DashboardLayout({
 
             {/* Desktop: Empty space */}
             <div className="hidden lg:block" />
-
             {/* User Menu */}
             <div className="flex items-center gap-4">
               {/* User Info */}
@@ -188,7 +198,11 @@ export default function DashboardLayout({
                   {user?.firstName} {user?.lastName}
                 </p>
                 <p className="text-xs text-gray-500">
-                  {user?.role === "DEVELOPER" ? "Разработчик" : "Покупатель"}
+                  {user?.role === "DEVELOPER"
+                    ? "Разработчик"
+                    : user?.role === "ADMIN"
+                    ? "Админ"
+                    : "Покупатель"}
                 </p>
               </div>
 

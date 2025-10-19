@@ -5,7 +5,7 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin", "cyrillic"] });
 
 export const metadata: Metadata = {
-  title: "StartupЁж - Биржа стартапов с Revenue Share",
+  title: "StartAppЁж - Биржа готовых IT решений с Revenue Share",
   description:
     "Найдите готовый стартап или продайте свой проект на выгодных условиях. Revenue Share модель для долгосрочного партнёрства.",
 };

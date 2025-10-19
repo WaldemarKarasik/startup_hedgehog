@@ -11,1322 +11,337 @@
    - Network:      http://100.84.138.197:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 117ms
- [32m[1m✓[22m[39m Ready in 615ms
+ [32m[1m✓[22m[39m Compiled middleware in 101ms
+ [32m[1m✓[22m[39m Ready in 587ms
  [37m[1m○[22m[39m Compiling /dashboard ...
- [32m[1m✓[22m[39m Compiled /dashboard in 1768ms
- GET /dashboard [32m200[39m in 1975ms
- [32m[1m✓[22m[39m Compiled in 19ms
- GET /dashboard [32m200[39m in 69ms
- [32m[1m✓[22m[39m Compiled /_not-found/page in 170ms
- GET /dashboard/analytics [33m404[39m in 203ms
- GET /dashboard/analytics [33m404[39m in 29ms
- GET /dashboard [32m200[39m in 27ms
- [32m[1m✓[22m[39m Compiled in 18ms
- GET /dashboard/analytics [33m404[39m in 16ms
- GET /dashboard/analytics [33m404[39m in 26ms
- GET /dashboard [32m200[39m in 85ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard/analytics [33m404[39m in 8ms
- GET /dashboard/analytics [33m404[39m in 30ms
- GET /dashboard [32m200[39m in 24ms
- [32m[1m✓[22m[39m Compiled in 15ms
- GET /dashboard/analytics [33m404[39m in 7ms
- GET /dashboard/analytics [33m404[39m in 21ms
- GET /dashboard [32m200[39m in 96ms
- GET /dashboard [32m200[39m in 25ms
- GET /dashboard/analytics [33m404[39m in 8ms
- GET /dashboard/analytics [33m404[39m in 21ms
- GET /dashboard [32m200[39m in 26ms
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:25:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./DesktopSidebar'[39m
-[0m [90m 23 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m"react"[39m[33m;[39m
- [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./DesktopSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
- [32m[1m✓[22m[39m Compiled in 46ms
- [32m[1m✓[22m[39m Compiled /dashboard in 7ms
- GET /dashboard [32m200[39m in 117ms
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx:26:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'./MobileSidebar'[39m
-[0m [90m 24 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m
- [90m 25 |[39m [36mimport[39m { [33mDesktopSidebar[39m } [36mfrom[39m [32m"./sidebar/DesktopSidebar"[39m[33m;[39m
-[31m[1m>[22m[39m[90m 26 |[39m [36mimport[39m { [33mMobileSidebar[39m } [36mfrom[39m [32m"./MobileSidebar"[39m[33m;[39m
- [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 27 |[39m
- [90m 28 |[39m [36mexport[39m type [33mNavItem[39m [33m=[39m {
- [90m 29 |[39m   label[33m:[39m string[33m;[39m[0m
-
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/_components/layout/DashboardLayout.tsx
-    ./web/app/(dashboard)/dashboard/layout.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
- [32m[1m✓[22m[39m Compiled in 32ms
- [32m[1m✓[22m[39m Compiled /dashboard in 5ms
- GET /dashboard [32m200[39m in 75ms
- [32m[1m✓[22m[39m Compiled in 16ms
- GET /dashboard [32m200[39m in 106ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 1720ms
+ GET /dashboard [32m200[39m in 1896ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 153ms
+ GET /dashboard/deals [33m404[39m in 190ms
+ GET /dashboard/deals [33m404[39m in 31ms
+ GET /dashboard [32m200[39m in 28ms
  [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 19ms
  [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled /for-developers/apply in 207ms
+ GET /for-developers/apply [32m200[39m in 236ms
+ GET /dashboard [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ GET /dashboard [32m200[39m in 62ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ GET /dashboard [32m200[39m in 82ms
+ GET /dashboard [32m200[39m in 26ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 24ms
+ GET /dashboard [32m200[39m in 103ms
+ [32m[1m✓[22m[39m Compiled in 13ms
+ GET /dashboard [32m200[39m in 106ms
+ GET /for-developers/apply [32m200[39m in 10ms
+ GET /dashboard [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard [32m200[39m in 173ms
+ GET /dashboard [32m200[39m in 29ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard [32m200[39m in 250ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 15ms
+ GET /dashboard [32m200[39m in 59ms
+ GET /dashboard [32m200[39m in 25ms
+ [32m[1m✓[22m[39m Compiled in 15ms
  GET /dashboard [32m200[39m in 78ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard [32m200[39m in 92ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard [32m200[39m in 77ms
+ [32m[1m✓[22m[39m Compiled in 31ms
+ GET /dashboard [32m200[39m in 112ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard [32m200[39m in 95ms
+ [32m[1m✓[22m[39m Compiled in 42ms
+ [32m[1m✓[22m[39m Compiled in 45ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 45ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ GET /dashboard [32m200[39m in 113ms
+ [32m[1m✓[22m[39m Compiled in 44ms
+ GET /dashboard [32m200[39m in 99ms
+ [32m[1m✓[22m[39m Compiled in 13ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 45ms
+ [32m[1m✓[22m[39m Compiled in 43ms
+ GET /for-developers/apply [32m200[39m in 25ms
+ GET /dashboard [32m200[39m in 52ms
+ GET /dashboard/products [33m404[39m in 19ms
+ GET /dashboard/products [33m404[39m in 25ms
+ GET /dashboard [32m200[39m in 58ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ GET /dashboard [32m200[39m in 119ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard/settings [33m404[39m in 17ms
+ GET /dashboard/settings [33m404[39m in 25ms
+ GET /dashboard [32m200[39m in 102ms
+ GET /for-developers/apply [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled / in 211ms
+ GET / [32m200[39m in 236ms
+ [32m[1m✓[22m[39m Compiled /calculator in 179ms
+ GET /calculator [32m200[39m in 263ms
+ [32m[1m✓[22m[39m Compiled /catalog in 163ms
+ GET /catalog [32m200[39m in 285ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 236ms
+ GET /for-developers [32m200[39m in 321ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 26ms
+ GET /dashboard [32m200[39m in 24ms
+ GET /dashboard [32m200[39m in 73ms
+ GET /dashboard [32m200[39m in 26ms
+ GET /for-developers/apply [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/products [33m404[39m in 7ms
+ GET /dashboard/products [33m404[39m in 24ms
+ GET /dashboard [32m200[39m in 24ms
+ GET /dashboard/products [33m404[39m in 8ms
+ GET /dashboard/products [33m404[39m in 20ms
+ GET /dashboard [32m200[39m in 24ms
+ GET /for-developers/apply [32m200[39m in 17ms
+ GET /dashboard [32m200[39m in 10ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ GET / [32m200[39m in 53ms
+ GET / [32m200[39m in 12ms
+ GET /dashboard [32m200[39m in 121ms
+ GET /dashboard/catalog [33m404[39m in 8ms
+ GET /dashboard/catalog [33m404[39m in 23ms
+ GET /dashboard [32m200[39m in 57ms
+ GET / [32m200[39m in 156ms
+ GET /catalog [32m200[39m in 106ms
+ GET /dashboard [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ GET /catalog [32m200[39m in 36ms
+ GET /dashboard [32m200[39m in 49ms
+ GET /catalog [32m200[39m in 36ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /catalog [32m200[39m in 35ms
+ GET /catalog [32m200[39m in 37ms
+ GET /for-developers [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /catalog [32m200[39m in 34ms
+ GET /dashboard [32m200[39m in 11ms
+ GET /dashboard/deals [33m404[39m in 8ms
+ GET /dashboard/deals [33m404[39m in 22ms
+ GET /dashboard [32m200[39m in 59ms
+ GET /catalog [32m200[39m in 141ms
+ GET /dashboard [32m200[39m in 7ms
+ GET / [32m200[39m in 77ms
+ GET / [32m200[39m in 191ms
+ GET / [32m200[39m in 11ms
+ [32m[1m✓[22m[39m Compiled in 24ms
+ GET / [32m200[39m in 62ms
+ GET /catalog [32m200[39m in 147ms
+ GET / [32m200[39m in 11ms
+ GET /catalog [32m200[39m in 37ms
+ GET /catalog [32m200[39m in 38ms
+ GET / [32m200[39m in 11ms
+ GET /calculator [32m200[39m in 78ms
+ GET /dashboard [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled in 29ms
+ GET / [32m200[39m in 18ms
+ GET /dashboard [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ GET /dashboard/deals [33m404[39m in 7ms
+ GET /dashboard/deals [33m404[39m in 24ms
+ GET /dashboard [32m200[39m in 69ms
+ GET / [32m200[39m in 158ms
+ GET /dashboard [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard [32m200[39m in 57ms
+ GET /dashboard [32m200[39m in 26ms
+ GET /dashboard [32m200[39m in 23ms
+ GET /dashboard [32m200[39m in 24ms
+ GET /dashboard [32m200[39m in 24ms
+ GET /dashboard [32m200[39m in 23ms
+ GET /dashboard [32m200[39m in 78ms
+ GET /dashboard [32m200[39m in 25ms
+ GET /dashboard [32m200[39m in 23ms
+ GET /dashboard [32m200[39m in 23ms
+ GET /catalog [32m200[39m in 145ms
+ GET /dashboard [32m200[39m in 10ms
+ GET /for-developers/apply [32m200[39m in 150ms
+ GET /dashboard [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET / [32m200[39m in 128ms
+ GET /dashboard [32m200[39m in 33ms
+ GET / [32m200[39m in 358ms
+ GET / [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled in 24ms
+ GET / [32m200[39m in 87ms
+ GET /dashboard [32m200[39m in 10ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 8ms
+ GET / [32m200[39m in 26ms
+ GET /dashboard [32m200[39m in 11ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 8ms
+ GET / [32m200[39m in 14ms
+ [32m[1m✓[22m[39m Compiled / in 6ms
+ GET / [32m200[39m in 41ms
+ GET / [32m200[39m in 19ms
+ GET / [32m200[39m in 12ms
+ GET / [32m200[39m in 18ms
+ GET / [32m200[39m in 12ms
+ GET / [32m200[39m in 11ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+ GET /catalog [32m200[39m in 171ms
+ [32m[1m✓[22m[39m Compiled /calculator in 8ms
+ GET /calculator [32m200[39m in 84ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 11ms
+ GET /for-developers [32m200[39m in 93ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/deals [33m404[39m in 9ms
+ GET /dashboard/deals [33m404[39m in 22ms
+ GET /dashboard [32m200[39m in 39ms
+ GET /catalog [32m200[39m in 173ms
+ GET / [32m200[39m in 10ms
+ GET /catalog [32m200[39m in 40ms
+ GET /calculator [32m200[39m in 5ms
+ GET /for-developers [32m200[39m in 6ms
+ GET / [32m200[39m in 12ms
+ GET /for-developers [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 7ms
+ GET / [32m200[39m in 31ms
+ GET /dashboard [32m200[39m in 6ms
+ GET / [32m200[39m in 20ms
+ GET / [32m200[39m in 18ms
+ GET /dashboard [32m200[39m in 12ms
+ GET / [32m200[39m in 21ms
+ GET /catalog [32m200[39m in 41ms
+ GET /calculator [32m200[39m in 7ms
+ GET /for-developers [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/products [33m404[39m in 7ms
+ GET /dashboard/products [33m404[39m in 23ms
+ GET /dashboard [32m200[39m in 26ms
+ GET /dashboard/products [33m404[39m in 6ms
+ GET /dashboard/products [33m404[39m in 21ms
+ GET /dashboard [32m200[39m in 34ms
+ GET /dashboard/products [33m404[39m in 9ms
+ GET /dashboard/products [33m404[39m in 22ms
+ GET /dashboard [32m200[39m in 26ms
+ [32m[1m✓[22m[39m Compiled middleware in 1ms
+ GET /dashboard [32m200[39m in 41ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 16ms
+ GET /dashboard [32m200[39m in 15ms
+ GET /dashboard [32m200[39m in 10ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 35ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 188ms
+ GET /dashboard/applications [32m200[39m in 225ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ GET /dashboard/applications [32m200[39m in 63ms
+ GET /dashboard [32m200[39m in 33ms
+ GET /dashboard/applications [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/applications [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard/applications [32m200[39m in 6ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard [32m200[39m in 28ms
+ GET /dashboard/applications [32m200[39m in 28ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 6ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ GET /dashboard/applications [32m200[39m in 52ms
+ GET /dashboard [32m200[39m in 85ms
+ GET /dashboard/applications [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 6ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /dashboard/applications [32m200[39m in 107ms
+ GET /dashboard [32m200[39m in 29ms
+ GET /dashboard/applications [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/applications [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 41ms
+ GET /dashboard [32m200[39m in 131ms
+ GET / [32m200[39m in 164ms
+ GET /dashboard [32m200[39m in 9ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 8ms
+ GET / [32m200[39m in 12ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 30ms
+ GET /dashboard/applications [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 5ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 6ms
+ [32m[1m✓[22m[39m Compiled middleware in 1ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled middleware in 2ms
+ [32m[1m✓[22m[39m Compiled in 18ms
 [?25h

@@ -69,7 +69,7 @@ export default function Comparison() {
             <div className="grid grid-cols-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
               <div className="p-6 font-bold text-lg">Критерий</div>
               <div className="p-6 font-bold text-lg text-center border-l border-white/20">
-                StartupЁж
+                StartAppЁж
               </div>
               <div className="p-6 font-bold text-lg text-center border-l border-white/20">
                 Фрилансер

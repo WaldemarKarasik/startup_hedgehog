@@ -3,19 +3,14 @@ import Link from "next/link";
 import { Rocket } from "lucide-react";
 import { useAuthStore } from "@/src/stores/auth.store";
 import { Skeleton } from "primereact/skeleton";
+import { Logo } from "@/app/_shared-components/Logo";
 export default function Header() {
   const { user, status } = useAuthStore();
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-primary-600 font-bold text-xl"
-        >
-          <Rocket className="w-6 h-6" />
-          StartAppЁж
-        </Link>
+        <Logo />
 
         <div className="hidden md:flex items-center gap-8">
           <Link
