@@ -22,8 +22,8 @@ import {
 } from "lucide-react";
 import React from "react";
 import Link from "next/link";
-import { DesktopSidebar } from "./DesktopSidebar";
-import { MobileSidebar } from "./MobileSidebar";
+import { DesktopSidebar } from "./sidebar/DesktopSidebar";
+import { MobileSidebar } from "./sidebar/MobileSidebar";
 
 export type NavItem = {
   label: string;
@@ -58,7 +58,7 @@ export default function DashboardLayout({
   // Навигационные элементы
   const navItems: NavItem[] = [
     {
-      label: "Обзор",
+      label: "Обзoр",
       icon: <LayoutDashboard size={20} />,
       href: "/dashboard",
       active: currentPath === "/dashboard",

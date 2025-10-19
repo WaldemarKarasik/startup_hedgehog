@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { NavItem } from "./DashboardLayout";
+import { NavItem } from "../DashboardLayout";
 import { Avatar } from "primereact/avatar";
 import { useAuthStore } from "@/src/stores/auth.store";
 import { Dispatch, SetStateAction } from "react";
+import { NotImplemented } from "./NotImplemented";
 
 export const DesktopSidebar = ({
   navItems,
@@ -26,28 +27,31 @@ export const DesktopSidebar = ({
 
       {/* Navigation */}
       <nav className="flex-1 px-3 py-4 space-y-1">
-        {navItems.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            onClick={() => setCurrentPath(item.href)}
-            className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${
-              item.active
-                ? "bg-primary-50 text-primary-700 font-medium shadow-sm"
-                : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
-            }`}
-          >
-            <span
-              className={item.active ? "text-primary-600" : "text-gray-400"}
+        {navItems.map((item) => {
+          if (item.notYetImplemented) return <NotImplemented navItem={item} />;
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setCurrentPath(item.href)}
+              className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${
+                item.active
+                  ? "bg-primary-50 text-primary-700 font-medium shadow-sm"
+                  : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
+              }`}
             >
-              {item.icon}
-            </span>
-            <span className="text-sm">{item.label} </span>
-            {item.notYetImplemented && (
-              <span className="ml-auto text-red-600 text-sm">Скоро</span>
-            )}
-          </Link>
-        ))}
+              <span
+                className={item.active ? "text-primary-600" : "text-gray-400"}
+              >
+                {item.icon}
+              </span>
+              <span className="text-sm">{item.label} </span>
+              {item.notYetImplemented && (
+                <span className="ml-auto text-red-600 text-sm">Скоро</span>
+              )}
+            </Link>
+          );
+        })}
       </nav>
 
       {/* User Card */}
