@@ -1,42 +1,15 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { jwtVerify } from "jose";
 
 // Определяем типы роутов
 const authRoutes = ["/sign-in", "/sign-up"];
 const protectedRoutes = ["/dashboard"];
-const adminRoutes = ["/dashboard/applications"];
-
-// Интерфейс для JWT payload
-interface JWTPayload {
-  userId: string;
-  role: "ADMIN" | "DEVELOPER" | "BUYER";
-  email: string;
-  exp: number;
-}
 
 /**
- * Декодирует и верифицирует JWT токен
+ * ВАЖНО: Middleware проверяет только наличие токена (authentication).
+ * Проверка ролей (authorization) выполняется на уровне Server Components
+ * через API вызовы к backend, чтобы избежать дублирования JWT_SECRET.
  */
-async function verifyToken(token: string): Promise<JWTPayload | null> {
-  try {
-    const secret = process.env.JWT_SECRET;
-    if (!secret) {
-      console.error("[MIDDLEWARE] JWT_SECRET not configured");
-      return null;
-    }
-
-    const { payload } = await jwtVerify(
-      token,
-      new TextEncoder().encode(secret)
-    );
-
-    return payload as unknown as JWTPayload;
-  } catch (error) {
-    console.error("[MIDDLEWARE] Token verification failed:", error);
-    return null;
-  }
-}
 
 export default async function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
@@ -82,48 +55,32 @@ export default async function middleware(request: NextRequest) {
 
   url.pathname = finalPathname;
 
-  // --- 3. Получаем и верифицируем токен ---
+  // --- 3. Проверяем наличие токена (НЕ декодируем его) ---
   const token = request.cookies.get("token")?.value;
-  let userPayload: JWTPayload | null = null;
-
-  if (token) {
-    userPayload = await verifyToken(token);
-  }
 
   // --- 4. Определяем тип страницы ---
   const isAuthPage = authRoutes.includes(pathname);
   const isProtectedPage = protectedRoutes.some((route) =>
     finalPathname.startsWith(route)
   );
-  const isAdminPage = adminRoutes.some((route) =>
-    finalPathname.startsWith(route)
-  );
 
-  // --- 5. ЛОГИКА: Пользователь АВТОРИЗОВАН ---
-  if (userPayload) {
+  // --- 5. ЛОГИКА: Пользователь АВТОРИЗОВАН (есть токен) ---
+  if (token) {
     // Если авторизован и пытается зайти на sign-in/sign-up
     if (isAuthPage) {
       return NextResponse.redirect(new URL("/dashboard", request.url));
     }
 
-    // Проверка доступа к admin страницам
-    if (isAdminPage) {
-      if (userPayload.role !== "ADMIN") {
-        // Не админ пытается зайти на admin страницу
-        return NextResponse.redirect(new URL("/dashboard", request.url));
-      }
-      // Админ - пропускаем
-    }
-
-    // Авторизован, не admin страница или админ на admin странице
+    // Пропускаем авторизованного пользователя
+    // Проверка ролей будет на уровне Server Component
     if (subdomain) {
       return NextResponse.rewrite(url);
     }
     return NextResponse.next();
   }
 
-  // --- 6. ЛОГИКА: Пользователь НЕ АВТОРИЗОВАН ---
-  if (!userPayload) {
+  // --- 6. ЛОГИКА: Пользователь НЕ АВТОРИЗОВАН (нет токена) ---
+  if (!token) {
     // Пытается зайти на защищенную страницу
     if (isProtectedPage) {
       return NextResponse.redirect(new URL("/sign-in", request.url));
