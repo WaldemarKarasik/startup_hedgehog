@@ -1,4 +1,5 @@
-import { Link, X } from "lucide-react";
+import { X } from "lucide-react";
+import Link from "next/link";
 import { NavItem } from "./DashboardLayout";
 import { Dispatch, SetStateAction } from "react";
 
