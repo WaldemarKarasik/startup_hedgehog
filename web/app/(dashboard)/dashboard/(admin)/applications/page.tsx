@@ -1,10 +1,12 @@
-import { apiClient } from "@/src/lib/api-client";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
 /**
  * Server Component - проверка роли через API вызов к backend
  * JWT_SECRET остается только в server, не дублируется
+ * 
+ * ВАЖНО: В Server Components нельзя использовать apiClient с credentials: "include"
+ * Нужно использовать обычный fetch с Cookie header
  */
 async function checkAdminAccess() {
   const cookieStore = await cookies();
@@ -15,16 +17,26 @@ async function checkAdminAccess() {
   }
 
   // API вызов к backend для проверки роли
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5173";
 
   try {
-    const response = await apiClient.api.auth.me.$get();
+    const response = await fetch(`${API_URL}/api/auth/me`, {
+      method: "GET",
+      headers: {
+        Cookie: `token=${token.value}`,
+      },
+      cache: "no-store", // Всегда fresh data
+    });
+
     if (!response.ok) {
+      console.error("[APPLICATIONS_PAGE] API response not ok:", response.status);
       redirect("/sign-in");
     }
 
     const data = await response.json();
-    console.log(data);
+    
     if (!data.success || !data.user) {
+      console.error("[APPLICATIONS_PAGE] Invalid data:", data);
       redirect("/sign-in");
     }
 

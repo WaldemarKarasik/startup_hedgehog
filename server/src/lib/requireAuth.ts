@@ -17,21 +17,26 @@ function extractToken(c: Context): string | undefined {
   let token = getCookie(c, "token");
 
   if (token) {
+    console.log("[extractToken] Got token from getCookie");
     return token;
   }
 
   // 2. Если нет - парсим Cookie header (server-side fetch)
   const cookieHeader = c.req.header("cookie");
+  console.log("[extractToken] Cookie header:", cookieHeader);
+  
   if (cookieHeader) {
     const cookies = cookieHeader.split(";").map((c) => c.trim());
     for (const cookie of cookies) {
       const [name, value] = cookie.split("=");
       if (name === "token") {
+        console.log("[extractToken] Got token from Cookie header");
         return value;
       }
     }
   }
 
+  console.log("[extractToken] No token found");
   return undefined;
 }
 
