@@ -11,6 +11,136 @@
    - Network:      http://100.84.142.155:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 102ms
- [32m[1m✓[22m[39m Ready in 729ms
-[?25h
+ [32m[1m✓[22m[39m Compiled middleware in 109ms
+ [32m[1m✓[22m[39m Ready in 600ms
+ [37m[1m○[22m[39m Compiling /for-developers/apply ...
+ [32m[1m✓[22m[39m Compiled /for-developers/apply in 1960ms
+ GET /for-developers/apply [32m200[39m in 2204ms
+ [32m[1m✓[22m[39m Compiled in 25ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 205ms
+ GET /for-developers [32m200[39m in 225ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 308ms
+ GET /dashboard [32m200[39m in 328ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 220ms
+ GET /dashboard/applications [32m200[39m in 588ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/applications [32m200[39m in 122ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 122ms
+ [32m[1m✓[22m[39m Compiled in 10ms
+ [32m[1m✓[22m[39m Compiled in 10ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 8ms
+ GET /dashboard/applications [32m200[39m in 50ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/applications [32m200[39m in 1132ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 108ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 106ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 6ms
+Response (0 KB) {
+  [0mok[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  [0murl[2m:[0m "[0m[1m[0m"[0m[2m,[0m
+  [0mstatus[2m:[0m [0m[33m500[0m[0m[2m,[0m
+  [0mstatusText[2m:[0m [0m"[1mInternal Server Error[0m"[0m[2m,[0m
+  [0mheaders[2m:[0m [0mHeaders {
+    [0m[32m"vary"[0m[2m:[0m [0m[32m[0m[32m"Origin"[0m[0m[0m[2m,[0m
+    [0m[32m"access-control-allow-credentials"[0m[2m:[0m [0m[32m[0m[32m"true"[0m[0m[0m[2m,[0m
+    [0m[32m"content-type"[0m[2m:[0m [0m[32m[0m[32m"application/json"[0m[0m[0m[2m,[0m
+    [0m[32m"date"[0m[2m:[0m [0m[32m[0m[32m"Mon, 20 Oct 2025 01:41:05 GMT"[0m[0m[0m[2m,[0m
+    [0m[32m"content-length"[0m[2m:[0m [0m[32m[0m[32m"90"[0m[0m[0m[2m,[0m
+  }[0m[2m,[0m
+  [0mredirected[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  [0mbodyUsed[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  ReadableStream {
+    [0mblob[2m:[0m [36m[Function: blob][0m[0m[2m,[0m
+    [0mbytes[2m:[0m [36m[Function: bytes][0m[0m[2m,[0m
+    [0mcancel[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mgetReader[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mjson[2m:[0m [36m[Function: json][0m[0m[2m,[0m
+    [0mlocked[2m:[0m [36m[Getter][0m[0m[2m,[0m
+    [0mpipeThrough[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mpipeTo[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mtee[2m:[0m [36m[Function][0m[0m[2m,[0m
+    [0mtext[2m:[0m [36m[Function: text][0m[0m[2m,[0m
+    [0mvalues[2m:[0m [36m[Function: values][0m[0m[2m,[0m
+    [0m[2m[[0m[34mSymbol(Symbol.asyncIterator)[0m[2m]:[0m [36m[Function: asyncIterator][0m[0m[2m,[0m
+  }
+}
+ GET /dashboard/applications [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 7ms
+ GET /dashboard/applications [32m200[39m in 60ms
+ [32m[1m✓[22m[39m Compiled in 11ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/applications [32m200[39m in 930ms
+ [32m[1m✓[22m[39m Compiled / in 165ms
+ GET / [32m200[39m in 196ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 398ms
+ GET /sign-in [32m200[39m in 423ms
+ GET / [32m200[39m in 23ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/applications [32m200[39m in 310ms
+ [32m[1m✓[22m[39m Compiled in 10ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 7ms
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0mdata[2m:[0m [
+    {
+      [0mid[2m:[0m [0m[32m[0m[32m"cmgygkuw90000ijrw8k0sw8ps"[0m[0m[0m[2m,[0m
+      [0mtelegram[2m:[0m [0m[32m""[0m[0m[2m,[0m
+      [0mproductName[2m:[0m [0m[32m[0m[32m"Social web app"[0m[0m[0m[2m,[0m
+      [0mproductDescription[2m:[0m [0m[32m[0m[32m"Social web app"[0m[0m[0m[2m,[0m
+      [0mcustomizationPrice[2m:[0m [0m[33m300000[0m[0m[2m,[0m
+      [0mrevenueSharePercent[2m:[0m [0m[33m10[0m[0m[2m,[0m
+      [0mgithubUrl[2m:[0m [0m[32m[0m[32m"https://www.youtube.com/watch?v=WLz_kbL1KqI&t=16651s"[0m[0m[0m[2m,[0m
+      [0mdemoUrl[2m:[0m [0m[32m[0m[32m"https://www.youtube.com/watch?v=WLz_kbL1KqI&t=16651s"[0m[0m[0m[2m,[0m
+      [0mvideoUrl[2m:[0m [0m[32m[0m[32m"https://www.youtube.com/watch?v=WLz_kbL1KqI&t=16651s"[0m[0m[0m[2m,[0m
+      [0mhasUsers[2m:[0m [0m[32m[0m[32m"no"[0m[0m[0m[2m,[0m
+      [0muserCount[2m:[0m [0m[32m""[0m[0m[2m,[0m
+      [0mcustomizationReady[2m:[0m [0m[32m[0m[32m"yes"[0m[0m[0m[2m,[0m
+      [0mtargetBusinesses[2m:[0m [0m[32m[0m[32m"For uneducated bigots"[0m[0m[0m[2m,[0m
+      [0mportfolio[2m:[0m [0m[32m""[0m[0m[2m,[0m
+      [0madditionalInfo[2m:[0m [0m[32m""[0m[0m[2m,[0m
+      [0mstatus[2m:[0m [0m[32m[0m[32m"NEW"[0m[0m[0m[2m,[0m
+      [0mreviewNotes[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mreviewedBy[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mreviewedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0muserId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+      [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-20T01:30:24.489Z"[0m[0m[0m[2m,[0m
+      [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-20T01:30:24.489Z"[0m[0m[0m[2m,[0m
+    }
+  ][0m[2m,[0m
+}
+ GET /dashboard/applications [32m200[39m in 71ms
+ [32m[1m✓[22m[39m Compiled in 9ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 5ms
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0mdata[2m:[0m [
+    {
+      [0mid[2m:[0m [0m[32m[0m[32m"cmgygkuw90000ijrw8k0sw8ps"[0m[0m[0m[2m,[0m
+      [0mtelegram[2m:[0m [0m[32m""[0m[0m[2m,[0m
+      [0mproductName[2m:[0m [0m[32m[0m[32m"Social web app"[0m[0m[0m[2m,[0m
+      [0mproductDescription[2m:[0m [0m[32m[0m[32m"Social web app"[0m[0m[0m[2m,[0m
+      [0mcustomizationPrice[2m:[0m [0m[33m300000[0m[0m[2m,[0m
+      [0mrevenueSharePercent[2m:[0m [0m[33m10[0m[0m[2m,[0m
+      [0mgithubUrl[2m:[0m [0m[32m[0m[32m"https://www.youtube.com/watch?v=WLz_kbL1KqI&t=16651s"[0m[0m[0m[2m,[0m
+      [0mdemoUrl[2m:[0m [0m[32m[0m[32m"https://www.youtube.com/watch?v=WLz_kbL1KqI&t=16651s"[0m[0m[0m[2m,[0m
+      [0mvideoUrl[2m:[0m [0m[32m[0m[32m"https://www.youtube.com/watch?v=WLz_kbL1KqI&t=16651s"[0m[0m[0m[2m,[0m
+      [0mhasUsers[2m:[0m [0m[32m[0m[32m"no"[0m[0m[0m[2m,[0m
+      [0muserCount[2m:[0m [0m[32m""[0m[0m[2m,[0m
+      [0mcustomizationReady[2m:[0m [0m[32m[0m[32m"yes"[0m[0m[0m[2m,[0m
+      [0mtargetBusinesses[2m:[0m [0m[32m[0m[32m"For uneducated bigots"[0m[0m[0m[2m,[0m
+      [0mportfolio[2m:[0m [0m[32m""[0m[0m[2m,[0m
+      [0madditionalInfo[2m:[0m [0m[32m""[0m[0m[2m,[0m
+      [0mstatus[2m:[0m [0m[32m[0m[32m"NEW"[0m[0m[0m[2m,[0m
+      [0mreviewNotes[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mreviewedBy[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mreviewedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0muserId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+      [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-20T01:30:24.489Z"[0m[0m[0m[2m,[0m
+      [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-20T01:30:24.489Z"[0m[0m[0m[2m,[0m
+    }
+  ][0m[2m,[0m
+}
+ GET /dashboard/applications [32m200[39m in 1068ms

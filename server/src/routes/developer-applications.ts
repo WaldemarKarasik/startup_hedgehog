@@ -10,10 +10,8 @@ import { HTTPException } from "hono/http-exception";
 export const developerApplicationSchema = z.object({
   telegram: z.string().optional(),
   productName: z.string().min(1, "Product name is required"),
-  productDescription: z
-    .string()
-    .min(10, "Description must be at least 10 characters"),
-  customizationprice: z.number().min(300000).max(1000000),
+  productDescription: z.string().min(10, "Не менее 10 символов"),
+  customizationPrice: z.number().min(300000).max(1000000),
   revenueSharePercent: z.number().min(5).max(20),
   githubUrl: z.string().url("Invalid GitHub URL"),
   demoUrl: z.string().url("Invalid demo URL"),
@@ -21,48 +19,68 @@ export const developerApplicationSchema = z.object({
   hasUsers: z.enum(["yes", "no"]),
   userCount: z.string(),
   customizationReady: z.enum(["yes", "no", "maybe"]),
-  targetBusinesses: z
-    .string()
-    .min(10, "Target businesses description must be at least 10 characters"),
-  portfolio: z.string().optional().default(""),
-  additionalInfo: z.string().optional().default(""),
+  targetBusinesses: z.string().min(10, "Не менее 10 символов"),
+  portfolio: z.string().optional(),
+  additionalInfo: z.string().optional(),
 });
 
-export const developerApplicationsRouter = new Hono().post(
-  "/",
-  requireAuth,
-  zValidator("json", developerApplicationSchema),
-  async (c) => {
-    try {
-      const data = c.req.valid("json");
-      const userId = c.get("user").userId;
-      const user = await prisma.user.findFirst({ where: { id: userId } });
-      if (!user) {
-        throw new HTTPException(409);
+export const developerApplicationsRouter = new Hono()
+  .post(
+    "/create",
+    requireAuth,
+    zValidator("json", developerApplicationSchema),
+    async (c) => {
+      try {
+        const data = c.req.valid("json");
+        const userId = c.get("user").userId;
+        const user = await prisma.user.findFirst({ where: { id: userId } });
+        if (!user) {
+          throw new HTTPException(409);
+        }
+        const application = await prisma.developerApplication.create({
+          data: { ...data, user: { connect: { id: user.id } } },
+        });
+        return c.json(
+          {
+            success: true,
+            message: "Application submitted successfully",
+          },
+          201
+        );
+      } catch (error) {
+        console.error("Error processing developer application:", error);
+
+        return c.json(
+          {
+            success: false,
+            error: "Failed to submit application. Please try again later.",
+          },
+          500
+        );
       }
-      const application = await prisma.developerApplication.create({
-        data: { ...data, user: { connect: { id: user.id } } },
-      });
-      return c.json(
-        {
-          success: true,
-          message: "Application submitted successfully",
-        },
-        201
-      );
+    }
+  )
+  .get("/list", requireAuth, async (c) => {
+    try {
+      const userRole = c.get("user").role;
+      if (userRole != "ADMIN") {
+        throw new HTTPException(403);
+      }
+      const applications = await prisma.developerApplication.findMany();
+      return c.json({ success: true, data: applications }, 200);
     } catch (error) {
       console.error("Error processing developer application:", error);
 
       return c.json(
         {
           success: false,
-          error: "Failed to submit application. Please try again later.",
+          error:
+            "Failed to list developer applications. Please try again later.",
         },
         500
       );
     }
-  }
-);
+  });
 
 /**
  * POST /api/developer-applications

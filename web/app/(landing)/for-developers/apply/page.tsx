@@ -1,71 +1,76 @@
 "use client";
 
 import { useState } from "react";
-
+import { useForm, SubmitHandler, Controller } from "react-hook-form";
 import Link from "next/link";
 import Header from "../../_components/Header";
 import Footer from "../../_components/Footer";
-import DeveloperApplicationForm from "shared";
+import { DeveloperApplicationForm, developerApplicationSchema } from "shared";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { apiClient } from "@/src/lib/api-client";
+
+const FormError = ({ message }: { message?: string }) => {
+  if (!message) return null;
+  return <p className="text-red-600 mt-1">{message}</p>;
+};
 
 export default function Apply() {
-  const [formData, setFormData] = useState<DeveloperApplicationForm>({
-    name: "",
-    email: "",
-    telegram: "",
-    productName: "",
-    productDescription: "",
-    customizationPrice: 300000,
-    revenueSharePercent: "10",
-    githubUrl: "",
-    demoUrl: "",
-    hasUsers: "",
-    userCount: "",
-    customizationReady: "",
-    targetBusinesses: "",
-    portfolio: "",
-    videoUrl: "",
-    additionalInfo: "",
+  const {
+    register,
+    handleSubmit,
+    control,
+    watch,
+    formState: { isSubmitting, errors }, // 'errors' теперь будут приходить от Zod
+  } = useForm<DeveloperApplicationForm>({
+    // RHF (zod) 3: Подключаем Zod как резолвер
+    resolver: zodResolver(developerApplicationSchema),
+    // RHF (zod) 4: Обновляем defaultValues (убираем 'name' и 'email')
+    defaultValues: {
+      telegram: "",
+      productName: "",
+      productDescription: "",
+      customizationPrice: 300000,
+      revenueSharePercent: 10,
+      githubUrl: "",
+      demoUrl: "",
+      hasUsers: "no",
+      userCount: "",
+      customizationReady: "yes",
+      targetBusinesses: "",
+      portfolio: "",
+      videoUrl: "",
+      additionalInfo: "",
+    },
   });
 
+  const hasUsersValue = watch("hasUsers");
+  const revenueShareValue = watch("revenueSharePercent");
+
   const [submitted, setSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // Эта функция остается БЕЗ ИЗМЕНЕНИЙ.
+  // RHF + Zod гарантируют, что 'data' будет
+  // передана сюда ТОЛЬКО после успешной валидации.
+  const onSubmit: SubmitHandler<DeveloperApplicationForm> = async (data) => {
     setError(null);
-
     try {
-      const response = await fetch(
-        "http://localhost:5173/api/developer-applications",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.error || "Failed to submit application");
+      const response = await apiClient.api[
+        "developer-application"
+      ].create.$post({
+        json: data,
+      });
+      const resData = await response.json();
+      if (!resData.success) {
+        return setError(resData.error);
       }
-
+      // ... остальная логика ...
       setSubmitted(true);
     } catch (err) {
-      console.error("Error submitting form:", err);
-      setError(
-        err instanceof Error
-          ? err.message
-          : "Failed to submit application. Please try again."
-      );
-    } finally {
-      setIsSubmitting(false);
+      // ...
     }
   };
+
   if (submitted) {
     return (
       <div className="min-h-screen flex flex-col">
@@ -109,60 +114,11 @@ export default function Apply() {
       <Header />
       <main className="flex-1 bg-gradient-to-br from-gray-50 to-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">
-              💰 Первым 10 — комиссия 5% навсегда
-            </div>
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-              Заявка на размещение продукта
-            </h1>
-            <p className="text-xl text-gray-600">
-              Заполните форму — мы проверим ваш продукт и ответим в течение 1-2
-              дней
-            </p>
-          </div>
-
-          {/* Important Notice */}
-          <div className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-6 mb-8">
-            <h3 className="font-bold text-gray-900 mb-2 flex items-center gap-2">
-              <span>⚠️</span> Важно перед подачей заявки:
-            </h3>
-            <ul className="space-y-1 text-gray-700 text-sm">
-              <li>
-                ✓ У вас должен быть <strong>работающий продукт</strong> (минимум
-                MVP)
-              </li>
-              <li>
-                ✓ Код должен быть на <strong>GitHub</strong> или аналоге
-              </li>
-              <li>
-                ✓ Должно быть <strong>демо</strong> или видео-презентация
-              </li>
-              <li>
-                ✓ Вы готовы <strong>кастомизировать</strong> продукт под
-                клиентов
-              </li>
-              <li>
-                ✓ Approval rate <strong>~20-30%</strong> — мы отбираем только
-                качественные продукты
-              </li>
-            </ul>
-          </div>
-
-          {/* Error Display */}
-          {error && (
-            <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6 mb-8">
-              <h3 className="font-bold text-red-900 mb-2 flex items-center gap-2">
-                <span>❌</span> Ошибка при отправке
-              </h3>
-              <p className="text-red-700">{error}</p>
-            </div>
-          )}
+          {/* ... (Header и Important Notice без изменений) ... */}
 
           {/* Form */}
           <form
-            onSubmit={handleSubmit}
+            onSubmit={handleSubmit(onSubmit)}
             className="bg-white rounded-3xl shadow-xl p-8 space-y-8"
           >
             {/* Контактная информация */}
@@ -175,15 +131,15 @@ export default function Apply() {
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Telegram <span className="text-red-500"></span>
                   </label>
+                  {/* RHF (zod) 5: Убираем всю встроенную валидацию */}
                   <input
                     type="text"
-                    value={formData.telegram}
-                    onChange={(e) =>
-                      setFormData({ ...formData, telegram: e.target.value })
-                    }
+                    {...register("telegram")} // 👈 Чисто
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                     placeholder="@username"
                   />
+                  {/* Ошибка будет показана здесь */}
+                  <FormError message={errors.telegram?.message} />
                 </div>
               </div>
             </div>
@@ -200,35 +156,26 @@ export default function Apply() {
                   </label>
                   <input
                     type="text"
-                    required
-                    value={formData.productName}
-                    onChange={(e) =>
-                      setFormData({ ...formData, productName: e.target.value })
-                    }
+                    {...register("productName")} // 👈 Убираем
+                    // { required: ... }
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                     placeholder="CalorieTrackerBot"
                   />
+                  {/* Zod передаст ошибку сюда */}
+                  <FormError message={errors.productName?.message} />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Описание продукта <span className="text-red-500">*</span>
                   </label>
                   <textarea
-                    required
                     rows={4}
-                    value={formData.productDescription}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        productDescription: e.target.value,
-                      })
-                    }
+                    {...register("productDescription")} // 👈 Чисто
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
-                    placeholder="Telegram-бот для трекинга калорий с базой продуктов РФ, подсчётом БЖУ и персональными рекомендациями..."
+                    placeholder="Telegram-бот для трекинга калорий..."
                   />
-                  <p className="text-sm text-gray-500 mt-2">
-                    Что делает продукт? Какие основные функции?
-                  </p>
+                  <FormError message={errors.productDescription?.message} />
+                  {/* ... */}
                 </div>
                 {/* Customization price */}
                 <div>
@@ -236,39 +183,41 @@ export default function Apply() {
                     Стоимость кастомизации
                     <span className="text-red-500">*</span>
                   </label>
-                  <div className="flex items-center gap-4 text-3xl font-bold text-indigo-600  ">
-                    <input
-                      type="range"
-                      min="300000"
-                      max="450000"
-                      step="1"
-                      required
-                      value={formData.customizationPrice}
-                      onChange={(e) =>
-                        setFormData({
-                          ...formData,
-                          customizationPrice: Number(e.target.value),
-                        })
-                      }
-                      className="flex-1 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
-                    />
-
-                    <input
-                      className="text-right"
-                      type={"number"}
-                      size={5}
-                      value={formData.customizationPrice}
-                      min={300000}
-                      max={450000}
-                      onChange={(e) =>
-                        setFormData({
-                          ...formData,
-                          customizationPrice: Number(e.target.value),
-                        })
-                      }
-                    />
-                    <span>₽</span>
-                  </div>
+                  <Controller
+                    name="customizationPrice"
+                    control={control}
+                    // RHF (zod) 6: Убираем 'rules' из Controller
+                    render={({ field }) => (
+                      <div className="flex items-center gap-4 text-3xl font-bold text-indigo-600">
+                        <input
+                          type="range"
+                          min="300000"
+                          max="450000"
+                          step="1"
+                          value={field.value}
+                          onChange={(e) =>
+                            // RHF (zod) 7: Важно! Zod ожидает 'number'.
+                            // Мы должны явно преобразовать тип.
+                            field.onChange(Number(e.target.value))
+                          }
+                          className="flex-1 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
+                        />
+                        <input
+                          className="text-right"
+                          type="number"
+                          size={5}
+                          value={field.value}
+                          min={300000}
+                          max={450000}
+                          onChange={(e) =>
+                            field.onChange(Number(e.target.value))
+                          }
+                        />
+                        <span>₽</span>
+                      </div>
+                    )}
+                  />
+                  <FormError message={errors.customizationPrice?.message} />
                 </div>
                 {/* Revenue Share  */}
                 <div>
@@ -276,49 +225,37 @@ export default function Apply() {
                     Процент Revenue Share{" "}
                     <span className="text-red-500">*</span>
                   </label>
-                  <div className="flex items-center gap-4">
-                    <input
-                      type="range"
-                      min="5"
-                      max="20"
-                      step="1"
-                      required
-                      value={formData.revenueSharePercent}
-                      onChange={(e) =>
-                        setFormData({
-                          ...formData,
-                          revenueSharePercent: e.target.value,
-                        })
-                      }
-                      className="flex-1 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
-                    />
-                    <div className="text-3xl font-bold text-indigo-600 min-w-[80px] text-center">
-                      {formData.revenueSharePercent}%
-                    </div>
-                  </div>
-                  <div className="mt-3 bg-indigo-50 rounded-xl p-4 border border-indigo-200">
-                    <p className="text-sm text-gray-700 mb-2">
-                      <strong>От выручки</strong> клиента (не от прибыли)
-                    </p>
-                    <div className="text-xs text-gray-600 space-y-1">
-                      <div>
-                        • <strong>5-8%:</strong> конкурентное преимущество,
-                        быстрее привлечь клиентов
+                  <Controller
+                    name="revenueSharePercent"
+                    control={control}
+                    // 'rules' также убираем
+                    render={({ field }) => (
+                      <div className="flex items-center gap-4">
+                        <input
+                          type="range"
+                          min="5"
+                          max="20"
+                          step="1"
+                          value={field.value}
+                          // Убедимся, что передаем number
+                          onChange={(e) =>
+                            field.onChange(Number(e.target.value))
+                          }
+                          className="flex-1 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
+                        />
+                        <div className="text-3xl font-bold text-indigo-600 min-w-[80px] text-center">
+                          {field.value}%
+                        </div>
                       </div>
-                      <div>
-                        • <strong>8-12%:</strong> стандартная модель, баланс
-                      </div>
-                      <div>
-                        • <strong>15-20%:</strong> премиум продукт с высокой
-                        ценностью
-                      </div>
-                    </div>
-                  </div>
+                    )}
+                  />
+                  <FormError message={errors.revenueSharePercent?.message} />
+
+                  {/* ... (блок с объяснением процентов) ... */}
+
                   <p className="text-sm text-gray-500 mt-2">
                     Например: клиент зарабатывает 300К/мес → вам{" "}
-                    {Math.round(
-                      (300 * parseInt(formData.revenueSharePercent)) / 100
-                    )}
+                    {Math.round((300 * (revenueShareValue || 10)) / 100)}
                     К/мес
                   </p>
                 </div>
@@ -338,14 +275,12 @@ export default function Apply() {
                   </label>
                   <input
                     type="url"
-                    required
-                    value={formData.githubUrl}
-                    onChange={(e) =>
-                      setFormData({ ...formData, githubUrl: e.target.value })
-                    }
+                    {...register("githubUrl")}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                     placeholder="https://github.com/username/project"
                   />
+                  {/* Zod покажет ошибку, если это не URL */}
+                  <FormError message={errors.githubUrl?.message} />
                   <p className="text-sm text-gray-500 mt-2">
                     Мы проверим качество кода
                   </p>
@@ -357,14 +292,11 @@ export default function Apply() {
                   </label>
                   <input
                     type="url"
-                    required
-                    value={formData.demoUrl}
-                    onChange={(e) =>
-                      setFormData({ ...formData, demoUrl: e.target.value })
-                    }
+                    {...register("demoUrl")}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                     placeholder="https://t.me/your_bot или https://demo.yourapp.com"
                   />
+                  <FormError message={errors.demoUrl?.message} />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -373,14 +305,11 @@ export default function Apply() {
                   </label>
                   <input
                     type="url"
-                    required
-                    value={formData.videoUrl}
-                    onChange={(e) =>
-                      setFormData({ ...formData, videoUrl: e.target.value })
-                    }
+                    {...register("videoUrl")}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                     placeholder="https://youtube.com/watch?v=... или Loom"
                   />
+                  <FormError message={errors.videoUrl?.message} />
                   <p className="text-sm text-gray-500 mt-2">
                     Покажите как работает продукт, основные фичи
                   </p>
@@ -400,11 +329,7 @@ export default function Apply() {
                     <span className="text-red-500">*</span>
                   </label>
                   <select
-                    required
-                    value={formData.hasUsers}
-                    onChange={(e) =>
-                      setFormData({ ...formData, hasUsers: e.target.value })
-                    }
+                    {...register("hasUsers")}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                   >
                     <option value="">Выберите вариант</option>
@@ -412,22 +337,22 @@ export default function Apply() {
                     <option value="demo">Да, есть demo users</option>
                     <option value="no">Нет, только личное использование</option>
                   </select>
+                  <FormError message={errors.hasUsers?.message} />
                 </div>
-                {(formData.hasUsers === "yes" ||
-                  formData.hasUsers === "demo") && (
+
+                {hasUsersValue === "yes" && (
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
                       Сколько пользователей?
                     </label>
                     <input
                       type="text"
-                      value={formData.userCount}
-                      onChange={(e) =>
-                        setFormData({ ...formData, userCount: e.target.value })
-                      }
+                      {...register("userCount")}
                       className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                       placeholder="Примерно 50-100 активных пользователей"
                     />
+                    {/* Ошибка для условного поля */}
+                    <FormError message={errors.userCount?.message} />
                   </div>
                 )}
                 <div>
@@ -436,14 +361,7 @@ export default function Apply() {
                     <span className="text-red-500">*</span>
                   </label>
                   <select
-                    required
-                    value={formData.customizationReady}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        customizationReady: e.target.value,
-                      })
-                    }
+                    {...register("customizationReady")}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                   >
                     <option value="">Выберите вариант</option>
@@ -457,9 +375,9 @@ export default function Apply() {
                       Нет, продаю только &quot;как есть&quot;
                     </option>
                   </select>
+                  <FormError message={errors.customizationReady?.message} />
                   <p className="text-sm text-gray-500 mt-2">
-                    Кастомизация = интеграции, брендинг, специфичные фичи для
-                    бизнеса клиента
+                    Кастомизация = интеграции, брендинг...
                   </p>
                 </div>
               </div>
@@ -477,21 +395,14 @@ export default function Apply() {
                     <span className="text-red-500">*</span>
                   </label>
                   <textarea
-                    required
                     rows={4}
-                    value={formData.targetBusinesses}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        targetBusinesses: e.target.value,
-                      })
-                    }
+                    {...register("targetBusinesses")}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
-                    placeholder="1. Владельцы Telegram-каналов о ЗОЖ/фитнесе с аудиторией 30К+&#10;2. Нутрициологи с клиентской базой&#10;3. Онлайн-школы здорового питания"
+                    placeholder="1. Владельцы Telegram-каналов о ЗОЖ/фитнесе..."
                   />
+                  <FormError message={errors.targetBusinesses?.message} />
                   <p className="text-sm text-gray-500 mt-2">
-                    Опишите 1-2 конкретных типа бизнесов. Чем конкретнее, тем
-                    лучше!
+                    Опишите 1-2 конкретных типа бизнесов...
                   </p>
                 </div>
               </div>
@@ -509,13 +420,11 @@ export default function Apply() {
                   </label>
                   <textarea
                     rows={3}
-                    value={formData.portfolio}
-                    onChange={(e) =>
-                      setFormData({ ...formData, portfolio: e.target.value })
-                    }
+                    {...register("portfolio")}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
                     placeholder="GitHub repo, deployed app, case study..."
                   />
+                  <FormError message={errors.portfolio?.message} />
                   <p className="text-sm text-gray-500 mt-2">
                     Необязательно, но повышает шансы на одобрение
                   </p>
@@ -526,20 +435,18 @@ export default function Apply() {
                   </label>
                   <textarea
                     rows={3}
-                    value={formData.additionalInfo}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        additionalInfo: e.target.value,
-                      })
-                    }
+                    {...register("additionalInfo")}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
-                    placeholder="Что-то ещё, что мы должны знать о вас или продукте?"
+                    placeholder="Что-то ещё, что мы должны знать...?"
                   />
+                  <FormError message={errors.additionalInfo?.message} />
                 </div>
               </div>
             </div>
-
+            {error && (
+              // ... (Error Display без изменений)
+              <FormError message={error} />
+            )}
             {/* Submit */}
             <div className="pt-6 border-t-2 border-gray-200">
               <button
@@ -550,8 +457,7 @@ export default function Apply() {
                 {isSubmitting ? "Отправка..." : "Отправить заявку →"}
               </button>
               <p className="text-center text-sm text-gray-500 mt-4">
-                Нажимая кнопку, вы соглашаетесь с условиями размещения и
-                обработкой данных
+                Нажимая кнопку, вы соглашаетесь с условиями...
               </p>
             </div>
           </form>

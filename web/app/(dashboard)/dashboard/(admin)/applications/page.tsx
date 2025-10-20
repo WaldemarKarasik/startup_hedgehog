@@ -11,7 +11,7 @@ async function checkAdminAccess() {
   const token = cookieStore.get("token");
 
   if (!token) {
-    redirect("/sign-in");
+    return redirect("/sign-in");
   }
 
   // API вызов к backend для проверки роли
@@ -39,7 +39,7 @@ async function checkAdminAccess() {
       return { hasAccess: false, user: data.user };
     }
 
-    return { hasAccess: true, user: data.user };
+    return { hasAccess: true, user: data.user, token };
   } catch (error) {
     console.error("[APPLICATIONS_PAGE] Failed to check access:", error);
     redirect("/sign-in");
@@ -47,7 +47,7 @@ async function checkAdminAccess() {
 }
 
 export default async function DeveloperApplicationsPage() {
-  const { hasAccess, user } = await checkAdminAccess();
+  const { hasAccess, user, token } = await checkAdminAccess();
 
   // Если не админ - показываем Access Denied
   if (!hasAccess) {
@@ -82,6 +82,17 @@ export default async function DeveloperApplicationsPage() {
   }
 
   // Админ - показываем страницу
+  const applications = await fetch(
+    `${API_URL}/api/developer-application/list`,
+    {
+      method: "GET",
+      headers: {
+        Cookie: `token=${token!.value}`,
+      },
+    }
+  );
+  const applicationsRes = await applications.json();
+  console.log(applicationsRes);
   return (
     <div>
       <div className="mb-6">
