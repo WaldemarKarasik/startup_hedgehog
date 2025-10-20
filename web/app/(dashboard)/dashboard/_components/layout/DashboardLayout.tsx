@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useAuthStore } from "@/src/stores/auth.store";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "primereact/button";
 import { Avatar } from "primereact/avatar";
 import { Skeleton } from "primereact/skeleton";
@@ -45,55 +45,53 @@ export default function DashboardLayout({
 }) {
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [currentPath, setCurrentPath] = useState("/dashboard");
   const userMenuRef = React.useRef<Menu>(null);
 
   // Получаем пользователя из Zustand
   const { user, status, clearUser } = useAuthStore();
-
-  React.useEffect(() => {
-    if (typeof window !== "undefined") {
-      setCurrentPath(window.location.pathname);
+  const pathname = usePathname();
+  const getIsActive = (href: string): boolean => {
+    if (href === "/dashboard") {
+      return pathname === "/dashboard";
     }
-  }, []);
 
+    // For all other routes, check if current path starts with the href
+    // This ensures /dashboard/applications only activates the applications link
+    return pathname.startsWith(href);
+  };
   // Навигационные элементы
   const navItems: NavItem[] = [
     {
       label: "Обзoр",
       icon: <LayoutDashboard size={20} />,
       href: "/dashboard",
-      notYetImplemented: true,
-      active: currentPath === "/dashboard",
-    },
-    {
-      label: "Мои Сделки",
-      icon: <Briefcase size={20} />,
-      href: "/dashboard/deals",
-      active: currentPath.startsWith("/dashboard/deals"),
-    },
-    {
-      label: "Каталог",
-      icon: <ShoppingCart size={20} />,
-      href: "/catalog",
-      active: currentPath.startsWith("/dashboard/catalog"),
+      notYetImplemented: false,
     },
     ...(user?.role === "DEVELOPER"
       ? [
           {
             label: "Мои Продукты",
             icon: <Package size={20} />,
-            href: "/dashboard/products",
-            active: currentPath.startsWith("/dashboard/products"),
+            href: "/dashboard/my-products",
           },
         ]
       : []),
+    {
+      label: "Мои Сделки",
+      icon: <Briefcase size={20} />,
+      href: "/dashboard/deals",
+    },
+    {
+      label: "Каталог",
+      icon: <ShoppingCart size={20} />,
+      href: "/catalog",
+    },
+
     {
       label: "Аналитика",
       icon: <TrendingUp size={20} />,
       href: "/dashboard/analytics",
       notYetImplemented: true,
-      active: currentPath.startsWith("/dashboard/analytics"),
     },
     ...(user?.role === "ADMIN"
       ? [
@@ -101,7 +99,6 @@ export default function DashboardLayout({
             label: "Developer Applications",
             icon: <FileUser size={20} />,
             href: "/dashboard/applications",
-            active: currentPath.startsWith("/dashboard/applications"),
           },
         ]
       : []),
@@ -110,7 +107,6 @@ export default function DashboardLayout({
       icon: <Settings size={20} />,
       href: "/dashboard/settings",
       notYetImplemented: true,
-      active: currentPath.startsWith("/dashboard/settings"),
     },
   ] as const;
 
@@ -161,7 +157,7 @@ export default function DashboardLayout({
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar Desktop */}
-      <DesktopSidebar navItems={navItems} setCurrentPath={setCurrentPath} />
+      <DesktopSidebar navItems={navItems} getIsActive={getIsActive} />
 
       {/* Mobile Sidebar Overlay */}
       {sidebarOpen && (
@@ -173,8 +169,8 @@ export default function DashboardLayout({
 
       {/* Mobile Sidebar */}
       <MobileSidebar
+        getIsActive={getIsActive}
         navItems={navItems}
-        setCurrentPath={setCurrentPath}
         sidebarOpen={sidebarOpen}
         setSidebarOpen={setSidebarOpen}
       />

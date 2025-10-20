@@ -11,115 +11,139 @@
    - Network:      http://100.84.142.155:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 103ms
- [32m[1m✓[22m[39m Ready in 600ms
- [37m[1m○[22m[39m Compiling /dashboard/applications ...
- [32m[1m✓[22m[39m Compiled /dashboard/applications in 2.1s
- GET /dashboard/applications [32m200[39m in 3900ms
- [32m[1m✓[22m[39m Compiled /sign-in in 453ms
- GET /sign-in [32m200[39m in 489ms
- GET /sign-in [32m200[39m in 130ms
- GET /sign-in [32m200[39m in 54ms
- [32m[1m✓[22m[39m Compiled /dashboard in 240ms
- GET /dashboard [32m200[39m in 257ms
- GET /dashboard/applications [32m200[39m in 735ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 321ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard/applications [32m200[39m in 218ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 217ms
- GET /dashboard/applications [32m200[39m in 219ms
- GET /dashboard/applications [32m200[39m in 217ms
- GET /dashboard/applications [32m200[39m in 219ms
- GET /dashboard/applications [32m200[39m in 218ms
- GET /dashboard/applications [32m200[39m in 422ms
- GET /dashboard/applications [32m200[39m in 346ms
- GET /sign-in [32m200[39m in 95ms
- GET /sign-in [32m200[39m in 133ms
- GET /sign-in [32m200[39m in 145ms
- [32m[1m✓[22m[39m Compiled in 25ms
- GET /sign-in [32m200[39m in 87ms
- GET /dashboard [32m200[39m in 49ms
- GET /dashboard/applications [32m200[39m in 237ms
- GET /sign-in [32m200[39m in 87ms
- GET /sign-in [32m200[39m in 80ms
- GET /sign-in [32m200[39m in 94ms
- GET /sign-in [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 85ms
- GET /dashboard/applications [32m200[39m in 217ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/applications [32m200[39m in 216ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard/applications [32m200[39m in 219ms
- [32m[1m✓[22m[39m Compiled in 21ms
- GET /dashboard/applications [32m200[39m in 531ms
- [32m[1m✓[22m[39m Compiled in 33ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled in 19ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled in 18ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled in 25ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 17ms
- [32m[1m✓[22m[39m Compiled /_not-found/page in 145ms
- GET /dashboard/settings [33m404[39m in 180ms
- GET /dashboard/settings [33m404[39m in 28ms
- GET /dashboard/applications [32m200[39m in 1523ms
- [32m[1m✓[22m[39m Compiled in 19ms
- GET /dashboard/applications [32m200[39m in 517ms
- GET /dashboard/settings/profile [33m404[39m in 7ms
- GET /dashboard/settings/profile [33m404[39m in 21ms
- GET /dashboard/applications [32m200[39m in 424ms
- [32m[1m✓[22m[39m Compiled in 20ms
- GET /dashboard/applications [32m200[39m in 578ms
- GET /dashboard/settings/profile [33m404[39m in 9ms
- GET /dashboard/settings/profile [33m404[39m in 22ms
- GET /dashboard/applications [32m200[39m in 331ms
- [32m[1m✓[22m[39m Compiled / in 193ms
- GET / [32m200[39m in 218ms
- GET /dashboard [32m200[39m in 45ms
- GET / [32m200[39m in 22ms
- [32m[1m✓[22m[39m Compiled /for-developers in 209ms
- GET /for-developers [32m200[39m in 225ms
- [32m[1m✓[22m[39m Compiled /for-developers/apply in 250ms
- GET /for-developers/apply [32m200[39m in 264ms
- [32m[1m✓[22m[39m Compiled in 14ms
- GET /dashboard [32m200[39m in 38ms
- GET /dashboard/applications [32m200[39m in 1635ms
- [32m[1m✓[22m[39m Compiled in 19ms
- GET /dashboard/applications [32m200[39m in 474ms
- [32m[1m✓[22m[39m Compiled in 22ms
- GET /dashboard/applications [32m200[39m in 380ms
- GET / [32m200[39m in 203ms
- GET /dashboard [32m200[39m in 46ms
- GET /dashboard/applications [32m200[39m in 294ms
- GET /dashboard/applications [32m200[39m in 211ms
- [32m[1m✓[22m[39m Compiled /catalog in 148ms
- GET /catalog [32m200[39m in 303ms
- GET /dashboard [32m200[39m in 9ms
- GET /catalog [32m200[39m in 40ms
- GET / [32m200[39m in 23ms
- GET /catalog [32m200[39m in 43ms
- GET /for-developers [32m200[39m in 11ms
+ [32m[1m✓[22m[39m Compiled middleware in 100ms
+ [32m[1m✓[22m[39m Ready in 590ms
+ [37m[1m○[22m[39m Compiling /dashboard ...
+ [32m[1m✓[22m[39m Compiled /dashboard in 2.1s
+ GET /dashboard [32m200[39m in 2313ms
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 464ms
+ GET /dashboard/applications [32m200[39m in 1164ms
+ [32m[1m✓[22m[39m Compiled / in 194ms
+ GET / [32m200[39m in 228ms
+ [32m[1m✓[22m[39m Compiled /calculator in 223ms
+ GET /calculator [32m200[39m in 238ms
  GET /dashboard [32m200[39m in 10ms
- GET / [32m200[39m in 21ms
- GET /for-developers [32m200[39m in 52ms
- GET /for-developers/apply [32m200[39m in 104ms
- GET / [32m200[39m in 22ms
- GET /dashboard [32m200[39m in 11ms
- GET /dashboard/applications [32m200[39m in 297ms
- GET / [32m200[39m in 13ms
- GET /dashboard [32m200[39m in 7ms
  GET /dashboard/applications [32m200[39m in 201ms
- GET / [32m200[39m in 13ms
+ GET /dashboard/applications [32m200[39m in 376ms
+ GET / [32m200[39m in 128ms
+ GET /dashboard [32m200[39m in 10ms
+ GET /dashboard/applications [32m200[39m in 203ms
  GET /dashboard [32m200[39m in 7ms
  GET /dashboard/applications [32m200[39m in 200ms
- GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 200ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 399ms
+ GET /sign-in [32m200[39m in 453ms
+ GET /sign-in [32m200[39m in 131ms
+ GET /sign-in [32m200[39m in 143ms
+ GET /dashboard [32m200[39m in 11ms
+ GET /dashboard [32m200[39m in 29ms
+ GET /dashboard [32m200[39m in 26ms
+ GET /dashboard [32m200[39m in 25ms
+ GET /dashboard/applications [32m200[39m in 201ms
+ GET /dashboard/applications [32m200[39m in 257ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 146ms
+ GET /dashboard/settings/profile [33m404[39m in 178ms
+ GET /dashboard/settings/profile [33m404[39m in 30ms
+ GET /dashboard/applications [32m200[39m in 274ms
+ GET / [32m200[39m in 144ms
  GET /dashboard [32m200[39m in 8ms
- GET /dashboard/applications [32m200[39m in 199ms
+ GET / [32m200[39m in 12ms
+ [32m[1m✓[22m[39m Compiled /catalog in 148ms
+ GET /catalog [32m200[39m in 266ms
+ GET /dashboard [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled /for-developers/apply in 191ms
+ GET /for-developers/apply [32m200[39m in 256ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /sign-in [32m200[39m in 117ms
+ GET /sign-in [32m200[39m in 139ms
+ GET /sign-in [32m200[39m in 218ms
+ GET /dashboard [32m200[39m in 9ms
+ [32m[1m✓[22m[39m Compiled middleware in 0ms
+ GET /dashboard [32m200[39m in 41ms
+ GET /dashboard [32m200[39m in 10ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 15ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 15ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 15ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 17ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 16ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 17ms
+ GET /dashboard [32m200[39m in 12ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/products [33m404[39m in 25ms
+ GET /dashboard/products [33m404[39m in 42ms
+ GET /dashboard [32m200[39m in 101ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 208ms
+ GET /dashboard/my-products [32m200[39m in 233ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ GET /dashboard/my-products [32m200[39m in 101ms
+ [32m[1m✓[22m[39m Compiled in 54ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 59ms
+[0m[31m [31m[1m⨯[22m[39m Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {label: "Создать", icon: </>, command: function command}
+                                         ^^^^^^^^^^^^^^^^
+    at stringify (null)
+    at stringify (null)
+    at performMicrotask (null)
+    at processTicksAndRejections (null) {
+  digest: [32m'2193903363'[39m
+}[0m
+ GET /dashboard/my-products [32m200[39m in 201ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 6ms
+ GET /dashboard/my-products [32m200[39m in 108ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 16ms
+[0m[31m [31m[1m⨯[22m[39m Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
+  {label: "Создать", icon: </>, command: function command}
+                                         ^^^^^^^^^^^^^^^^
+    at stringify (null)
+    at stringify (null)
+    at stringify (null)
+    at performMicrotask (null)
+    at processTicksAndRejections (null) {
+  digest: [32m'3369375997'[39m
+}[0m
+ GET /dashboard/my-products [32m200[39m in 113ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 19ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/my-products [32m200[39m in 123ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ GET /dashboard/my-products [32m200[39m in 86ms
+ [32m[1m✓[22m[39m Compiled in 43ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 114ms
+ [32m[1m✓[22m[39m Compiled in 42ms
+ GET /dashboard/my-products [32m200[39m in 129ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 82ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
 [?25h

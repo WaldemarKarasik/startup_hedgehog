@@ -6,15 +6,17 @@ import { Dispatch, SetStateAction } from "react";
 import { NotImplemented } from "./NotImplemented";
 import { Logo } from "@/app/_shared-components/Logo";
 import { UserRoles } from "shared";
+import { usePathname } from "next/navigation";
 
 export const DesktopSidebar = ({
   navItems,
-  setCurrentPath,
+  getIsActive,
 }: {
   navItems: NavItem[];
-  setCurrentPath: Dispatch<SetStateAction<string>>;
+  getIsActive: (href: string) => boolean;
 }) => {
   const user = useAuthStore((s) => s.user);
+
   return (
     <aside className="hidden lg:flex lg:flex-col lg:w-64 bg-white border-r border-gray-200">
       {/* Logo */}
@@ -25,22 +27,21 @@ export const DesktopSidebar = ({
       {/* Navigation */}
       <nav className="flex-1 px-3 py-5 space-y-1">
         {navItems.map((item) => {
+          const isActive = getIsActive(item.href);
+
           if (item.notYetImplemented)
             return <NotImplemented navItem={item} key={item.href} />;
           return (
             <Link
               key={item.href}
               href={item.href}
-              onClick={() => setCurrentPath(item.href)}
               className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200 ${
-                item.active
+                isActive
                   ? "bg-primary-50 text-primary-700 shadow-sm"
                   : "text-gray-700 hover:bg-gray-50 hover:text-gray-900"
               }`}
             >
-              <span
-                className={item.active ? "text-primary-600" : "text-gray-400"}
-              >
+              <span className={isActive ? "text-primary-600" : "text-gray-400"}>
                 {item.icon}
               </span>
               <span className="">{item.label} </span>
@@ -49,7 +50,7 @@ export const DesktopSidebar = ({
         })}
       </nav>
       {/* Apply for developer role */}
-      {user?.role !== UserRoles.DEVELOPER && user?.role !== UserRoles.ADMIN && (
+      {user?.role == UserRoles.BUYER && (
         <div className="p-4 ">
           <Link href={"/for-developers/apply"} className="p-button">
             Стать разработчиком
