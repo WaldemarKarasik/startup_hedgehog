@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "../../_components/Header";
 import Footer from "../../_components/Footer";
-import DeveloperApplicationForm from "shared";
+import type { DeveloperApplicationForm } from "shared";
 
 export default function Apply() {
   const [formData, setFormData] = useState<DeveloperApplicationForm>({
