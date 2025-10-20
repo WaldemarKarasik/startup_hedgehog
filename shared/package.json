@@ -6,6 +6,9 @@
     "build": "tsc",
     "dev": "tsc --watch"
   },
+  "dependencies": {
+    "server": "workspace:*"
+  },
   "devDependencies": {
     "typescript": "^5.8.3"
   }

@@ -1,26 +1,24 @@
-import { Hono } from "hono";
+import { Hono, type Env } from "hono";
 import { zValidator } from "@hono/zod-validator";
 import { z } from "zod";
 import { prisma } from "../lib/prisma";
-import type {
-  CustomizationReadyOption,
-  HasUsersOption,
-} from "../generated/prisma";
+
+import { requireAuth } from "../lib/requireAuth";
+import { HTTPException } from "hono/http-exception";
 
 // Validation schema for developer application
 export const developerApplicationSchema = z.object({
-  name: z.string().min(1, "Name is required"),
-  email: z.email("Invalid email address"),
   telegram: z.string().optional(),
   productName: z.string().min(1, "Product name is required"),
   productDescription: z
     .string()
     .min(10, "Description must be at least 10 characters"),
-  revenueSharePercent: z.string().regex(/^\d+$/, "Must be a number"),
+  customizationprice: z.number().min(300000).max(1000000),
+  revenueSharePercent: z.number().min(5).max(20),
   githubUrl: z.string().url("Invalid GitHub URL"),
   demoUrl: z.string().url("Invalid demo URL"),
   videoUrl: z.string().url("Invalid video URL"),
-  hasUsers: z.enum(["yes", "demo", "no"]),
+  hasUsers: z.enum(["yes", "no"]),
   userCount: z.string(),
   customizationReady: z.enum(["yes", "no", "maybe"]),
   targetBusinesses: z
@@ -30,50 +28,41 @@ export const developerApplicationSchema = z.object({
   additionalInfo: z.string().optional().default(""),
 });
 
-// export const developerApplicationsRouter = new Hono().post(
-//   "/",
-//   zValidator("json", developerApplicationSchema),
-//   async (c) => {
-//     try {
-//       const data = c.req.valid("json");
-//       const application = await prisma.developerApplication.create({
-//         data: {
-//           telegram: data.telegram || null,
-//           productName: data.productName,
-//           productDescription: data.productDescription,
-//           revenueSharePercent: parseInt(data.revenueSharePercent, 10),
-//           githubUrl: data.githubUrl || null,
-//           demoUrl: data.demoUrl || null,
-//           videoUrl: data.videoUrl || null,
-//           hasUsers: data.hasUsers as HasUsersOption,
-//           userCount: data.userCount || null,
-//           customizationReady:
-//             data.customizationReady as CustomizationReadyOption,
-//           targetBusinesses: data.targetBusinesses || null,
-//           portfolio: data.portfolio || null,
-//           additionalInfo: data.additionalInfo || null,
-//         },
-//       });
-//       return c.json(
-//         {
-//           success: true,
-//           message: "Application submitted successfully",
-//         },
-//         201
-//       );
-//     } catch (error) {
-//       console.error("Error processing developer application:", error);
+export const developerApplicationsRouter = new Hono().post(
+  "/",
+  requireAuth,
+  zValidator("json", developerApplicationSchema),
+  async (c) => {
+    try {
+      const data = c.req.valid("json");
+      const userId = c.get("user").userId;
+      const user = await prisma.user.findFirst({ where: { id: userId } });
+      if (!user) {
+        throw new HTTPException(409);
+      }
+      const application = await prisma.developerApplication.create({
+        data: { ...data, user: { connect: { id: user.id } } },
+      });
+      return c.json(
+        {
+          success: true,
+          message: "Application submitted successfully",
+        },
+        201
+      );
+    } catch (error) {
+      console.error("Error processing developer application:", error);
 
-//       return c.json(
-//         {
-//           success: false,
-//           error: "Failed to submit application. Please try again later.",
-//         },
-//         500
-//       );
-//     }
-//   }
-// );
+      return c.json(
+        {
+          success: false,
+          error: "Failed to submit application. Please try again later.",
+        },
+        500
+      );
+    }
+  }
+);
 
 /**
  * POST /api/developer-applications

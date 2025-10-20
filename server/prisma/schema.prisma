@@ -48,6 +48,7 @@ model DeveloperApplication {
   // Информация о проекте
   productName        String
   productDescription String        @db.Text
+  customizationPrice Int 
   revenueSharePercent Int          // 0-100
   
   // Ссылки

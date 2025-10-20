@@ -1,12 +1,7 @@
 import type { Context, MiddlewareHandler, Next } from "hono";
 import { getCookie } from "hono/cookie";
 import { verify } from "hono/jwt";
-
-export type JwtPayload = {
-  userId: string;
-  role: string;
-  exp: number;
-};
+import type { JwtPayload } from "../types";
 
 /**
  * Извлекает токен из cookie или Cookie header

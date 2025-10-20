@@ -5,14 +5,16 @@ import { useState } from "react";
 import Link from "next/link";
 import Header from "../../_components/Header";
 import Footer from "../../_components/Footer";
+import DeveloperApplicationForm from "shared";
 
 export default function Apply() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<DeveloperApplicationForm>({
     name: "",
     email: "",
     telegram: "",
     productName: "",
     productDescription: "",
+    customizationPrice: 300000,
     revenueSharePercent: "10",
     githubUrl: "",
     demoUrl: "",
@@ -64,7 +66,6 @@ export default function Apply() {
       setIsSubmitting(false);
     }
   };
-
   if (submitted) {
     return (
       <div className="min-h-screen flex flex-col">
@@ -172,41 +173,10 @@ export default function Apply() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Ваше имя <span className="text-red-500">*</span>
+                    Telegram <span className="text-red-500"></span>
                   </label>
                   <input
                     type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
-                    placeholder="Иван Иванов"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-xl focus:border-indigo-600 focus:ring-2 focus:ring-indigo-200 transition-colors"
-                    placeholder="ivan@example.com"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Telegram <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    required
                     value={formData.telegram}
                     onChange={(e) =>
                       setFormData({ ...formData, telegram: e.target.value })
@@ -260,7 +230,47 @@ export default function Apply() {
                     Что делает продукт? Какие основные функции?
                   </p>
                 </div>
+                {/* Customization price */}
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    Стоимость кастомизации
+                    <span className="text-red-500">*</span>
+                  </label>
+                  <div className="flex items-center gap-4 text-3xl font-bold text-indigo-600  ">
+                    <input
+                      type="range"
+                      min="300000"
+                      max="450000"
+                      step="1"
+                      required
+                      value={formData.customizationPrice}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          customizationPrice: Number(e.target.value),
+                        })
+                      }
+                      className="flex-1 h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
+                    />
 
+                    <input
+                      className="text-right"
+                      type={"number"}
+                      size={5}
+                      value={formData.customizationPrice}
+                      min={300000}
+                      max={450000}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          customizationPrice: Number(e.target.value),
+                        })
+                      }
+                    />
+                    <span>₽</span>
+                  </div>
+                </div>
+                {/* Revenue Share  */}
                 <div>
                   <label className="block text-sm font-semibold text-gray-700 mb-2">
                     Процент Revenue Share{" "}

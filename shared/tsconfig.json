@@ -17,11 +17,14 @@
     // Additional checks
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
-
+    "paths": {
+      "server": ["../server"]
+    },
     "composite": true,
     "rootDir": "./src",
     "allowSyntheticDefaultImports": true // Helps with module resolution
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules", "**/*.test.ts", "dist"]
+  "exclude": ["node_modules", "**/*.test.ts", "dist"],
+  "references": [{ "path": "../server" }]
 }
