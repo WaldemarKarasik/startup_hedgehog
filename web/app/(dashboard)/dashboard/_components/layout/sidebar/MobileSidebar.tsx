@@ -4,6 +4,8 @@ import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
 import { NotImplemented } from "./NotImplemented";
 import { Logo } from "@/app/_shared-components/Logo";
+import { useAuthStore } from "@/src/stores/auth.store";
+import { UserRoles } from "shared";
 
 export const MobileSidebar = ({
   navItems,
@@ -16,6 +18,7 @@ export const MobileSidebar = ({
   sidebarOpen: boolean;
   setCurrentPath: Dispatch<SetStateAction<string>>;
 }) => {
+  const user = useAuthStore((s) => s.user);
   return (
     <aside
       className={`fixed inset-y-0 left-0 w-64 bg-white z-50 transform transition-transform duration-300 lg:hidden ${
@@ -38,7 +41,7 @@ export const MobileSidebar = ({
         <div className="flex-1">
           {navItems.map((item) => {
             if (item.notYetImplemented)
-              return <NotImplemented navItem={item} />;
+              return <NotImplemented navItem={item} key={item.href} />;
             return (
               <Link
                 key={item.href}
@@ -64,11 +67,14 @@ export const MobileSidebar = ({
           })}
         </div>
         {/* Apply for developer role */}
-        <div className="mb-20 p-4 ">
-          <Link href={"/for-developers/apply"} className="p-button">
-            Стать разработчиком
-          </Link>
-        </div>
+        {user?.role != UserRoles.DEVELOPER &&
+          user?.role !== UserRoles.ADMIN && (
+            <div className="mb-20 p-4 ">
+              <Link href={"/for-developers/apply"} className="p-button">
+                Стать разработчиком
+              </Link>
+            </div>
+          )}
       </nav>
     </aside>
   );

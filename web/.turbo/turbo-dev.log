@@ -11,783 +11,115 @@
    - Network:      http://100.84.142.155:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 98ms
- [32m[1m✓[22m[39m Ready in 584ms
+ [32m[1m✓[22m[39m Compiled middleware in 103ms
+ [32m[1m✓[22m[39m Ready in 600ms
  [37m[1m○[22m[39m Compiling /dashboard/applications ...
- [32m[1m✓[22m[39m Compiled /dashboard/applications in 2.2s
- GET /dashboard/applications [32m200[39m in 3851ms
- [32m[1m✓[22m[39m Compiled /dashboard/applications in 19ms
- GET /dashboard/applications [32m200[39m in 57ms
- GET /dashboard/applications [32m200[39m in 1467ms
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
-[0m[31m [31m[1m⨯[22m[39m ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx:3:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@/src/hooks/useApplications'[39m
-[0m [90m 1 |[39m [32m"use client"[39m[33m;[39m
- [90m 2 |[39m
-[31m[1m>[22m[39m[90m 3 |[39m [36mimport[39m useApplications [36mfrom[39m [32m"@/src/hooks/useApplications"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 4 |[39m [36mimport[39m { [33mDeveloperApplication[39m } [36mfrom[39m [32m"@/src/types"[39m[33m;[39m
- [90m 5 |[39m [36mimport[39m { [33mEye[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m
- [90m 6 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"primereact/button"[39m[33m;[39m[0m
-
-Import map: aliased to relative './src/hooks/useApplications' inside of [project]/web
-
-
-Import trace:
-  Server Component:
-    ./web/app/(dashboard)/dashboard/(admin)/_components/ApplicationsTable.tsx
-    ./web/app/(dashboard)/dashboard/(admin)/applications/page.tsx
-
-https://nextjs.org/docs/messages/module-not-found
-
-[0m
+ [32m[1m✓[22m[39m Compiled /dashboard/applications in 2.1s
+ GET /dashboard/applications [32m200[39m in 3900ms
+ [32m[1m✓[22m[39m Compiled /sign-in in 453ms
+ GET /sign-in [32m200[39m in 489ms
+ GET /sign-in [32m200[39m in 130ms
+ GET /sign-in [32m200[39m in 54ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 240ms
+ GET /dashboard [32m200[39m in 257ms
+ GET /dashboard/applications [32m200[39m in 735ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 321ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/applications [32m200[39m in 218ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/applications [32m200[39m in 217ms
+ GET /dashboard/applications [32m200[39m in 219ms
+ GET /dashboard/applications [32m200[39m in 217ms
+ GET /dashboard/applications [32m200[39m in 219ms
+ GET /dashboard/applications [32m200[39m in 218ms
+ GET /dashboard/applications [32m200[39m in 422ms
+ GET /dashboard/applications [32m200[39m in 346ms
+ GET /sign-in [32m200[39m in 95ms
+ GET /sign-in [32m200[39m in 133ms
+ GET /sign-in [32m200[39m in 145ms
+ [32m[1m✓[22m[39m Compiled in 25ms
+ GET /sign-in [32m200[39m in 87ms
+ GET /dashboard [32m200[39m in 49ms
+ GET /dashboard/applications [32m200[39m in 237ms
+ GET /sign-in [32m200[39m in 87ms
+ GET /sign-in [32m200[39m in 80ms
+ GET /sign-in [32m200[39m in 94ms
+ GET /sign-in [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 85ms
+ GET /dashboard/applications [32m200[39m in 217ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/applications [32m200[39m in 216ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/applications [32m200[39m in 219ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ GET /dashboard/applications [32m200[39m in 531ms
  [32m[1m✓[22m[39m Compiled in 33ms
- [32m[1m✓[22m[39m Compiled /dashboard/applications in 8ms
- GET /dashboard/applications [32m200[39m in 85ms
- GET /dashboard/applications [32m200[39m in 351ms
- GET /dashboard/applications [32m200[39m in 343ms
- [32m[1m✓[22m[39m Compiled / in 220ms
- GET / [32m200[39m in 246ms
- [32m[1m✓[22m[39m Compiled /dashboard in 184ms
- GET /dashboard [32m200[39m in 200ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 25ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 145ms
+ GET /dashboard/settings [33m404[39m in 180ms
+ GET /dashboard/settings [33m404[39m in 28ms
+ GET /dashboard/applications [32m200[39m in 1523ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /dashboard/applications [32m200[39m in 517ms
+ GET /dashboard/settings/profile [33m404[39m in 7ms
+ GET /dashboard/settings/profile [33m404[39m in 21ms
+ GET /dashboard/applications [32m200[39m in 424ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ GET /dashboard/applications [32m200[39m in 578ms
+ GET /dashboard/settings/profile [33m404[39m in 9ms
+ GET /dashboard/settings/profile [33m404[39m in 22ms
+ GET /dashboard/applications [32m200[39m in 331ms
+ [32m[1m✓[22m[39m Compiled / in 193ms
+ GET / [32m200[39m in 218ms
+ GET /dashboard [32m200[39m in 45ms
+ GET / [32m200[39m in 22ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 209ms
+ GET /for-developers [32m200[39m in 225ms
+ [32m[1m✓[22m[39m Compiled /for-developers/apply in 250ms
+ GET /for-developers/apply [32m200[39m in 264ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ GET /dashboard [32m200[39m in 38ms
+ GET /dashboard/applications [32m200[39m in 1635ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /dashboard/applications [32m200[39m in 474ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ GET /dashboard/applications [32m200[39m in 380ms
+ GET / [32m200[39m in 203ms
+ GET /dashboard [32m200[39m in 46ms
+ GET /dashboard/applications [32m200[39m in 294ms
  GET /dashboard/applications [32m200[39m in 211ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 206ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 207ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 207ms
+ [32m[1m✓[22m[39m Compiled /catalog in 148ms
+ GET /catalog [32m200[39m in 303ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /catalog [32m200[39m in 40ms
+ GET / [32m200[39m in 23ms
+ GET /catalog [32m200[39m in 43ms
+ GET /for-developers [32m200[39m in 11ms
+ GET /dashboard [32m200[39m in 10ms
+ GET / [32m200[39m in 21ms
+ GET /for-developers [32m200[39m in 52ms
+ GET /for-developers/apply [32m200[39m in 104ms
+ GET / [32m200[39m in 22ms
+ GET /dashboard [32m200[39m in 11ms
+ GET /dashboard/applications [32m200[39m in 297ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/applications [32m200[39m in 201ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/applications [32m200[39m in 200ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/applications [32m200[39m in 199ms
+[?25h

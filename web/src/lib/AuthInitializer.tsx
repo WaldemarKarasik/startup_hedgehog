@@ -39,6 +39,8 @@ export const AuthInitializer = () => {
   if (status === "loading") {
     return null; // или <GlobalSpinner />
   }
-
+  if (error) {
+    return <div>error</div>;
+  }
   return null;
 };

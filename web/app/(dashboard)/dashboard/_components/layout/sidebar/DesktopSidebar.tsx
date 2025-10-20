@@ -5,6 +5,7 @@ import { useAuthStore } from "@/src/stores/auth.store";
 import { Dispatch, SetStateAction } from "react";
 import { NotImplemented } from "./NotImplemented";
 import { Logo } from "@/app/_shared-components/Logo";
+import { UserRoles } from "shared";
 
 export const DesktopSidebar = ({
   navItems,
@@ -24,7 +25,8 @@ export const DesktopSidebar = ({
       {/* Navigation */}
       <nav className="flex-1 px-3 py-5 space-y-1">
         {navItems.map((item) => {
-          if (item.notYetImplemented) return <NotImplemented navItem={item} />;
+          if (item.notYetImplemented)
+            return <NotImplemented navItem={item} key={item.href} />;
           return (
             <Link
               key={item.href}
@@ -47,11 +49,14 @@ export const DesktopSidebar = ({
         })}
       </nav>
       {/* Apply for developer role */}
-      <div className="p-4 ">
-        <Link href={"/for-developers/apply"} className="p-button">
-          Стать разработчиком
-        </Link>
-      </div>
+      {user?.role !== UserRoles.DEVELOPER && user?.role !== UserRoles.ADMIN && (
+        <div className="p-4 ">
+          <Link href={"/for-developers/apply"} className="p-button">
+            Стать разработчиком
+          </Link>
+        </div>
+      )}
+
       {/* User Card */}
       <div className="p-4 border-t border-gray-200">
         <div className="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">

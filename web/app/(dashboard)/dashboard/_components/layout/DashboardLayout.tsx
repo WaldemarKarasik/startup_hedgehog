@@ -25,6 +25,7 @@ import React from "react";
 import Link from "next/link";
 import { DesktopSidebar } from "./sidebar/DesktopSidebar";
 import { MobileSidebar } from "./sidebar/MobileSidebar";
+import { apiClient } from "@/src/lib/api-client";
 
 export type NavItem = {
   label: string;
@@ -62,6 +63,7 @@ export default function DashboardLayout({
       label: "Обзoр",
       icon: <LayoutDashboard size={20} />,
       href: "/dashboard",
+      notYetImplemented: true,
       active: currentPath === "/dashboard",
     },
     {
@@ -107,6 +109,7 @@ export default function DashboardLayout({
       label: "Настройки",
       icon: <Settings size={20} />,
       href: "/dashboard/settings",
+      notYetImplemented: true,
       active: currentPath.startsWith("/dashboard/settings"),
     },
   ] as const;
@@ -124,7 +127,8 @@ export default function DashboardLayout({
     {
       label: "Выйти",
       icon: "pi pi-sign-out",
-      command: () => {
+      command: async () => {
+        await apiClient.api.auth.logout.$get();
         clearUser();
         router.push("/sign-in");
       },

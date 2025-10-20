@@ -221,4 +221,8 @@ export const authRoutes = new Hono()
       return c.json({ success: false }, 500);
     }
     return c.json({ success: true, user: payload });
+  })
+  .get("/logout", requireAuth, async (c) => {
+    setCookie(c, "token", "");
+    return c.json({ success: true }, 200);
   });

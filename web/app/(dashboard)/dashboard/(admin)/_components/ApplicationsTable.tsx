@@ -1,17 +1,15 @@
 "use client";
 
-import { useApplications } from "@/src/hooks/applications";
+import {
+  useApplications,
+  useSetApplicationStatus,
+} from "@/src/hooks/applications";
 import { DeveloperApplication } from "@/src/types";
-import { Eye } from "lucide-react";
+import { Eye, ThumbsDown, ThumbsUp } from "lucide-react";
 import { Button } from "primereact/button";
 import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
-import { useState } from "react";
 import { DeveloperApplicationStatuses } from "shared";
-
-const initialState = {
-  success: false,
-};
 
 export const ApplicationsTable = ({
   data,
@@ -19,39 +17,68 @@ export const ApplicationsTable = ({
   data: DeveloperApplication[];
 }) => {
   const { data: applications } = useApplications(data);
+  const { mutate: setStatus, error: setStatusError } =
+    useSetApplicationStatus();
   const actionBodyTemplate = (application: DeveloperApplication) => {
     const handleApprove = () => {
-      console.log("Approve application:", application.id);
-      // Ваша логика одобрения
+      // Одобрить developer application
+      setStatus({ application, status: "APPROVED" });
     };
 
     const handleReject = () => {
-      console.log("Reject application:", application.id);
-      // Ваша логика отклонения
+      // Отклонить developer application
+      setStatus({ application, status: "REJECTED" });
     };
 
     const handleReview = async () => {
       // Отправить на рассмотрение
-      console.log("View application:", application.id);
+      setStatus({ application, status: "IN_REVIEW" });
     };
-    if (application.status == DeveloperApplicationStatuses.NEW) {
-      return (
-        <Button
-          icon={<Eye />}
-          rounded
-          onClick={handleReview}
-          tooltip="Отправить на рассмотрение"
-          tooltipOptions={{ position: "top" }}
-        />
-      );
-    } else return null;
+    switch (application.status) {
+      case DeveloperApplicationStatuses.NEW:
+        return (
+          <Button
+            icon={<Eye />}
+            rounded
+            onClick={handleReview}
+            tooltip="Отправить на рассмотрение"
+            tooltipOptions={{ position: "top" }}
+          />
+        );
+      case DeveloperApplicationStatuses.IN_REVIEW:
+        return (
+          <div className="flex gap-2">
+            <Button
+              icon={<ThumbsUp />}
+              rounded
+              severity="success"
+              onClick={handleApprove}
+              tooltip="Одобрить"
+              tooltipOptions={{ position: "top" }}
+            />
+            <Button
+              icon={<ThumbsDown />}
+              rounded
+              severity="danger"
+              onClick={handleReject}
+              tooltip="Отказать"
+              tooltipOptions={{ position: "top" }}
+            />
+          </div>
+        );
+    }
   };
   return (
     <>
-      <DataTable value={applications} tableStyle={{ minWidth: "50rem" }}>
-        {Object.keys(applications[0]).map((key) => (
-          <Column field={key} header={key} />
-        ))}
+      <DataTable value={applications} tableStyle={{}}>
+        <Column header="Статус" field="status" />
+        <Column header="Telegram" field="telegram" />
+        <Column header="Название" field="productName" />
+        <Column header="Описание" field="productDescription" />
+        <Column header="Стоимость кастомизации" field="customizationPrice" />
+        <Column header="Revenue Share %" field="revenueSharePercent" />
+        <Column header="Demo URL" field="demoUrl" />
+        <Column header="Github URL" field="githubUrl" />
 
         <Column
           header="Действия"

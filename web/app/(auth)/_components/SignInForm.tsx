@@ -51,7 +51,7 @@ export const SignInForm = () => {
     },
     onSuccess: (data: SignInSuccess) => {
       setUser(data.user);
-      router.push("/");
+      router.push("/dashboard");
     },
   });
   const setUser = useAuthStore((state) => state.setUser);

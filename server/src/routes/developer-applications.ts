@@ -5,6 +5,11 @@ import { prisma } from "../lib/prisma";
 
 import { requireAuth } from "../lib/requireAuth";
 import { HTTPException } from "hono/http-exception";
+import {
+  ApplicationStatus,
+  type DeveloperApplication,
+} from "../generated/prisma";
+import { DeveloperApplicationStatuses } from "../types";
 
 // Validation schema for developer application
 export const developerApplicationSchema = z.object({
@@ -37,6 +42,14 @@ export const developerApplicationsRouter = new Hono()
         if (!user) {
           throw new HTTPException(409);
         }
+        const existingApplication = await prisma.developerApplication.findFirst(
+          {
+            where: { userId: user.id },
+          }
+        );
+        if (existingApplication) {
+          throw new HTTPException(403);
+        }
         const application = await prisma.developerApplication.create({
           data: { ...data, user: { connect: { id: user.id } } },
         });
@@ -66,7 +79,18 @@ export const developerApplicationsRouter = new Hono()
       if (userRole != "ADMIN") {
         throw new HTTPException(403);
       }
-      const applications = await prisma.developerApplication.findMany();
+      const applications: DeveloperApplication[] = await prisma.$queryRaw`
+        SELECT * FROM "DeveloperApplication"
+        ORDER BY 
+         CASE 
+          WHEN status::text = ${ApplicationStatus.NEW} THEN 1
+          WHEN status::text = ${ApplicationStatus.IN_REVIEW} THEN 2
+          WHEN status::text = ${ApplicationStatus.APPROVED} THEN 3
+          WHEN status::text = ${ApplicationStatus.REJECTED} THEN 4
+        ELSE 5
+        END,
+        "createdAt" DESC
+      `;
       return c.json({ success: true, data: applications }, 200);
     } catch (error) {
       console.error("Error processing developer application:", error);
@@ -82,21 +106,23 @@ export const developerApplicationsRouter = new Hono()
     }
   })
   .post(
-    "/review",
+    "/setStatus",
     requireAuth,
     zValidator("query", z.object({ id: z.string() })),
+    zValidator("json", z.enum(ApplicationStatus)),
     async (c) => {
-      console.log("review");
       try {
         const { id } = c.req.valid("query");
+        const status = c.req.valid("json");
         const userRole = c.get("user").role;
         if (userRole != "ADMIN") {
           throw new HTTPException(403);
         }
-        const application = prisma.developerApplication.update({
+
+        const application = await prisma.developerApplication.update({
           where: { id },
           data: {
-            status: "IN_REVIEW",
+            status,
           },
         });
         return c.json(
