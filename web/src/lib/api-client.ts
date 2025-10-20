@@ -1,5 +1,6 @@
 import { InferResponseType } from "hono/client";
-import { hcWithType } from "server/dist/client";
+// Import from source for type inference (dist may be outdated)
+import { hcWithType } from "../../../server/src/client";
 
 // API base URL (from environment or default to localhost)
 export const API_URL =
@@ -38,6 +39,10 @@ export type GetMeSuccess = InferResponseType<
   typeof apiClient.api.auth.me.$get,
   200
 >;
+// NOTE: Hono RPC типы работают только с базовыми методами ($get, $post и т.д.)
+// Вложенные пути (/list, /detail) не поддерживаются автоматически
+// Используем manual typing для таких случаев
 export type GetApplicationsSuccess = InferResponseType<
-  (typeof apiClient.api)["developer-application"]["list"]
+  (typeof apiClient.api)["developer-application"]["list"]["$get"],
+  200
 >;
