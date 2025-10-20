@@ -1,6 +1,14 @@
-import { API_URL, apiClient, GetMe } from "@/src/lib/api-client";
+import {
+  API_URL,
+  apiClient,
+  GetApplications,
+  GetApplicationsError,
+  GetApplicationsSuccess,
+  GetMe,
+} from "@/src/lib/api-client";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { ApplicationsTable } from "../_components/ApplicationsTable";
 
 /**
  * Server Component - проверка роли через API вызов к backend
@@ -11,9 +19,8 @@ async function checkAdminAccess() {
   const token = cookieStore.get("token");
 
   if (!token) {
-    return redirect("/sign-in");
+    redirect("/sign-in");
   }
-
   // API вызов к backend для проверки роли
 
   try {
@@ -82,17 +89,22 @@ export default async function DeveloperApplicationsPage() {
   }
 
   // Админ - показываем страницу
-  const applications = await fetch(
-    `${API_URL}/api/developer-application/list`,
-    {
-      method: "GET",
-      headers: {
-        Cookie: `token=${token!.value}`,
-      },
-    }
-  );
-  const applicationsRes = await applications.json();
-  console.log(applicationsRes);
+  let error: GetApplicationsError["error"] | null = null;
+  let data: GetApplicationsSuccess["data"] | null = null;
+  const applications = await fetch(`${API_URL}/api/developerApplication/list`, {
+    method: "GET",
+    headers: {
+      Cookie: `token=${token!.value}`,
+    },
+    cache: "no-store",
+  });
+  const applicationsRes: GetApplications = await applications.json();
+  if (!applicationsRes.success) {
+    error = applicationsRes.error;
+  } else {
+    data = applicationsRes.data;
+  }
+
   return (
     <div>
       <div className="mb-6">
@@ -105,12 +117,8 @@ export default async function DeveloperApplicationsPage() {
       </div>
 
       <div className="bg-white rounded-lg border border-gray-200 p-6">
-        <p className="text-gray-600">
-          Здесь будет список заявок разработчиков...
-        </p>
-        <p className="text-sm text-gray-500 mt-2">
-          Добро пожаловать, администратор {user.firstName}!
-        </p>
+        {error && <p className="text-red-600">{error}</p>}
+        {data && <ApplicationsTable data={data} />}
       </div>
     </div>
   );

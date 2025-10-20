@@ -80,7 +80,46 @@ export const developerApplicationsRouter = new Hono()
         500
       );
     }
-  });
+  })
+  .post(
+    "/review",
+    requireAuth,
+    zValidator("query", z.object({ id: z.string() })),
+    async (c) => {
+      console.log("review");
+      try {
+        const { id } = c.req.valid("query");
+        const userRole = c.get("user").role;
+        if (userRole != "ADMIN") {
+          throw new HTTPException(403);
+        }
+        const application = prisma.developerApplication.update({
+          where: { id },
+          data: {
+            status: "IN_REVIEW",
+          },
+        });
+        return c.json(
+          {
+            success: true,
+            message: "Developer Application updated successfuly",
+          },
+          200
+        );
+      } catch (error) {
+        console.error("Error processing developer application:", error);
+
+        return c.json(
+          {
+            success: false,
+            error:
+              "Failed to send developer applications to review. Please try again later.",
+          },
+          500
+        );
+      }
+    }
+  );
 
 /**
  * POST /api/developer-applications

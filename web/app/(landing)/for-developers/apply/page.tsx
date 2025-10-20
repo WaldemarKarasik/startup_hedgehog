@@ -55,9 +55,7 @@ export default function Apply() {
   const onSubmit: SubmitHandler<DeveloperApplicationForm> = async (data) => {
     setError(null);
     try {
-      const response = await apiClient.api[
-        "developer-application"
-      ].create.$post({
+      const response = await apiClient.api.developerApplication.create.$post({
         json: data,
       });
       const resData = await response.json();

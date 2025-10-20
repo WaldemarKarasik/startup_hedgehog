@@ -15,7 +15,7 @@ export const app = new Hono()
     return c.json({ success: true, message: "StartupЁж API is running" });
   })
   .route("/api/auth", authRoutes)
-  .route("/api/developer-application", developerApplicationsRouter);
+  .route("/api/developerApplication", developerApplicationsRouter);
 
 // Enable CORS for frontend
 

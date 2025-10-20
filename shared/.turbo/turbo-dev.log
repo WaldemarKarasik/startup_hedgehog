@@ -1,25 +1,5 @@
 [0m[2m[35m$[0m [2m[1mtsc --watch[0m
-[2J[3J[H[[90m9:28:50 AM[0m] Starting compilation in watch mode...
+[2J[3J[H[[90m12:13:13 PM[0m] Starting compilation in watch mode...
 
-[[90m9:28:52 AM[0m] Found 0 errors. Watching for file changes.
-
-[2J[3J[H[[90m9:32:54 AM[0m] File change detected. Starting incremental compilation...
-
-[[90m9:32:55 AM[0m] Found 0 errors. Watching for file changes.
-
-[2J[3J[H[[90m9:35:02 AM[0m] File change detected. Starting incremental compilation...
-
-[[90m9:35:03 AM[0m] Found 0 errors. Watching for file changes.
-
-[2J[3J[H[[90m9:41:31 AM[0m] File change detected. Starting incremental compilation...
-
-[[90m9:41:32 AM[0m] Found 0 errors. Watching for file changes.
-
-[2J[3J[H[[90m9:42:30 AM[0m] File change detected. Starting incremental compilation...
-
-[[90m9:42:31 AM[0m] Found 0 errors. Watching for file changes.
-
-[2J[3J[H[[90m9:45:59 AM[0m] File change detected. Starting incremental compilation...
-
-[[90m9:45:59 AM[0m] Found 0 errors. Watching for file changes.
+[[90m12:13:15 PM[0m] Found 0 errors. Watching for file changes.
 

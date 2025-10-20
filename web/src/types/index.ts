@@ -1,3 +1,5 @@
+import { GetApplications, GetApplicationsSuccess } from "../lib/api-client";
+
 export interface Startup {
   id: string;
   title: string;
@@ -37,3 +39,5 @@ export interface RevenueShareCalculation {
   yearlyDeveloperIncome: number;
   yearlyEntrepreneurIncome: number;
 }
+
+export type DeveloperApplication = GetApplicationsSuccess["data"][number];

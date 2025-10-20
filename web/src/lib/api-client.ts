@@ -38,6 +38,15 @@ export type GetMeSuccess = InferResponseType<
   typeof apiClient.api.auth.me.$get,
   200
 >;
+
+export type GetApplications = InferResponseType<
+  typeof apiClient.api.developerApplication.list.$get
+>;
 export type GetApplicationsSuccess = InferResponseType<
-  (typeof apiClient.api)["developer-application"]["list"]
+  typeof apiClient.api.developerApplication.list.$get,
+  200
+>;
+export type GetApplicationsError = InferResponseType<
+  typeof apiClient.api.developerApplication.list.$get,
+  500
 >;
