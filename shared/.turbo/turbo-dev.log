@@ -1,5 +1,72 @@
 [0m[2m[35m$[0m [2m[1mtsc --watch[0m
-[2J[3J[H[[90m6:14:25 PM[0m] Starting compilation in watch mode...
+[2J[3J[H[[90m7:06:50 PM[0m] Starting compilation in watch mode...
 
-[[90m6:14:27 PM[0m] Found 0 errors. Watching for file changes.
+[[90m7:06:52 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:15:24 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:15:25 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:18:32 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:18:33 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:19:24 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:19:24 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:19:42 PM[0m] File change detected. Starting incremental compilation...
+
+[96m../server/src/routes/developer-applications.ts[0m:[93m76[0m:[93m43[0m - [91merror[0m[90m TS1005: [0m',' expected.
+
+[7m76[0m   .get("/list", requireAuth, requireAdmin async (c) => {
+[7m  [0m [91m                                          ~~~~~[0m
+
+[[90m7:19:43 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m7:19:48 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:19:48 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:20:43 PM[0m] File change detected. Starting incremental compilation...
+
+[96m../server/src/routes/developer-applications.ts[0m:[93m40[0m:[93m24[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.
+
+[7m40[0m         const userId = c.get("user").userId;
+[7m  [0m [91m                       ~~~~~~~~~~~~~[0m
+
+[96m../server/src/routes/developer-applications.ts[0m:[93m40[0m:[93m30[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(key: never): unknown', gave the following error.
+    Argument of type '"user"' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(key: "jwtPayload"): any', gave the following error.
+    Argument of type '"user"' is not assignable to parameter of type '"jwtPayload"'.
+
+[7m40[0m         const userId = c.get("user").userId;
+[7m  [0m [91m                             ~~~~~~[0m
+
+
+[96m../server/src/routes/developer-applications.ts[0m:[93m113[0m:[93m26[0m - [91merror[0m[90m TS2571: [0mObject is of type 'unknown'.
+
+[7m113[0m         const userRole = c.get("user").role;
+[7m   [0m [91m                         ~~~~~~~~~~~~~[0m
+
+[96m../server/src/routes/developer-applications.ts[0m:[93m113[0m:[93m32[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(key: never): unknown', gave the following error.
+    Argument of type '"user"' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(key: "jwtPayload"): any', gave the following error.
+    Argument of type '"user"' is not assignable to parameter of type '"jwtPayload"'.
+
+[7m113[0m         const userRole = c.get("user").role;
+[7m   [0m [91m                               ~~~~~~[0m
+
+
+[[90m7:20:44 PM[0m] Found 4 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:21:37 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:21:38 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:22:27 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:22:28 PM[0m] Found 0 errors. Watching for file changes.
 

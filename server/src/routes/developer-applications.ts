@@ -3,7 +3,7 @@ import { zValidator } from "@hono/zod-validator";
 import { z } from "zod";
 import { prisma } from "../lib/prisma";
 
-import { requireAuth } from "../lib/requireAuth";
+import { requireAdmin, requireAuth } from "../lib/requireAuth";
 import { HTTPException } from "hono/http-exception";
 import {
   ApplicationStatus,
@@ -73,12 +73,8 @@ export const developerApplicationsRouter = new Hono()
       }
     }
   )
-  .get("/list", requireAuth, async (c) => {
+  .get("/list", requireAuth, requireAdmin, async (c) => {
     try {
-      const userRole = c.get("user").role;
-      if (userRole != "ADMIN") {
-        throw new HTTPException(403);
-      }
       const applications: DeveloperApplication[] = await prisma.$queryRaw`
         SELECT * FROM "DeveloperApplication"
         ORDER BY 

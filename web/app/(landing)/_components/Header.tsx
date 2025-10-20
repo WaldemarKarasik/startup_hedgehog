@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Rocket } from "lucide-react";
+import { Rocket, User } from "lucide-react";
 import { useAuthStore } from "@/src/stores/auth.store";
 import { Skeleton } from "primereact/skeleton";
 import { Logo } from "@/app/_shared-components/Logo";

@@ -4,7 +4,7 @@ import { ApplicationStatus, UserRole } from "../generated/prisma";
 
 export type JwtPayload = {
   userId: string;
-  role: string;
+  role: UserRole;
   exp: number;
 };
 

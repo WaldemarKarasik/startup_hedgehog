@@ -4,13 +4,17 @@ import { MenuItem } from "primereact/menuitem";
 import { SpeedDial } from "primereact/speeddial";
 import { Tooltip } from "primereact/tooltip";
 
-export const FloatingMenuButton = () => {
+export const FloatingMenuButton = ({
+  onCreateClick,
+}: {
+  onCreateClick: () => void;
+}) => {
   const items: MenuItem[] = [
     {
       label: "Добавить новый продукт",
       icon: <Plus size={30} />,
 
-      command: () => {},
+      command: () => onCreateClick(),
     },
   ];
   return (

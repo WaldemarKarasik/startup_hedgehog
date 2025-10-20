@@ -12,138 +12,217 @@
 
  [32m[1m✓[22m[39m Starting...
  [32m[1m✓[22m[39m Compiled middleware in 100ms
- [32m[1m✓[22m[39m Ready in 590ms
+ [32m[1m✓[22m[39m Ready in 585ms
+ [37m[1m○[22m[39m Compiling / ...
+ [32m[1m✓[22m[39m Compiled / in 2.1s
+ GET / [32m200[39m in 2343ms
  [37m[1m○[22m[39m Compiling /dashboard ...
- [32m[1m✓[22m[39m Compiled /dashboard in 2.1s
- GET /dashboard [32m200[39m in 2313ms
- [32m[1m✓[22m[39m Compiled /dashboard/applications in 464ms
- GET /dashboard/applications [32m200[39m in 1164ms
- [32m[1m✓[22m[39m Compiled / in 194ms
- GET / [32m200[39m in 228ms
- [32m[1m✓[22m[39m Compiled /calculator in 223ms
- GET /calculator [32m200[39m in 238ms
- GET /dashboard [32m200[39m in 10ms
- GET /dashboard/applications [32m200[39m in 201ms
- GET /dashboard/applications [32m200[39m in 376ms
- GET / [32m200[39m in 128ms
- GET /dashboard [32m200[39m in 10ms
- GET /dashboard/applications [32m200[39m in 203ms
- GET /dashboard [32m200[39m in 7ms
- GET /dashboard/applications [32m200[39m in 200ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 531ms
+ GET /dashboard [32m200[39m in 560ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 125ms
+ GET /dashboard/deals [33m404[39m in 155ms
+ GET /dashboard/deals [33m404[39m in 27ms
+ GET /dashboard [32m200[39m in 94ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 288ms
+ GET /dashboard/my-products [32m200[39m in 306ms
  GET /dashboard [32m200[39m in 6ms
- GET /dashboard/applications [32m200[39m in 200ms
- [32m[1m✓[22m[39m Compiled /sign-in in 399ms
- GET /sign-in [32m200[39m in 453ms
- GET /sign-in [32m200[39m in 131ms
- GET /sign-in [32m200[39m in 143ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 10ms
+ [32m[1m✓[22m[39m Compiled in 6ms
+ [32m[1m✓[22m[39m Compiled in 10ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 10ms
+ GET /dashboard/my-products [32m200[39m in 53ms
+ GET /dashboard/my-products [32m200[39m in 11ms
+ GET /dashboard/my-products [32m200[39m in 78ms
+ GET /dashboard/my-products [32m200[39m in 29ms
+ GET /dashboard/deals [33m404[39m in 9ms
+ GET /dashboard/deals [33m404[39m in 22ms
+ GET /dashboard/my-products [32m200[39m in 27ms
+ GET /dashboard/my-products [32m200[39m in 11ms
+ GET / [32m200[39m in 138ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 9ms
+ GET /dashboard [32m200[39m in 65ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 10ms
+ GET /dashboard/my-products [32m200[39m in 138ms
+ GET / [32m200[39m in 158ms
+ GET /dashboard [32m200[39m in 59ms
+ GET /dashboard/deals [33m404[39m in 7ms
+ GET /dashboard/deals [33m404[39m in 21ms
+ GET /dashboard [32m200[39m in 42ms
+ [32m[1m✓[22m[39m Compiled /catalog in 175ms
+ GET /catalog [32m200[39m in 358ms
+ GET /dashboard [32m200[39m in 9ms
+ GET / [32m200[39m in 109ms
+ [32m[1m✓[22m[39m Compiled in 59ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 20ms
  GET /dashboard [32m200[39m in 11ms
- GET /dashboard [32m200[39m in 29ms
- GET /dashboard [32m200[39m in 26ms
- GET /dashboard [32m200[39m in 25ms
- GET /dashboard/applications [32m200[39m in 201ms
- GET /dashboard/applications [32m200[39m in 257ms
- [32m[1m✓[22m[39m Compiled /_not-found/page in 146ms
- GET /dashboard/settings/profile [33m404[39m in 178ms
- GET /dashboard/settings/profile [33m404[39m in 30ms
- GET /dashboard/applications [32m200[39m in 274ms
- GET / [32m200[39m in 144ms
+ GET / [32m200[39m in 108ms
+ [32m[1m✓[22m[39m Compiled in 23ms
  GET /dashboard [32m200[39m in 8ms
- GET / [32m200[39m in 12ms
- [32m[1m✓[22m[39m Compiled /catalog in 148ms
- GET /catalog [32m200[39m in 266ms
+ GET / [32m200[39m in 66ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard/my-products [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
  GET /dashboard [32m200[39m in 7ms
- [32m[1m✓[22m[39m Compiled /for-developers/apply in 191ms
- GET /for-developers/apply [32m200[39m in 256ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET / [32m200[39m in 23ms
+ GET /dashboard [32m200[39m in 18ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET / [32m200[39m in 20ms
  GET /dashboard [32m200[39m in 8ms
- GET /sign-in [32m200[39m in 117ms
- GET /sign-in [32m200[39m in 139ms
- GET /sign-in [32m200[39m in 218ms
- GET /dashboard [32m200[39m in 9ms
- [32m[1m✓[22m[39m Compiled middleware in 0ms
- GET /dashboard [32m200[39m in 41ms
- GET /dashboard [32m200[39m in 10ms
+ GET /catalog [32m200[39m in 40ms
  GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET / [32m200[39m in 20ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET / [32m200[39m in 14ms
  GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET / [32m200[39m in 13ms
  GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET / [32m200[39m in 13ms
  GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 15ms
- GET /dashboard [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 15ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 15ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 17ms
- GET /dashboard [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 16ms
- GET /dashboard [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 17ms
+ GET /dashboard/deals [33m404[39m in 8ms
+ GET /dashboard/deals [33m404[39m in 25ms
+ GET /dashboard [32m200[39m in 27ms
+ GET /dashboard/my-products [32m200[39m in 10ms
  GET /dashboard [32m200[39m in 12ms
- GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 33ms
+ GET /dashboard/my-products [32m200[39m in 31ms
+ GET / [32m200[39m in 166ms
  GET /dashboard [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/deals [33m404[39m in 7ms
+ GET /dashboard/deals [33m404[39m in 22ms
+ GET /dashboard [32m200[39m in 25ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 5ms
+ GET / [32m200[39m in 23ms
+ GET /dashboard [32m200[39m in 10ms
+ GET /dashboard/deals [33m404[39m in 8ms
+ GET /dashboard/deals [33m404[39m in 24ms
+ GET /dashboard [32m200[39m in 28ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET / [32m200[39m in 14ms
  GET /dashboard [32m200[39m in 7ms
- GET /dashboard/products [33m404[39m in 25ms
- GET /dashboard/products [33m404[39m in 42ms
- GET /dashboard [32m200[39m in 101ms
- [32m[1m✓[22m[39m Compiled /dashboard/my-products in 208ms
- GET /dashboard/my-products [32m200[39m in 233ms
- [32m[1m✓[22m[39m Compiled in 21ms
- [32m[1m✓[22m[39m Compiled in 19ms
- [32m[1m✓[22m[39m Compiled in 21ms
- [32m[1m✓[22m[39m Compiled in 18ms
- GET /dashboard/my-products [32m200[39m in 101ms
- [32m[1m✓[22m[39m Compiled in 54ms
- [32m[1m✓[22m[39m Compiled /dashboard/my-products in 59ms
-[0m[31m [31m[1m⨯[22m[39m Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  {label: "Создать", icon: </>, command: function command}
-                                         ^^^^^^^^^^^^^^^^
-    at stringify (null)
-    at stringify (null)
-    at performMicrotask (null)
-    at processTicksAndRejections (null) {
-  digest: [32m'2193903363'[39m
-}[0m
- GET /dashboard/my-products [32m200[39m in 201ms
- [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 52ms
+ GET /dashboard/my-products [32m200[39m in 29ms
+ GET /dashboard/my-products [32m200[39m in 29ms
+ GET /dashboard/my-products [32m200[39m in 26ms
  [32m[1m✓[22m[39m Compiled /dashboard/my-products in 6ms
- GET /dashboard/my-products [32m200[39m in 108ms
- [32m[1m✓[22m[39m Compiled /dashboard/my-products in 16ms
-[0m[31m [31m[1m⨯[22m[39m Error: Functions cannot be passed directly to Client Components unless you explicitly expose it by marking it with "use server". Or maybe you meant to call this function rather than return it.
-  {label: "Создать", icon: </>, command: function command}
-                                         ^^^^^^^^^^^^^^^^
-    at stringify (null)
-    at stringify (null)
-    at stringify (null)
-    at performMicrotask (null)
-    at processTicksAndRejections (null) {
-  digest: [32m'3369375997'[39m
-}[0m
- GET /dashboard/my-products [32m200[39m in 113ms
- [32m[1m✓[22m[39m Compiled /dashboard/my-products in 19ms
- [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
- GET /dashboard/my-products [32m200[39m in 123ms
- [32m[1m✓[22m[39m Compiled in 18ms
- [32m[1m✓[22m[39m Compiled in 51ms
- GET /dashboard/my-products [32m200[39m in 86ms
- [32m[1m✓[22m[39m Compiled in 43ms
- [32m[1m✓[22m[39m Compiled in 21ms
- [32m[1m✓[22m[39m Compiled in 15ms
- [32m[1m✓[22m[39m Compiled in 20ms
+ GET /dashboard/my-products [32m200[39m in 61ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 4ms
+ GET /dashboard/my-products [32m200[39m in 61ms
+ GET /dashboard/my-products [32m200[39m in 81ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 9ms
+ GET /dashboard/my-products [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled in 72ms
+ [32m[1m✓[22m[39m Compiled in 47ms
  [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 6ms
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: useState is not defined
+    at MyProductsClient (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/%28developer%29/my-products/page.tsx:5:33)
+[0m [90m 3 |[39m
+ [90m 4 |[39m [36mconst[39m [33mMyProductsClient[39m [33m=[39m () [33m=>[39m {
+[31m[1m>[22m[39m[90m 5 |[39m   [36mconst[39m [visible[33m,[39m setVisible] [33m=[39m useState([36mfalse[39m)[33m;[39m
+ [90m   |[39m                                 [31m[1m^[22m[39m
+ [90m 6 |[39m   [36mreturn[39m (
+ [90m 7 |[39m     [33m<[39m[33mdiv[39m[33m>[39m
+ [90m 8 |[39m       [33m<[39m[33mDialog[39m[0m {
+  digest: [32m'73217967'[39m
+}[0m
+ GET /dashboard/my-products [32m200[39m in 73ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 5ms
+ GET /dashboard/my-products [32m200[39m in 109ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 37ms
+ GET /dashboard/my-products [32m200[39m in 72ms
  [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 16ms
- [32m[1m✓[22m[39m Compiled in 20ms
  [32m[1m✓[22m[39m Compiled in 17ms
  [32m[1m✓[22m[39m Compiled in 17ms
- GET /dashboard/my-products [32m200[39m in 114ms
- [32m[1m✓[22m[39m Compiled in 42ms
- GET /dashboard/my-products [32m200[39m in 129ms
- [32m[1m✓[22m[39m Compiled in 17ms
- GET /dashboard/my-products [32m200[39m in 82ms
+ GET /dashboard/my-products [32m200[39m in 256ms
  [32m[1m✓[22m[39m Compiled in 18ms
  [32m[1m✓[22m[39m Compiled in 17ms
-[?25h
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard/my-products [32m200[39m in 124ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ GET /dashboard/my-products [32m200[39m in 138ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 122ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 30ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard/my-products [32m200[39m in 127ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard/my-products [32m200[39m in 139ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 62ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 45ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ GET /dashboard/my-products [32m200[39m in 391ms
+ [32m[1m✓[22m[39m Compiled in 42ms
+ [32m[1m✓[22m[39m Compiled in 45ms
+ [32m[1m✓[22m[39m Compiled in 56ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ GET /dashboard/my-products [32m200[39m in 139ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ [32m[1m✓[22m[39m Compiled in 50ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ GET /dashboard/my-products [32m200[39m in 144ms
+ GET / [32m200[39m in 167ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard/settings/profile [33m404[39m in 8ms
+ GET /dashboard/settings/profile [33m404[39m in 23ms
+ GET /dashboard [32m200[39m in 27ms
+ GET /dashboard/my-products [32m200[39m in 9ms
+ GET /dashboard/my-products [32m200[39m in 26ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms

@@ -60,3 +60,39 @@ export const requireAuth: MiddlewareHandler<{
     return c.json({ success: false, message: "Невалидный токен" }, 401);
   }
 };
+
+export const requireAdmin: MiddlewareHandler<{
+  Variables: { user: JwtPayload };
+}> = async (c: Context, next: Next) => {
+  try {
+    const user = c.get("user");
+    if (!user) {
+      return c.json({ success: false, message: "Требуется авторизация" }, 401);
+    }
+    if (user.role !== "ADMIN") {
+      return c.json({ success: false, message: "Вы не админ" }, 403);
+    }
+    await next();
+  } catch (error) {
+    // 9. ОШИБКА: Токен невалидный
+    return c.json({ success: false, message: "Невалидный токен" }, 401);
+  }
+};
+
+export const requireDeveloper: MiddlewareHandler<{
+  Variables: { user: JwtPayload };
+}> = async (c: Context, next: Next) => {
+  try {
+    const user = c.get("user");
+    if (!user) {
+      return c.json({ success: false, message: "Требуется авторизация" }, 401);
+    }
+    if (user.role !== "DEVELOPER") {
+      return c.json({ success: false, message: "Вы не разработчик" }, 403);
+    }
+    await next();
+  } catch (error) {
+    // 9. ОШИБКА: Токен невалидный
+    return c.json({ success: false, message: "Невалидный токен" }, 401);
+  }
+};
