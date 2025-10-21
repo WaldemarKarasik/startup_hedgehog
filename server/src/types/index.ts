@@ -21,4 +21,3 @@ export const DeveloperApplicationStatuses = ApplicationStatus;
 export const UserRoles = UserRole;
 
 export const ProductCategories = ProductCategory;
-export { NewProductSchema } from "../routes/products";

@@ -10,7 +10,8 @@
   "dependencies": {
     "@hono/zod-validator": "^0.7.3",
     "@prisma/client": "^6.17.1",
-    "googleapis": "^164.0.0"
+    "googleapis": "^164.0.0",
+    "shared": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "^1.2.23",

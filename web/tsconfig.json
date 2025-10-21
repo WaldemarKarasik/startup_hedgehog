@@ -30,8 +30,7 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "server/*": ["../server/*"],
-      "shared/*": ["../shared/*"]
+      "server/*": ["../server/*"]
     }
   }
 }
