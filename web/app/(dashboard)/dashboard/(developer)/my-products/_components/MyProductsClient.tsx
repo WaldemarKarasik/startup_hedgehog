@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { FloatingMenuButton } from "./FloatingMenuButton";
 import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
+import { NewProductForm } from "./NewProductForm";
+import { X } from "lucide-react";
 
 export const MyProductsClient = () => {
   const [visible, setVisible] = useState(false);
@@ -24,13 +26,24 @@ export const MyProductsClient = () => {
           <div className="flex flex-col min-w-[90vw] md:min-w-[30vw] min-h-[60vh] md:min-h-[30vh] px-8 py-5 gap-4 bg-white rounded-xl">
             {/* Main content */}
             <div className="flex-1">
-              <h3 className="text-xl">Добавьте новый продукт</h3>
+              <div className="grid grid-cols-2 border-b-2 border-gray-300 ">
+                <h3 className="text-2xl font-medium ">
+                  Добавьте новый продукт
+                </h3>
+                <X
+                  size={26}
+                  className="cursor-pointer justify-self-end"
+                  onClick={() => setVisible(false)}
+                />
+              </div>
+              {/* Форма для добавления нового продукта */}
+              <NewProductForm />
             </div>
             {/* Dialog actions */}
-            <div className="flex gap-5">
+            {/* <div className="flex gap-5 ">
               <Button label="Добавить" />
               <Button label="Закрыть" severity={"secondary"} onClick={hide} />
-            </div>
+            </div> */}
           </div>
         )}
       />

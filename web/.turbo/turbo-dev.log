@@ -323,3 +323,176 @@ To help make Turbopack better, report this error by ]8;;https://github.com/verc
  GET /dashboard/my-products [32m200[39m in 8ms
  GET /dashboard/my-products [32m200[39m in 46ms
  [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ GET /dashboard/my-products [32m200[39m in 92ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled / in 6ms
+ GET / [32m200[39m in 245ms
+ GET / [32m200[39m in 63ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 21ms
+ GET /dashboard [32m200[39m in 48ms
+ GET /dashboard/my-products [32m200[39m in 133ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ [32m[1m✓[22m[39m Compiled in 28ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 204ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 44ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 50ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 14ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 74ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /dashboard/my-products [32m200[39m in 87ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 16ms
+ GET /dashboard/my-products [32m200[39m in 73ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 25ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 15ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 212ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 25ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled /for-developers/apply in 243ms
+ GET /for-developers/apply [32m200[39m in 319ms
+ GET /dashboard [32m200[39m in 31ms
+ GET /dashboard/my-products [32m200[39m in 186ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 86ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 144ms
+ GET /dashboard/settings/profile [33m404[39m in 179ms
+ GET /dashboard/settings/profile [33m404[39m in 27ms
+ GET /dashboard/my-products [32m200[39m in 27ms
+ [32m[1m✓[22m[39m Compiled in 46ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 49ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ GET /dashboard/my-products [32m200[39m in 89ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 47ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET / [32m200[39m in 243ms
+ GET /dashboard [32m200[39m in 28ms
+ GET /dashboard/my-products [32m200[39m in 32ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 30ms
+ GET / [32m200[39m in 23ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard/my-products [32m200[39m in 30ms
+[?25h
