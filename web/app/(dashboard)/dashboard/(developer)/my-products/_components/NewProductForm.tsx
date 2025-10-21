@@ -13,6 +13,13 @@ import { InputTextarea } from "primereact/inputtextarea";
 import { InputText } from "primereact/inputtext";
 import { FileUpload } from "primereact/fileupload";
 import { MultipleImageUpload } from "@/app/_shared-components/MultipleImageUpload";
+
+// Convert Prisma enum object to array for Zod and Dropdown
+const productCategoriesArray = Object.values(ProductCategories) as [
+  string,
+  ...string[]
+];
+
 const NewProductSchema = z.object({
   // General info
   name: z.string().min(3, { message: "Минимум 3 символа" }),
@@ -20,7 +27,7 @@ const NewProductSchema = z.object({
   techStack: z
     .string({ message: "Это поле обязательно" })
     .nonempty({ message: "Это поле не может быть пустым" }),
-  category: z.enum(ProductCategories, { message: "Выберите категорию" }),
+  category: z.enum(productCategoriesArray, { message: "Выберите категорию" }),
   // Price
   customizationPrice: z.number().min(300000).max(450000),
   revenueShare: z.number().min(5).max(20),
@@ -47,8 +54,6 @@ const NewProductSchema = z.object({
       "Only JPG, PNG, WEBP formats are supported"
     ),
 });
-
-const productCategories = Array.from(Object.keys(ProductCategories));
 
 export type NewProductFormData = z.infer<typeof NewProductSchema>;
 export const NewProductForm = ({
@@ -191,8 +196,7 @@ export const NewProductForm = ({
               <Dropdown
                 value={category}
                 onChange={(e) => setValue("category", e.target.value)}
-                options={productCategories}
-                optionLabel="name"
+                options={productCategoriesArray}
                 placeholder="Выберите категорию"
                 className="w-full md:w-14rem"
                 checkmark={true}
