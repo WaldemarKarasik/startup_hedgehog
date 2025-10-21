@@ -3,6 +3,7 @@ export {
   DeveloperApplicationStatuses,
   UserRoles,
   ProductCategories,
+  NewProductSchema,
 } from "server/src/types";
 import type z from "zod";
 

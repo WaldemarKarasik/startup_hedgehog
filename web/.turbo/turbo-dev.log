@@ -2835,3 +2835,289 @@ https://nextjs.org/docs/messages/module-not-found
  [32m[1m✓[22m[39m Compiled in 23ms
  [32m[1m✓[22m[39m Compiled in 20ms
  [32m[1m✓[22m[39m Compiled in 23ms
+ GET /dashboard/deals [33m404[39m in 17ms
+ GET /dashboard/deals [33m404[39m in 29ms
+ GET /dashboard/my-products [32m200[39m in 124ms
+ GET /dashboard [32m200[39m in 26ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 9ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 51ms
+ GET /dashboard/my-products [32m200[39m in 28ms
+ GET / [32m200[39m in 210ms
+ GET /catalog [32m200[39m in 138ms
+ GET /dashboard [32m200[39m in 10ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET / [32m200[39m in 14ms
+ GET / [32m200[39m in 197ms
+ GET / [32m200[39m in 49ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET /dashboard/deals [33m404[39m in 14ms
+ GET /dashboard/deals [33m404[39m in 22ms
+ GET /dashboard/my-products [32m200[39m in 28ms
+ GET /catalog [32m200[39m in 181ms
+ GET /catalog [32m200[39m in 42ms
+ GET /calculator [32m200[39m in 11ms
+ GET /for-developers [32m200[39m in 11ms
+ GET /for-developers/apply [32m200[39m in 97ms
+ GET /catalog [32m200[39m in 44ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/deals [33m404[39m in 6ms
+ GET /dashboard/deals [33m404[39m in 21ms
+ GET /dashboard [32m200[39m in 230ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ [32m[1m✓[22m[39m Compiled in 70ms
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9093:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:3:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9093:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:3:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ GET /dashboard/my-products [31m500[39m in 46ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./server/src/types/index.ts [app-client] (ecmascript) <locals> changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9093:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ [32m[1m✓[22m[39m Compiled in 24ms
+ GET /dashboard/my-products [31m500[39m in 103ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./server/src/routes/products.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9092:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ [32m[1m✓[22m[39m Compiled in 9ms
+ GET /dashboard/my-products [31m500[39m in 110ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./server/src/routes/products.ts changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 8ms
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9096:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ GET /dashboard/my-products [31m500[39m in 147ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 158ms
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9096:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard/my-products [31m500[39m in 299ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./web/app/(dashboard)/dashboard/(developer)/my-products/_components/NewProductForm.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 37ms
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9096:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ GET /dashboard/my-products [31m500[39m in 145ms
+ [32m[1m✓[22m[39m Compiled in 39ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./shared/dist/types/index.js [app-client] (ecmascript) <locals> changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 2ms
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9096:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9096:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ GET /dashboard/my-products [31m500[39m in 55ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 168ms
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9096:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload when ./web/app/(dashboard)/dashboard/(developer)/my-products/_components/NewProductForm.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+[0m[31m [31m[1m⨯[22m[39m ReferenceError: Cannot access 'ProductCategories' before initialization.
+    at <anonymous> (.next/dev/server/chunks/ssr/[root-of-the-server]__dc941a2c._.js:9096:9)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/routes/products.ts:14:20)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/server/src/types/index.ts:24:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/types/index.js:2:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/shared/dist/index.js:1:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/sidebar/DesktopSidebar.tsx:8:1)
+    at __TURBOPACK__module__evaluation__ (file:/home/daniel/Documents/%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF_%D0%B5%D0%B6/web/app/%28dashboard%29/dashboard/_components/layout/DashboardLayout.tsx:26:1)
+    at processTicksAndRejections (null)
+[0m [90m 12 |[39m     [33m.[39mstring({ message[33m:[39m [32m"Это поле обязательно"[39m })
+ [90m 13 |[39m     [33m.[39mnonempty({ message[33m:[39m [32m"Это поле не может быть пустым"[39m })[33m,[39m
+[31m[1m>[22m[39m[90m 14 |[39m   category[33m:[39m z[33m.[39m[36menum[39m([33mProductCategories[39m[33m,[39m { message[33m:[39m [32m"Выберите категорию"[39m })[33m,[39m
+ [90m    |[39m                    [31m[1m^[22m[39m
+ [90m 15 |[39m   [90m// Price[39m
+ [90m 16 |[39m   customizationPrice[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m300000[39m)[33m.[39mmax([35m450000[39m)[33m,[39m
+ [90m 17 |[39m   revenueShare[33m:[39m z[33m.[39mnumber()[33m.[39mmin([35m5[39m)[33m.[39mmax([35m20[39m)[33m,[39m[0m {
+  digest: [32m'281671074'[39m
+}[0m
+ GET /dashboard/my-products [31m500[39m in 60ms

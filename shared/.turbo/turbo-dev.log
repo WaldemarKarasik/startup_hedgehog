@@ -11,3 +11,77 @@
 
 [[90m1:57:49 PM[0m] Found 0 errors. Watching for file changes.
 
+[2J[3J[H[[90m7:35:38 PM[0m] File change detected. Starting incremental compilation...
+
+[96m../server/src/routes/products.ts[0m:[93m50[0m:[93m7[0m - [91merror[0m[90m TS2345: [0mArgument of type 'undefined' is not assignable to parameter of type 'Blob'.
+
+[7m50[0m       screenshots,
+[7m  [0m [91m      ~~~~~~~~~~~[0m
+
+[96m../server/src/routes/products.ts[0m:[93m71[0m:[93m7[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(input: string | Request | URL, init?: RequestInit | undefined): Promise<Response>', gave the following error.
+    Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'HeadersInit | undefined'.
+      Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'undefined'.
+  Overload 2 of 2, '(input: string | Request | URL, init?: BunFetchRequestInit | undefined): Promise<Response>', gave the following error.
+    Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'HeadersInit | undefined'.
+      Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'undefined'.
+
+[7m71[0m       headers: {
+[7m  [0m [91m      ~~~~~~~[0m
+
+
+[[90m7:35:39 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:35:48 PM[0m] File change detected. Starting incremental compilation...
+
+[96m../server/src/routes/products.ts[0m:[93m50[0m:[93m7[0m - [91merror[0m[90m TS2345: [0mArgument of type 'undefined' is not assignable to parameter of type 'Blob'.
+
+[7m50[0m       screenshots,
+[7m  [0m [91m      ~~~~~~~~~~~[0m
+
+[96m../server/src/routes/products.ts[0m:[93m71[0m:[93m7[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(input: string | Request | URL, init?: RequestInit | undefined): Promise<Response>', gave the following error.
+    Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'HeadersInit | undefined'.
+      Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'undefined'.
+  Overload 2 of 2, '(input: string | Request | URL, init?: BunFetchRequestInit | undefined): Promise<Response>', gave the following error.
+    Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'HeadersInit | undefined'.
+      Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'undefined'.
+
+[7m71[0m       headers: {
+[7m  [0m [91m      ~~~~~~~[0m
+
+
+[[90m7:35:49 PM[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:36:09 PM[0m] File change detected. Starting incremental compilation...
+
+[96m../server/src/routes/products.ts[0m:[93m67[0m:[93m7[0m - [91merror[0m[90m TS2769: [0mNo overload matches this call.
+  Overload 1 of 2, '(input: string | Request | URL, init?: RequestInit | undefined): Promise<Response>', gave the following error.
+    Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'HeadersInit | undefined'.
+      Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'undefined'.
+  Overload 2 of 2, '(input: string | Request | URL, init?: BunFetchRequestInit | undefined): Promise<Response>', gave the following error.
+    Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'HeadersInit | undefined'.
+      Type '{ AccessKey: string | undefined; "Content-Type": string; }' is not assignable to type 'undefined'.
+
+[7m67[0m       headers: {
+[7m  [0m [91m      ~~~~~~~[0m
+
+
+[[90m7:36:09 PM[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m7:37:40 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:37:41 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:38:35 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:38:35 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:43:17 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:43:17 PM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m7:43:52 PM[0m] File change detected. Starting incremental compilation...
+
+[[90m7:43:52 PM[0m] Found 0 errors. Watching for file changes.
+
