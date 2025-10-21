@@ -1,0 +1,47 @@
+import * as z from 'zod';
+export const UserFindManyResultSchema = z.object({
+  data: z.array(z.object({
+  id: z.string(),
+  email: z.string(),
+  passwordHash: z.string(),
+  role: z.unknown(),
+  firstName: z.string(),
+  lastName: z.string(),
+  phone: z.string().optional(),
+  avatar: z.string().optional(),
+  bio: z.string().optional(),
+  userType: z.unknown().optional(),
+  legalName: z.string().optional(),
+  inn: z.string().optional(),
+  legalBasis: z.string().optional(),
+  bankDetails: z.unknown().optional(),
+  payoutMethod: z.string().optional(),
+  payoutDetails: z.unknown().optional(),
+  reputation: z.number().int(),
+  trustScore: z.number().int(),
+  rating: z.number(),
+  reviewCount: z.number().int(),
+  isVerified: z.boolean(),
+  isSuspended: z.boolean(),
+  suspendedReason: z.string().optional(),
+  lastActiveAt: z.date(),
+  application: z.unknown().optional(),
+  developedProducts: z.array(z.unknown()),
+  purchasedDeals: z.array(z.unknown()),
+  soldDeals: z.array(z.unknown()),
+  reviews: z.array(z.unknown()),
+  receivedReviews: z.array(z.unknown()),
+  disputes: z.array(z.unknown()),
+  notifications: z.array(z.unknown()),
+  createdAt: z.date(),
+  updatedAt: z.date()
+})),
+  pagination: z.object({
+  page: z.number().int().min(1),
+  pageSize: z.number().int().min(1),
+  total: z.number().int().min(0),
+  totalPages: z.number().int().min(0),
+  hasNext: z.boolean(),
+  hasPrev: z.boolean()
+})
+});

@@ -1,0 +1,66 @@
+import * as z from 'zod';
+export const ContractAggregateResultSchema = z.object({  _count: z.object({
+    id: z.number(),
+    dealId: z.number(),
+    deal: z.number(),
+    templateVersion: z.number(),
+    content: z.number(),
+    pdfUrl: z.number(),
+    fixedPrice: z.number(),
+    revenueSharePercent: z.number(),
+    revenueShareDuration: z.number(),
+    supportPeriod: z.number(),
+    criticalSLA: z.number(),
+    normalSLA: z.number(),
+    signatures: z.number(),
+    status: z.number(),
+    createdAt: z.number(),
+    updatedAt: z.number(),
+    signedAt: z.number()
+  }).optional(),
+  _sum: z.object({
+    fixedPrice: z.number().nullable(),
+    revenueSharePercent: z.number().nullable(),
+    supportPeriod: z.number().nullable(),
+    criticalSLA: z.number().nullable(),
+    normalSLA: z.number().nullable()
+  }).nullable().optional(),
+  _avg: z.object({
+    fixedPrice: z.number().nullable(),
+    revenueSharePercent: z.number().nullable(),
+    supportPeriod: z.number().nullable(),
+    criticalSLA: z.number().nullable(),
+    normalSLA: z.number().nullable()
+  }).nullable().optional(),
+  _min: z.object({
+    id: z.string().nullable(),
+    dealId: z.string().nullable(),
+    templateVersion: z.string().nullable(),
+    content: z.string().nullable(),
+    pdfUrl: z.string().nullable(),
+    fixedPrice: z.number().nullable(),
+    revenueSharePercent: z.number().int().nullable(),
+    revenueShareDuration: z.string().nullable(),
+    supportPeriod: z.number().int().nullable(),
+    criticalSLA: z.number().int().nullable(),
+    normalSLA: z.number().int().nullable(),
+    createdAt: z.date().nullable(),
+    updatedAt: z.date().nullable(),
+    signedAt: z.date().nullable()
+  }).nullable().optional(),
+  _max: z.object({
+    id: z.string().nullable(),
+    dealId: z.string().nullable(),
+    templateVersion: z.string().nullable(),
+    content: z.string().nullable(),
+    pdfUrl: z.string().nullable(),
+    fixedPrice: z.number().nullable(),
+    revenueSharePercent: z.number().int().nullable(),
+    revenueShareDuration: z.string().nullable(),
+    supportPeriod: z.number().int().nullable(),
+    criticalSLA: z.number().int().nullable(),
+    normalSLA: z.number().int().nullable(),
+    createdAt: z.date().nullable(),
+    updatedAt: z.date().nullable(),
+    signedAt: z.date().nullable()
+  }).nullable().optional()});

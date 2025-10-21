@@ -1,0 +1,14 @@
+import type { Prisma } from '../../../src/generated/prisma';
+import * as z from 'zod';
+import { RevenueReportOrderByWithRelationInputObjectSchema as RevenueReportOrderByWithRelationInputObjectSchema } from './objects/RevenueReportOrderByWithRelationInput.schema';
+import { RevenueReportWhereInputObjectSchema as RevenueReportWhereInputObjectSchema } from './objects/RevenueReportWhereInput.schema';
+import { RevenueReportWhereUniqueInputObjectSchema as RevenueReportWhereUniqueInputObjectSchema } from './objects/RevenueReportWhereUniqueInput.schema';
+import { RevenueReportCountAggregateInputObjectSchema as RevenueReportCountAggregateInputObjectSchema } from './objects/RevenueReportCountAggregateInput.schema';
+import { RevenueReportMinAggregateInputObjectSchema as RevenueReportMinAggregateInputObjectSchema } from './objects/RevenueReportMinAggregateInput.schema';
+import { RevenueReportMaxAggregateInputObjectSchema as RevenueReportMaxAggregateInputObjectSchema } from './objects/RevenueReportMaxAggregateInput.schema';
+import { RevenueReportAvgAggregateInputObjectSchema as RevenueReportAvgAggregateInputObjectSchema } from './objects/RevenueReportAvgAggregateInput.schema';
+import { RevenueReportSumAggregateInputObjectSchema as RevenueReportSumAggregateInputObjectSchema } from './objects/RevenueReportSumAggregateInput.schema';
+
+export const RevenueReportAggregateSchema: z.ZodType<Prisma.RevenueReportAggregateArgs> = z.object({ orderBy: z.union([RevenueReportOrderByWithRelationInputObjectSchema, RevenueReportOrderByWithRelationInputObjectSchema.array()]).optional(), where: RevenueReportWhereInputObjectSchema.optional(), cursor: RevenueReportWhereUniqueInputObjectSchema.optional(), take: z.number().optional(), skip: z.number().optional(), _count: z.union([ z.literal(true), RevenueReportCountAggregateInputObjectSchema ]).optional(), _min: RevenueReportMinAggregateInputObjectSchema.optional(), _max: RevenueReportMaxAggregateInputObjectSchema.optional(), _avg: RevenueReportAvgAggregateInputObjectSchema.optional(), _sum: RevenueReportSumAggregateInputObjectSchema.optional() }).strict() as unknown as z.ZodType<Prisma.RevenueReportAggregateArgs>;
+
+export const RevenueReportAggregateZodSchema = z.object({ orderBy: z.union([RevenueReportOrderByWithRelationInputObjectSchema, RevenueReportOrderByWithRelationInputObjectSchema.array()]).optional(), where: RevenueReportWhereInputObjectSchema.optional(), cursor: RevenueReportWhereUniqueInputObjectSchema.optional(), take: z.number().optional(), skip: z.number().optional(), _count: z.union([ z.literal(true), RevenueReportCountAggregateInputObjectSchema ]).optional(), _min: RevenueReportMinAggregateInputObjectSchema.optional(), _max: RevenueReportMaxAggregateInputObjectSchema.optional(), _avg: RevenueReportAvgAggregateInputObjectSchema.optional(), _sum: RevenueReportSumAggregateInputObjectSchema.optional() }).strict();

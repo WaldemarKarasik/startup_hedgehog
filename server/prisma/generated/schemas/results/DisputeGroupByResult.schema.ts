@@ -1,0 +1,58 @@
+import * as z from 'zod';
+export const DisputeGroupByResultSchema = z.array(z.object({
+  id: z.string(),
+  dealId: z.string(),
+  initiatedBy: z.string(),
+  title: z.string(),
+  description: z.string(),
+  evidenceUrls: z.array(z.string()),
+  resolution: z.string(),
+  platformAction: z.string(),
+  createdAt: z.date(),
+  updatedAt: z.date(),
+  resolvedAt: z.date(),
+  _count: z.object({
+    id: z.number(),
+    dealId: z.number(),
+    deal: z.number(),
+    initiatedBy: z.number(),
+    initiator: z.number(),
+    type: z.number(),
+    stage: z.number(),
+    status: z.number(),
+    title: z.number(),
+    description: z.number(),
+    evidenceUrls: z.number(),
+    resolution: z.number(),
+    platformAction: z.number(),
+    createdAt: z.number(),
+    updatedAt: z.number(),
+    resolvedAt: z.number()
+  }).optional(),
+  _min: z.object({
+    id: z.string().nullable(),
+    dealId: z.string().nullable(),
+    initiatedBy: z.string().nullable(),
+    title: z.string().nullable(),
+    description: z.string().nullable(),
+    evidenceUrls: z.array(z.string()).nullable(),
+    resolution: z.string().nullable(),
+    platformAction: z.string().nullable(),
+    createdAt: z.date().nullable(),
+    updatedAt: z.date().nullable(),
+    resolvedAt: z.date().nullable()
+  }).nullable().optional(),
+  _max: z.object({
+    id: z.string().nullable(),
+    dealId: z.string().nullable(),
+    initiatedBy: z.string().nullable(),
+    title: z.string().nullable(),
+    description: z.string().nullable(),
+    evidenceUrls: z.array(z.string()).nullable(),
+    resolution: z.string().nullable(),
+    platformAction: z.string().nullable(),
+    createdAt: z.date().nullable(),
+    updatedAt: z.date().nullable(),
+    resolvedAt: z.date().nullable()
+  }).nullable().optional()
+}));

@@ -1,24 +1,2 @@
 [0m[2m[35m$[0m [2m[1mbun --watch run src/index.ts && tsc --watch[0m
 Started development server: http://localhost:5173
-[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
-[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
-[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
-[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
-[2J[3J[H[2J[3J[H[1m76 | [0m  [0m[3m[1m.get[0m([0m[32m"/list"[0m, requireAuth, requireAdmin [0m[35masync[0m (c) => {
-                                               [1m[31m[1m^[0m
-[31merror[0m[2m: [0m[1mExpected ")" but found "async"[0m
-    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/developer-applications.ts[0m[2m:[0m[33m76[0m[2m:[0m[33m43[0m
-
-[1m76 | [0m  [0m[3m[1m.get[0m([0m[32m"/list"[0m, requireAuth, requireAdmin [0m[35masync[0m (c) => {
-                                                         [1m[31m[1m^[0m
-[31merror[0m[2m: [0m[1mExpected ";" but found "=>"[0m
-    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/developer-applications.ts[0m[2m:[0m[33m76[0m[2m:[0m[33m53[0m
-
-[1m104 | [0m  })
-         [1m[31m[1m^[0m
-[31merror[0m[2m: [0m[1mUnexpected )[0m
-    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/developer-applications.ts[0m[2m:[0m[33m104[0m[2m:[0m[33m4[0m
-[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
-[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
-[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
-[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173

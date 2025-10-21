@@ -174,11 +174,9 @@ enum ProductCategory {
 }
 
 enum ProductStatus {
-  DRAFT      // Черновик
   MODERATION // На модерации
   ACTIVE     // Активен в каталоге
   SOLD       // Продан (но может быть продан повторно)
-  ARCHIVED   // Архивирован
   REJECTED   // Отклонён модерацией
 }
 
@@ -191,12 +189,10 @@ model Product {
   name        String
   tagline     String
   description String          @db.Text
-  fullDescription String?     @db.Text
   category    ProductCategory
   
   // Технические детали
   techStack   String[]        // ["React", "Node.js", "PostgreSQL"]
-  version     String          @default("1.0.0")
   
   // Демо и медиа
   demoUrl     String?
@@ -206,7 +202,7 @@ model Product {
   
   
   // Условия оферты (шаблон договора)
-  fixedPrice          Decimal?  @db.Decimal(10, 2) // null = только Revenue Share
+  customizationPrice          Decimal  @db.Decimal(10, 2) // null = только Revenue Share
   revenueSharePercent Int       // 0-100
   revenueShareDuration String   // "36 месяцев" или "бессрочно"
   
@@ -217,7 +213,7 @@ model Product {
   
   
   // Статус и модерация
-  status      ProductStatus   @default(DRAFT)
+  status      ProductStatus   @default(MODERATION)
   rejectionReason String?
   
   // SEO и статистика

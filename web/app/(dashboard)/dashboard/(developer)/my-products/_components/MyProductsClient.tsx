@@ -24,7 +24,7 @@ export const MyProductsClient = () => {
           <div className="flex flex-col min-w-[90vw] md:min-w-[30vw] min-h-[60vh] md:min-h-[30vh] px-8 py-5 gap-4 bg-white rounded-xl">
             {/* Main content */}
             <div className="flex-1">
-              <h3 className="text-2xl">Добавьте новый продукт</h3>
+              <h3 className="text-xl">Добавьте новый продукт</h3>
             </div>
             {/* Dialog actions */}
             <div className="flex gap-5">

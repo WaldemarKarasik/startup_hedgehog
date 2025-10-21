@@ -1,0 +1,40 @@
+import * as z from 'zod';
+export const DealFindManyResultSchema = z.object({
+  data: z.array(z.object({
+  id: z.string(),
+  productId: z.string(),
+  product: z.unknown(),
+  buyerId: z.string(),
+  buyer: z.unknown(),
+  developerId: z.string(),
+  developer: z.unknown(),
+  fixedPrice: z.number().optional(),
+  revenueSharePercent: z.number().int(),
+  revenueShareDuration: z.string(),
+  supportPeriod: z.number().int(),
+  criticalSLA: z.number().int(),
+  normalSLA: z.number().int(),
+  hasRevenueShare: z.boolean(),
+  paymentMethodId: z.string().optional(),
+  escrowPaymentId: z.string().optional(),
+  escrowExpiresAt: z.date().optional(),
+  status: z.unknown(),
+  activatedAt: z.date().optional(),
+  pausedAt: z.date().optional(),
+  completedAt: z.date().optional(),
+  contract: z.unknown().optional(),
+  transactions: z.array(z.unknown()),
+  revenueReports: z.array(z.unknown()),
+  disputes: z.array(z.unknown()),
+  createdAt: z.date(),
+  updatedAt: z.date()
+})),
+  pagination: z.object({
+  page: z.number().int().min(1),
+  pageSize: z.number().int().min(1),
+  total: z.number().int().min(0),
+  totalPages: z.number().int().min(0),
+  hasNext: z.boolean(),
+  hasPrev: z.boolean()
+})
+});

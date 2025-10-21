@@ -1,0 +1,10 @@
+import type { Prisma } from '../../../src/generated/prisma';
+import * as z from 'zod';
+import { DeveloperApplicationOrderByWithRelationInputObjectSchema as DeveloperApplicationOrderByWithRelationInputObjectSchema } from './objects/DeveloperApplicationOrderByWithRelationInput.schema';
+import { DeveloperApplicationWhereInputObjectSchema as DeveloperApplicationWhereInputObjectSchema } from './objects/DeveloperApplicationWhereInput.schema';
+import { DeveloperApplicationWhereUniqueInputObjectSchema as DeveloperApplicationWhereUniqueInputObjectSchema } from './objects/DeveloperApplicationWhereUniqueInput.schema';
+import { DeveloperApplicationCountAggregateInputObjectSchema as DeveloperApplicationCountAggregateInputObjectSchema } from './objects/DeveloperApplicationCountAggregateInput.schema';
+
+export const DeveloperApplicationCountSchema: z.ZodType<Prisma.DeveloperApplicationCountArgs> = z.object({ orderBy: z.union([DeveloperApplicationOrderByWithRelationInputObjectSchema, DeveloperApplicationOrderByWithRelationInputObjectSchema.array()]).optional(), where: DeveloperApplicationWhereInputObjectSchema.optional(), cursor: DeveloperApplicationWhereUniqueInputObjectSchema.optional(), take: z.number().optional(), skip: z.number().optional(), select: z.union([ z.literal(true), DeveloperApplicationCountAggregateInputObjectSchema ]).optional() }).strict() as unknown as z.ZodType<Prisma.DeveloperApplicationCountArgs>;
+
+export const DeveloperApplicationCountZodSchema = z.object({ orderBy: z.union([DeveloperApplicationOrderByWithRelationInputObjectSchema, DeveloperApplicationOrderByWithRelationInputObjectSchema.array()]).optional(), where: DeveloperApplicationWhereInputObjectSchema.optional(), cursor: DeveloperApplicationWhereUniqueInputObjectSchema.optional(), take: z.number().optional(), skip: z.number().optional(), select: z.union([ z.literal(true), DeveloperApplicationCountAggregateInputObjectSchema ]).optional() }).strict();

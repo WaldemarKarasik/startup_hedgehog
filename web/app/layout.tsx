@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 
 import QueryProvider from "@/src/lib/TanstackQueryProvider";
-import { apiClient } from "@/src/lib/api-client";
 import { AuthInitializer } from "@/src/lib/AuthInitializer";
 
 export const metadata: Metadata = {

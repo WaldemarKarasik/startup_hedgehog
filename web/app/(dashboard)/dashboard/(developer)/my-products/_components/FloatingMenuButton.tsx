@@ -1,4 +1,3 @@
-"use client";
 import { Plus } from "lucide-react";
 import { MenuItem } from "primereact/menuitem";
 import { SpeedDial } from "primereact/speeddial";
@@ -26,7 +25,7 @@ export const FloatingMenuButton = ({
       <SpeedDial
         model={items}
         direction="up"
-        className="speeddial-bottom-right right-20 bottom-20"
+        className="speeddial-bottom-right fixed bottom-20 right-20"
         buttonClassName="p-button-primary"
       />
     </>
