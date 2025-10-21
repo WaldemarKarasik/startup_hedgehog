@@ -164,6 +164,7 @@ enum ProductCategory {
   SAAS
   MARKETPLACE
   ECOMMERCE
+  BOT
   FINTECH
   EDTECH
   HEALTHTECH
@@ -208,8 +209,7 @@ model Product {
   
   // Поддержка
   supportPeriod       Int       // месяцев
-  criticalSLA         Int       // часов для критических
-  normalSLA           Int       // дней для обычных
+
   
   
   // Статус и модерация

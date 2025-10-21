@@ -23,10 +23,10 @@ export const MyProductsClient = () => {
         }}
         closeOnEscape
         content={({ hide }) => (
-          <div className="flex flex-col min-w-[90vw] md:min-w-[30vw] min-h-[60vh] md:min-h-[30vh] px-8 py-5 gap-4 bg-white rounded-xl">
+          <div className="flex flex-col w-full max-w-[95vw] sm:max-w-[80vw] md:max-w-[60vw] lg:max-w-[40vw]  px-8 py-5 gap-4 bg-white rounded-xl">
             {/* Main content */}
             <div className="flex-1">
-              <div className="grid grid-cols-2 border-b-2 border-gray-300 ">
+              <div className="flex justify-between border-b-2 border-gray-300 ">
                 <h3 className="text-2xl font-medium ">
                   Добавьте новый продукт
                 </h3>
@@ -37,7 +37,7 @@ export const MyProductsClient = () => {
                 />
               </div>
               {/* Форма для добавления нового продукта */}
-              <NewProductForm />
+              <NewProductForm isDevelopersFirstProduct={true} />
             </div>
             {/* Dialog actions */}
             {/* <div className="flex gap-5 ">

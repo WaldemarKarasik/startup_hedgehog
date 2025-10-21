@@ -1,4 +1,8 @@
-import { GetApplications, GetApplicationsSuccess } from "../lib/api-client";
+import {
+  GetApplications,
+  GetApplicationsSuccess,
+  GetMeSuccess,
+} from "../lib/api-client";
 
 export interface Startup {
   id: string;
