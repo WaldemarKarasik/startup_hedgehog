@@ -2718,3 +2718,120 @@ https://nextjs.org/docs/messages/module-not-found
  GET /dashboard [32m200[39m in 68ms
  GET /dashboard/my-products [32m200[39m in 55ms
  GET / [32m200[39m in 13ms
+ GET /catalog [32m200[39m in 155ms
+ GET /calculator [32m200[39m in 12ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 205ms
+ GET /for-developers [32m200[39m in 222ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 48ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 115ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 32ms
+ [32m[1m✓[22m[39m Compiled in 26ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 9ms
+ GET /dashboard/my-products [32m200[39m in 53ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 16ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 26ms
+ GET /dashboard/my-products [32m200[39m in 121ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 33ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 30ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 36ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 10ms
+ GET /dashboard/my-products [32m200[39m in 96ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 6ms
+ GET /dashboard/my-products [32m200[39m in 79ms
+ [32m[1m✓[22m[39m Compiled in 106ms
+ [32m[1m✓[22m[39m Compiled in 26ms
+ POST /dashboard/null [33m404[39m in 54ms
+ [32m[1m✓[22m[39m Compiled in 24ms
+ POST /dashboard/null [33m404[39m in 29ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 54ms
+ [32m[1m✓[22m[39m Compiled in 31ms
+ [32m[1m✓[22m[39m Compiled in 33ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 43ms
+ [32m[1m✓[22m[39m Compiled in 26ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ [32m[1m✓[22m[39m Compiled in 24ms
+ [32m[1m✓[22m[39m Compiled in 24ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ GET /dashboard/my-products [32m200[39m in 161ms
+ GET /dashboard/my-products [32m200[39m in 33ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /dashboard/my-products [32m200[39m in 120ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 57ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 27ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 51ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 52ms
+ [32m[1m✓[22m[39m Compiled in 52ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled in 20ms
+ [32m[1m✓[22m[39m Compiled in 23ms
