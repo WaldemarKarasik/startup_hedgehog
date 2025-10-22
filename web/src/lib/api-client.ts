@@ -50,3 +50,8 @@ export type GetApplicationsError = InferResponseType<
   typeof apiClient.api.developerApplication.list.$get,
   500
 >;
+
+export type GetDeveloperProductsSuccess = InferResponseType<
+  typeof apiClient.api.developerApplication.list.$get,
+  200
+>;

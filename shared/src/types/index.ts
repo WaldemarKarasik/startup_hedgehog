@@ -1,4 +1,7 @@
-import { ProductCategory } from "server/src/generated/prisma/client";
+import {
+  ProductCategory,
+  type Product,
+} from "server/src/generated/prisma/client";
 export {
   DeveloperApplicationStatuses,
   UserRoles,
@@ -60,3 +63,5 @@ export const NewProductSchema = z.object({
       "Only JPG, PNG, WEBP formats are supported"
     ),
 });
+
+export type DeveloperProduct = Product;

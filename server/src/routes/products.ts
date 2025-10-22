@@ -9,11 +9,8 @@ const newProductSchema = z.object({
   ...NewProductSchema.shape,
   images: z.array(z.instanceof(Blob)),
 });
-export const productsRouter = new Hono().post(
-  "/create",
-  requireAuth,
-  requireDeveloper,
-  async (c) => {
+export const productsRouter = new Hono()
+  .post("/create", requireAuth, requireDeveloper, async (c) => {
     try {
       const formData = await c.req.formData();
 
@@ -111,8 +108,31 @@ export const productsRouter = new Hono().post(
 
       return c.json({ success: false, error: error }, 500);
     }
-  }
-);
+  })
+  .get(
+    "/list",
+    zValidator("query", z.object({ developerId: z.string().optional() })),
+    async (c) => {
+      try {
+        const { developerId } = c.req.valid("query");
+        if (!developerId) {
+          return c.json({ success: true });
+        } else {
+          const developerProducts = await prisma.product.findMany();
+          return c.json({
+            success: true,
+            data: developerProducts,
+          });
+        }
+      } catch (error) {
+        console.error(error);
+        return c.json({
+          success: false,
+          error: "Couldn't get developer products",
+        });
+      }
+    }
+  );
 
 async function uploadToStorage(
   prefix: string,

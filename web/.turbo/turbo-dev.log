@@ -11,23 +11,129 @@
    - Network:      http://100.84.190.219:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 120ms
- [32m[1m✓[22m[39m Ready in 844ms
+ [32m[1m✓[22m[39m Compiled middleware in 99ms
+ [32m[1m✓[22m[39m Ready in 615ms
  [37m[1m○[22m[39m Compiling /dashboard/my-products ...
- [32m[1m✓[22m[39m Compiled /dashboard/my-products in 2.1s
- GET /dashboard/my-products [32m200[39m in 2303ms
- [32m[1m✓[22m[39m Compiled in 27ms
- [32m[1m✓[22m[39m Compiled in 19ms
- [32m[1m✓[22m[39m Compiled in 32ms
- [32m[1m✓[22m[39m Compiled in 14ms
- [32m[1m✓[22m[39m Compiled in 34ms
- [32m[1m✓[22m[39m Compiled in 51ms
- [32m[1m✓[22m[39m Compiled in 19ms
- [32m[1m✓[22m[39m Compiled in 21ms
- [32m[1m✓[22m[39m Compiled in 19ms
- GET /dashboard/my-products [32m200[39m in 135ms
- [32m[1m✓[22m[39m Compiled in 20ms
- [32m[1m✓[22m[39m Compiled in 23ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 2.2s
+ GET /dashboard/my-products [32m200[39m in 2382ms
+ [32m[1m✓[22m[39m Compiled in 22ms
+ [32m[1m✓[22m[39m Compiled in 24ms
  [32m[1m✓[22m[39m Compiled in 26ms
- GET /dashboard/my-products [32m200[39m in 135ms
+ GET /dashboard/my-products [32m200[39m in 88ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /dashboard/my-products [32m200[39m in 115ms
+ GET /dashboard/my-products [32m200[39m in 34ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 216ms
+ GET /dashboard [32m200[39m in 236ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 21ms
+ GET /dashboard/my-products [32m200[39m in 116ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 88ms
+ GET /dashboard/my-products [32m200[39m in 29ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 119ms
+ GET /dashboard [32m200[39m in 10ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 93ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 32ms
+ GET /dashboard [32m200[39m in 6ms
  GET /dashboard/my-products [32m200[39m in 12ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 70ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled in 19ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 22ms
+ GET /dashboard/my-products [32m200[39m in 118ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 18ms
+ GET /dashboard/my-products [32m200[39m in 110ms
+ GET /dashboard/my-products [32m200[39m in 47ms
+ [33m[1m⚠[22m[39m Fast Refresh had to perform a full reload due to a runtime error.
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 111ms
+ [32m[1m✓[22m[39m Compiled in 29ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ [32m[1m✓[22m[39m Compiled in 18ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 116ms
+ [32m[1m✓[22m[39m Compiled in 17ms
+ GET /dashboard/my-products [32m200[39m in 119ms
+ GET /dashboard [32m200[39m in 9ms
+ GET /dashboard/my-products [32m200[39m in 8ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 10ms
+ GET /dashboard [32m200[39m in 8ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 5ms
+ GET /dashboard/my-products [32m200[39m in 6ms
+ GET /dashboard [32m200[39m in 6ms
+ GET /dashboard/my-products [32m200[39m in 5ms

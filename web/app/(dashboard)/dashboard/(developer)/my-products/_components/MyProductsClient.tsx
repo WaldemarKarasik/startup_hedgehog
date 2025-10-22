@@ -5,12 +5,27 @@ import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
 import { NewProductForm } from "./NewProductForm";
 import { X } from "lucide-react";
-
+import { useDeveloperProducts } from "@/src/hooks/products";
+import { useAuthStore } from "@/src/stores/auth.store";
+import { Skeleton } from "primereact/skeleton";
 export const MyProductsClient = () => {
   const [visible, setVisible] = useState(false);
+  const userId = useAuthStore((s) => s.user?.id);
+  const {
+    data: developerProducts,
+    isLoading,
+    isFetching,
+    isRefetching,
+  } = useDeveloperProducts({
+    developerId: userId!,
+    cacheKey: ["my-products"],
+  });
   useEffect(() => {
     console.log(visible);
   }, [visible]);
+  if (isLoading || isFetching || isRefetching) {
+    return <Skeleton height="40" />;
+  }
   return (
     <div>
       {/* New product dialog */}
@@ -47,6 +62,10 @@ export const MyProductsClient = () => {
           </div>
         )}
       />
+      {developerProducts?.data.map((product) => (
+        <p>{product["name"]}</p>
+      ))}
+
       <FloatingMenuButton onCreateClick={() => setVisible(true)} />
     </div>
   );

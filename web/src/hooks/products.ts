@@ -1,5 +1,9 @@
-import { useMutation } from "@tanstack/react-query";
-import { API_URL } from "../lib/api-client";
+import { useMutation, useQuery } from "@tanstack/react-query";
+import {
+  API_URL,
+  apiClient,
+  GetDeveloperProductsSuccess,
+} from "../lib/api-client";
 import { useRouter } from "next/navigation";
 
 export const useDeveloperProducts = ({
@@ -7,9 +11,22 @@ export const useDeveloperProducts = ({
   cacheKey,
 }: {
   developerId: string;
-  cacheKey: [];
+  cacheKey: string[];
 }) => {
-  return;
+  return useQuery({
+    queryKey: cacheKey,
+    queryFn: async () => {
+      const products = await apiClient.api.product.list.$get({
+        query: { developerId },
+      });
+      const productsRes = await products.json();
+      if (!productsRes.success) {
+        throw new Error(productsRes.error);
+      }
+      return productsRes as GetDeveloperProductsSuccess;
+    },
+    staleTime: 0,
+  });
 };
 
 export const useCreateProduct = () => {
