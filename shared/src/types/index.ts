@@ -1,5 +1,4 @@
 import { ProductCategory } from "server/src/generated/prisma/client";
-import { developerApplicationSchema as applicationSchema } from "server/src/routes/developer-applications";
 export {
   DeveloperApplicationStatuses,
   UserRoles,
@@ -7,8 +6,26 @@ export {
 } from "server/src/types";
 import z from "zod";
 
-export type DeveloperApplicationForm = z.infer<typeof applicationSchema>;
-export const developerApplicationSchema = applicationSchema;
+export const developerApplicationSchema = z.object({
+  telegram: z.string().optional(),
+  productName: z.string().min(1, "Product name is required"),
+  productDescription: z.string().min(10, "Не менее 10 символов"),
+  customizationPrice: z.number().min(300000).max(1000000),
+  revenueSharePercent: z.number().min(5).max(20),
+  githubUrl: z.string().url("Invalid GitHub URL"),
+  demoUrl: z.string().url("Invalid demo URL"),
+  videoUrl: z.string().url("Invalid video URL"),
+  hasUsers: z.enum(["yes", "no"]),
+  userCount: z.string(),
+  customizationReady: z.enum(["yes", "no", "maybe"]),
+  targetBusinesses: z.string().min(10, "Не менее 10 символов"),
+  portfolio: z.string().optional(),
+  additionalInfo: z.string().optional(),
+});
+export type DeveloperApplicationForm = z.infer<
+  typeof developerApplicationSchema
+>;
+
 export const NewProductSchema = z.object({
   // General info
   name: z.string().min(3, { message: "Минимум 3 символа" }),

@@ -201,8 +201,8 @@ export default function DashboardLayout({
                   {user?.role === "DEVELOPER"
                     ? "Разработчик"
                     : user?.role === "ADMIN"
-                    ? "Админ"
-                    : "Покупатель"}
+                      ? "Админ"
+                      : "Покупатель"}
                 </p>
               </div>
 

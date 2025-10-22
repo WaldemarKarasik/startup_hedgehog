@@ -188,7 +188,6 @@ model Product {
   
   // Основная информация
   name        String
-  tagline     String
   description String          @db.Text
   category    ProductCategory
   
@@ -204,8 +203,8 @@ model Product {
   
   // Условия оферты (шаблон договора)
   customizationPrice          Decimal  @db.Decimal(10, 2) // null = только Revenue Share
-  revenueSharePercent Int       // 0-100
-  revenueShareDuration String   // "36 месяцев" или "бессрочно"
+  revenueShare Int       // 0-100
+  revenueShareDuration Int   // "36 месяцев" или "бессрочно"
   
   // Поддержка
   supportPeriod       Int       // месяцев

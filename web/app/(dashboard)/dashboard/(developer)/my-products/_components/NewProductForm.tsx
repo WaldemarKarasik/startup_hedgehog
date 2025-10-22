@@ -13,44 +13,8 @@ import { InputTextarea } from "primereact/inputtextarea";
 import { InputText } from "primereact/inputtext";
 import { MultipleImageUpload } from "@/app/_shared-components/MultipleImageUpload";
 import { NewProductSchema } from "shared";
-// const productCategoriesArray = Object.values(ProductCategories) as [
-//   string,
-//   ...string[],
-// ];
-// const NewProductSchema = z.object({
-//   // General info
-//   name: z.string().min(3, { message: "Минимум 3 символа" }),
-//   description: z.string().min(10, { message: "Минимум 10 символов" }),
-//   techStack: z
-//     .string({ message: "Это поле обязательно" })
-//     .nonempty({ message: "Это поле не может быть пустым" }),
-//   category: z.enum(productCategoriesArray, { message: "Выберите категорию" }),
-//   // Price
-//   customizationPrice: z.number().min(300000).max(450000),
-//   revenueShare: z.number().min(5).max(20),
-//   revenueShareDuration: z.number().min(1).max(100),
-//   // Support
-//   supportPeriod: z
-//     .number()
-//     .min(1, { message: "Минимум 1 месяц" })
-//     .max(100, { message: "Максимум 100 месяцев" }),
-//   // Media
-//   images: z
-//     .array(z.instanceof(File))
-//     .min(1, "Загрузите по меньшей мере 1 изображение")
-//     .max(10, "Не более 10 изображений")
-//     .refine(
-//       (files) => files.every((file) => file.size <= 5 * 1024 * 1024),
-//       "Each image must be less than 5MB"
-//     )
-//     .refine(
-//       (files) =>
-//         files.every((file) =>
-//           ["image/jpeg", "image/png", "image/webp"].includes(file.type)
-//         ),
-//       "Only JPG, PNG, WEBP formats are supported"
-//     ),
-// });
+import { API_URL, apiClient } from "@/src/lib/api-client";
+import { useCreateProduct } from "@/src/hooks/products";
 
 const productCategories = Array.from(Object.keys(ProductCategories));
 
@@ -65,6 +29,7 @@ export const NewProductForm = ({
     trigger,
     watch,
     setValue,
+    getValues,
     formState: { errors },
   } = useForm<NewProductFormData>({
     resolver: zodResolver(NewProductSchema) as Resolver<NewProductFormData>,
@@ -112,12 +77,26 @@ export const NewProductForm = ({
       nextStep();
     }
   };
-
+  const { mutate: createProduct, isPending, error } = useCreateProduct();
   const handleSubmit = async () => {
     const fieldsToValidate = stepFields[activeStep];
     const isMediaValid = await trigger(fieldsToValidate);
     if (isMediaValid) {
-      alert("Now create product");
+      const formData = new FormData();
+      const formValues = getValues();
+
+      // Append all form fields except images
+      Object.entries(formValues).forEach(([key, value]) => {
+        if (key !== "images" && value != null) {
+          formData.append(key, value.toString());
+        }
+      });
+
+      // Append each image file directly
+      getValues("images").forEach((image, index) => {
+        formData.append("images", image); // Send File objects directly
+      });
+      createProduct(formData);
     }
   };
 
@@ -426,10 +405,13 @@ export const NewProductForm = ({
                 {errors.images.message}
               </p>
             )}
+            {error && (
+              <p className="text-red-600 text-sm mt-2">{error.message}</p>
+            )}
             <div className="flex gap-5 ">
               <Button
                 size={"small"}
-                label="Отправить на модерацию"
+                label={isPending ? "Отправка" : "Отправить на модерацию"}
                 onClick={handleSubmit}
               />
               <Button

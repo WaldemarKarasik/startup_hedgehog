@@ -1,5 +1,4 @@
 import type z from "zod";
-import type { developerApplicationSchema } from "../routes/developer-applications";
 import {
   ApplicationStatus,
   ProductCategory,
@@ -11,10 +10,6 @@ export type JwtPayload = {
   role: UserRole;
   exp: number;
 };
-
-export type DeveloperApplicationForm = z.infer<
-  typeof developerApplicationSchema
->;
 
 export const DeveloperApplicationStatuses = ApplicationStatus;
 

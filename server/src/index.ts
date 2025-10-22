@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { authRoutes } from "./routes/auth";
 import { developerApplicationsRouter } from "./routes/developer-applications";
+import { productsRouter } from "./routes/products";
 
 export const app = new Hono()
   .use(
@@ -15,7 +16,8 @@ export const app = new Hono()
     return c.json({ success: true, message: "StartupЁж API is running" });
   })
   .route("/api/auth", authRoutes)
-  .route("/api/developerApplication", developerApplicationsRouter);
+  .route("/api/developerApplication", developerApplicationsRouter)
+  .route("/api/product", productsRouter);
 
 // Enable CORS for frontend
 
