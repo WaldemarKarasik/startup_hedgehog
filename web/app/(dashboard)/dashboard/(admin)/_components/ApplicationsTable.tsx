@@ -70,7 +70,7 @@ export const ApplicationsTable = ({
   };
   return (
     <>
-      <DataTable value={applications} tableStyle={{}}>
+      <DataTable value={applications} tableStyle={{}} showGridlines>
         <Column header="Статус" field="status" />
         <Column header="Telegram" field="telegram" />
         <Column header="Название" field="productName" />

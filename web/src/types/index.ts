@@ -43,5 +43,8 @@ export interface RevenueShareCalculation {
   yearlyDeveloperIncome: number;
   yearlyEntrepreneurIncome: number;
 }
-
+export enum REVALIDATE_TYPES {
+  PATH = "PATH",
+  TAG = "TAG",
+}
 export type DeveloperApplication = GetApplicationsSuccess["data"][number];

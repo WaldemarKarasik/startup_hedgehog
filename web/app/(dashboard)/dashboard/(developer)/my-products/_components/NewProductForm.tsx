@@ -13,8 +13,10 @@ import { InputTextarea } from "primereact/inputtextarea";
 import { InputText } from "primereact/inputtext";
 import { MultipleImageUpload } from "@/app/_shared-components/MultipleImageUpload";
 import { NewProductSchema } from "shared";
-import { API_URL, apiClient } from "@/src/lib/api-client";
 import { useCreateProduct } from "@/src/hooks/products";
+import { useRouter } from "next/navigation";
+import { revalidate } from "@/src/lib/revalidate";
+import { REVALIDATE_TYPES } from "@/src/types";
 
 const productCategories = Array.from(Object.keys(ProductCategories));
 
@@ -52,6 +54,7 @@ export const NewProductForm = ({
     3: ["images"],
   };
   const customizationPrice = watch("customizationPrice");
+  const router = useRouter();
   const revenueShare = watch("revenueShare");
   const revenueShareDuration = watch("revenueShareDuration");
   const category = watch("category");
@@ -77,7 +80,20 @@ export const NewProductForm = ({
       nextStep();
     }
   };
-  const { mutate: createProduct, isPending, error } = useCreateProduct();
+  const onCreateSuccess = async () => {
+    await revalidate({
+      type: REVALIDATE_TYPES.PATH,
+      path: "/dashboard/my-products",
+    });
+
+    router.push("/dashboard/my-products");
+  };
+  const {
+    mutate: createProduct,
+    isPending,
+    error,
+  } = useCreateProduct(onCreateSuccess);
+
   const handleSubmit = async () => {
     const fieldsToValidate = stepFields[activeStep];
     const isMediaValid = await trigger(fieldsToValidate);

@@ -5,6 +5,7 @@ import { NewProductSchema } from "shared";
 import z from "zod";
 import { prisma } from "../lib/prisma";
 import { S3Client } from "bun";
+import { HTTPException } from "hono/http-exception";
 const newProductSchema = z.object({
   ...NewProductSchema.shape,
   images: z.array(z.instanceof(Blob)),
@@ -111,25 +112,83 @@ export const productsRouter = new Hono()
   })
   .get(
     "/list",
-    zValidator("query", z.object({ developerId: z.string().optional() })),
+
     async (c) => {
       try {
-        const { developerId } = c.req.valid("query");
-        if (!developerId) {
-          return c.json({ success: true });
-        } else {
-          const developerProducts = await prisma.product.findMany();
-          return c.json({
+        const products = await prisma.product.findMany();
+        return c.json(
+          {
             success: true,
-            data: developerProducts,
-          });
-        }
+            data: products,
+          },
+          200
+        );
       } catch (error) {
         console.error(error);
-        return c.json({
-          success: false,
-          error: "Couldn't get developer products",
+        return c.json(
+          {
+            success: false,
+            error: "Couldn't get products",
+          },
+          500
+        );
+      }
+    }
+  )
+  .get(
+    "/list/:developerId",
+    zValidator("param", z.object({ developerId: z.string() })),
+    async (c) => {
+      const { developerId } = c.req.valid("param");
+      console.log("fetch products");
+      try {
+        const developerProducts = await prisma.product.findMany({
+          where: { developerId },
         });
+        return c.json(
+          {
+            success: true,
+            data: developerProducts,
+          },
+          200
+        );
+      } catch (error) {
+        console.error(error);
+        return c.json(
+          {
+            success: false,
+            error: "Couldn't get developer products",
+          },
+          500
+        );
+      }
+    }
+  )
+  .delete(
+    "/delete/:developerId/:productId",
+    requireAuth,
+    requireDeveloper,
+    zValidator(
+      "param",
+      z.object({ developerId: z.string(), productId: z.string() })
+    ),
+    async (c) => {
+      try {
+        const user = c.get("user");
+        const { developerId, productId } = c.req.valid("param");
+        const ownsProduct = user.userId == developerId;
+        if (!ownsProduct) {
+          throw new HTTPException(403);
+        }
+        await prisma.product.delete({
+          where: { id: productId },
+        });
+        return c.json({ success: true });
+      } catch (err) {
+        return c.json(
+          { success: false, error: "Couldn't delete product" },
+          500
+        );
       }
     }
   );

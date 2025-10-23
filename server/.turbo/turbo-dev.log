@@ -1,5 +1,255 @@
 [0m[2m[35m$[0m [2m[1mbun --watch run src/index.ts && tsc --watch[0m
 Started development server: http://localhost:5173
+[31mprisma:error[39m 
+Invalid `prisma.product.findMany()` invocation in
+/home/daniel/Documents/стартап_еж/server/src/routes/products.ts:137:56
+
+  134 async (c) => {
+  135   const { developerId } = c.req.valid("param");
+  136   try {
+→ 137     const developerProducts = await prisma.product.findMany(
+Can't reach database server at `crossover.proxy.rlwy.net:42216`
+
+Please make sure your database server is running at `crossover.proxy.rlwy.net:42216`.
+[0m[1m119 |[0m 
+[0m[1m120 |[0m Example:
+[0m[1m121 |[0m   [0m[35mawait[0m prisma[0m[3m[1m.$executeRawUnsafe[0m(\[0m[32m`ALTER USER prisma WITH PASSWORD '\${password}'\`)[0m
+[0m[1m122 |[0m 
+[0m[1m123 |[0m More Information: https:[0m[2m//pris.ly/d/execute-raw[0m
+[0m[1m124 |[0m [0m[32m`)}var So=({clientMethod:e,activeProvider:r})=>t=>{let n="",i;if(Vn(t))n=t.sql,i={values:Wr(t.values),__prismaRawParameters__:!0};else if(Array.isArray(t)){let[o,...s]=t;n=o,i={values:Wr(s||[]),__prismaRawParameters__:!0}}else switch(r){case"sqlite":case"mysql":{n=t.sql,i={values:Wr(t.values),__prismaRawParameters__:!0};break}case"cockroachdb":case"postgresql":case"postgres":{n=t.text,i={values:Wr(t.values),__prismaRawParameters__:!0};break}case"sqlserver":{n=Vl(t),i={values:Wr(t.values),__prismaRawParameters__:!0};break}default:throw new Error(`[0mThe ${r} provider does not support ${e}[0m[32m`)}return i?.values?Ql(`[0mprisma.${e}(${n}, ${i.values})[0m[32m`):Ql(`[0mprisma.${e}(${n})[0m[32m`),{query:n,parameters:i}},Wl={requestArgsToMiddlewareArgs(e){return[e.strings,...e.values]},middlewareArgsToRequestArgs(e){let[r,...t]=e;return new ie(r,t)}},Jl={requestArgsToMiddlewareArgs(e){return[e]},middlewareArgsToRequestArgs(e){return e[0]}};function Ro(e){return function(t,n){let i,o=(s=e)=>{try{return s===void 0||s?.kind==="itx"?i??=Kl(t(s)):K[0m[0m[2m | ... truncated [0m
+
+[0m[31mPrismaClientKnownRequestError[0m[2m:[0m [1m
+Invalid `prisma.product.findMany()` invocation in
+/home/daniel/Documents/стартап_еж/server/src/routes/products.ts:137:56
+
+  134 async (c) => {
+  135   const { developerId } = c.req.valid("param");
+  136   try {
+→ 137     const developerProducts = await prisma.product.findMany(
+Can't reach database server at `crossover.proxy.rlwy.net:42216`
+
+Please make sure your database server is running at `crossover.proxy.rlwy.net:42216`.[0m
+       meta[0m[2m:[0m {
+  [0mmodelName[2m:[0m [0m[32m[0m[32m"Product"[0m[0m[0m[2m,[0m
+  [0mdatabase_location[2m:[0m [0m[32m[0m[32m"crossover.proxy.rlwy.net:42216"[0m[0m[0m[2m,[0m
+}[0m[2m,[0m
+ clientVersion[0m[2m:[0m [0m[32m"6.17.1"[0m[0m[2m,[0m
+       code[0m[2m:[0m [32m"P1001"[0m
+
+[0m      [2mat [0m[0m[1m[3mhandleRequestError[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m7268[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mhandleAndLogRequestError[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m6593[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mrequest[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m6300[0m[2m)[0m
+
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+[31mprisma:error[39m 
+Invalid `prisma.user.findFirst()` invocation in
+/home/daniel/Documents/стартап_еж/server/src/routes/auth.ts:210:39
+
+  207 )
+  208 .get("/me", requireAuth, async (c) => {
+  209   const user = c.get("user");
+→ 210   const payload = await prisma.user.findFirst(
+Can't reach database server at `crossover.proxy.rlwy.net:42216`
+
+Please make sure your database server is running at `crossover.proxy.rlwy.net:42216`.
+[0m[1m119 |[0m 
+[0m[1m120 |[0m Example:
+[0m[1m121 |[0m   [0m[35mawait[0m prisma[0m[3m[1m.$executeRawUnsafe[0m(\[0m[32m`ALTER USER prisma WITH PASSWORD '\${password}'\`)[0m
+[0m[1m122 |[0m 
+[0m[1m123 |[0m More Information: https:[0m[2m//pris.ly/d/execute-raw[0m
+[0m[1m124 |[0m [0m[32m`)}var So=({clientMethod:e,activeProvider:r})=>t=>{let n="",i;if(Vn(t))n=t.sql,i={values:Wr(t.values),__prismaRawParameters__:!0};else if(Array.isArray(t)){let[o,...s]=t;n=o,i={values:Wr(s||[]),__prismaRawParameters__:!0}}else switch(r){case"sqlite":case"mysql":{n=t.sql,i={values:Wr(t.values),__prismaRawParameters__:!0};break}case"cockroachdb":case"postgresql":case"postgres":{n=t.text,i={values:Wr(t.values),__prismaRawParameters__:!0};break}case"sqlserver":{n=Vl(t),i={values:Wr(t.values),__prismaRawParameters__:!0};break}default:throw new Error(`[0mThe ${r} provider does not support ${e}[0m[32m`)}return i?.values?Ql(`[0mprisma.${e}(${n}, ${i.values})[0m[32m`):Ql(`[0mprisma.${e}(${n})[0m[32m`),{query:n,parameters:i}},Wl={requestArgsToMiddlewareArgs(e){return[e.strings,...e.values]},middlewareArgsToRequestArgs(e){let[r,...t]=e;return new ie(r,t)}},Jl={requestArgsToMiddlewareArgs(e){return[e]},middlewareArgsToRequestArgs(e){return e[0]}};function Ro(e){return function(t,n){let i,o=(s=e)=>{try{return s===void 0||s?.kind==="itx"?i??=Kl(t(s)):K[0m[0m[2m | ... truncated [0m
+
+[0m[31mPrismaClientKnownRequestError[0m[2m:[0m [1m
+Invalid `prisma.user.findFirst()` invocation in
+/home/daniel/Documents/стартап_еж/server/src/routes/auth.ts:210:39
+
+  207 )
+  208 .get("/me", requireAuth, async (c) => {
+  209   const user = c.get("user");
+→ 210   const payload = await prisma.user.findFirst(
+Can't reach database server at `crossover.proxy.rlwy.net:42216`
+
+Please make sure your database server is running at `crossover.proxy.rlwy.net:42216`.[0m
+       meta[0m[2m:[0m {
+  [0mmodelName[2m:[0m [0m[32m[0m[32m"User"[0m[0m[0m[2m,[0m
+  [0mdatabase_location[2m:[0m [0m[32m[0m[32m"crossover.proxy.rlwy.net:42216"[0m[0m[0m[2m,[0m
+}[0m[2m,[0m
+ clientVersion[0m[2m:[0m [0m[32m"6.17.1"[0m[0m[2m,[0m
+       code[0m[2m:[0m [32m"P1001"[0m
+
+[0m      [2mat [0m[0m[1m[3mhandleRequestError[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m7268[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mhandleAndLogRequestError[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m6593[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mrequest[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m6300[0m[2m)[0m
+
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
 [2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
 [2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+fetch products
+fetch products
+fetch products
+[31mprisma:error[39m 
+Invalid `prisma.user.findFirst()` invocation in
+/home/daniel/Documents/стартап_еж/server/src/routes/auth.ts:210:39
+
+  207 )
+  208 .get("/me", requireAuth, async (c) => {
+  209   const user = c.get("user");
+→ 210   const payload = await prisma.user.findFirst(
+Can't reach database server at `crossover.proxy.rlwy.net:42216`
+
+Please make sure your database server is running at `crossover.proxy.rlwy.net:42216`.
+[0m[1m119 |[0m 
+[0m[1m120 |[0m Example:
+[0m[1m121 |[0m   [0m[35mawait[0m prisma[0m[3m[1m.$executeRawUnsafe[0m(\[0m[32m`ALTER USER prisma WITH PASSWORD '\${password}'\`)[0m
+[0m[1m122 |[0m 
+[0m[1m123 |[0m More Information: https:[0m[2m//pris.ly/d/execute-raw[0m
+[0m[1m124 |[0m [0m[32m`)}var So=({clientMethod:e,activeProvider:r})=>t=>{let n="",i;if(Vn(t))n=t.sql,i={values:Wr(t.values),__prismaRawParameters__:!0};else if(Array.isArray(t)){let[o,...s]=t;n=o,i={values:Wr(s||[]),__prismaRawParameters__:!0}}else switch(r){case"sqlite":case"mysql":{n=t.sql,i={values:Wr(t.values),__prismaRawParameters__:!0};break}case"cockroachdb":case"postgresql":case"postgres":{n=t.text,i={values:Wr(t.values),__prismaRawParameters__:!0};break}case"sqlserver":{n=Vl(t),i={values:Wr(t.values),__prismaRawParameters__:!0};break}default:throw new Error(`[0mThe ${r} provider does not support ${e}[0m[32m`)}return i?.values?Ql(`[0mprisma.${e}(${n}, ${i.values})[0m[32m`):Ql(`[0mprisma.${e}(${n})[0m[32m`),{query:n,parameters:i}},Wl={requestArgsToMiddlewareArgs(e){return[e.strings,...e.values]},middlewareArgsToRequestArgs(e){let[r,...t]=e;return new ie(r,t)}},Jl={requestArgsToMiddlewareArgs(e){return[e]},middlewareArgsToRequestArgs(e){return e[0]}};function Ro(e){return function(t,n){let i,o=(s=e)=>{try{return s===void 0||s?.kind==="itx"?i??=Kl(t(s)):K[0m[0m[2m | ... truncated [0m
+
+[0m[31mPrismaClientKnownRequestError[0m[2m:[0m [1m
+Invalid `prisma.user.findFirst()` invocation in
+/home/daniel/Documents/стартап_еж/server/src/routes/auth.ts:210:39
+
+  207 )
+  208 .get("/me", requireAuth, async (c) => {
+  209   const user = c.get("user");
+→ 210   const payload = await prisma.user.findFirst(
+Can't reach database server at `crossover.proxy.rlwy.net:42216`
+
+Please make sure your database server is running at `crossover.proxy.rlwy.net:42216`.[0m
+       meta[0m[2m:[0m {
+  [0mmodelName[2m:[0m [0m[32m[0m[32m"User"[0m[0m[0m[2m,[0m
+  [0mdatabase_location[2m:[0m [0m[32m[0m[32m"crossover.proxy.rlwy.net:42216"[0m[0m[0m[2m,[0m
+}[0m[2m,[0m
+ clientVersion[0m[2m:[0m [0m[32m"6.17.1"[0m[0m[2m,[0m
+       code[0m[2m:[0m [32m"P1001"[0m
+
+[0m      [2mat [0m[0m[1m[3mhandleRequestError[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m7268[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mhandleAndLogRequestError[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m6593[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mrequest[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m6300[0m[2m)[0m
+
+[31mprisma:error[39m 
+Invalid `prisma.product.findMany()` invocation in
+/home/daniel/Documents/стартап_еж/server/src/routes/products.ts:139:56
+
+  136 const { developerId } = c.req.valid("param");
+  137 console.log("fetch products");
+  138 try {
+→ 139   const developerProducts = await prisma.product.findMany(
+Can't reach database server at `crossover.proxy.rlwy.net:42216`
+
+Please make sure your database server is running at `crossover.proxy.rlwy.net:42216`.
+[0m[1m119 |[0m 
+[0m[1m120 |[0m Example:
+[0m[1m121 |[0m   [0m[35mawait[0m prisma[0m[3m[1m.$executeRawUnsafe[0m(\[0m[32m`ALTER USER prisma WITH PASSWORD '\${password}'\`)[0m
+[0m[1m122 |[0m 
+[0m[1m123 |[0m More Information: https:[0m[2m//pris.ly/d/execute-raw[0m
+[0m[1m124 |[0m [0m[32m`)}var So=({clientMethod:e,activeProvider:r})=>t=>{let n="",i;if(Vn(t))n=t.sql,i={values:Wr(t.values),__prismaRawParameters__:!0};else if(Array.isArray(t)){let[o,...s]=t;n=o,i={values:Wr(s||[]),__prismaRawParameters__:!0}}else switch(r){case"sqlite":case"mysql":{n=t.sql,i={values:Wr(t.values),__prismaRawParameters__:!0};break}case"cockroachdb":case"postgresql":case"postgres":{n=t.text,i={values:Wr(t.values),__prismaRawParameters__:!0};break}case"sqlserver":{n=Vl(t),i={values:Wr(t.values),__prismaRawParameters__:!0};break}default:throw new Error(`[0mThe ${r} provider does not support ${e}[0m[32m`)}return i?.values?Ql(`[0mprisma.${e}(${n}, ${i.values})[0m[32m`):Ql(`[0mprisma.${e}(${n})[0m[32m`),{query:n,parameters:i}},Wl={requestArgsToMiddlewareArgs(e){return[e.strings,...e.values]},middlewareArgsToRequestArgs(e){let[r,...t]=e;return new ie(r,t)}},Jl={requestArgsToMiddlewareArgs(e){return[e]},middlewareArgsToRequestArgs(e){return e[0]}};function Ro(e){return function(t,n){let i,o=(s=e)=>{try{return s===void 0||s?.kind==="itx"?i??=Kl(t(s)):K[0m[0m[2m | ... truncated [0m
+
+[0m[31mPrismaClientKnownRequestError[0m[2m:[0m [1m
+Invalid `prisma.product.findMany()` invocation in
+/home/daniel/Documents/стартап_еж/server/src/routes/products.ts:139:56
+
+  136 const { developerId } = c.req.valid("param");
+  137 console.log("fetch products");
+  138 try {
+→ 139   const developerProducts = await prisma.product.findMany(
+Can't reach database server at `crossover.proxy.rlwy.net:42216`
+
+Please make sure your database server is running at `crossover.proxy.rlwy.net:42216`.[0m
+       meta[0m[2m:[0m {
+  [0mmodelName[2m:[0m [0m[32m[0m[32m"Product"[0m[0m[0m[2m,[0m
+  [0mdatabase_location[2m:[0m [0m[32m[0m[32m"crossover.proxy.rlwy.net:42216"[0m[0m[0m[2m,[0m
+}[0m[2m,[0m
+ clientVersion[0m[2m:[0m [0m[32m"6.17.1"[0m[0m[2m,[0m
+       code[0m[2m:[0m [32m"P1001"[0m
+
+[0m      [2mat [0m[0m[1m[3mhandleRequestError[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m7268[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mhandleAndLogRequestError[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m6593[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mrequest[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/generated/prisma/runtime/library.js[0m[2m:[0m[33m124[0m[2m:[33m6300[0m[2m)[0m
+
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+fetch products
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+fetch products
 [2J[3J[H[2J[3J[HStarted development server: http://localhost:5173

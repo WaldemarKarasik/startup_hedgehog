@@ -8,7 +8,15 @@ import { X } from "lucide-react";
 import { useDeveloperProducts } from "@/src/hooks/products";
 import { useAuthStore } from "@/src/stores/auth.store";
 import { Skeleton } from "primereact/skeleton";
-export const MyProductsClient = () => {
+import { GetDeveloperProductsSuccess } from "@/src/lib/api-client";
+import { DataTable } from "primereact/datatable";
+import { Column } from "primereact/column";
+import { MyProductsTable } from "./MyProductsTable";
+export const MyProductsClient = ({
+  products,
+}: {
+  products: GetDeveloperProductsSuccess["data"];
+}) => {
   const [visible, setVisible] = useState(false);
   const userId = useAuthStore((s) => s.user?.id);
   const {
@@ -19,6 +27,7 @@ export const MyProductsClient = () => {
   } = useDeveloperProducts({
     developerId: userId!,
     cacheKey: ["my-products"],
+    initialData: products,
   });
   useEffect(() => {
     console.log(visible);
@@ -62,9 +71,9 @@ export const MyProductsClient = () => {
           </div>
         )}
       />
-      {developerProducts?.data.map((product) => (
-        <p>{product["name"]}</p>
-      ))}
+      {developerProducts && (
+        <MyProductsTable developerProducts={developerProducts} />
+      )}
 
       <FloatingMenuButton onCreateClick={() => setVisible(true)} />
     </div>

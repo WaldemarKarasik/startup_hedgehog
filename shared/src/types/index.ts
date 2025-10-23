@@ -1,5 +1,6 @@
 import {
   ProductCategory,
+  ProductStatus,
   type Product,
 } from "server/src/generated/prisma/client";
 export {
@@ -65,3 +66,4 @@ export const NewProductSchema = z.object({
 });
 
 export type DeveloperProduct = Product;
+export const PRODUCT_STATUS = ProductStatus;
