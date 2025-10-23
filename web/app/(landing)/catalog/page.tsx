@@ -4,6 +4,7 @@ import { Filter } from "lucide-react";
 import Header from "../_components/Header";
 import Footer from "../_components/Footer";
 import { fetchCatalog } from "@/src/hooks/products";
+import { ProductCard } from "./_components/ProductCard";
 
 export default async function CatalogPage() {
   const activeStartups = mockStartups.filter((s) => s.status === "active");
@@ -31,6 +32,11 @@ export default async function CatalogPage() {
                     {catalog.length}
                   </span>
                 </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                {catalog.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
               </div>
             </div>
           </main>

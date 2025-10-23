@@ -16,15 +16,8 @@ export const MyProductsTable = ({
 }) => {
   const userId = useAuthStore((s) => s.user?.id)!;
   const { mutateAsync: deleteProduct } = useDeleteProduct();
-  const [selectedProduct, setSelectedProduct] = useState(null);
   return (
-    <DataTable
-      value={developerProducts}
-      showGridlines
-      selectionMode="single"
-      selection={selectedProduct}
-      onSelectionChange={(e: any) => setSelectedProduct(e.value)}
-    >
+    <DataTable value={developerProducts} showGridlines>
       <Column header="Название" field="name"></Column>
       <Column
         header="Стоимость кастомизации"

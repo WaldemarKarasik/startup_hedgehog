@@ -96,7 +96,7 @@ export const fetchCatalog = async () => {
   const catalog = await fetch(`${API_URL}/api/product/list`, {
     method: "GET",
     next: {
-      revalidate: false,
+      revalidate: 1000,
       tags: ["catalog"],
     },
   });

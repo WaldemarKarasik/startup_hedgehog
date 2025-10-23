@@ -115,7 +115,9 @@ export const productsRouter = new Hono()
 
     async (c) => {
       try {
-        const products = await prisma.product.findMany();
+        const products = await prisma.product.findMany({
+          include: { developer: true },
+        });
         return c.json(
           {
             success: true,
