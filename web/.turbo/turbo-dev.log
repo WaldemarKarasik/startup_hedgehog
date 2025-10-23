@@ -11,248 +11,116 @@
    - Network:      http://100.84.146.212:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 107ms
- [32m[1m✓[22m[39m Ready in 636ms
- [37m[1m○[22m[39m Compiling / ...
- [32m[1m✓[22m[39m Compiled / in 1909ms
- GET / [32m200[39m in 2154ms
- [32m[1m✓[22m[39m Compiled /calculator in 210ms
- GET /calculator [32m200[39m in 228ms
- [32m[1m✓[22m[39m Compiled /catalog in 194ms
- GET /catalog [32m200[39m in 612ms
- [32m[1m✓[22m[39m Compiled /catalog in 8ms
-{
-  [0mid[2m:[0m [0m[32m[0m[32m"cmh1dhzq80001ijzxzz1nel87"[0m[0m[0m[2m,[0m
-  [0mdeveloperId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
-  [0mname[2m:[0m [0m[32m[0m[32m"Social Web App"[0m[0m[0m[2m,[0m
-  [0mdescription[2m:[0m [0m[32m[0m[32m"Социальная сеть по типу реддита"[0m[0m[0m[2m,[0m
-  [0mcategory[2m:[0m [0m[32m[0m[32m"OTHER"[0m[0m[0m[2m,[0m
-  [0mtechStack[2m:[0m [ [0m[32m"React"[0m[0m[0m[2m,[0m [0m[32m"Nextjs"[0m[0m ][0m[2m,[0m
-  [0mdemoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-  [0mvideoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-  [0mgithubUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-  [0mimages[2m:[0m [ [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-00.png"[0m[0m[0m[2m,[0m
-    [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-29.png"[0m[0m[0m[2m,[0m
-    [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-59.png"[0m[0m[0m[2m,[0m
-    [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-44-46.png"[0m[0m
-  ][0m[2m,[0m
-  [0mcustomizationPrice[2m:[0m [0m[32m[0m[32m"300000"[0m[0m[0m[2m,[0m
-  [0mrevenueShare[2m:[0m [0m[33m10[0m[0m[2m,[0m
-  [0mrevenueShareDuration[2m:[0m [0m[33m12[0m[0m[2m,[0m
-  [0msupportPeriod[2m:[0m [0m[33m12[0m[0m[2m,[0m
-  [0mstatus[2m:[0m [0m[32m[0m[32m"MODERATION"[0m[0m[0m[2m,[0m
-  [0mrejectionReason[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-  [0mslug[2m:[0m [0m[32m[0m[32m"social-web-app"[0m[0m[0m[2m,[0m
-  [0mviews[2m:[0m [0m[33m0[0m[0m[2m,[0m
-  [0mfavorites[2m:[0m [0m[33m0[0m[0m[2m,[0m
-  [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-22T02:27:30.362Z"[0m[0m[0m[2m,[0m
-  [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-22T02:27:30.362Z"[0m[0m[0m[2m,[0m
-  [0mpublishedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-  [0mdeveloper[2m:[0m {
-    [0mid[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
-    [0memail[2m:[0m [0m[32m[0m[32m"komsomolradio@gmail.com"[0m[0m[0m[2m,[0m
-    [0mpasswordHash[2m:[0m [0m[32m[0m[32m"$2b$10$FN9EesxMc3RIs2NClu679.MnbbJgyKYcdUP9cq9DxcIgIgTXe5yu2"[0m[0m[0m[2m,[0m
-    [0mrole[2m:[0m [0m[32m[0m[32m"DEVELOPER"[0m[0m[0m[2m,[0m
-    [0mfirstName[2m:[0m [0m[32m[0m[32m"Данил"[0m[0m[0m[2m,[0m
-    [0mlastName[2m:[0m [0m[32m[0m[32m"Касаткин"[0m[0m[0m[2m,[0m
-    [0mphone[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mavatar[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mbio[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0muserType[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mlegalName[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0minn[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mlegalBasis[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mbankDetails[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mpayoutMethod[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mpayoutDetails[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mreputation[2m:[0m [0m[33m100[0m[0m[2m,[0m
-    [0mtrustScore[2m:[0m [0m[33m60[0m[0m[2m,[0m
-    [0mrating[2m:[0m [0m[32m[0m[32m"0"[0m[0m[0m[2m,[0m
-    [0mreviewCount[2m:[0m [0m[33m0[0m[0m[2m,[0m
-    [0misVerified[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
-    [0misSuspended[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
-    [0msuspendedReason[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-    [0mlastActiveAt[2m:[0m [0m[32m[0m[32m"2025-10-20T10:28:04.000Z"[0m[0m[0m[2m,[0m
-    [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-20T10:28:04.000Z"[0m[0m[0m[2m,[0m
-    [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-20T10:28:04.000Z"[0m[0m[0m[2m,[0m
-  }[0m[2m,[0m
-}
- GET /catalog [32m200[39m in 59ms
- [32m[1m✓[22m[39m Compiled /catalog in 6ms
- GET /catalog [32m200[39m in 53ms
- GET /catalog [32m200[39m in 52ms
- GET / [32m200[39m in 115ms
- GET /catalog [32m200[39m in 12ms
- GET / [32m200[39m in 12ms
- GET / [32m200[39m in 21ms
- [32m[1m✓[22m[39m Compiled in 19ms
- GET / [32m200[39m in 52ms
- [32m[1m✓[22m[39m Compiled /catalog in 6ms
- GET /catalog [32m200[39m in 456ms
- GET / [32m200[39m in 12ms
- GET /catalog [32m200[39m in 207ms
- GET / [32m200[39m in 11ms
- GET /catalog [32m200[39m in 206ms
- GET / [32m200[39m in 12ms
- GET /catalog [32m200[39m in 209ms
- GET / [32m200[39m in 11ms
- GET /catalog [32m200[39m in 207ms
- GET / [32m200[39m in 12ms
- GET /catalog [32m200[39m in 302ms
- GET / [32m200[39m in 10ms
- GET /catalog [32m200[39m in 206ms
- GET /catalog [32m200[39m in 1245ms
- GET / [32m200[39m in 85ms
- GET /catalog [32m200[39m in 201ms
- GET / [32m200[39m in 11ms
- GET /catalog [32m200[39m in 198ms
- [32m[1m✓[22m[39m Compiled /catalog in 7ms
- GET /catalog [32m200[39m in 74ms
- [32m[1m✓[22m[39m Compiled /catalog in 5ms
- GET /catalog [32m200[39m in 72ms
- GET /catalog [32m200[39m in 62ms
- GET / [32m200[39m in 14ms
- GET /catalog [32m200[39m in 11ms
- GET / [32m200[39m in 11ms
- GET /catalog [32m200[39m in 12ms
- GET / [32m200[39m in 12ms
- GET /catalog [32m200[39m in 11ms
- GET / [32m200[39m in 19ms
- GET /catalog [32m200[39m in 19ms
- GET /calculator [32m200[39m in 7ms
- [32m[1m✓[22m[39m Compiled /for-developers in 216ms
- GET /for-developers [32m200[39m in 232ms
- GET /calculator [32m200[39m in 6ms
+ [32m[1m✓[22m[39m Compiled middleware in 119ms
+ [32m[1m✓[22m[39m Ready in 648ms
+ [37m[1m○[22m[39m Compiling /catalog ...
+ [32m[1m✓[22m[39m Compiled /catalog in 1996ms
+ GET /catalog [32m200[39m in 3259ms
+ [32m[1m✓[22m[39m Compiled /_not-found/page in 160ms
+ GET /product/dfggdf [33m404[39m in 193ms
+ GET /product/dfggdf [33m404[39m in 29ms
+ GET /catalog [32m200[39m in 51ms
+ GET /catalog [32m200[39m in 43ms
+ [32m[1m✓[22m[39m Compiled / in 195ms
+ GET / [32m200[39m in 217ms
  [37m[1m○[22m[39m Compiling /dashboard ...
- [32m[1m✓[22m[39m Compiled /dashboard in 504ms
- GET /dashboard [32m200[39m in 563ms
+ [32m[1m✓[22m[39m Compiled /dashboard in 531ms
+ GET /dashboard [32m200[39m in 546ms
  [37m[1m○[22m[39m Compiling /dashboard/my-products ...
- [32m[1m✓[22m[39m Compiled /dashboard/my-products in 652ms
- GET /dashboard/my-products [32m200[39m in 1126ms
+ [32m[1m✓[22m[39m Compiled /dashboard/my-products in 675ms
+ GET /dashboard/my-products [32m200[39m in 1119ms
  GET /dashboard [32m200[39m in 6ms
  GET /dashboard/my-products [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 6ms
+ GET / [32m200[39m in 19ms
+ GET /dashboard [32m200[39m in 8ms
+ GET / [32m200[39m in 21ms
+ GET /catalog [32m200[39m in 20ms
+ GET / [32m200[39m in 12ms
+ GET /catalog [32m200[39m in 13ms
+ GET / [32m200[39m in 11ms
+ GET /catalog [32m200[39m in 25ms
+ GET /catalog [32m200[39m in 43ms
+ GET / [32m200[39m in 98ms
+ GET /catalog [32m200[39m in 21ms
+ GET / [32m200[39m in 12ms
+ GET /catalog [32m200[39m in 13ms
+ [32m[1m✓[22m[39m Compiled /calculator in 200ms
+ GET /calculator [32m200[39m in 215ms
+ [32m[1m✓[22m[39m Compiled /for-developers in 201ms
+ GET /for-developers [32m200[39m in 216ms
+ [32m[1m✓[22m[39m Compiled /for-developers/apply in 186ms
+ GET /for-developers/apply [32m200[39m in 203ms
+ GET / [32m200[39m in 13ms
+ GET /dashboard [32m200[39m in 13ms
  GET /dashboard/my-products [32m200[39m in 7ms
+ GET /dashboard/my-products [32m200[39m in 99ms
  GET /dashboard [32m200[39m in 6ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/my-products [32m200[39m in 9ms
- GET /dashboard [32m200[39m in 5ms
  GET /dashboard/my-products [32m200[39m in 8ms
  GET /dashboard [32m200[39m in 7ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/my-products [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/my-products [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/my-products [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 6ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 6ms
  GET /dashboard/my-products [32m200[39m in 8ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/my-products [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/my-products [32m200[39m in 7ms
- GET /dashboard/my-products [32m200[39m in 6ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/my-products [32m200[39m in 8ms
- GET / [32m200[39m in 13ms
- GET /catalog [32m200[39m in 10ms
+ GET / [32m200[39m in 12ms
+ GET /catalog [32m200[39m in 14ms
  [32m[1m✓[22m[39m Compiled /catalog in 8ms
-[0m[31mEach child in a list should have a unique "key" prop. See https://react.dev/link/warning-keys for more information.[0m
- GET /catalog [32m200[39m in 83ms
+ GET /catalog [32m200[39m in 63ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
+ GET /catalog [32m200[39m in 47ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+ GET /catalog [32m200[39m in 59ms
  [32m[1m✓[22m[39m Compiled /catalog in 4ms
- GET /catalog [32m200[39m in 68ms
- GET /catalog [32m200[39m in 65ms
- [32m[1m✓[22m[39m Compiled /catalog in 12ms
+ GET /catalog [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+ GET /catalog [32m200[39m in 90ms
+ GET /catalog [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled /catalog in 8ms
+ GET /catalog [32m200[39m in 86ms
+ [32m[1m✓[22m[39m Compiled /catalog in 4ms
+ GET /catalog [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
+ GET /catalog [32m200[39m in 74ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
  GET /catalog [32m200[39m in 83ms
- [32m[1m✓[22m[39m Compiled /_not-found/page in 243ms
- GET /startuphedgehog.storage.yandexcloud.net/product-dfggdf/Screenshot%20From%202025-10-12%2018-44-46.png [33m404[39m in 294ms
- GET /startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot%20From%202025-10-12%2018-43-00.png [33m404[39m in 351ms
- GET /product/cmh367hst0003ijahq6jegzmv [33m404[39m in 12ms
- GET /product/cmh367hst0003ijahq6jegzmv [33m404[39m in 20ms
- GET /catalog [32m200[39m in 49ms
- GET /catalog [32m200[39m in 33ms
- [32m[1m✓[22m[39m Compiled /catalog in 8ms
- GET /catalog [32m200[39m in 57ms
- GET /catalog [32m200[39m in 50ms
- GET /startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot%20From%202025-10-12%2018-43-00.png [33m404[39m in 67ms
- GET /catalog [32m200[39m in 649ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
+ GET /catalog [32m200[39m in 112ms
  [32m[1m✓[22m[39m Compiled /catalog in 7ms
- GET /catalog [32m200[39m in 55ms
- GET /catalog [32m200[39m in 52ms
- GET /catalog [32m200[39m in 38ms
- GET / [32m200[39m in 13ms
- GET /catalog [32m200[39m in 20ms
- GET / [32m200[39m in 11ms
- GET /catalog [32m200[39m in 12ms
- GET /catalog [32m200[39m in 37ms
- GET / [32m200[39m in 11ms
- GET /catalog [32m200[39m in 17ms
- GET /product/cmh1dhzq80001ijzxzz1nel87 [33m404[39m in 8ms
- GET /product/cmh1dhzq80001ijzxzz1nel87 [33m404[39m in 22ms
- GET /catalog [32m200[39m in 43ms
- [32m[1m✓[22m[39m Compiled /catalog in 7ms
- GET /catalog [32m200[39m in 44ms
- GET /product/social-web-app [33m404[39m in 7ms
- GET /product/social-web-app [33m404[39m in 21ms
- GET /catalog [32m200[39m in 84ms
- GET /catalog [32m200[39m in 39ms
- GET /product/dfggdf [33m404[39m in 8ms
- GET /product/dfggdf [33m404[39m in 21ms
- GET /catalog [32m200[39m in 39ms
- [32m[1m✓[22m[39m Compiled /catalog in 8ms
- GET /catalog [32m200[39m in 49ms
+ GET /catalog [32m200[39m in 98ms
  [32m[1m✓[22m[39m Compiled /catalog in 4ms
  GET /catalog [32m200[39m in 48ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+ GET /catalog [32m200[39m in 87ms
  [32m[1m✓[22m[39m Compiled /catalog in 5ms
- GET /catalog [32m200[39m in 52ms
- [32m[1m✓[22m[39m Compiled /catalog in 5ms
- GET /catalog [32m200[39m in 45ms
- [32m[1m✓[22m[39m Compiled /catalog in 5ms
- GET /catalog [32m200[39m in 69ms
+ GET /catalog [32m200[39m in 72ms
  [32m[1m✓[22m[39m Compiled /catalog in 4ms
- GET /catalog [32m200[39m in 95ms
- GET /catalog [32m200[39m in 235ms
- [32m[1m✓[22m[39m Compiled /catalog in 8ms
+ GET /catalog [32m200[39m in 45ms
+ [32m[1m✓[22m[39m Compiled /catalog in 4ms
+ GET /catalog [32m200[39m in 67ms
+ [32m[1m✓[22m[39m Compiled /catalog in 7ms
+ GET /catalog [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+ GET /catalog [32m200[39m in 58ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+ GET /catalog [32m200[39m in 69ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
  GET /catalog [32m200[39m in 75ms
- GET /catalog [32m200[39m in 51ms
- GET /product/social-web-app [33m404[39m in 8ms
- GET /product/social-web-app [33m404[39m in 24ms
- GET /catalog [32m200[39m in 44ms
- GET /product/social-web-app [33m404[39m in 6ms
- GET /product/social-web-app [33m404[39m in 20ms
- GET /catalog [32m200[39m in 40ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
+ GET /catalog [32m200[39m in 70ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
+ GET /catalog [32m200[39m in 75ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
+ GET /catalog [32m200[39m in 110ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
+ GET /catalog [32m200[39m in 84ms
+ [32m[1m✓[22m[39m Compiled /catalog in 4ms
+ GET /catalog [32m200[39m in 46ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+ GET /catalog [32m200[39m in 134ms
+ [32m[1m✓[22m[39m Compiled /catalog in 8ms
+ GET /catalog [32m200[39m in 67ms
+ [32m[1m✓[22m[39m Compiled /catalog in 5ms
+ GET /catalog [32m200[39m in 46ms
+ GET /product/social-web-app [33m404[39m in 7ms
+ GET /product/social-web-app [33m404[39m in 25ms
+ GET /catalog [32m200[39m in 88ms
  [32m[1m✓[22m[39m Compiled /catalog in 6ms
  GET /catalog [32m200[39m in 46ms
- [32m[1m✓[22m[39m Compiled /catalog in 5ms
- GET /catalog [32m200[39m in 92ms
- [32m[1m✓[22m[39m Compiled /catalog in 5ms
- GET /catalog [32m200[39m in 85ms
- GET /catalog [32m200[39m in 50ms
- [32m[1m✓[22m[39m Compiled /catalog in 7ms
- GET /catalog [32m200[39m in 82ms
- [32m[1m✓[22m[39m Compiled /catalog in 6ms
- GET /catalog [32m200[39m in 51ms
- [32m[1m✓[22m[39m Compiled /catalog in 4ms
- GET /catalog [32m200[39m in 120ms
- [32m[1m✓[22m[39m Compiled /catalog in 5ms
- GET /catalog [32m200[39m in 80ms
- GET / [32m200[39m in 136ms
+ GET / [32m200[39m in 27ms
  GET /catalog [32m200[39m in 21ms
- GET /dashboard [32m200[39m in 67ms
- GET /dashboard/my-products [32m200[39m in 24ms
- GET /dashboard [32m200[39m in 5ms
- GET /dashboard/my-products [32m200[39m in 7ms
