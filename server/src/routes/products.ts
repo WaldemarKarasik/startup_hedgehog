@@ -118,14 +118,25 @@ export const productsRouter = new Hono()
         const products = await prisma.product.findMany({
           include: {
             developer: {
-              select: { firstName: true, lastName: true, avatar: true },
+              select: {
+                firstName: true,
+                lastName: true,
+                avatar: true,
+                rating: true,
+              },
             },
           },
         });
         return c.json(
           {
             success: true,
-            data: products,
+            data: products.map((product) => ({
+              ...product,
+              developer: {
+                ...product.developer,
+                rating: product.developer.rating.toNumber(),
+              },
+            })),
           },
           200
         );

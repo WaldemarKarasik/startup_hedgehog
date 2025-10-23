@@ -1,5 +1,7 @@
 import { GetCatalogSuccess } from "@/src/lib/api-client";
 import Link from "next/link";
+import { Avatar } from "primereact/avatar";
+import { Rating } from "primereact/rating";
 
 export const ProductCard = ({
   product,
@@ -13,7 +15,7 @@ export const ProductCard = ({
     >
       <img src={`http://${product.images[0]}`} className="rounded-2xl" />
       <div className="flex flex-wrap gap-1.5 items-center mt-3">
-        <p className="text-lg font-medium line-clamp-1">{product.name}</p>
+        <p className="text-lg font-semibold line-clamp-1">{product.name}</p>
         <p className="text-gray-500 text-sm font-medium">{product.category}</p>
       </div>
 
@@ -31,20 +33,27 @@ export const ProductCard = ({
       {/* Pricing */}
       <div className="mt-3 pt-2 space-y-2 border-t-2 border-primary-100">
         <p className="break-words ">
-          Стоимость кастомизации: {product.customizationPrice}₽
+          <span className="font-medium">Стоимость кастомизации:</span>{" "}
+          {product.customizationPrice}₽
         </p>
         <p className="break-words">
-          Revenue Share: {product.revenueShare}% на{" "}
-          {product.revenueShareDuration} месяцев
+          <span className="font-medium">Revenue Share:</span>{" "}
+          {product.revenueShare}% на {product.revenueShareDuration} месяцев
         </p>
       </div>
       {/* Developer */}
       <div className="flex-1 mt-3">
-        <div className="flex items-center">
+        <div className="flex items-center gap-1.5">
           {/* <img src={product.developer.avatar}/> */}
-          <p>
+          <Avatar
+            label={`${product.developer.firstName.at(0)}${product.developer.lastName.at(0)}`}
+            shape="circle"
+            className="bg-gradient-to-br from-primary-500 to-primary-700 text-white cursor-pointer ring-2 ring-offset-2 ring-primary-200  transition-all"
+          />
+          <p className="">
             {product.developer.firstName + " " + product.developer.lastName}
           </p>
+          <Rating value={product.developer.rating} readOnly cancel={false} />
         </div>
       </div>
     </Link>
