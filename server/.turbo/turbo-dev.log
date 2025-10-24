@@ -2,10 +2,103 @@
 Started development server: http://localhost:5173
 fetch catalog
 fetch catalog
-fetch product cmh1dhzq80001ijzxzz1nel87
-fetch product cmh367hst0003ijahq6jegzmv
 fetch catalog
 fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+[2J[3J[H[2J[3J[H[1m141 | [0m        }[0m[2m;[0m
+               [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected "finally" but found ";"[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m141[0m[2m:[0m[33m10[0m
+
+[1m156 | [0m        [0m[35mreturn[0m c[0m[3m[1m.json[0m(
+              [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected "{" but found "return"[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m156[0m[2m:[0m[33m9[0m
+
+[1m169 | [0m      } [0m[35mcatch[0m (error: [0m[34many[0m) {
+              [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mUnexpected catch[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m169[0m[2m:[0m[33m9[0m
+[2J[3J[H[2J[3J[H[1m156 | [0m        [0m[35mreturn[0m c[0m[3m[1m.json[0m(
+              [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected "finally" but found "return"[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m156[0m[2m:[0m[33m9[0m
+
+[1m156 | [0m        [0m[35mreturn[0m c[0m[3m[1m.json[0m(
+                     [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected "{" but found "c"[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m156[0m[2m:[0m[33m16[0m
+
+[1m156 | [0m        [0m[35mreturn[0m c[0m[3m[1m.json[0m(
+                      [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mUnexpected .[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m156[0m[2m:[0m[33m17[0m
+[2J[3J[H[2J[3J[H[1m164 | [0m      } [0m[35mcatch[0m (error: [0m[34many[0m) {
+            [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected "finally" but found "}"[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m164[0m[2m:[0m[33m7[0m
+
+[1m164 | [0m      } [0m[35mcatch[0m (error: [0m[34many[0m) {
+              [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mExpected "{" but found "catch"[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m164[0m[2m:[0m[33m9[0m
+
+[1m164 | [0m      } [0m[35mcatch[0m (error: [0m[34many[0m) {
+                          [1m[31m[1m^[0m
+[31merror[0m[2m: [0m[1mUnexpected ":"[0m
+    [2mat [0m[36m/home/daniel/Documents/стартап_еж/server/src/routes/products.ts[0m[2m:[0m[33m164[0m[2m:[0m[33m21[0m
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+fetch catalog
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
 fetch catalog
 fetch catalog
 fetch catalog

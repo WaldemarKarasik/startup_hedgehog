@@ -7,6 +7,7 @@ import {
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { UserRoles } from "shared";
+import { ProductsTable } from "./_сcomponents/ProductsTable";
 
 export default async function ProductApplications() {
   const cookieStore = await cookies();
@@ -53,8 +54,16 @@ export default async function ProductApplications() {
     if (!productApplicationsRes.success) {
       throw new Error(productApplicationsRes.error);
     }
-    console.log(productApplicationsRes);
-    return <div>products</div>;
+    return (
+      <div>
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold text-gray-900">Продукты</h1>
+          <p className="text-gray-600 mt-1">Управление всеми продуктами</p>
+        </div>
+
+        <ProductsTable products={productApplicationsRes.data} />
+      </div>
+    );
   } catch (err: any) {
     return <div className="text-red-500">{err.message}</div>;
   }

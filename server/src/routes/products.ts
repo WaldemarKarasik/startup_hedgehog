@@ -7,6 +7,8 @@ import { prisma } from "../lib/prisma";
 import { S3Client } from "bun";
 import { HTTPException } from "hono/http-exception";
 import { ProductStatus } from "../generated/prisma";
+import { ProductQueryBuilder } from "../services/productService";
+import type { ProductWithDeveloperInfo } from "../types";
 const newProductSchema = z.object({
   ...NewProductSchema.shape,
   images: z.array(z.instanceof(Blob)),
@@ -119,41 +121,34 @@ export const productsRouter = new Hono()
       z.object({
         status: z.enum(ProductStatus).optional(),
         operator: z.enum(["NOT", "IS"]).optional(),
+        orderBy: z.enum(["status", "date"]).optional(),
+        orderByDirection: z.enum(["desc", "asc"]).optional(),
       })
     ),
     async (c) => {
       console.log("fetch catalog");
-      const { status, operator } = c.req.valid("query");
+      const { status, operator, orderBy, orderByDirection } =
+        c.req.valid("query");
 
       try {
-        const getWhereClause = () => {
-          let clause: any = {};
-          if ((status && !operator) || (operator && !status)) {
-            throw new Error(
-              "Not enough query options for setting where clause"
-            );
-          }
-          if (operator == "IS") {
-            clause.status = status;
-            return clause;
-          }
-          clause = { status: { not: status } };
-          return clause;
-        };
-
-        const products = await prisma.product.findMany({
-          where: getWhereClause(),
-          include: {
-            developer: {
-              select: {
-                firstName: true,
-                lastName: true,
-                avatar: true,
-                rating: true,
-              },
+        const builder = new ProductQueryBuilder().with({
+          developer: {
+            select: {
+              firstName: true,
+              lastName: true,
+              avatar: true,
+              rating: true,
             },
           },
         });
+        if (status && operator) {
+          builder.filterByStatus(status, operator);
+        }
+        if (orderBy && orderByDirection) {
+          builder.sortBy(orderBy, orderByDirection);
+        }
+        const products =
+          (await builder.execute()) as ProductWithDeveloperInfo[];
         return c.json(
           {
             success: true,
