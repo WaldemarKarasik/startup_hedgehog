@@ -4,7 +4,7 @@ import { apiClient } from "../lib/api-client";
 import { DeveloperApplicationStatuses } from "shared";
 export const useApplications = (initialData: DeveloperApplication[]) => {
   return useQuery({
-    queryKey: ["developer-applications"],
+    queryKey: ["developer-applications", "list"],
     queryFn: async () => {
       const applications = await apiClient.api.developerApplication.list.$get();
       const applicationsRes = await applications.json();
@@ -35,7 +35,9 @@ export const useSetApplicationStatus = () => {
       }
     },
     onSuccess: () => {
-      queryClient.refetchQueries({ queryKey: ["developer-applications"] });
+      queryClient.refetchQueries({
+        queryKey: ["developer-applications", "list"],
+      });
     },
   });
 };

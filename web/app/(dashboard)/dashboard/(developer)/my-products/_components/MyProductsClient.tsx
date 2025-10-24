@@ -5,7 +5,7 @@ import { Dialog } from "primereact/dialog";
 import { Button } from "primereact/button";
 import { NewProductForm } from "./NewProductForm";
 import { X } from "lucide-react";
-import { useDeveloperProducts } from "@/src/hooks/products";
+import { useProducts } from "@/src/hooks/products";
 import { useAuthStore } from "@/src/stores/auth.store";
 import { Skeleton } from "primereact/skeleton";
 import { GetDeveloperProductsSuccess } from "@/src/lib/api-client";
@@ -24,11 +24,7 @@ export const MyProductsClient = ({
     isLoading,
     isFetching,
     isRefetching,
-  } = useDeveloperProducts({
-    developerId: userId!,
-    cacheKey: ["my-products"],
-    initialData: products,
-  });
+  } = useProducts({ initialData: products, filters: { developerId: userId } });
   useEffect(() => {
     console.log(visible);
   }, [visible]);

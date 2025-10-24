@@ -8,20 +8,55 @@ import {
   GetProduct,
 } from "../lib/api-client";
 
-export const useDeveloperProducts = ({
-  developerId,
-  cacheKey,
+interface ProductFilters {
+  status?: string;
+  operator?: "IS" | "NOT";
+  orderByDate?: "asc" | "desc";
+  page?: number;
+  limit?: number;
+  developerId?: string;
+}
+
+export const useProducts = ({
+  filters,
   initialData,
 }: {
-  developerId: string;
-  cacheKey: string[];
+  filters: ProductFilters;
   initialData?: GetDeveloperProductsSuccess["data"];
 }) => {
   return useQuery({
-    queryKey: cacheKey,
-    queryFn: async () => fetchDeveloperProducts(developerId),
+    queryKey: ["products", "list", filters],
+    queryFn: async () => fetchProducts(filters),
     ...(initialData && { initialData, refetchOnMount: false }),
   });
+};
+
+export const fetchProducts = async (filters: ProductFilters) => {
+  const params = new URLSearchParams(
+    Object.entries(filters).reduce(
+      (acc, [key, value]) => {
+        if (value !== undefined) {
+          acc[key] = String(value);
+        }
+        return acc;
+      },
+      {} as Record<string, string>
+    )
+  );
+
+  const response = await fetch(`${API_URL}/api/product/list?${params}`);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch products");
+  }
+
+  const json: GetCatalog = await response.json();
+
+  if (!json.success) {
+    throw new Error(json.error);
+  }
+
+  return json.data;
 };
 
 export const fetchDeveloperProducts = async (developerId: string) => {
@@ -76,20 +111,6 @@ export const useDeleteProduct = (onSuccess?: (data: any) => any) => {
       return deleteProductRes;
     },
     ...(onSuccess && { onSuccess }),
-  });
-};
-
-export const useCatalog = ({
-  cacheKey,
-  initialData,
-}: {
-  cacheKey: string[];
-  initialData?: GetCatalogSuccess["data"];
-}) => {
-  return useQuery({
-    queryKey: cacheKey,
-    queryFn: () => fetchCatalog(),
-    ...(initialData && { initialData, refetchOnMount: false }),
   });
 };
 

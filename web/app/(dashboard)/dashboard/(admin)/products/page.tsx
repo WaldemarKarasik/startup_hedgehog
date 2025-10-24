@@ -7,7 +7,7 @@ import {
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { UserRoles } from "shared";
-import { ProductsTable } from "./_сcomponents/ProductsTable";
+import { ProductsTable } from "./_сomponents/ProductsTable";
 
 export default async function ProductApplications() {
   const cookieStore = await cookies();

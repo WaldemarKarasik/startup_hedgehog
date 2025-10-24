@@ -94,7 +94,7 @@ export default function DashboardLayout({
             href: "/dashboard/applications",
           },
           {
-            label: "Product Applications",
+            label: "Products",
             icon: <Package size={20} />,
             href: "/dashboard/products",
           },

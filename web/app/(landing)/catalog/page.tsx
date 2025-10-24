@@ -3,11 +3,11 @@ import { mockStartups } from "@/src/lib/mock-data";
 import { Filter } from "lucide-react";
 import Header from "../_components/Header";
 import Footer from "../_components/Footer";
-import { fetchCatalog } from "@/src/hooks/products";
+import { fetchCatalog, fetchProducts } from "@/src/hooks/products";
 import { ProductCard } from "./_components/ProductCard";
 
 export default async function CatalogPage() {
-  const catalog = await fetchCatalog()
+  const catalog = await fetchProducts({ status: "ACTIVE", operator: "IS" })
     .then((catalog) => {
       return (
         <div className="min-h-screen flex flex-col">

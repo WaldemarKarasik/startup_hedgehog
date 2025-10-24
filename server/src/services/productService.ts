@@ -1,13 +1,13 @@
-import type { Prisma } from "../generated/prisma";
+import type { Prisma, ProductStatus } from "../generated/prisma";
 import { prisma } from "../lib/prisma";
 
 export class ProductQueryBuilder {
-  private where: any = {};
+  private where: Prisma.ProductWhereInput = {};
   private orderBy: any = {};
   private skip = 0;
   private take = 20;
   private include: Prisma.ProductInclude = {};
-  filterByStatus(status: string, operator: "IS" | "NOT") {
+  filterByStatus(status: ProductStatus, operator: "IS" | "NOT") {
     this.where.status = operator === "IS" ? status : { not: status };
     return this;
   }
@@ -16,7 +16,10 @@ export class ProductQueryBuilder {
     this.orderBy[field] = direction;
     return this;
   }
-
+  byDeveloper(developerId: string) {
+    this.where.developerId = developerId;
+    return this;
+  }
   paginate(page: number, limit: number) {
     this.skip = (page - 1) * limit;
     this.take = limit;

@@ -1,5 +1,6 @@
 "use client";
 import { GetCatalogSuccess } from "@/src/lib/api-client";
+import { useQuery } from "@tanstack/react-query";
 import { Check, X } from "lucide-react";
 import { Button } from "primereact/button";
 import { Column } from "primereact/column";
@@ -10,6 +11,7 @@ export const ProductsTable = ({
 }: {
   products: GetCatalogSuccess["data"];
 }) => {
+  const {} = useQuery({ queryKey: [""] });
   function handleApproveClick(
     product: GetCatalogSuccess["data"][number]
   ): void {
@@ -26,6 +28,9 @@ export const ProductsTable = ({
           `${rowData.developer.firstName} ${rowData.developer.lastName}`
         }
       />
+      <Column header="Стоимость кастомизации" field="customizationPrice" />
+      <Column header="Revenue Share " field="revenueShare" />
+
       <Column
         header="Действия"
         body={(product) => (

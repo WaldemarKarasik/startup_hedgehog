@@ -123,11 +123,12 @@ export const productsRouter = new Hono()
         operator: z.enum(["NOT", "IS"]).optional(),
         orderBy: z.enum(["status", "date"]).optional(),
         orderByDirection: z.enum(["desc", "asc"]).optional(),
+        developerId: z.string().optional(),
       })
     ),
     async (c) => {
       console.log("fetch catalog");
-      const { status, operator, orderBy, orderByDirection } =
+      const { status, operator, orderBy, orderByDirection, developerId } =
         c.req.valid("query");
 
       try {
@@ -141,6 +142,9 @@ export const productsRouter = new Hono()
             },
           },
         });
+        if (developerId) {
+          builder.byDeveloper(developerId);
+        }
         if (status && operator) {
           builder.filterByStatus(status, operator);
         }
@@ -226,6 +230,46 @@ export const productsRouter = new Hono()
       } catch (err) {
         return c.json(
           { success: false, error: "Couldn't delete product" },
+          500
+        );
+      }
+    }
+  )
+  .patch(
+    "/approve/:productId",
+    zValidator("param", z.object({ productId: z.string() })),
+    async (c) => {
+      const { productId } = c.req.valid("param");
+      try {
+        await prisma.product.update({
+          where: { id: productId },
+          data: { status: "ACTIVE" },
+        });
+        return c.json({ success: true }, 200);
+      } catch (err) {
+        console.error(err);
+        return c.json(
+          { success: false, error: "Failed to approve product" },
+          500
+        );
+      }
+    }
+  )
+  .patch(
+    "/reject/:productId",
+    zValidator("param", z.object({ productId: z.string() })),
+    async (c) => {
+      const { productId } = c.req.valid("param");
+      try {
+        await prisma.product.update({
+          where: { id: productId },
+          data: { status: "REJECTED" },
+        });
+        return c.json({ success: true }, 200);
+      } catch (err) {
+        console.error(err);
+        return c.json(
+          { success: false, error: "Failed to reject product" },
           500
         );
       }
