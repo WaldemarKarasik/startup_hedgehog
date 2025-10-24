@@ -6,6 +6,7 @@ import z from "zod";
 import { prisma } from "../lib/prisma";
 import { S3Client } from "bun";
 import { HTTPException } from "hono/http-exception";
+import { ProductStatus } from "../generated/prisma";
 const newProductSchema = z.object({
   ...NewProductSchema.shape,
   images: z.array(z.instanceof(Blob)),
@@ -113,11 +114,35 @@ export const productsRouter = new Hono()
   })
   .get(
     "/list",
-
+    zValidator(
+      "query",
+      z.object({
+        status: z.enum(ProductStatus).optional(),
+        operator: z.enum(["NOT", "IS"]).optional(),
+      })
+    ),
     async (c) => {
       console.log("fetch catalog");
+      const { status, operator } = c.req.valid("query");
+
       try {
+        const getWhereClause = () => {
+          let clause: any = {};
+          if ((status && !operator) || (operator && !status)) {
+            throw new Error(
+              "Not enough query options for setting where clause"
+            );
+          }
+          if (operator == "IS") {
+            clause.status = status;
+            return clause;
+          }
+          clause = { status: { not: status } };
+          return clause;
+        };
+
         const products = await prisma.product.findMany({
+          where: getWhereClause(),
           include: {
             developer: {
               select: {
@@ -142,12 +167,12 @@ export const productsRouter = new Hono()
           },
           200
         );
-      } catch (error) {
+      } catch (error: any) {
         console.error(error);
         return c.json(
           {
             success: false,
-            error: "Couldn't get products",
+            error: `Couldn't get products | ${error.message}`,
           },
           500
         );

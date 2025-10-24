@@ -94,13 +94,16 @@ export const useCatalog = ({
 };
 
 export const fetchCatalog = async () => {
-  const catalog = await fetch(`${API_URL}/api/product/list`, {
-    method: "GET",
-    next: {
-      revalidate: 1000,
-      tags: ["catalog"],
-    },
-  });
+  const catalog = await fetch(
+    `${API_URL}/api/product/list?status=MODERATION&operator=NOT`,
+    {
+      method: "GET",
+      next: {
+        revalidate: 1000,
+        tags: ["catalog"],
+      },
+    }
+  );
   const catalogRes: GetCatalog = await catalog.json();
   if (!catalogRes.success) {
     throw new Error(catalogRes.error);

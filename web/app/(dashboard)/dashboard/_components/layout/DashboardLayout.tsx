@@ -86,13 +86,6 @@ export default function DashboardLayout({
       icon: <ShoppingCart size={20} />,
       href: "/catalog",
     },
-
-    {
-      label: "Аналитика",
-      icon: <TrendingUp size={20} />,
-      href: "/dashboard/analytics",
-      notYetImplemented: true,
-    },
     ...(user?.role === "ADMIN"
       ? [
           {
@@ -100,8 +93,20 @@ export default function DashboardLayout({
             icon: <FileUser size={20} />,
             href: "/dashboard/applications",
           },
+          {
+            label: "Product Applications",
+            icon: <Package size={20} />,
+            href: "/dashboard/products",
+          },
         ]
       : []),
+    {
+      label: "Аналитика",
+      icon: <TrendingUp size={20} />,
+      href: "/dashboard/analytics",
+      notYetImplemented: true,
+    },
+
     {
       label: "Настройки",
       icon: <Settings size={20} />,

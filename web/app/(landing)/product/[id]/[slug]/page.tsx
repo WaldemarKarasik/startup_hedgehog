@@ -2,6 +2,7 @@ import Footer from "@/app/(landing)/_components/Footer";
 import Header from "@/app/(landing)/_components/Header";
 import { UserAvatar } from "@/app/_shared-components/UserAvatar";
 import { fetchProduct } from "@/src/hooks/products";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Avatar } from "primereact/avatar";
 import { Badge } from "primereact/badge";
 import { Button } from "primereact/button";
@@ -11,6 +12,8 @@ import { Divider } from "primereact/divider";
 import { Image } from "primereact/image";
 import { Rating } from "primereact/rating";
 import { Tag } from "primereact/tag";
+import { ImageGallery } from "./_components/ImageGallery";
+import { BuyerActions } from "./_components/BuyerActions";
 
 export default async function ProductPage(
   props: PageProps<"/product/[id]/[slug]">
@@ -137,7 +140,7 @@ export default async function ProductPage(
                   {/* Pricing & Actions */}
                   <Card className="shadow-sm">
                     <div className="space-y-4">
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-5">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-5 ">
                         <span className="text-2xl font-bold text-primary">
                           Стоимость {product.customizationPrice}₽
                         </span>
@@ -150,20 +153,7 @@ export default async function ProductPage(
                         </span>
                       </div>
 
-                      <div className="flex flex-col sm:flex-row gap-2">
-                        <Button
-                          label="Get Started"
-                          icon="pi pi-shopping-cart"
-                          className="flex-1"
-                          size="large"
-                        />
-                        <Button
-                          label="View Documentation"
-                          icon="pi pi-book"
-                          className="p-button-outlined flex-1"
-                          size="large"
-                        />
-                      </div>
+                      <BuyerActions />
                     </div>
                   </Card>
 
@@ -207,19 +197,7 @@ export default async function ProductPage(
                 {/* Right Column - Features & Additional Content */}
                 <div className="space-y-6 self-end">
                   {/* Features */}
-                  <Card title="Изображения" className="shadow-sm">
-                    <div className="grid auto-cols-max grid-flow-col overflow-auto gap-10">
-                      {product.images.map((img) => (
-                        <Image
-                          key={img}
-                          src={`http://${img}`}
-                          alt="продукт"
-                          width="500"
-                        />
-                      ))}
-                    </div>
-                  </Card>
-
+                  <ImageGallery images={product.images} />
                   {/* Technical Specifications */}
                   <Card title="Технические детали" className="shadow-sm">
                     <div className="grid md:grid-cols-[max-content_auto] gap-x-5 gap-y-3 items-center">
@@ -228,7 +206,7 @@ export default async function ProductPage(
                       </p>
                       <div className="flex flex-wrap items-center gap-3">
                         {product.techStack.map((tech) => (
-                          <Chip label={tech} className="text-sm" />
+                          <Chip key={tech} label={tech} className="text-sm" />
                         ))}
                       </div>
                     </div>

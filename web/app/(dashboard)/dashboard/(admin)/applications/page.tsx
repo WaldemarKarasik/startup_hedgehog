@@ -8,7 +8,7 @@ import {
 } from "@/src/lib/api-client";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { ApplicationsTable } from "../_components/ApplicationsTable";
+import { ApplicationsTable } from "./_components/ApplicationsTable";
 
 /**
  * Server Component - проверка роли через API вызов к backend

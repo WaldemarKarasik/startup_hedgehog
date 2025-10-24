@@ -13,7 +13,7 @@ export const ProductCard = ({
     <Link
       prefetch={false}
       href={`/product/${product.id}/${product.slug}`}
-      className=" p-10 rounded-4xl bg-gray-100 hover:bg-gray-200 transition duration-200"
+      className=" p-10 rounded-4xl bg-gray-100 hover:bg-gray-200 transition duration-200 shadow-sm"
     >
       <img src={`http://${product.images[0]}`} className="rounded-2xl" />
       <div className="flex flex-wrap gap-1.5 items-center mt-3">
