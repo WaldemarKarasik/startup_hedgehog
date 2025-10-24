@@ -209,7 +209,7 @@ export default function DashboardLayout({
               {/* Avatar with Menu */}
               <div className="relative">
                 <Avatar
-                  label={user?.firstName?.[0] || "U"}
+                  label={`${user?.firstName.at(0)}${user?.lastName.at(0)}`}
                   size="large"
                   shape="circle"
                   className="bg-gradient-to-br from-primary-500 to-primary-700 text-white cursor-pointer ring-2 ring-offset-2 ring-primary-200 hover:ring-primary-300 transition-all"

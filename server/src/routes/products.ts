@@ -11,6 +11,7 @@ const newProductSchema = z.object({
   images: z.array(z.instanceof(Blob)),
 });
 export const productsRouter = new Hono()
+
   .post("/create", requireAuth, requireDeveloper, async (c) => {
     try {
       const formData = await c.req.formData();
@@ -114,6 +115,7 @@ export const productsRouter = new Hono()
     "/list",
 
     async (c) => {
+      console.log("fetch catalog");
       try {
         const products = await prisma.product.findMany({
           include: {
@@ -156,8 +158,8 @@ export const productsRouter = new Hono()
     "/list/:developerId",
     zValidator("param", z.object({ developerId: z.string() })),
     async (c) => {
+      console.log("fetch developer products");
       const { developerId } = c.req.valid("param");
-      console.log("fetch products");
       try {
         const developerProducts = await prisma.product.findMany({
           where: { developerId },
@@ -208,8 +210,43 @@ export const productsRouter = new Hono()
         );
       }
     }
-  );
+  )
+  .get("/:productId", async (c) => {
+    try {
+      const { productId } = c.req.param();
+      console.log("fetch product", productId);
 
+      const product = await prisma.product.findFirst({
+        where: { id: productId },
+        include: {
+          developer: {
+            select: {
+              firstName: true,
+              lastName: true,
+              avatar: true,
+              rating: true,
+            },
+          },
+        },
+      });
+      if (!product) {
+        throw new HTTPException(404);
+      }
+      return c.json({
+        success: true,
+        data: {
+          ...product,
+          developer: {
+            ...product.developer,
+            rating: product.developer.rating.toNumber(),
+          },
+        },
+      });
+    } catch (error) {
+      console.error(error);
+      return c.json({ success: false, error: "Couldn't fetch product" }, 500);
+    }
+  });
 async function uploadToStorage(
   prefix: string,
   file: {

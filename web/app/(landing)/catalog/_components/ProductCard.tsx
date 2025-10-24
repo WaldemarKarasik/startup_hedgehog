@@ -1,3 +1,4 @@
+import { UserAvatar } from "@/app/_shared-components/UserAvatar";
 import { GetCatalogSuccess } from "@/src/lib/api-client";
 import Link from "next/link";
 import { Avatar } from "primereact/avatar";
@@ -10,7 +11,8 @@ export const ProductCard = ({
 }) => {
   return (
     <Link
-      href={`/product/${product.slug}`}
+      prefetch={false}
+      href={`/product/${product.id}/${product.slug}`}
       className=" p-10 rounded-4xl bg-gray-100 hover:bg-gray-200 transition duration-200"
     >
       <img src={`http://${product.images[0]}`} className="rounded-2xl" />
@@ -45,11 +47,7 @@ export const ProductCard = ({
       <div className="flex-1 mt-3">
         <div className="flex items-center gap-1.5">
           {/* <img src={product.developer.avatar}/> */}
-          <Avatar
-            label={`${product.developer.firstName.at(0)}${product.developer.lastName.at(0)}`}
-            shape="circle"
-            className="bg-gradient-to-br from-primary-500 to-primary-700 text-white cursor-pointer ring-2 ring-offset-2 ring-primary-200  transition-all"
-          />
+          <UserAvatar user={product.developer} />
           <p className="">
             {product.developer.firstName + " " + product.developer.lastName}
           </p>

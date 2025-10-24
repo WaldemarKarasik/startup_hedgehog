@@ -8,94 +8,262 @@
 
    [1m[38;2;173;127;168m▲ Next.js 16.0.0-beta.0[39m[22m (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://100.84.146.212:3000
+   - Network:      http://100.84.137.182:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Compiled middleware in 108ms
- [32m[1m✓[22m[39m Ready in 621ms
+ [32m[1m✓[22m[39m Compiled middleware in 104ms
+ [32m[1m✓[22m[39m Ready in 606ms
  [37m[1m○[22m[39m Compiling /catalog ...
- [32m[1m✓[22m[39m Compiled /catalog in 1993ms
-{
-  [0mfirstName[2m:[0m [0m[32m[0m[32m"Данил"[0m[0m[0m[2m,[0m
-  [0mlastName[2m:[0m [0m[32m[0m[32m"Касаткин"[0m[0m[0m[2m,[0m
-  [0mavatar[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-  [0mrating[2m:[0m [0m[33m0[0m[0m[2m,[0m
-}
-{
-  [0mfirstName[2m:[0m [0m[32m[0m[32m"Данил"[0m[0m[0m[2m,[0m
-  [0mlastName[2m:[0m [0m[32m[0m[32m"Касаткин"[0m[0m[0m[2m,[0m
-  [0mavatar[2m:[0m [0m[33mnull[0m[0m[2m,[0m
-  [0mrating[2m:[0m [0m[33m0[0m[0m[2m,[0m
-}
- GET /catalog [32m200[39m in 3516ms
+ [32m[1m✓[22m[39m Compiled /catalog in 2.2s
+ GET /catalog [32m200[39m in 3479ms
  [32m[1m✓[22m[39m Compiled /catalog in 8ms
- GET /catalog [32m200[39m in 55ms
+ GET /catalog [32m200[39m in 245ms
+ GET /catalog [32m200[39m in 140ms
+ [32m[1m✓[22m[39m Compiled /catalog in 9ms
+ GET /catalog [32m200[39m in 142ms
  [32m[1m✓[22m[39m Compiled /catalog in 6ms
- [32m[1m✓[22m[39m Compiled in 71ms
- GET /catalog [32m200[39m in 80ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 236ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 142ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 126ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 126ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 267ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 135ms
+ [32m[1m✓[22m[39m Compiled /catalog in 8ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 164ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 231ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+next_fetchCatalog
+{
+  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  [0merror[2m:[0m [0m[32m[0m[32m"Couldn't fetch product"[0m[0m[0m[2m,[0m
+}
+ GET /catalog [32m200[39m in 169ms
+ [32m[1m✓[22m[39m Compiled /catalog in 6ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 233ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 1292ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 243ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 131ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 234ms
+next_fetchCatalog
+ GET /catalog [32m200[39m in 234ms
+ [32m[1m✓[22m[39m Compiled /catalog in 7ms
+next_fetchCatalog
+{
+  [0msuccess[2m:[0m [0m[33mfalse[0m[0m[2m,[0m
+  [0merror[2m:[0m [0m[32m[0m[32m"Couldn't fetch product"[0m[0m[0m[2m,[0m
+}
+ GET /catalog [32m200[39m in 281ms
+next_fetchCatalog
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0mdata[2m:[0m [
+    {
+      [0mid[2m:[0m [0m[32m[0m[32m"cmh1dhzq80001ijzxzz1nel87"[0m[0m[0m[2m,[0m
+      [0mdeveloperId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+      [0mname[2m:[0m [0m[32m[0m[32m"Social Web App"[0m[0m[0m[2m,[0m
+      [0mdescription[2m:[0m [0m[32m[0m[32m"Социальная сеть по типу реддита"[0m[0m[0m[2m,[0m
+      [0mcategory[2m:[0m [0m[32m[0m[32m"OTHER"[0m[0m[0m[2m,[0m
+      [0mtechStack[2m:[0m [ [0m[32m"React"[0m[0m[0m[2m,[0m [0m[32m"Nextjs"[0m[0m ][0m[2m,[0m
+      [0mdemoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mvideoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mgithubUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mimages[2m:[0m [ [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-00.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-29.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-59.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-44-46.png"[0m[0m
+      ][0m[2m,[0m
+      [0mcustomizationPrice[2m:[0m [0m[32m[0m[32m"300000"[0m[0m[0m[2m,[0m
+      [0mrevenueShare[2m:[0m [0m[33m10[0m[0m[2m,[0m
+      [0mrevenueShareDuration[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0msupportPeriod[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0mstatus[2m:[0m [0m[32m[0m[32m"MODERATION"[0m[0m[0m[2m,[0m
+      [0mrejectionReason[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mslug[2m:[0m [0m[32m[0m[32m"social-web-app"[0m[0m[0m[2m,[0m
+      [0mviews[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mfavorites[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-22T02:27:30.362Z"[0m[0m[0m[2m,[0m
+      [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-22T02:27:30.362Z"[0m[0m[0m[2m,[0m
+      [0mpublishedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mdeveloper[2m:[0m [0m[36m[Object ...][0m[0m[2m,[0m
+    }[0m[2m,[0m {
+      [0mid[2m:[0m [0m[32m[0m[32m"cmh367hst0003ijahq6jegzmv"[0m[0m[0m[2m,[0m
+      [0mdeveloperId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+      [0mname[2m:[0m [0m[32m[0m[32m"Very long name for not so great app"[0m[0m[0m[2m,[0m
+      [0mdescription[2m:[0m [0m[32m[0m[32m"sdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdf"[0m[0m[0m[2m,[0m
+      [0mcategory[2m:[0m [0m[32m[0m[32m"ECOMMERCE"[0m[0m[0m[2m,[0m
+      [0mtechStack[2m:[0m [ [0m[32m"dsfasf"[0m[0m ][0m[2m,[0m
+      [0mdemoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mvideoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mgithubUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mimages[2m:[0m [ [0m[32m"startuphedgehog.storage.yandexcloud.net/product-dfggdf/Screenshot From 2025-10-12 18-44-46.png"[0m[0m ][0m[2m,[0m
+      [0mcustomizationPrice[2m:[0m [0m[32m[0m[32m"300000"[0m[0m[0m[2m,[0m
+      [0mrevenueShare[2m:[0m [0m[33m10[0m[0m[2m,[0m
+      [0mrevenueShareDuration[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0msupportPeriod[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0mstatus[2m:[0m [0m[32m[0m[32m"MODERATION"[0m[0m[0m[2m,[0m
+      [0mrejectionReason[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mslug[2m:[0m [0m[32m[0m[32m"dfggdf"[0m[0m[0m[2m,[0m
+      [0mviews[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mfavorites[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-23T08:38:51.159Z"[0m[0m[0m[2m,[0m
+      [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-23T11:43:16.329Z"[0m[0m[0m[2m,[0m
+      [0mpublishedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mdeveloper[2m:[0m [0m[36m[Object ...][0m[0m[2m,[0m
+    }
+  ][0m[2m,[0m
+}
+ GET /catalog [32m200[39m in 1133ms
+next_fetchCatalog
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0mdata[2m:[0m [
+    {
+      [0mid[2m:[0m [0m[32m[0m[32m"cmh1dhzq80001ijzxzz1nel87"[0m[0m[0m[2m,[0m
+      [0mdeveloperId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+      [0mname[2m:[0m [0m[32m[0m[32m"Social Web App"[0m[0m[0m[2m,[0m
+      [0mdescription[2m:[0m [0m[32m[0m[32m"Социальная сеть по типу реддита"[0m[0m[0m[2m,[0m
+      [0mcategory[2m:[0m [0m[32m[0m[32m"OTHER"[0m[0m[0m[2m,[0m
+      [0mtechStack[2m:[0m [ [0m[32m"React"[0m[0m[0m[2m,[0m [0m[32m"Nextjs"[0m[0m ][0m[2m,[0m
+      [0mdemoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mvideoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mgithubUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mimages[2m:[0m [ [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-00.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-29.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-59.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-44-46.png"[0m[0m
+      ][0m[2m,[0m
+      [0mcustomizationPrice[2m:[0m [0m[32m[0m[32m"300000"[0m[0m[0m[2m,[0m
+      [0mrevenueShare[2m:[0m [0m[33m10[0m[0m[2m,[0m
+      [0mrevenueShareDuration[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0msupportPeriod[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0mstatus[2m:[0m [0m[32m[0m[32m"MODERATION"[0m[0m[0m[2m,[0m
+      [0mrejectionReason[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mslug[2m:[0m [0m[32m[0m[32m"social-web-app"[0m[0m[0m[2m,[0m
+      [0mviews[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mfavorites[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-22T02:27:30.362Z"[0m[0m[0m[2m,[0m
+      [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-22T02:27:30.362Z"[0m[0m[0m[2m,[0m
+      [0mpublishedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mdeveloper[2m:[0m [0m[36m[Object ...][0m[0m[2m,[0m
+    }[0m[2m,[0m {
+      [0mid[2m:[0m [0m[32m[0m[32m"cmh367hst0003ijahq6jegzmv"[0m[0m[0m[2m,[0m
+      [0mdeveloperId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+      [0mname[2m:[0m [0m[32m[0m[32m"Very long name for not so great app"[0m[0m[0m[2m,[0m
+      [0mdescription[2m:[0m [0m[32m[0m[32m"sdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdf"[0m[0m[0m[2m,[0m
+      [0mcategory[2m:[0m [0m[32m[0m[32m"ECOMMERCE"[0m[0m[0m[2m,[0m
+      [0mtechStack[2m:[0m [ [0m[32m"dsfasf"[0m[0m ][0m[2m,[0m
+      [0mdemoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mvideoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mgithubUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mimages[2m:[0m [ [0m[32m"startuphedgehog.storage.yandexcloud.net/product-dfggdf/Screenshot From 2025-10-12 18-44-46.png"[0m[0m ][0m[2m,[0m
+      [0mcustomizationPrice[2m:[0m [0m[32m[0m[32m"300000"[0m[0m[0m[2m,[0m
+      [0mrevenueShare[2m:[0m [0m[33m10[0m[0m[2m,[0m
+      [0mrevenueShareDuration[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0msupportPeriod[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0mstatus[2m:[0m [0m[32m[0m[32m"MODERATION"[0m[0m[0m[2m,[0m
+      [0mrejectionReason[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mslug[2m:[0m [0m[32m[0m[32m"dfggdf"[0m[0m[0m[2m,[0m
+      [0mviews[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mfavorites[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-23T08:38:51.159Z"[0m[0m[0m[2m,[0m
+      [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-23T11:43:16.329Z"[0m[0m[0m[2m,[0m
+      [0mpublishedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mdeveloper[2m:[0m [0m[36m[Object ...][0m[0m[2m,[0m
+    }
+  ][0m[2m,[0m
+}
+ GET /catalog [32m200[39m in 222ms
+ [32m[1m✓[22m[39m Compiled /catalog in 7ms
+next_fetchCatalog
+{
+  [0msuccess[2m:[0m [0m[33mtrue[0m[0m[2m,[0m
+  [0mdata[2m:[0m [
+    {
+      [0mid[2m:[0m [0m[32m[0m[32m"cmh1dhzq80001ijzxzz1nel87"[0m[0m[0m[2m,[0m
+      [0mdeveloperId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+      [0mname[2m:[0m [0m[32m[0m[32m"Social Web App"[0m[0m[0m[2m,[0m
+      [0mdescription[2m:[0m [0m[32m[0m[32m"Социальная сеть по типу реддита"[0m[0m[0m[2m,[0m
+      [0mcategory[2m:[0m [0m[32m[0m[32m"OTHER"[0m[0m[0m[2m,[0m
+      [0mtechStack[2m:[0m [ [0m[32m"React"[0m[0m[0m[2m,[0m [0m[32m"Nextjs"[0m[0m ][0m[2m,[0m
+      [0mdemoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mvideoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mgithubUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mimages[2m:[0m [ [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-00.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-29.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-43-59.png"[0m[0m[0m[2m,[0m
+        [0m[32m"startuphedgehog.storage.yandexcloud.net/product-social-web-app/Screenshot From 2025-10-12 18-44-46.png"[0m[0m
+      ][0m[2m,[0m
+      [0mcustomizationPrice[2m:[0m [0m[32m[0m[32m"300000"[0m[0m[0m[2m,[0m
+      [0mrevenueShare[2m:[0m [0m[33m10[0m[0m[2m,[0m
+      [0mrevenueShareDuration[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0msupportPeriod[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0mstatus[2m:[0m [0m[32m[0m[32m"MODERATION"[0m[0m[0m[2m,[0m
+      [0mrejectionReason[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mslug[2m:[0m [0m[32m[0m[32m"social-web-app"[0m[0m[0m[2m,[0m
+      [0mviews[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mfavorites[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-22T02:27:30.362Z"[0m[0m[0m[2m,[0m
+      [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-22T02:27:30.362Z"[0m[0m[0m[2m,[0m
+      [0mpublishedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mdeveloper[2m:[0m [0m[36m[Object ...][0m[0m[2m,[0m
+    }[0m[2m,[0m {
+      [0mid[2m:[0m [0m[32m[0m[32m"cmh367hst0003ijahq6jegzmv"[0m[0m[0m[2m,[0m
+      [0mdeveloperId[2m:[0m [0m[32m[0m[32m"cmgw4wlqt0000ij0pj46ywdow"[0m[0m[0m[2m,[0m
+      [0mname[2m:[0m [0m[32m[0m[32m"Very long name for not so great app"[0m[0m[0m[2m,[0m
+      [0mdescription[2m:[0m [0m[32m[0m[32m"sdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdfsdfdsfasdfasdf"[0m[0m[0m[2m,[0m
+      [0mcategory[2m:[0m [0m[32m[0m[32m"ECOMMERCE"[0m[0m[0m[2m,[0m
+      [0mtechStack[2m:[0m [ [0m[32m"dsfasf"[0m[0m ][0m[2m,[0m
+      [0mdemoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mvideoUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mgithubUrl[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mimages[2m:[0m [ [0m[32m"startuphedgehog.storage.yandexcloud.net/product-dfggdf/Screenshot From 2025-10-12 18-44-46.png"[0m[0m ][0m[2m,[0m
+      [0mcustomizationPrice[2m:[0m [0m[32m[0m[32m"300000"[0m[0m[0m[2m,[0m
+      [0mrevenueShare[2m:[0m [0m[33m10[0m[0m[2m,[0m
+      [0mrevenueShareDuration[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0msupportPeriod[2m:[0m [0m[33m12[0m[0m[2m,[0m
+      [0mstatus[2m:[0m [0m[32m[0m[32m"MODERATION"[0m[0m[0m[2m,[0m
+      [0mrejectionReason[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mslug[2m:[0m [0m[32m[0m[32m"dfggdf"[0m[0m[0m[2m,[0m
+      [0mviews[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mfavorites[2m:[0m [0m[33m0[0m[0m[2m,[0m
+      [0mcreatedAt[2m:[0m [0m[32m[0m[32m"2025-10-23T08:38:51.159Z"[0m[0m[0m[2m,[0m
+      [0mupdatedAt[2m:[0m [0m[32m[0m[32m"2025-10-23T11:43:16.329Z"[0m[0m[0m[2m,[0m
+      [0mpublishedAt[2m:[0m [0m[33mnull[0m[0m[2m,[0m
+      [0mdeveloper[2m:[0m [0m[36m[Object ...][0m[0m[2m,[0m
+    }
+  ][0m[2m,[0m
+}
+ GET /catalog [32m200[39m in 70ms
  [32m[1m✓[22m[39m Compiled /catalog in 4ms
- GET /catalog [32m200[39m in 65ms
- [32m[1m✓[22m[39m Compiled /calculator in 211ms
- GET /calculator [32m200[39m in 227ms
- [32m[1m✓[22m[39m Compiled /for-developers in 170ms
- GET /for-developers [32m200[39m in 197ms
+ GET /catalog [32m200[39m in 42ms
+ GET /catalog [32m200[39m in 338ms
+ [32m[1m✓[22m[39m Compiled /product/[id]/[slug] in 328ms
+ GET /product/cmh1dhzq80001ijzxzz1nel87/social-web-app [32m200[39m in 863ms
+ GET /product/cmh1dhzq80001ijzxzz1nel87/social-web-app [32m200[39m in 23ms
+ GET /catalog [32m200[39m in 51ms
+ GET /product/cmh1dhzq80001ijzxzz1nel87/social-web-app [32m200[39m in 67ms
+ GET /product/cmh1dhzq80001ijzxzz1nel87/social-web-app [32m200[39m in 24ms
+ GET /product/cmh1dhzq80001ijzxzz1nel87/social-web-app [32m200[39m in 23ms
+ GET /product/cmh367hst0003ijahq6jegzmv/dfggdf [32m200[39m in 301ms
+ GET /product/cmh367hst0003ijahq6jegzmv/dfggdf [32m200[39m in 22ms
+[0m[31mEach child in a list should have a unique "key" prop.
+
+Check the top-level render call using <Chip>. See https://react.dev/link/warning-keys for more information.[0m
+ GET /product/cmh367hst0003ijahq6jegzmv/dfggdf [32m200[39m in 88ms
  GET /catalog [32m200[39m in 22ms
- [32m[1m✓[22m[39m Compiled / in 194ms
- GET / [32m200[39m in 216ms
- [32m[1m✓[22m[39m Compiled /dashboard in 465ms
- GET /dashboard [32m200[39m in 482ms
- GET / [32m200[39m in 18ms
- GET /catalog [32m200[39m in 20ms
- [32m[1m✓[22m[39m Compiled /catalog in 5ms
- GET /catalog [32m200[39m in 119ms
- GET /catalog [32m200[39m in 107ms
- GET / [32m200[39m in 110ms
- GET /catalog [32m200[39m in 20ms
- GET /catalog [32m200[39m in 46ms
- [32m[1m✓[22m[39m Compiled /catalog in 7ms
- GET /catalog [32m200[39m in 67ms
- GET /dashboard [32m200[39m in 9ms
- GET / [32m200[39m in 14ms
- GET /catalog [32m200[39m in 19ms
- GET / [32m200[39m in 20ms
- GET /catalog [32m200[39m in 21ms
- GET /catalog [32m200[39m in 76ms
- GET / [32m200[39m in 13ms
- GET /catalog [32m200[39m in 20ms
- [32m[1m✓[22m[39m Compiled /catalog in 7ms
- GET /catalog [32m200[39m in 73ms
- GET /catalog [32m200[39m in 81ms
- GET /dashboard [32m200[39m in 10ms
- GET / [32m200[39m in 82ms
- GET /catalog [32m200[39m in 20ms
- GET / [32m200[39m in 12ms
- GET / [32m200[39m in 60ms
- GET /catalog [32m200[39m in 94ms
- GET /dashboard [32m200[39m in 18ms
- GET / [32m200[39m in 20ms
- GET /catalog [32m200[39m in 23ms
- [32m[1m✓[22m[39m Compiled /catalog in 16ms
- [32m[1m✓[22m[39m Compiled in 54ms
- GET /catalog [32m200[39m in 407ms
- GET /catalog [32m200[39m in 48ms
- GET /catalog [32m200[39m in 19ms
- [32m[1m✓[22m[39m Compiled / in 7ms
- GET / [32m200[39m in 150ms
- GET /catalog [32m200[39m in 14ms
- GET /catalog [32m200[39m in 66ms
- GET /catalog [32m200[39m in 43ms
- GET /catalog [32m200[39m in 50ms
- GET /catalog [32m200[39m in 43ms
- GET /catalog [32m200[39m in 43ms
- GET /dashboard [32m200[39m in 9ms
- GET / [32m200[39m in 13ms
- GET /catalog [32m200[39m in 13ms
- [32m[1m✓[22m[39m Compiled /calculator in 22ms
- GET /calculator [32m200[39m in 111ms
- GET /catalog [32m200[39m in 22ms
- GET /calculator [32m200[39m in 5ms
- GET /catalog [32m200[39m in 21ms
- GET / [32m200[39m in 19ms
- GET /catalog [32m200[39m in 23ms
- GET /catalog [32m200[39m in 46ms
- GET /catalog [32m200[39m in 50ms
+ GET /product/cmh1dhzq80001ijzxzz1nel87/social-web-app [32m200[39m in 26ms
+[?25h

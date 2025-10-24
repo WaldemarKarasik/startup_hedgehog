@@ -1,2 +1,133 @@
 [0m[2m[35m$[0m [2m[1mbun --watch run src/index.ts && tsc --watch[0m
 Started development server: http://localhost:5173
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+fetch product list
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+fetch product list
+[0m[1m28 |[0m             },
+[0m[1m29 |[0m           },
+[0m[1m30 |[0m         },
+[0m[1m31 |[0m       })[0m[2m;[0m
+[0m[1m32 |[0m       [0m[35mif[0m (!product) {
+[0m[1m33 |[0m         [0m[35mthrow[0m [0m[35mnew[0m [0m[1mHTTPException[0m([0m[33m404[0m)[0m[2m;[0m
+                   [31m[1m^[0m
+[0m[31mError[0m[2m:[0m 
+    res[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ status[0m[2m:[0m [0m[33m404[0m[0m[2m,[0m
+
+[0m      [2mat [0m[0m[2m<anonymous>[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/routes/products.ts[0m[2m:[0m[33m33[0m[2m:[33m15[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync cors2[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/middleware/cors/index.js[0m[2m:[0m[33m84[0m[2m:[33m11[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[2masync <anonymous>[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/hono-base.js[0m[2m:[0m[33m201[0m[2m:[33m31[0m[2m)[0m
+
+fetch product list
+[0m[1m28 |[0m             },
+[0m[1m29 |[0m           },
+[0m[1m30 |[0m         },
+[0m[1m31 |[0m       })[0m[2m;[0m
+[0m[1m32 |[0m       [0m[35mif[0m (!product) {
+[0m[1m33 |[0m         [0m[35mthrow[0m [0m[35mnew[0m [0m[1mHTTPException[0m([0m[33m404[0m)[0m[2m;[0m
+                   [31m[1m^[0m
+[0m[31mError[0m[2m:[0m 
+    res[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ status[0m[2m:[0m [0m[33m404[0m[0m[2m,[0m
+
+[0m      [2mat [0m[0m[2m<anonymous>[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/routes/products.ts[0m[2m:[0m[33m33[0m[2m:[33m15[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync cors2[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/middleware/cors/index.js[0m[2m:[0m[33m84[0m[2m:[33m11[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[2masync <anonymous>[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/hono-base.js[0m[2m:[0m[33m201[0m[2m:[33m31[0m[2m)[0m
+
+fetch product list
+[0m[1m28 |[0m             },
+[0m[1m29 |[0m           },
+[0m[1m30 |[0m         },
+[0m[1m31 |[0m       })[0m[2m;[0m
+[0m[1m32 |[0m       [0m[35mif[0m (!product) {
+[0m[1m33 |[0m         [0m[35mthrow[0m [0m[35mnew[0m [0m[1mHTTPException[0m([0m[33m404[0m)[0m[2m;[0m
+                   [31m[1m^[0m
+[0m[31mError[0m[2m:[0m 
+    res[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ status[0m[2m:[0m [0m[33m404[0m[0m[2m,[0m
+
+[0m      [2mat [0m[0m[2m<anonymous>[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/routes/products.ts[0m[2m:[0m[33m33[0m[2m:[33m15[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync cors2[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/middleware/cors/index.js[0m[2m:[0m[33m84[0m[2m:[33m11[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[2masync <anonymous>[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/hono-base.js[0m[2m:[0m[33m201[0m[2m:[33m31[0m[2m)[0m
+
+fetch product list
+[0m[1m28 |[0m             },
+[0m[1m29 |[0m           },
+[0m[1m30 |[0m         },
+[0m[1m31 |[0m       })[0m[2m;[0m
+[0m[1m32 |[0m       [0m[35mif[0m (!product) {
+[0m[1m33 |[0m         [0m[35mthrow[0m [0m[35mnew[0m [0m[1mHTTPException[0m([0m[33m404[0m)[0m[2m;[0m
+                   [31m[1m^[0m
+[0m[31mError[0m[2m:[0m 
+    res[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ status[0m[2m:[0m [0m[33m404[0m[0m[2m,[0m
+
+[0m      [2mat [0m[0m[2m<anonymous>[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/routes/products.ts[0m[2m:[0m[33m33[0m[2m:[33m15[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync cors2[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/middleware/cors/index.js[0m[2m:[0m[33m84[0m[2m:[33m11[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[2masync <anonymous>[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/hono-base.js[0m[2m:[0m[33m201[0m[2m:[33m31[0m[2m)[0m
+
+fetch product list
+[0m[1m28 |[0m             },
+[0m[1m29 |[0m           },
+[0m[1m30 |[0m         },
+[0m[1m31 |[0m       })[0m[2m;[0m
+[0m[1m32 |[0m       [0m[35mif[0m (!product) {
+[0m[1m33 |[0m         [0m[35mthrow[0m [0m[35mnew[0m [0m[1mHTTPException[0m([0m[33m404[0m)[0m[2m;[0m
+                   [31m[1m^[0m
+[0m[31mError[0m[2m:[0m 
+    res[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ status[0m[2m:[0m [0m[33m404[0m[0m[2m,[0m
+
+[0m      [2mat [0m[0m[2m<anonymous>[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/routes/products.ts[0m[2m:[0m[33m33[0m[2m:[33m15[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync cors2[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/middleware/cors/index.js[0m[2m:[0m[33m84[0m[2m:[33m11[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[2masync <anonymous>[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/hono-base.js[0m[2m:[0m[33m201[0m[2m:[33m31[0m[2m)[0m
+
+fetch product list
+[0m[1m28 |[0m             },
+[0m[1m29 |[0m           },
+[0m[1m30 |[0m         },
+[0m[1m31 |[0m       })[0m[2m;[0m
+[0m[1m32 |[0m       [0m[35mif[0m (!product) {
+[0m[1m33 |[0m         [0m[35mthrow[0m [0m[35mnew[0m [0m[1mHTTPException[0m([0m[33m404[0m)[0m[2m;[0m
+                   [31m[1m^[0m
+[0m[31mError[0m[2m:[0m 
+    res[0m[2m:[0m [0m[2mundefined[0m[0m[2m,[0m
+ status[0m[2m:[0m [0m[33m404[0m[0m[2m,[0m
+
+[0m      [2mat [0m[0m[2m<anonymous>[0m[2m ([0m[0m[36m[2m/home/daniel/Documents/стартап_еж/server/[0m[36msrc/routes/products.ts[0m[2m:[0m[33m33[0m[2m:[33m15[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync cors2[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/middleware/cors/index.js[0m[2m:[0m[33m84[0m[2m:[33m11[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3masync dispatch[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/compose.js[0m[2m:[0m[33m22[0m[2m:[33m23[0m[2m)[0m
+[0m      [2mat [0m[0m[2masync <anonymous>[0m[2m ([0m[0m[36m/home/daniel/Documents/стартап_еж/node_modules/hono/dist/hono-base.js[0m[2m:[0m[33m201[0m[2m:[33m31[0m[2m)[0m
+
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+[2J[3J[H[2J[3J[HStarted development server: http://localhost:5173
+fetch catalog
+fetch catalog
+fetch catalog
+fetch product cmh1dhzq80001ijzxzz1nel87
+fetch product cmh367hst0003ijahq6jegzmv

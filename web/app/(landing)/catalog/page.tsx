@@ -7,8 +7,6 @@ import { fetchCatalog } from "@/src/hooks/products";
 import { ProductCard } from "./_components/ProductCard";
 
 export default async function CatalogPage() {
-  const activeStartups = mockStartups.filter((s) => s.status === "active");
-
   const catalog = await fetchCatalog()
     .then((catalog) => {
       return (

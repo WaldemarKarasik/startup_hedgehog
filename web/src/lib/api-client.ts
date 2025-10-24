@@ -104,3 +104,7 @@ export type GetCatalogSuccess = InferResponseType<
   typeof apiClient.api.product.list.$get,
   200
 >;
+
+export type GetProduct = InferResponseType<
+  (typeof apiClient.api.product)[":productId"]["$get"]
+>;

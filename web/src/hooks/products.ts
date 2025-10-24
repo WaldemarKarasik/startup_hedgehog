@@ -5,6 +5,7 @@ import {
   GetCatalog,
   GetCatalogSuccess,
   GetDeveloperProductsSuccess,
+  GetProduct,
 } from "../lib/api-client";
 
 export const useDeveloperProducts = ({
@@ -105,4 +106,16 @@ export const fetchCatalog = async () => {
     throw new Error(catalogRes.error);
   }
   return catalogRes.data;
+};
+
+export const fetchProduct = async (productId: string) => {
+  const product = await fetch(`${API_URL}/api/product/${productId}`, {
+    method: "GET",
+    next: { revalidate: 1000, tags: [`product-${productId}`] },
+  });
+  const productRes: GetProduct = await product.json();
+  if (!productRes.success) {
+    throw new Error(productRes.error);
+  }
+  return productRes.data;
 };
