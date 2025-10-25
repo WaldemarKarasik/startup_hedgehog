@@ -33,15 +33,12 @@ export const MyProductsTable = ({
             severity={"danger"}
             size="small"
             onClick={async () => {
-              deleteProduct({ developerId: userId, productId: product.id });
-              await revalidate({
-                type: REVALIDATE_TYPES.PATH,
-                path: "/dashboard/my-products",
-              });
+              deleteProduct({ productId: product.id });
+
               if (product.status == PRODUCT_STATUS.ACTIVE) {
                 await revalidate({
-                  type: REVALIDATE_TYPES.PATH,
-                  path: "/catalog",
+                  type: REVALIDATE_TYPES.TAG,
+                  tag: "products",
                 });
               }
             }}

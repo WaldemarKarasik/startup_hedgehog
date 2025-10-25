@@ -1,4 +1,4 @@
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   API_URL,
   apiClient,
@@ -17,6 +17,9 @@ interface ProductFilters {
   developerId?: string;
 }
 
+export enum UpdateProductFields {
+  status = "status",
+}
 export const useProducts = ({
   filters,
   initialData,
@@ -27,54 +30,8 @@ export const useProducts = ({
   return useQuery({
     queryKey: ["products", "list", filters],
     queryFn: async () => fetchProducts(filters),
-    ...(initialData && { initialData, refetchOnMount: false }),
+    ...(initialData && { initialData }),
   });
-};
-
-export const fetchProducts = async (filters: ProductFilters) => {
-  const params = new URLSearchParams(
-    Object.entries(filters).reduce(
-      (acc, [key, value]) => {
-        if (value !== undefined) {
-          acc[key] = String(value);
-        }
-        return acc;
-      },
-      {} as Record<string, string>
-    )
-  );
-
-  const response = await fetch(`${API_URL}/api/product/list?${params}`);
-
-  if (!response.ok) {
-    throw new Error("Failed to fetch products");
-  }
-
-  const json: GetCatalog = await response.json();
-
-  if (!json.success) {
-    throw new Error(json.error);
-  }
-
-  return json.data;
-};
-
-export const fetchDeveloperProducts = async (developerId: string) => {
-  // const products = await apiClient.api.product.list[":developerId"].$get({
-  //   param: { developerId },
-  // });
-  const products = await fetch(`${API_URL}/api/product/list/${developerId}`, {
-    method: "GET",
-    next: {
-      revalidate: 300,
-      tags: ["developer-products"],
-    },
-  });
-  const productsRes = await products.json();
-  if (!productsRes.success) {
-    throw new Error(productsRes.error);
-  }
-  return productsRes.data as GetDeveloperProductsSuccess["data"];
 };
 
 export const useCreateProduct = (onSuccess?: (data: any) => any) => {
@@ -95,41 +52,51 @@ export const useCreateProduct = (onSuccess?: (data: any) => any) => {
   });
 };
 export const useDeleteProduct = (onSuccess?: (data: any) => any) => {
+  const queryClient = useQueryClient();
+
   return useMutation({
-    mutationFn: async (input: { developerId: string; productId: string }) => {
-      const deleteProduct = await fetch(
-        `${API_URL}/api/product/delete/${input.developerId}/${input.productId}`,
-        {
-          method: "DELETE",
-          credentials: "include",
-        }
-      );
+    mutationFn: async (input: { productId: string }) => {
+      const deleteProduct = await apiClient.api.product.delete[
+        ":productId"
+      ].$delete({ param: { productId: input.productId } });
       const deleteProductRes = await deleteProduct.json();
       if (!deleteProductRes.success) {
         throw new Error(deleteProductRes.error);
       }
       return deleteProductRes;
     },
-    ...(onSuccess && { onSuccess }),
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ["products"] });
+    },
   });
 };
-
-export const fetchCatalog = async () => {
-  const catalog = await fetch(
-    `${API_URL}/api/product/list?status=MODERATION&operator=NOT`,
-    {
-      method: "GET",
-      next: {
-        revalidate: 1000,
-        tags: ["catalog"],
-      },
-    }
-  );
-  const catalogRes: GetCatalog = await catalog.json();
-  if (!catalogRes.success) {
-    throw new Error(catalogRes.error);
-  }
-  return catalogRes.data;
+export const useUpdateProduct = () => {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async (input: {
+      productId: string;
+      field: UpdateProductFields;
+      fieldValue: any;
+    }) => {
+      console.log(input);
+      const product = await apiClient.api.product.update[":productId"].$patch({
+        param: {
+          productId: input.productId,
+        },
+        json: {
+          field: input.field,
+          fieldValue: input.fieldValue,
+        },
+      });
+      const productRes: any = await product.json();
+      if (!productRes.success) {
+        throw new Error(productRes.error);
+      }
+    },
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ["products"] });
+    },
+  });
 };
 
 export const fetchProduct = async (productId: string) => {
@@ -142,4 +109,51 @@ export const fetchProduct = async (productId: string) => {
     throw new Error(productRes.error);
   }
   return productRes.data;
+};
+
+export const fetchDeveloperProducts = async (developerId: string) => {
+  // const products = await apiClient.api.product.list[":developerId"].$get({
+  //   param: { developerId },
+  // });
+  const products = await fetch(`${API_URL}/api/product/list/${developerId}`, {
+    method: "GET",
+  });
+  const productsRes = await products.json();
+  if (!productsRes.success) {
+    throw new Error(productsRes.error);
+  }
+  return productsRes.data as GetDeveloperProductsSuccess["data"];
+};
+export const fetchProducts = async (
+  filters: ProductFilters,
+  options?: RequestInit
+) => {
+  const params = new URLSearchParams(
+    Object.entries(filters).reduce(
+      (acc, [key, value]) => {
+        if (value !== undefined) {
+          acc[key] = String(value);
+        }
+        return acc;
+      },
+      {} as Record<string, string>
+    )
+  );
+
+  const response = await fetch(
+    `${API_URL}/api/product/list?${params}`,
+    options && options
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch products");
+  }
+
+  const json: GetCatalog = await response.json();
+
+  if (!json.success) {
+    throw new Error(json.error);
+  }
+
+  return json.data;
 };

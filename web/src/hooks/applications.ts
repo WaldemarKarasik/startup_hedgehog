@@ -13,7 +13,6 @@ export const useApplications = (initialData: DeveloperApplication[]) => {
       }
       return applicationsRes.data as DeveloperApplication[];
     },
-    refetchOnMount: false,
     initialData,
   });
 };
@@ -34,10 +33,8 @@ export const useSetApplicationStatus = () => {
         throw new Error(reviewRes.error);
       }
     },
-    onSuccess: () => {
-      queryClient.refetchQueries({
-        queryKey: ["developer-applications", "list"],
-      });
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ["developer-applications"] });
     },
   });
 };

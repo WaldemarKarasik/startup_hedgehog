@@ -96,7 +96,10 @@ export default async function DeveloperApplicationsPage() {
     headers: {
       Cookie: `token=${token!.value}`,
     },
-    cache: "no-store",
+    next: {
+      revalidate: 2000,
+      tags: ["developer-applications"],
+    },
   });
   const applicationsRes: GetApplications = await applications.json();
   if (!applicationsRes.success) {

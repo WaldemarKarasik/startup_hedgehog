@@ -38,4 +38,13 @@ export class ProductQueryBuilder {
       include: this.include,
     });
   }
+  async get() {
+    return prisma.product.findFirst({
+      where: this.where,
+      orderBy: this.orderBy,
+      //   skip: this.skip,
+      //   take: this.take,
+      include: this.include,
+    });
+  }
 }

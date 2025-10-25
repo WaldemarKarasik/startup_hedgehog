@@ -81,9 +81,9 @@ export const NewProductForm = ({
     }
   };
   const onCreateSuccess = async () => {
-    await revalidate({
-      type: REVALIDATE_TYPES.PATH,
-      path: "/dashboard/my-products",
+    revalidate({
+      type: REVALIDATE_TYPES.TAG,
+      tag: "products",
     });
 
     router.push("/dashboard/my-products");

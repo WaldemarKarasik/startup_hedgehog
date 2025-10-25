@@ -1,12 +1,12 @@
 import { Hono } from "hono";
 import { requireAuth, requireDeveloper } from "../lib/requireAuth";
 import { zValidator } from "@hono/zod-validator";
-import { NewProductSchema } from "shared";
+import { NewProductSchema, UserRoles } from "shared";
 import z from "zod";
 import { prisma } from "../lib/prisma";
 import { S3Client } from "bun";
 import { HTTPException } from "hono/http-exception";
-import { ProductStatus } from "../generated/prisma";
+import { Prisma, ProductStatus } from "../generated/prisma";
 import { ProductQueryBuilder } from "../services/productService";
 import type { ProductWithDeveloperInfo } from "../types";
 const newProductSchema = z.object({
@@ -208,26 +208,39 @@ export const productsRouter = new Hono()
     }
   )
   .delete(
-    "/delete/:developerId/:productId",
+    "/delete/:productId",
     requireAuth,
-    requireDeveloper,
-    zValidator(
-      "param",
-      z.object({ developerId: z.string(), productId: z.string() })
-    ),
+    zValidator("param", z.object({ productId: z.string() })),
     async (c) => {
       try {
+        const { productId } = c.req.valid("param");
         const user = c.get("user");
-        const { developerId, productId } = c.req.valid("param");
-        const ownsProduct = user.userId == developerId;
-        if (!ownsProduct) {
-          throw new HTTPException(403);
+
+        // Get the product to check ownership
+        const product = await prisma.product.findUnique({
+          where: { id: productId },
+          select: { developerId: true },
+        });
+
+        if (!product) {
+          return c.json({ success: false, error: "Product not found" }, 404);
         }
+
+        // Check authorization: must be admin OR the product owner
+        const isOwner = product.developerId === user.userId;
+        const isAdmin = user.role === UserRoles.ADMIN;
+
+        if (!isOwner && !isAdmin) {
+          return c.json({ success: false, error: "Unauthorized" }, 403);
+        }
+
         await prisma.product.delete({
           where: { id: productId },
         });
+
         return c.json({ success: true });
       } catch (err) {
+        console.error("Delete product error:", err);
         return c.json(
           { success: false, error: "Couldn't delete product" },
           500
@@ -236,42 +249,32 @@ export const productsRouter = new Hono()
     }
   )
   .patch(
-    "/approve/:productId",
-    zValidator("param", z.object({ productId: z.string() })),
+    "/update/:productId",
+    requireAuth,
+    zValidator(
+      "param",
+      z.object({
+        productId: z.string(),
+      })
+    ),
+    zValidator(
+      "json",
+      z.object({
+        field: z.enum(Prisma.ProductScalarFieldEnum),
+        fieldValue: z.any(),
+      })
+    ),
     async (c) => {
       const { productId } = c.req.valid("param");
+      const { field, fieldValue } = c.req.valid("json");
       try {
         await prisma.product.update({
           where: { id: productId },
-          data: { status: "ACTIVE" },
+          data: { [field]: fieldValue },
         });
-        return c.json({ success: true }, 200);
+        return c.json({ success: true });
       } catch (err) {
-        console.error(err);
-        return c.json(
-          { success: false, error: "Failed to approve product" },
-          500
-        );
-      }
-    }
-  )
-  .patch(
-    "/reject/:productId",
-    zValidator("param", z.object({ productId: z.string() })),
-    async (c) => {
-      const { productId } = c.req.valid("param");
-      try {
-        await prisma.product.update({
-          where: { id: productId },
-          data: { status: "REJECTED" },
-        });
-        return c.json({ success: true }, 200);
-      } catch (err) {
-        console.error(err);
-        return c.json(
-          { success: false, error: "Failed to reject product" },
-          500
-        );
+        return c.json({ success: false, error: "Failed to update product" });
       }
     }
   )

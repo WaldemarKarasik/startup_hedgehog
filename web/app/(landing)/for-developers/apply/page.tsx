@@ -8,6 +8,9 @@ import Footer from "../../_components/Footer";
 import { DeveloperApplicationForm, developerApplicationSchema } from "shared";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { apiClient } from "@/src/lib/api-client";
+import { revalidate } from "@/src/lib/revalidate";
+import { REVALIDATE_TYPES } from "@/src/types";
+import { useQueryClient } from "@tanstack/react-query";
 
 const FormError = ({ message }: { message?: string }) => {
   if (!message) return null;
@@ -48,7 +51,7 @@ export default function Apply() {
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
+  const queryClient = useQueryClient();
   // Эта функция остается БЕЗ ИЗМЕНЕНИЙ.
   // RHF + Zod гарантируют, что 'data' будет
   // передана сюда ТОЛЬКО после успешной валидации.
@@ -64,6 +67,11 @@ export default function Apply() {
       }
       // ... остальная логика ...
       setSubmitted(true);
+      await revalidate({
+        type: REVALIDATE_TYPES.TAG,
+        tag: "developer-applications",
+      });
+      queryClient.invalidateQueries({ queryKey: ["developer-applications"] });
     } catch (err) {
       // ...
     }

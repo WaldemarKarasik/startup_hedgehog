@@ -8,6 +8,7 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { UserRoles } from "shared";
 import { ProductsTable } from "./_сomponents/ProductsTable";
+import { fetchProducts } from "@/src/hooks/products";
 
 export default async function ProductApplications() {
   const cookieStore = await cookies();
@@ -46,14 +47,11 @@ export default async function ProductApplications() {
     );
   }
   try {
-    const productApplicatios = await serverFetch(
-      "/api/product/list",
-      cookieStore
+    const products = await fetchProducts(
+      {},
+      { next: { tags: ["products"], revalidate: 2000 } }
     );
-    const productApplicationsRes: GetCatalog = await productApplicatios.json();
-    if (!productApplicationsRes.success) {
-      throw new Error(productApplicationsRes.error);
-    }
+
     return (
       <div>
         <div className="mb-6">
@@ -61,7 +59,7 @@ export default async function ProductApplications() {
           <p className="text-gray-600 mt-1">Управление всеми продуктами</p>
         </div>
 
-        <ProductsTable products={productApplicationsRes.data} />
+        <ProductsTable products={products} />
       </div>
     );
   } catch (err: any) {

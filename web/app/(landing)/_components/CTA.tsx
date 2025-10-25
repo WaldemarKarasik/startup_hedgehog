@@ -51,7 +51,7 @@ export default function CTA() {
             </div>
 
             <Link
-              href="/for-developers/apply"
+              href="/sign-up"
               className="block w-full px-8 py-4 bg-white text-indigo-600 rounded-xl font-semibold text-lg text-center hover:bg-gray-100 transition-colors"
             >
               Подать заявку

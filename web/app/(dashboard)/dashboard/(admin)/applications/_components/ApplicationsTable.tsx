@@ -4,11 +4,13 @@ import {
   useApplications,
   useSetApplicationStatus,
 } from "@/src/hooks/applications";
-import { DeveloperApplication } from "@/src/types";
+import { revalidate } from "@/src/lib/revalidate";
+import { DeveloperApplication, REVALIDATE_TYPES } from "@/src/types";
 import { Eye, ThumbsDown, ThumbsUp } from "lucide-react";
 import { Button } from "primereact/button";
 import { Column } from "primereact/column";
 import { DataTable } from "primereact/datatable";
+import { useEffect } from "react";
 import { DeveloperApplicationStatuses } from "shared";
 
 export const ApplicationsTable = ({
@@ -16,23 +18,35 @@ export const ApplicationsTable = ({
 }: {
   data: DeveloperApplication[];
 }) => {
-  const { data: applications } = useApplications(data);
+  const { data: applications, refetch } = useApplications(data);
   const { mutate: setStatus, error: setStatusError } =
     useSetApplicationStatus();
   const actionBodyTemplate = (application: DeveloperApplication) => {
-    const handleApprove = () => {
+    const handleApprove = async () => {
       // Одобрить developer application
       setStatus({ application, status: "APPROVED" });
+      revalidate({
+        type: REVALIDATE_TYPES.TAG,
+        tag: "developer-applications",
+      });
     };
 
-    const handleReject = () => {
+    const handleReject = async () => {
       // Отклонить developer application
       setStatus({ application, status: "REJECTED" });
+      revalidate({
+        type: REVALIDATE_TYPES.TAG,
+        tag: "developer-applications",
+      });
     };
 
     const handleReview = async () => {
       // Отправить на рассмотрение
       setStatus({ application, status: "IN_REVIEW" });
+      revalidate({
+        type: REVALIDATE_TYPES.TAG,
+        tag: "developer-applications",
+      });
     };
     switch (application.status) {
       case DeveloperApplicationStatuses.NEW:
